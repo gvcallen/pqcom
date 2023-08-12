@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  12 AUG 2023 12:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  12 AUG 2023 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -677,7 +677,7 @@ LaTeX Info: Redefining \nameref on input line 123.
  (./frontmatter/title_page.tex
 
 pdfTeX warning: pdflatex (file ./frontmatter/figures//SU_logo_RGB_without_slogan.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<frontmatter/figures//SU_logo_RGB_without_slogan.pdf, id=52, 441.01764pt x 506.96803pt>
+<frontmatter/figures//SU_logo_RGB_without_slogan.pdf, id=68, 441.01764pt x 506.96803pt>
 File: frontmatter/figures//SU_logo_RGB_without_slogan.pdf Graphic file (type pdf)
 <use frontmatter/figures//SU_logo_RGB_without_slogan.pdf>
 Package pdftex.def Info: frontmatter/figures//SU_logo_RGB_without_slogan.pdf  used on input line 7.
@@ -693,7 +693,7 @@ Package microtype Info: Loading generic protrusion settings for font family
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./frontmatter/figures//SU_logo_RGB_without_slogan.pdf>]) (./frontmatter/declaration.tex
-<USlogo-top.pdf, id=73, 560.0925pt x 183.68625pt>
+<USlogo-top.pdf, id=89, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
 Package pdftex.def Info: USlogo-top.pdf  used on input line 7.
@@ -728,11 +728,20 @@ Chapter 1.
 
 ]
 Chapter 2.
-) (./content/conclusion.tex [2
+<content/figures/balloon_path.png, id=175, 713.66624pt x 550.30594pt>
+File: content/figures/balloon_path.png Graphic file (type png)
+<use content/figures/balloon_path.png>
+Package pdftex.def Info: content/figures/balloon_path.png  used on input line 13.
+(pdftex.def)             Requested size: 377.85419pt x 291.35846pt.
+) (./content/background.tex [2
+
+] [3 <./content/figures/balloon_path.png>]
+Chapter 3.
+(./content/background/pocketqube.tex)) (./content/conclusion.tex [4
 
 ]
-Chapter 3.
-) (build/report.bbl [3
+Chapter 4.
+) (build/report.bbl [5
 
 ]
 Underfull \hbox (badness 6188) in paragraph at lines 25--28
@@ -744,7 +753,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--28
 \OT1/lmr/m/n/12 (+8) weatherballoons# : [] : text = The % 20balloon % 20^^Mights % 20last % 20for ,[] 20 % 20miles ) %20in %
  []
 
-) (./endmatter/appendix.tex (./endmatter/appendix/planning.tex [4
+
+Overfull \hbox (131.44194pt too wide) in paragraph at lines 30--33
+[]\OT1/lmr/m/n/12 (-20) ``Intermet,'' [][]$https : / / intermet . co / wp-[]content / uploads / iMet-[]3100M-[]403MHz-[]Military-[]Antenna-[]Receiver-[]Brochure-[]V4 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
+[]\OT1/lmr/m/n/12 (+20) ``Types of or-bits --- esa.int,'' [][]$https : / / www . esa . int / Enabling[]Support / Space[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
+\OT1/lmr/m/n/12 (+1) Transportation / Types[]of[]orbits# : [] : text = Low % 20Earth % 20orbit % 20(LEO ) ,[]-[]A % 20low %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
+\OT1/lmr/m/n/12 (+20) 20Earth & text = It % 20is % 20normally % 20at % 20an ,[] very % 20far % 20above % 20Earth '[] s %
+ []
+
+) (./endmatter/appendix.tex (./endmatter/appendix/planning.tex [6
 
 ]
 Appendix A.
@@ -753,25 +782,25 @@ Appendix A.
 Package caption Warning: Unused \captionsetup[algorithm] on input line 107.
 See the caption package documentation for explanation.
 
-[5
+[7
 
 ] (build/report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 353A056A8EC01E0B162073F3DA9B6568;1367.
+(rerunfilecheck)             Checksum: 3107DBC75113E1D67887CFA424AEE6B9;1766.
  ) 
 Here is how much of TeX's memory you used:
- 21371 strings out of 480171
- 398828 string characters out of 5894489
- 793162 words of memory out of 5000000
- 38849 multiletter control sequences out of 15000+600000
- 518822 words of font info for 102 fonts, out of 8000000 for 9000
+ 21458 strings out of 480171
+ 400375 string characters out of 5894489
+ 794301 words of memory out of 5000000
+ 38887 multiletter control sequences out of 15000+600000
+ 528486 words of font info for 117 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  71i,11n,79p,1051b,796s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on build/report.pdf (12 pages, 494380 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on build/report.pdf (14 pages, 952111 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 28779 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 34960 words of extra memory for PDF output out of 35830 (max. 10000000)
 

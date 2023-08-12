@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ATGM332D-5N31")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/ATGM332D-5N31/ATGM332D-5N31.kicad_sym")(options "")(descr ""))
+  (lib (name "RA-02")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/RA-02/RA-02.kicad_sym")(options "")(descr ""))
+)

@@ -26,4 +26,14 @@
   \url{https://www.weather.gov/bmx/kidscorner_weatherballoons#:~:text=The%20balloon%20flights%20last%20for,20%20miles)%20in%20the%20atmosphere!},
   [Accessed 12-08-2023].
 
+\bibitem{datasheet-iMet3100M}
+``Intermet,''
+  \url{https://intermet.co/wp-content/uploads/iMet-3100M-403MHz-Military-Antenna-Receiver-Brochure-V4.5.pdf},
+  [Accessed 12-08-2023].
+
+\bibitem{esaTypesOrbits}
+``{T}ypes of orbits --- esa.int,''
+  \url{https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits#:~:text=Low%20Earth%20orbit%20(LEO),-A%20low%20Earth&text=It%20is%20normally%20at%20an,very%20far%20above%20Earth's%20surface.},
+  [Accessed 12-08-2023].
+
 \end{thebibliography}
