@@ -1,0 +1,36 @@
+\graphicspath{{./figures}}
+
+\section{PCB Design}
+
+\textit{Printed circuit board} (PCB) design is considered a skill and art in and of itself. Since this project will require basic PCB design techniques related to simple circuits, as well as potentially RF circuits (depending on decisions made in the design process), an initial review of literature and techniques should be done. An overview of the most relevant, core concepts is presented below.
+
+\subsection{Layers}
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.3\textwidth]{4layerPCB}
+  \caption{Common 4 Layer PCB Stackup \cite{site-4layerPCB}}
+  \label{fig:4layerPCB}
+\end{figure}
+
+A PCB is made up of multiple layers. 2-layer and 4-layer PCBs are considered the most common. For a 2-layer board, there are two layers of copper on both the top and bottom of the board. For 4-layer boards, 2 extra copper layers lie in between the outer layers and are therefore not exposed to air. These inner layers are general used for \textit{ground planes} or \textit{power planes}. The purpose of each layer and how they are distributed is called the PCB \textit{stackup}. Figure \ref{fig:4layerPCB} shows a common 4-layer PCB stackup. \cite{site-pcbLayers}
+
+\subsection{Traces}
+The traces connect various components on the different layers. They are created by removing the copper which surround them, resulting in a single conducting path. For digital design, generally only the thickness of the trace is important, and is determine by the current handling requirements of that signal. For radio frequency \textit{RF} design, the type of material in between traces, distance between traces, thickness of the trace etc. should all be taken into account. This is due to the fact that they influence the \textit{characteristic impedance} of the resulting \textit{transmission lines}.
+
+\subsection{Vias}
+Vias are holes on boards that (generally) pass a signal from one layer to another. They allow for a circuit's components to be distributed across layers, therefore providing flexibile in laying traces. \textit{Untented} (uncovered) vias can be soldered to for e.g. \textit{through-hole} components, whereas \textit{tented} vias are used to prevent the via from being soldered to \cite{site-pcbBasics}. \textit{Stiching vias} are a large number of vias placed in a spaced-out pattern, which result in a stronger connection, allow for better thermal management, and reduce crosstalk and EMI \cite{site-viaStitching}.
+
+\subsection{Copper Pours}
+\textit{Copper pours} are large areas of copper on a PCB. They are typically used for large exposed ground planes and power planes where power distribution or electrical shielding is necessary.
+
+\subsection{RF Design}
+The design of PCB circuits involving higher frequencies is significantly more complex. Not only is the layout of components more critical, but the length of traces, the placement of ground planes, and many complex considerations need to be made. Some of this process can be significantly simplified by making use of RF \textit{modules}. These are typically isolated components with an RF \textit{shield} providing a single functionality.
+
+The following list encompasses a short summary of some considerations that \textit{may} be applicable in this project. It should be noted that many of these points are \textit{only} applicable if RF traces and RF ICs are designed directly (as opposed to using an RF module). This is known as a "chip-down" design. The trade-off of using such modules will be made in the design phase.
+\begin{itemize}
+    \item Ensure proper grounding with thick enough traces and $V_{cc}$ bypas capacitors near RF integrated circuits. If the ground is not on the same layer as the IC, multiple vias should be used \cite{datasheet-MAX2659}. 
+    \item If a high-frequency signal is to be routed on a trace, its characteristic impedance should either be \textit{controlled} or \textit{matched} appropriately. In other words, if two $\SI{50}{\ohm}$ RF pins on two different ICs are to be connected together, either the trace itself should have a $\SI{50}{\ohm}$ impedance, or impedance matching should be done so that the transition between characteristic impedances does not cause reflections. \cite{datasheet-MAX2659}
+    \item Take care of \textit{crosstalk} and electromagnetic \textit{isolation}. Use \textit{RF filters}, \textit{RF shields} and \textit{stitching vias} to minimize these effects.
+    \item Keep RF lines as far as possible from each other, and route high-speed digital signals on a different layer from the RF lines entirely. Layers should be dedicated to a continuous ground plane and power plane - typically layers 2 and 3 for a 4-layer board, as shown in Figure \ref{fig:4layerPCB}. \cite{site-rfPCBGuidelines}
+    \item Apply curved bending or \textit{mitering} when transmission lines are required to change direction abruptly. \cite{site-rfPCBGuidelines}
+\end{itemize}

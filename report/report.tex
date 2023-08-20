@@ -118,27 +118,25 @@
 \makeatother
  \usepackage[normalem]{ulem}
 
+\usepackage{subfiles}
 
 % Document 
 \begin{document}
 
 % Front matter
-\input{frontmatter/title_page}
-\input{frontmatter/declaration}
+\subfile{frontmatter/title_page}
+\subfile{frontmatter/declaration}
 \pagenumbering{roman}
 \tableofcontents
 \listoffigures
 \listoftables
-\input{frontmatter/nomenclature}
-\input{frontmatter/abstract}
+\subfile{frontmatter/nomenclature}
+\subfile{frontmatter/abstract}
 \newpage
 \pagenumbering{arabic}
 
 % Contents
-\input{content/introduction}
-\input{content/problem}
-\input{content/background}
-\input{content/conclusion}
+\subfile{content/content.tex}
 
 % Bibliography
 \nocite{*}
@@ -146,6 +144,6 @@
 
 % End matter
 \appendix
-\input{endmatter/appendix}
+\subfile{endmatter/appendix}
 
 \end{document}

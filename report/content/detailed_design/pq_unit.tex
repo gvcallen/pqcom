@@ -1,0 +1,23 @@
+\section{PocketQube Unit}
+
+Since the components have been selected, the design of the PQ unit PCB can be done. This unit includes the microcontroller, integration with the PQ9 9-pin bus, a simple power module, and the control of the GPS and RF modules.
+
+The power consumptions of the various on-board components are found in Table \ref{tab:pqunit_component_current} below.
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c|c| }
+  \hline
+  \textbf{Component}        & \textbf{State}        & \textbf{Current}      \\ \hline 
+  ATmega328                 & Active                & 0.2 mA                \\ \hline 
+  RA-02                     & TX                    & 93 mA                 \\ \hline 
+                            & RX                    & 12.15 mA              \\ \hline 
+                            & Idle                  & 1.5 mA                \\ \hline 
+  \hline  \end{tabular}
+  \caption{Current Consumption of PQ Unit Components}
+  \label{tab:pqunit_component_current}
+\end{table}
+
+\noindent This results in a maximum current level of around 100 mA, although will typically be less since TX will not be continuously occuring. (e.g. around 40-50 mA). The Panasonic CR2450 is a 3 V, 620 mAh coin cell which, even at maximum current, will allow the system to last 5 hours. This meets the specification and will therefore be used.    
+
+The bus requires one unit of the PocketQube to control the reset line. This will need to be included in the RF unit so that the entire PQ can be reset via a tele-command. This, however, introduces complications in that the PQ9 specification requires the reset line to be driven for at least 20 ms, whereas the ATmega328 will reset after a \SI{2.5}{\micro \second} pulse. A 

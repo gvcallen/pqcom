@@ -1,19 +1,47 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Declaration}{i}{Doc-Start}%
-\contentsline {chapter}{List of Figures}{iii}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{iv}{chapter*.3}%
-\contentsline {chapter}{Nomenclature}{v}{chapter*.4}%
-\contentsline {chapter}{Abstract}{vi}{chapter*.5}%
+\contentsline {chapter}{List of Figures}{iv}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{v}{chapter*.3}%
+\contentsline {chapter}{Nomenclature}{vi}{chapter*.4}%
+\contentsline {chapter}{Abstract}{vii}{chapter*.5}%
+\babel@toc {afrikaans}{}\relax 
+\babel@toc {english}{}\relax 
 \babel@toc {afrikaans}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Problem Definition}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Problem}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Overview}{2}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Requirements}{2}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Expansions}{3}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Background}{4}{chapter.3}%
-\contentsline {section}{\numberline {3.1}PocketQube}{4}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Conclusion}{5}{chapter.4}%
-\contentsline {chapter}{Bibliography}{6}{chapter*.7}%
-\contentsline {chapter}{\numberline {A}Appendix A}{7}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Project Planning Schedule}{7}{section.A.1}%
+\contentsline {section}{\numberline {2.2}Requirements}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Specifications}{4}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Background}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}PocketQube}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Antennas}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Half-Wave Dipole}{7}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}General Dipole}{7}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Quarter-Wave Monopole}{8}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Helical}{8}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Patch}{9}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Array}{9}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Yagi-Uda}{9}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Modified Patch}{9}{subsection.3.2.8}%
+\contentsline {subsection}{\numberline {3.2.9}Summary}{10}{subsection.3.2.9}%
+\contentsline {section}{\numberline {3.3}Satellite Tracking}{11}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Open-Loop}{11}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}GPS Relay}{11}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Radio}{12}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}PCB Design}{13}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Layers}{13}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Traces}{13}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Vias}{13}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Copper Pours}{14}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}RF Design}{14}{subsection.3.4.5}%
+\contentsline {chapter}{\numberline {4}System Design}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Complete System}{15}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Detailed Design}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Components}{17}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}GPS}{17}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}PocketQube Unit}{17}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusion}{18}{chapter.6}%
+\contentsline {chapter}{Bibliography}{19}{chapter*.19}%
+\contentsline {chapter}{\numberline {A}Appendix A}{21}{appendix.A}%

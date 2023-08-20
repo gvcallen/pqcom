@@ -1,7 +1,0 @@
-\section{PocketQube Unit}
-
-Since the components have been selected, the design of the PQ unit PCB can be done. This unit includes the microcontroller, integration with the PQ9 9-pin bus, a simple power module, and the control of the GPS and RF modules.
-
-The PQ unit will be integrated with other \textit{prototype} units into a single PocketQube. Since this is a prototype launch, there is risk of the energy power system (EPS) going offline. Further, a power connection is needed for modularized testing. A simple on-board battery system, as well as a battery source selector, will therefore be designed. This can be used for testing and deployment, however the battery cell can be removed if the EPS is found to meet all \textit{flight-readiness} tests.
-
-The bus requires one unit of the PocketQube to control the reset line. This will need to be included in the RF unit so that the entire PQ can be reset via a tele-command. This, however, introduces complications in that the PQ9 specification requires the reset line to be driven for at least 20 ms, whereas the ATmega328 will reset after a \SI{2.5}{\micro \second} pulse. A 

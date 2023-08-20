@@ -1,5 +1,7 @@
 (sym_lib_table
   (version 7)
-  (lib (name "ATGM332D-5N31")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/ATGM332D-5N31/ATGM332D-5N31.kicad_sym")(options "")(descr ""))
-  (lib (name "RA-02")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/RA-02/RA-02.kicad_sym")(options "")(descr ""))
+  (lib (name "ATMEGA328P-AU")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/ATMEGA328P-AU/ATMEGA328P-AU.kicad_sym")(options "")(descr ""))
+  (lib (name "USB-TYPE-C-017")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/USB-TYPE-C-017/USB-TYPE-C-017.kicad_sym")(options "")(descr ""))
+  (lib (name "F2920")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/F2920/F2920.kicad_sym")(options "")(descr ""))
+  (lib (name "ST3485EBDR")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/ST3485EBDR/ST3485EBDR.kicad_sym")(options "")(descr ""))
 )

@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ATGM332D-5N31")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/ATGM332D-5N31/ATGM332D-5N31.kicad_sym")(options "")(descr ""))
+  (lib (name "L6219DS")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/L6219/L6219DS/L6219DS.kicad_sym")(options "")(descr ""))
+  (lib (name "XL6009PCB")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/XL6009PCB/XL6009PCB.kicad_sym")(options "")(descr ""))
+  (lib (name "MPU9250PCB")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/MPU9250PCB.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32-WROOM-32PCB")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/ESP32-WROOM-32PCB/ESP32-WROOM-32PCB.kicad_sym")(options "")(descr ""))
+)

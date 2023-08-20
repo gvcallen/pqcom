@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  12 AUG 2023 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  18 AUG 2023 14:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -535,8 +535,12 @@ Package: cite 2015/02/27  v 5.5
 \ULC@box=\box70
 Package: ulem 2019/11/18
 \ULdepth=\dimen267
-)
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 123.
+) (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
+Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
+ (/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+))
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 124.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (build/report.aux (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/af/babel-afrikaans.tex
@@ -544,28 +548,28 @@ Package babel Info: Importing basic data for afrikaans
 (babel)             from babel-af.ini. Reported on input line 11.
 )
 Package babel Info: Hyphen rules for 'afrikaans' set to \l@english
-(babel)             (\language0). Reported on input line 28.
+(babel)             (\language0). Reported on input line 35.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -620,13 +624,7 @@ Package caption Info: End \AtBeginDocument code.
 \everyMPtoPDFconversion=\toks34
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
@@ -636,18 +634,18 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Info: Redefining \microtypecontext on input line 123.
-Package microtype Info: Applying patch `item' on input line 123.
-Package microtype Info: Applying patch `toc' on input line 123.
-Package microtype Info: Applying patch `eqnum' on input line 123.
-Package microtype Info: Applying patch `footnote' on input line 123.
+LaTeX Info: Redefining \microtypecontext on input line 124.
+Package microtype Info: Applying patch `item' on input line 124.
+Package microtype Info: Applying patch `toc' on input line 124.
+Package microtype Info: Applying patch `eqnum' on input line 124.
+Package microtype Info: Applying patch `footnote' on input line 124.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 123.
+LaTeX Info: Redefining \showhyphens on input line 124.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -656,8 +654,8 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 ) (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 123.
-Package hyperref Info: Link coloring ON on input line 123.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 124.
+Package hyperref Info: Link coloring ON on input line 124.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -667,20 +665,20 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count335
 )
-LaTeX Info: Redefining \ref on input line 123.
-LaTeX Info: Redefining \pageref on input line 123.
-LaTeX Info: Redefining \nameref on input line 123.
+LaTeX Info: Redefining \ref on input line 124.
+LaTeX Info: Redefining \pageref on input line 124.
+LaTeX Info: Redefining \nameref on input line 124.
  (build/report.out) (build/report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
  (./frontmatter/title_page.tex
 
-pdfTeX warning: pdflatex (file ./frontmatter/figures//SU_logo_RGB_without_slogan.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<frontmatter/figures//SU_logo_RGB_without_slogan.pdf, id=68, 441.01764pt x 506.96803pt>
-File: frontmatter/figures//SU_logo_RGB_without_slogan.pdf Graphic file (type pdf)
-<use frontmatter/figures//SU_logo_RGB_without_slogan.pdf>
-Package pdftex.def Info: frontmatter/figures//SU_logo_RGB_without_slogan.pdf  used on input line 7.
+pdfTeX warning: pdflatex (file ./frontmatter/./figures//SU_logo_RGB_without_slogan.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<frontmatter/./figures//SU_logo_RGB_without_slogan.pdf, id=172, 441.01764pt x 506.96803pt>
+File: frontmatter/./figures//SU_logo_RGB_without_slogan.pdf Graphic file (type pdf)
+<use frontmatter/./figures//SU_logo_RGB_without_slogan.pdf>
+Package pdftex.def Info: frontmatter/./figures//SU_logo_RGB_without_slogan.pdf  used on input line 7.
 (pdftex.def)             Requested size: 227.62204pt x 261.66002pt.
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 11.
 (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
@@ -692,115 +690,231 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./frontmatter/figures//SU_logo_RGB_without_slogan.pdf>]) (./frontmatter/declaration.tex
-<USlogo-top.pdf, id=89, 560.0925pt x 183.68625pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./frontmatter/./figures//SU_logo_RGB_without_slogan.pdf>]) (./frontmatter/declaration.tex
+<USlogo-top.pdf, id=193, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
 Package pdftex.def Info: USlogo-top.pdf  used on input line 7.
 (pdftex.def)             Requested size: 227.62204pt x 74.65036pt.
 LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <17.28> not available
 (Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 10.
- (/usr/share/texmf/tex/latex/lm/omllmm.fd) (/usr/share/texmf/tex/latex/lm/omslmsy.fd) (/usr/share/texmf/tex/latex/lm/omxlmex.fd) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)) [1 </usr/share/texlive/texmf-dist/tex/latex/stellenbosch/logos/USlogo-top.pdf>] (build/report.toc)
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd) (/usr/share/texmf/tex/latex/lm/omslmsy.fd) (/usr/share/texmf/tex/latex/lm/omxlmex.fd) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)) [1 </usr/share/texlive/texmf-dist/tex/latex/stellenbosch/logos/USlogo-top.pdf>] (build/report.toc [2
+
+])
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
- [2
-
-] (build/report.lof)
+ [3] (build/report.lof)
 \tf@lof=\write5
 \openout5 = `report.lof'.
 
- [3
+ [4
 
 ] (build/report.lot)
 \tf@lot=\write6
 \openout6 = `report.lot'.
 
- (./frontmatter/nomenclature.tex [4
+ (./frontmatter/nomenclature.tex [5
 
-]) (./frontmatter/abstract.tex [5
+]) (./frontmatter/abstract.tex [6
 
-]) [6
+]) [7
 
-] (./content/introduction.tex
+] (./content/content.tex
 Chapter 1.
-) (./content/problem.tex [1
+(./content/introduction/introduction.tex) [1
 
 ]
 Chapter 2.
-<content/figures/balloon_path.png, id=175, 713.66624pt x 550.30594pt>
-File: content/figures/balloon_path.png Graphic file (type png)
-<use content/figures/balloon_path.png>
-Package pdftex.def Info: content/figures/balloon_path.png  used on input line 13.
+(./content/problem/overview.tex
+<content/problem/./figures//balloon_path.png, id=386, 713.66624pt x 550.30594pt>
+File: content/problem/./figures//balloon_path.png Graphic file (type png)
+<use content/problem/./figures//balloon_path.png>
+Package pdftex.def Info: content/problem/./figures//balloon_path.png  used on input line 11.
 (pdftex.def)             Requested size: 377.85419pt x 291.35846pt.
-) (./content/background.tex [2
+) [2
 
-] [3 <./content/figures/balloon_path.png>]
+ <./content/problem/./figures//balloon_path.png>] (./content/problem/requirements.tex) [3] (./content/problem/specifications.tex
+<content/problem/./figures/gs_existing.jpeg, id=408, 963.6pt x 1284.8pt>
+File: content/problem/./figures/gs_existing.jpeg Graphic file (type jpg)
+<use content/problem/./figures/gs_existing.jpeg>
+Package pdftex.def Info: content/problem/./figures/gs_existing.jpeg  used on input line 11.
+(pdftex.def)             Requested size: 188.9235pt x 251.8975pt.
+ [4 <./content/problem/./figures/gs_existing.jpeg>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 28.
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)) [5]
 Chapter 3.
-(./content/background/pocketqube.tex)) (./content/conclusion.tex [4
+(./content/background/pocketqube.tex
+<content/background/./figures/pq_enclosure.png, id=435, 815.29594pt x 462.97969pt>
+File: content/background/./figures/pq_enclosure.png Graphic file (type png)
+<use content/background/./figures/pq_enclosure.png>
+Package pdftex.def Info: content/background/./figures/pq_enclosure.png  used on input line 9.
+(pdftex.def)             Requested size: 283.39244pt x 160.92912pt.
+) [6
 
-]
+ <./content/background/./figures/pq_enclosure.png>] (./content/background/antennas.tex
+<content/background/./figures/dipole.png, id=446, 602.25pt x 296.60812pt>
+File: content/background/./figures/dipole.png Graphic file (type png)
+<use content/background/./figures/dipole.png>
+Package pdftex.def Info: content/background/./figures/dipole.png  used on input line 17.
+(pdftex.def)             Requested size: 188.9235pt x 93.04282pt.
+ [7 <./content/background/./figures/dipole.png>]
+<content/background/./figures/whip.png, id=457, 301.125pt x 301.125pt>
+File: content/background/./figures/whip.png Graphic file (type png)
+<use content/background/./figures/whip.png>
+Package pdftex.def Info: content/background/./figures/whip.png  used on input line 32.
+(pdftex.def)             Requested size: 141.69621pt x 141.69876pt.
+<content/background/./figures/helical_uni.jpg, id=458, 564.1075pt x 551.05875pt>
+File: content/background/./figures/helical_uni.jpg Graphic file (type jpg)
+<use content/background/./figures/helical_uni.jpg>
+Package pdftex.def Info: content/background/./figures/helical_uni.jpg  used on input line 40.
+(pdftex.def)             Requested size: 94.46175pt x 92.27452pt.
+ [8 <./content/background/./figures/whip.png> <./content/background/./figures/helical_uni.jpg>]
+<content/background/./figures/yagi.jpg, id=466, 702.625pt x 468.75125pt>
+File: content/background/./figures/yagi.jpg Graphic file (type jpg)
+<use content/background/./figures/yagi.jpg>
+Package pdftex.def Info: content/background/./figures/yagi.jpg  used on input line 57.
+(pdftex.def)             Requested size: 188.9235pt x 126.03523pt.
+<content/background/./figures/invertedF.png, id=470, 4028.29968pt x 2105.61656pt>
+File: content/background/./figures/invertedF.png Graphic file (type png)
+<use content/background/./figures/invertedF.png>
+Package pdftex.def Info: content/background/./figures/invertedF.png  used on input line 66.
+(pdftex.def)             Requested size: 141.69621pt x 74.05753pt.
+ [9 <./content/background/./figures/yagi.jpg> <./content/background/./figures/invertedF.png>]
+Overfull \hbox (55.23756pt too wide) in paragraph at lines 78--89
+ []|   [] 
+ []
+
+) [10] (./content/background/satellite_tracking.tex
+<content/background/./figures//gps_relay.png, id=488, 361.35pt x 361.35pt>
+File: content/background/./figures//gps_relay.png Graphic file (type png)
+<use content/background/./figures//gps_relay.png>
+Package pdftex.def Info: content/background/./figures//gps_relay.png  used on input line 24.
+(pdftex.def)             Requested size: 188.9235pt x 188.92313pt.
+ [11]) [12 <./content/background/./figures//gps_relay.png>] (./content/background/pcb_design.tex
+<content/background/./figures/4layerPCB.png, id=506, 664.4825pt x 510.90875pt>
+File: content/background/./figures/4layerPCB.png Graphic file (type png)
+<use content/background/./figures/4layerPCB.png>
+Package pdftex.def Info: content/background/./figures/4layerPCB.png  used on input line 10.
+(pdftex.def)             Requested size: 141.69621pt x 108.94672pt.
+ [13 <./content/background/./figures/4LayerPCB.png>]) [14]
 Chapter 4.
-) (build/report.bbl [5
+(./content/system_design/overview.tex) (./content/system_design/complete_system.tex
+<content/system_design/./figures/complete_system.png, id=534, 803.25093pt x 557.83406pt>
+File: content/system_design/./figures/complete_system.png Graphic file (type png)
+<use content/system_design/./figures/complete_system.png>
+Package pdftex.def Info: content/system_design/./figures/complete_system.png  used on input line 8.
+(pdftex.def)             Requested size: 377.85419pt x 262.41185pt.
+ [15
+
+ <./content/system_design/./figures/complete_system.png>]) [16]
+Chapter 5.
+(./content/detailed_design/components.tex) (./content/detailed_design/pq_unit.tex) [17
 
 ]
-Underfull \hbox (badness 6188) in paragraph at lines 25--28
+Chapter 6.
+(./content/conclusion/conclusion.tex)) (build/report.bbl [18
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
+[]\OT1/lmr/m/n/12 (+20) electronicsforu, ``Trans-mis-sion ba-sics: De-sign-ing a dipole an-tenna,''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
+[][]$\OT1/lmr/m/n/12 (+20) https : / / www . electronicsforu . com / technology-[]trends / learn-[]electronics /
+ []
+
+
+Underfull \hbox (badness 3428) in paragraph at lines 57--60
 []\OT1/lmr/m/n/12 (+20) ``Weather Bal-loons --- weather.gov,'' [][]$https : / / www . weather . gov / bmx / kidscorner[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
-\OT1/lmr/m/n/12 (+8) weatherballoons# : [] : text = The % 20balloon % 20^^Mights % 20last % 20for ,[] 20 % 20miles ) %20in %
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
+\OT1/lmr/m/n/12 (+20) weatherballoons# : [] : text = The % 20balloon % 20^^Mights % 20last % 20for ,[] 20 % 20miles )
  []
 
 
-Overfull \hbox (131.44194pt too wide) in paragraph at lines 30--33
-[]\OT1/lmr/m/n/12 (-20) ``Intermet,'' [][]$https : / / intermet . co / wp-[]content / uploads / iMet-[]3100M-[]403MHz-[]Military-[]Antenna-[]Receiver-[]Brochure-[]V4 .
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+[]\OT1/lmr/m/n/12 (+20) Intermet, ``imet-3100m,'' [][]$https : / / intermet . co / wp-[]content / uploads /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
-[]\OT1/lmr/m/n/12 (+20) ``Types of or-bits --- esa.int,'' [][]$https : / / www . esa . int / Enabling[]Support / Space[]
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+\OT1/lmr/m/n/12 (+20) iMet-[]3100M-[]403MHz-[]Military-[]Antenna-[]Receiver-[]Brochure-[]V4 . 5 . pdf$[][], [Ac-cessed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
-\OT1/lmr/m/n/12 (+1) Transportation / Types[]of[]orbits# : [] : text = Low % 20Earth % 20orbit % 20(LEO ) ,[]-[]A % 20low %
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+[]\OT1/lmr/m/n/12 (+20) ``Types of or-bits --- esa.int,'' [][]$https : / / www . esa . int / Enabling[]Support /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
-\OT1/lmr/m/n/12 (+20) 20Earth & text = It % 20is % 20normally % 20at % 20an ,[] very % 20far % 20above % 20Earth '[] s %
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+\OT1/lmr/m/n/12 (+20) Space[]Transportation / Types[]of[]orbits# : [] : text = Low % 20Earth % 20orbit % 20(LEO )
  []
 
-) (./endmatter/appendix.tex (./endmatter/appendix/planning.tex [6
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+\OT1/lmr/m/n/12 (+20) ,[]-[]A % 20low % 20Earth & text = It % 20is % 20normally % 20at % 20an ,[] very % 20far % 20above %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
+[]\OT1/lmr/m/n/12 (+20) Intermet, ``imet-54,'' [][]$https : / / intermet . co / wp-[]content / uploads /
+ []
+
+[19
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
+[]\OT1/lmr/m/n/12 (+20) C. P. SO-LU-TIONS, ``Pcb lay-ers ex-plained: Mul-ti-layer boards
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
+\OT1/lmr/m/n/12 (+20) and stackup rules,'' [][]$https : / / resources . pcb . cadence . com / blog /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
+\OT1/lmr/m/n/12 (+20) 2019-[]pcb-[]layers-[]explained-[]multilayer-[]boards-[]and-[]stackup-[]rules$[][], [Ac-cessed 18-08-
+ []
+
+
+Underfull \hbox (badness 4120) in paragraph at lines 97--100
+[]\OT1/lmr/m/n/12 (+20) Proteus, ``Pcb via stitch-ing and shield-ing,'' [][]$https : / / www . labcenter . com / blog /
+ []
+
+) (./endmatter/appendix.tex [20]
 Appendix A.
-))
+(./endmatter/planning/planning.tex))
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 107.
 See the caption package documentation for explanation.
 
-[7
+[21
 
 ] (build/report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 3107DBC75113E1D67887CFA424AEE6B9;1766.
+(rerunfilecheck)             Checksum: 774F169801A81838A128C45C7DECA7A7;4530.
  ) 
 Here is how much of TeX's memory you used:
- 21458 strings out of 480171
- 400375 string characters out of 5894489
- 794301 words of memory out of 5000000
- 38887 multiletter control sequences out of 15000+600000
- 528486 words of font info for 117 fonts, out of 8000000 for 9000
+ 21996 strings out of 480171
+ 413298 string characters out of 5894489
+ 802182 words of memory out of 5000000
+ 39183 multiletter control sequences out of 15000+600000
+ 536074 words of font info for 157 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 71i,11n,79p,1051b,796s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on build/report.pdf (14 pages, 952170 bytes).
+ 71i,12n,79p,1263b,1018s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on build/report.pdf (29 pages, 4299312 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 34960 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 688 PDF objects out of 1000 (max. 8388607)
+ 594 compressed objects within 6 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 45458 words of extra memory for PDF output out of 51595 (max. 10000000)
 
