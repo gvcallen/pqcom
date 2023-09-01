@@ -13,4 +13,5 @@
   (lib (name "ST3485EBDR")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/ST3485EBDR")(options "")(descr ""))
   (lib (name "C3216X5R1V226MTJ00E (22uF)")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/Capacitors/C3216X5R1V226MTJ00E (22uF)")(options "")(descr ""))
   (lib (name "MAX485")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/MAX485")(options "")(descr ""))
+  (lib (name "ATGM332D-5N31-PCB")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/ATGM332D-5N31/ATGM332D-5N31-PCB.pretty")(options "")(descr ""))
 )
