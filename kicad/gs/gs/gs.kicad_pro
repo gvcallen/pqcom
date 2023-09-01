@@ -424,7 +424,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.4,
+        "track_width": 0.508,
         "via_diameter": 1.6,
         "via_drill": 0.8,
         "wire_width": 6
@@ -441,7 +441,7 @@
         "name": "Heatsink",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.4,
+        "track_width": 0.508,
         "via_diameter": 1.6,
         "via_drill": 0.8,
         "wire_width": 6
@@ -458,7 +458,7 @@
         "name": "Motor",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
+        "track_width": 0.508,
         "via_diameter": 1.6,
         "via_drill": 0.8,
         "wire_width": 6
