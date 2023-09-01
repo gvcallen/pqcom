@@ -3567,8 +3567,8 @@
     (property "Datasheet" "~" (at 360.68 200.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a67fe624-aa68-413f-bb35-e3cea3b7d6a1))
-    (pin "2" (uuid 04d9f09b-0cad-4c76-ad23-20c56169339f))
+    (pin "1" (uuid ae693ab6-7ccb-48eb-8a4d-60dfe9c91de5))
+    (pin "2" (uuid 25eb220e-667e-4ec5-b6a6-84c364486cc0))
     (instances
       (project "gs"
         (path "/87280d6c-f285-4b0d-af8d-73b358669421"
