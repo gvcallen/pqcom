@@ -1,8 +1,8 @@
 \graphicspath{{./figures}}
 
-\section{Antennas}
+\section{Antennas}\label{sec:antennas}
 
-There are various antenna types to consider for this communication system. A highly-customized antenna design is out of the scope of this project, and therefore only common, existing designs with tunable parameters will be considered. These antennas should also be compared in the context of the UHF frequencies of interest (400 MHz to 440 MHz). Ultimately, the following characteristics will be used to compare the various options:
+There are various antenna types to consider for this communication system. A highly-customized antenna design is out of the scope of this project, and therefore only common designs with tunable parameters, or existing designs in literature, will be considered. Ultimately, the following characteristics will be used to compare the various options:
 \begin{itemize}
     \item Radiation pattern (qualitative shape)
     \item Gain (relative to an \textit{isotropic} source) 
@@ -42,11 +42,11 @@ The working principle of monopole antennas makes use of the electromagnetic theo
   \label{fig:helical_uni}
 \end{figure}
 
-Helical antennas are coiled windings of wire, where the circumference of the coil has some direct relationship with the desired wavelength. Commonly, a circumference of $C = 1.0 \lambda$ is used. Both \textit{omni-directional} and \textit{unidirectional} variants are possible, with the latter having an extended \textit{feedline}, as shown in Figure \ref{fig:helical_uni}. These antennas have the major advantage of a small size, due to the \textit{circumference} being related to the wavelength as opposed to the antennas length itself. Further, they have several design parameters that can influence the antennas functionality, such as number of turns, wire width, and turn pitch angle. They also are able to receive either linear or circularly polarized signals, making them more flexible.
+Helical antennas are coiled windings of wire, where the circumference of the coil has some direct relationship with the desired wavelength. Commonly, a circumference of $C = 1.0 \lambda$ is used. Both \textit{omni-directional} and \textit{unidirectional} variants are possible, depending on the size of the antenna relative to the operating wavelengths. These generally arise from an antenna operating in \textit{normal mode} or \textit{axial mode}, respectively. Figure \ref{fig:helical_uni} depicts a unidirectional variant. These antennas have the major advantage of a small size, due to the \textit{circumference} being more related to the wavelength as opposed to the antennas length itself. Further, they have several design parameters that can influence the antennas functionality, such as number of turns, wire width, and turn pitch angle. They also are able to receive either linear or circularly polarized signals, making them more flexible.
 
 
 \subsection{Patch}
-A \textit{patch} antenna (also known as a \textit{PCB} antenna) is simply a rectangular PCB trace sized correctly to allow for radiation. Typically, a simple square or rectangular shape can be used. They allow for extremely small profiles at the cost of efficiency \cite{site-antennaTheory}, and can be integrated onto a PCB using normal trace techniques.
+A \textit{patch} antenna (also collequially known as a \textit{PCB} antenna) is simply a rectangular PCB trace sized correctly to allow for radiation. Typically, a simple square or rectangular shape can be used. They allow for small profiles at the cost of efficiency \cite{site-antennaTheory}, and can be integrated onto a PCB using normal trace techniques.
 
 \subsection{Array}
 It should be noted that multiple antennas can be combined in what is known as an \textit{array} configuration. This allows complete manipulation of the design due to \textit{constructive} and \textit{destructive} interference, meaning directivity can be increased or decreased. Common variations of this concept reside in \textit{Yagi-Uda} and \textit{Patch Array} antennas.
@@ -60,14 +60,21 @@ It should be noted that multiple antennas can be combined in what is known as an
 \end{figure}
 Although not strictly an antenna array, \textit{Yagi-Uda} antennas are one of the most popular directive antennas available. A number of conductors are stacked in a specific configuration to "steer" the electromagnetic waves using interference. Only one of the conductors in the array is actually fed with a signal - the rest are merely \textit{passive} elements used for increasing the directivity. An example of such an antenna is shown in Figure \ref{fig:yagi}.
 
-\subsection{Modified Patch}
+\subsection{Microstrip}
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.3\textwidth]{invertedF}
   \caption{Inverted-F Patch Antennas \cite{site-invertedFAntenna}}
   \label{fig:invertedF}
 \end{figure}
-Several modified designs exist for patch antennas which allow for varying characteristics. Although many of these designs originated from non-PCB antenna designs, their complexity is mostly on justified when implemented on a flat PCB for a non-antenna focused projected. Examples include a \textit{patch array}, which allows for a increased directivity, or an \textit{inverted-F} design, which allows for much smaller form factorer and a nearly full 3D omni-directional radiation pattern. A multi-frequency version of the latter is illustrated in Figure \ref{fig:invertedF}. A third example is a \textit{helical patch} antenna, which is simply a "zig-zag" helical shape flattened onto a PCB.
+\textit{Microstrip} antennas generally refer to any planar, PCB antenna, and can be considered a generalization of a patch antenna. Many designs exist (which are often derived from non-planar antennas) and allow for a diverse selection of desired characteristics. A few examples include:
+\begin{itemize}
+  \item A \textit{patch array}, which has increased directivity.
+  \item An \textit{inverted-F} design, which has a small form factorer and a nearly full 3D omni-directional radiation pattern.
+  \item A \textit{ring antenna}, which has a uni-directional, and an even smaller form factor than the inverted-F antenna \cite{paper-lowProfileRingAntenna}.
+  \item A \textit{helical patch} antenna, which is simply a "zig-zag" helical shape flattened onto a PCB.
+
+Many variations on these designs exist, and the literature may be further consulted in the design phase. A multi-frequency inverted-F design is illustrated in Figure \ref{fig:invertedF}.
 
 \subsection{Summary}
 

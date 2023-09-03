@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  25 AUG 2023 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  3 SEP 2023 17:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -675,7 +675,7 @@ LaTeX Info: Redefining \nameref on input line 124.
  (./frontmatter/title_page.tex
 
 pdfTeX warning: pdflatex (file ./frontmatter/./figures//SU_logo_RGB_without_slogan.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<frontmatter/./figures//SU_logo_RGB_without_slogan.pdf, id=172, 441.01764pt x 506.96803pt>
+<frontmatter/./figures//SU_logo_RGB_without_slogan.pdf, id=184, 441.01764pt x 506.96803pt>
 File: frontmatter/./figures//SU_logo_RGB_without_slogan.pdf Graphic file (type pdf)
 <use frontmatter/./figures//SU_logo_RGB_without_slogan.pdf>
 Package pdftex.def Info: frontmatter/./figures//SU_logo_RGB_without_slogan.pdf  used on input line 7.
@@ -691,7 +691,7 @@ Package microtype Info: Loading generic protrusion settings for font family
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./frontmatter/./figures//SU_logo_RGB_without_slogan.pdf>]) (./frontmatter/declaration.tex
-<USlogo-top.pdf, id=193, 560.0925pt x 183.68625pt>
+<USlogo-top.pdf, id=206, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
 Package pdftex.def Info: USlogo-top.pdf  used on input line 7.
@@ -727,7 +727,7 @@ Chapter 1.
 ]
 Chapter 2.
 (./content/problem/overview.tex
-<content/problem/./figures//balloon_path.png, id=386, 713.66624pt x 550.30594pt>
+<content/problem/./figures//balloon_path.png, id=407, 713.66624pt x 550.30594pt>
 File: content/problem/./figures//balloon_path.png Graphic file (type png)
 <use content/problem/./figures//balloon_path.png>
 Package pdftex.def Info: content/problem/./figures//balloon_path.png  used on input line 11.
@@ -735,7 +735,7 @@ Package pdftex.def Info: content/problem/./figures//balloon_path.png  used on in
 ) [2
 
  <./content/problem/./figures//balloon_path.png>] (./content/problem/requirements.tex) [3] (./content/problem/specifications.tex
-<content/problem/./figures/gs_existing.jpeg, id=408, 963.6pt x 1284.8pt>
+<content/problem/./figures/gs_existing.jpeg, id=429, 963.6pt x 1284.8pt>
 File: content/problem/./figures/gs_existing.jpeg Graphic file (type jpg)
 <use content/problem/./figures/gs_existing.jpeg>
 Package pdftex.def Info: content/problem/./figures/gs_existing.jpeg  used on input line 11.
@@ -747,7 +747,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) [5]
 Chapter 3.
 (./content/background/pocketqube.tex
-<content/background/./figures/pq_enclosure.png, id=435, 815.29594pt x 462.97969pt>
+<content/background/./figures/pq_enclosure.png, id=457, 815.29594pt x 462.97969pt>
 File: content/background/./figures/pq_enclosure.png Graphic file (type png)
 <use content/background/./figures/pq_enclosure.png>
 Package pdftex.def Info: content/background/./figures/pq_enclosure.png  used on input line 9.
@@ -755,46 +755,46 @@ Package pdftex.def Info: content/background/./figures/pq_enclosure.png  used on 
 ) [6
 
  <./content/background/./figures/pq_enclosure.png>] (./content/background/antennas.tex
-<content/background/./figures/dipole.png, id=446, 602.25pt x 296.60812pt>
+<content/background/./figures/dipole.png, id=467, 602.25pt x 296.60812pt>
 File: content/background/./figures/dipole.png Graphic file (type png)
 <use content/background/./figures/dipole.png>
 Package pdftex.def Info: content/background/./figures/dipole.png  used on input line 17.
 (pdftex.def)             Requested size: 188.9235pt x 93.04282pt.
  [7 <./content/background/./figures/dipole.png>]
-<content/background/./figures/whip.png, id=457, 301.125pt x 301.125pt>
+<content/background/./figures/whip.png, id=478, 301.125pt x 301.125pt>
 File: content/background/./figures/whip.png Graphic file (type png)
 <use content/background/./figures/whip.png>
 Package pdftex.def Info: content/background/./figures/whip.png  used on input line 32.
 (pdftex.def)             Requested size: 141.69621pt x 141.69876pt.
-<content/background/./figures/helical_uni.jpg, id=458, 564.1075pt x 551.05875pt>
+<content/background/./figures/helical_uni.jpg, id=479, 564.1075pt x 551.05875pt>
 File: content/background/./figures/helical_uni.jpg Graphic file (type jpg)
 <use content/background/./figures/helical_uni.jpg>
 Package pdftex.def Info: content/background/./figures/helical_uni.jpg  used on input line 40.
 (pdftex.def)             Requested size: 94.46175pt x 92.27452pt.
  [8 <./content/background/./figures/whip.png> <./content/background/./figures/helical_uni.jpg>]
-<content/background/./figures/yagi.jpg, id=466, 702.625pt x 468.75125pt>
+<content/background/./figures/yagi.jpg, id=487, 702.625pt x 468.75125pt>
 File: content/background/./figures/yagi.jpg Graphic file (type jpg)
 <use content/background/./figures/yagi.jpg>
 Package pdftex.def Info: content/background/./figures/yagi.jpg  used on input line 57.
 (pdftex.def)             Requested size: 188.9235pt x 126.03523pt.
-<content/background/./figures/invertedF.png, id=470, 4028.29968pt x 2105.61656pt>
+<content/background/./figures/invertedF.png, id=491, 4028.29968pt x 2105.61656pt>
 File: content/background/./figures/invertedF.png Graphic file (type png)
 <use content/background/./figures/invertedF.png>
 Package pdftex.def Info: content/background/./figures/invertedF.png  used on input line 66.
 (pdftex.def)             Requested size: 141.69621pt x 74.05753pt.
  [9 <./content/background/./figures/yagi.jpg> <./content/background/./figures/invertedF.png>]
-Overfull \hbox (55.23756pt too wide) in paragraph at lines 78--89
+Overfull \hbox (55.23756pt too wide) in paragraph at lines 85--96
  []|   [] 
  []
 
 ) [10] (./content/background/satellite_tracking.tex
-<content/background/./figures//gps_relay.png, id=488, 361.35pt x 361.35pt>
+<content/background/./figures//gps_relay.png, id=511, 361.35pt x 361.35pt>
 File: content/background/./figures//gps_relay.png Graphic file (type png)
 <use content/background/./figures//gps_relay.png>
 Package pdftex.def Info: content/background/./figures//gps_relay.png  used on input line 24.
 (pdftex.def)             Requested size: 188.9235pt x 188.92313pt.
  [11]) [12 <./content/background/./figures//gps_relay.png>] (./content/background/pcb_design.tex
-<content/background/./figures/4layerPCB.png, id=506, 664.4825pt x 510.90875pt>
+<content/background/./figures/4layerPCB.png, id=529, 664.4825pt x 510.90875pt>
 File: content/background/./figures/4layerPCB.png Graphic file (type png)
 <use content/background/./figures/4layerPCB.png>
 Package pdftex.def Info: content/background/./figures/4layerPCB.png  used on input line 10.
@@ -802,7 +802,7 @@ Package pdftex.def Info: content/background/./figures/4layerPCB.png  used on inp
  [13 <./content/background/./figures/4LayerPCB.png>]) [14]
 Chapter 4.
 (./content/system_design/overview.tex) (./content/system_design/complete_system.tex
-<content/system_design/./figures/complete_system.png, id=534, 803.25093pt x 557.83406pt>
+<content/system_design/./figures/complete_system.png, id=558, 803.25093pt x 557.83406pt>
 File: content/system_design/./figures/complete_system.png Graphic file (type png)
 <use content/system_design/./figures/complete_system.png>
 Package pdftex.def Info: content/system_design/./figures/complete_system.png  used on input line 8.
@@ -811,11 +811,17 @@ Package pdftex.def Info: content/system_design/./figures/complete_system.png  us
 
  <./content/system_design/./figures/complete_system.png>]) [16]
 Chapter 5.
-(./content/detailed_design/components.tex) (./content/detailed_design/pq_unit.tex) [17
+(./content/detailed_design/components.tex) (./content/detailed_design/pq_unit.tex) (./content/detailed_design/link_budget.tex [17
 
-]
+]) (./content/detailed_design/gs_antenna.tex [18]
+<content/detailed_design/./figures/antennaMount.png, id=582, 404.35065pt x 557.9244pt>
+File: content/detailed_design/./figures/antennaMount.png Graphic file (type png)
+<use content/detailed_design/./figures/antennaMount.png>
+Package pdftex.def Info: content/detailed_design/./figures/antennaMount.png  used on input line 12.
+(pdftex.def)             Requested size: 165.31346pt x 228.09496pt.
+) [19 <./content/detailed_design/./figures/antennaMount.png>]
 Chapter 6.
-(./content/conclusion/conclusion.tex)) (build/report.bbl [18
+(./content/conclusion/conclusion.tex)) (build/report.bbl [20
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 28--31
@@ -867,54 +873,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--80
 []\OT1/lmr/m/n/12 (+20) Intermet, ``imet-54,'' [][]$https : / / intermet . co / wp-[]content / uploads /
  []
 
-[19
+[21
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
 []\OT1/lmr/m/n/12 (+20) C. P. SO-LU-TIONS, ``Pcb lay-ers ex-plained: Mul-ti-layer boards
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
 \OT1/lmr/m/n/12 (+20) and stackup rules,'' [][]$https : / / resources . pcb . cadence . com / blog /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
 \OT1/lmr/m/n/12 (+20) 2019-[]pcb-[]layers-[]explained-[]multilayer-[]boards-[]and-[]stackup-[]rules$[][], [Ac-cessed 18-08-
  []
 
 
-Underfull \hbox (badness 4120) in paragraph at lines 97--100
+Underfull \hbox (badness 4120) in paragraph at lines 103--106
 []\OT1/lmr/m/n/12 (+20) Proteus, ``Pcb via stitch-ing and shield-ing,'' [][]$https : / / www . labcenter . com / blog /
  []
 
-) (./endmatter/appendix.tex [20]
+) (./endmatter/appendix.tex [22]
 Appendix A.
 (./endmatter/planning/planning.tex))
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 107.
 See the caption package documentation for explanation.
 
-[21
+[23
 
 ] (build/report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 774F169801A81838A128C45C7DECA7A7;4530.
- ) 
+(rerunfilecheck)             Checksum: A1579570266929C34EF1B462A666A1A4;4976.
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 139 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 21996 strings out of 480171
- 413298 string characters out of 5894489
- 802182 words of memory out of 5000000
- 39183 multiletter control sequences out of 15000+600000
- 536074 words of font info for 157 fonts, out of 8000000 for 9000
+ 22050 strings out of 480171
+ 414856 string characters out of 5894489
+ 803331 words of memory out of 5000000
+ 39206 multiletter control sequences out of 15000+600000
+ 536467 words of font info for 161 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 71i,12n,79p,1263b,1018s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on build/report.pdf (29 pages, 4299307 bytes).
+ 71i,12n,79p,1263b,1142s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on build/report.pdf (31 pages, 5762880 bytes).
 PDF statistics:
- 688 PDF objects out of 1000 (max. 8388607)
- 594 compressed objects within 6 object streams
- 129 named destinations out of 1000 (max. 500000)
- 45458 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 735 PDF objects out of 1000 (max. 8388607)
+ 634 compressed objects within 7 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 45487 words of extra memory for PDF output out of 51595 (max. 10000000)
 
