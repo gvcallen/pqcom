@@ -1,0 +1,87 @@
+#include <Arduino.h>
+#include <SPI.h>
+#include <LoRa.h>
+
+#include "mount.h"
+
+// Pins
+const uint8_t PIN_MOTOR_AZ_I01 = 14;
+const uint8_t PIN_MOTOR_AZ_I11 = 12;
+const uint8_t PIN_MOTOR_AZ_PH1 = 32;
+const uint8_t PIN_MOTOR_AZ_I02 = 26;
+const uint8_t PIN_MOTOR_AZ_I12 = 25;
+const uint8_t PIN_MOTOR_AZ_PH2 = 33;
+
+const uint8_t PIN_MOTOR_EL_I01 = 1;
+const uint8_t PIN_MOTOR_EL_I11 = 3;
+const uint8_t PIN_MOTOR_EL_PH1 = 21;
+const uint8_t PIN_MOTOR_EL_I02 = 2;
+const uint8_t PIN_MOTOR_EL_I12 = 4;
+const uint8_t PIN_MOTOR_EL_PH2 = 5;
+
+const uint8_t PIN_LORA_NSS = 10;
+
+// Objects
+pqgs::Mount mount;
+SPIClass spi;
+
+void setupMount()
+{
+    pqgs::MotorPins azimuthalPins {};
+    pqgs::MotorPins elevationPins {};
+
+    azimuthalPins.i01 = PIN_MOTOR_AZ_I01;
+    azimuthalPins.i02 = PIN_MOTOR_AZ_I02;
+    azimuthalPins.i11 = PIN_MOTOR_AZ_I11;
+    azimuthalPins.i12 = PIN_MOTOR_AZ_I12;
+    azimuthalPins.ph1 = PIN_MOTOR_AZ_PH1;
+    azimuthalPins.ph2 = PIN_MOTOR_AZ_PH2;
+    
+    elevationPins.i01 = PIN_MOTOR_EL_I01;
+    elevationPins.i02 = PIN_MOTOR_EL_I02;
+    elevationPins.i11 = PIN_MOTOR_EL_I11;
+    elevationPins.i12 = PIN_MOTOR_EL_I12;
+    elevationPins.ph1 = PIN_MOTOR_EL_PH1;
+    elevationPins.ph2 = PIN_MOTOR_EL_PH2;
+
+    mount.begin(elevationPins, azimuthalPins);
+}
+
+
+int counter = 0;
+
+void setup() {
+    // setupMount();
+
+    Serial.begin(9600);
+    // while (!Serial);
+
+    Serial.println("LoRa Sender edit");
+
+    LoRa.setPins(PIN_LORA_NSS);
+    spi = SPIClass {VSPI};
+    LoRa.setSPI(spi);
+
+    if (!LoRa.begin(433E6)) {
+        Serial.println("Starting LoRa failed!");
+        while (1);
+    }
+    
+    Serial.println("LoRa succesfully initialized");
+}
+
+void loop() {
+    Serial.print("Sending packet: ");
+    Serial.println(counter);
+
+    // send packet
+    LoRa.beginPacket();
+    LoRa.print("hello ");
+    LoRa.print(counter);
+    LoRa.endPacket();
+
+
+    counter++;
+
+    delay(5000);
+}
