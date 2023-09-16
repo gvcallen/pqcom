@@ -1,0 +1,74 @@
+#include <Arduino.h>
+
+#include "mount.h"
+#include "transceiver.h"
+#include "imu.h"
+
+// Objects
+pqgs::Mount mount;
+pqgs::Transceiver transceiver;
+pqgs::Imu imu;
+
+void setupMount()
+{
+    pqgs::MotorPins azimuthalPins {};
+    pqgs::MotorPins elevationPins {};
+
+    azimuthalPins.i01 = 14;
+    azimuthalPins.i02 = 26;
+    azimuthalPins.i11 = 12;
+    azimuthalPins.i12 = 25;
+    azimuthalPins.ph1 = 32;
+    azimuthalPins.ph2 = 33;
+    
+    elevationPins.i01 = 1;
+    elevationPins.i02 = 2;
+    elevationPins.i11 = 3;
+    elevationPins.i12 = 4;
+    elevationPins.ph1 = 21;
+    elevationPins.ph2 = 5;
+
+    mount.begin(elevationPins, azimuthalPins);
+}
+
+void setupTransceiver()
+{
+    pqgs::TransceiverPins pins;
+    pins.miso = MISO;
+    pins.mosi = MOSI;
+    pins.sck = SCK;
+    pins.nss = 10;
+    pins.reset = 13;
+    pins.dio0 = 15;
+
+    transceiver.begin(pins, 433E6);
+}
+
+void setupImu()
+{
+    pqgs::ImuPins pins;
+    // pins.miso = MISO;
+    // pins.mosi = MOSI;
+    // pins.sck = SCK;
+    pins.nss = 22;
+    pins.interrupt = 39;
+
+    // SPI.begin();
+
+    imu.begin(pins);
+}
+
+void setup()
+{
+    // Serial.begin(9600);
+    // while (!Serial);
+
+    // setupMount();
+    // setupTransceiver();
+    setupImu();
+}
+
+void loop()
+{
+    imu.printValues();
+}
