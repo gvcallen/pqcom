@@ -144,8 +144,13 @@ A.~Devices, ``Max2659 gps/gnss low-noise amplifier,''
   \url{https://www.analog.com/media/en/technical-documentation/data-sheets/MAX2659.pdf},
   [Accessed 18-08-2023].
 
+\bibitem{site-pcbRoutingGuidelines}
+P.~Electronics, ``Routing guidelines for rf pcbs,''
+  \url{https://www.proto-electronics.com/blog/routing-guidelines-rf-pcb},
+  [Accessed 29-09-2023].
+
 \bibitem{site-rfPCBGuidelines}
-------, ``Pcbs layout guidelines for rf and mixed signal,''
+A.~Devices, ``Pcbs layout guidelines for rf and mixed signal,''
   \url{https://www.analog.com/en/technical-articles/pcbs-layout-guidelines-for-rf--mixedsignal.html},
   [Accessed 18-08-2023].
 

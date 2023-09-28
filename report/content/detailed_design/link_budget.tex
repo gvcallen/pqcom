@@ -1,8 +1,12 @@
 \section{Link Budget}
 
-For any communication system, a link-level design or \textit{link budget} should be conducted. The goal of this step is to determine the power requirements of the commuication system, taking into account transmitter power, antenna characteristics, receiver sensitivity, and any attenuation involved.
+The link budget should now be conducted, as well as initial considerations for the ground station geo-location. This location will affect the range of elevation angles to accomodate, the distance to the horizon, as well as the free-space path loss.
 
-Given the travel path in Figure \ref{fig:balloon_path}, and a height of 30 km, the minimum and maximum elevation angles are around 15 and 17 degrees respectively.
+If it is acceptable to estabilish the link a few minutes after the launch, Signal Hill in Cape Town is a viable location for the ground station, and is easily accessible. At its height of 350 m, communication with the balloon would move be available after the ballon reaches an altitude of 650 m. A maximum elevation angle of $13.5 \circ$ (to Worcester) should therefore be considered.
+
+If communication with the satellite from the beginning of launch is necessary (e.g. for direct GPS tracking), then the ground station would need to be raised above sea level. Considering Cape Town as a location would require a height of around 1 km (measured to Saldanha Airfield), which is mostly impractical, unless accessibility into Table Mountain is granted. Therefore, a location scout would need to be conducted closer to the launch site. At 200 m altitude, the site could be up to 50 km away from launch. In this case, a maximum elevation angle of between $25 \circ$ and $30 \circ$ will need to be considered.
+
+The software mentioned in Section \ref{sec:link_budget} was used to compute attenuation effects in the link budget, with Saldanha Airfield as the satellite location, and Signal Hill as the ground station location. 
 
 **Transmitter Power**
 +18 dBm (RA-02)

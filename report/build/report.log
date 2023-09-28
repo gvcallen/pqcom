@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  28 SEP 2023 16:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  28 SEP 2023 19:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -788,7 +788,7 @@ File: content/background/./figures/invertedF.png Graphic file (type png)
 Package pdftex.def Info: content/background/./figures/invertedF.png  used on input line 74.
 (pdftex.def)             Requested size: 141.69621pt x 74.05753pt.
  [9 <./content/background/./figures/yagi.jpg>] [10 <./content/background/./figures/invertedF.png>]) [11] (./content/background/telecommunication_theory.tex) [12] (./content/background/satellite_tracking.tex
-<content/background/./figures//gps_relay.png, id=726, 361.35pt x 361.35pt>
+<content/background/./figures//gps_relay.png, id=727, 361.35pt x 361.35pt>
 File: content/background/./figures//gps_relay.png Graphic file (type png)
 <use content/background/./figures//gps_relay.png>
 Package pdftex.def Info: content/background/./figures//gps_relay.png  used on input line 25.
@@ -802,7 +802,7 @@ Package pdftex.def Info: content/background/./figures/4layerPCB.png  used on inp
  [15 <./content/background/./figures/4LayerPCB.png>]) [16]
 Chapter 4.
 (./content/system_design/overview.tex) (./content/system_design/high_level_system.tex
-<content/system_design/./figures/complete_system.png, id=772, 803.25093pt x 557.83406pt>
+<content/system_design/./figures/complete_system.png, id=774, 803.25093pt x 557.83406pt>
 File: content/system_design/./figures/complete_system.png Graphic file (type png)
 <use content/system_design/./figures/complete_system.png>
 Package pdftex.def Info: content/system_design/./figures/complete_system.png  used on input line 8.
@@ -810,25 +810,25 @@ Package pdftex.def Info: content/system_design/./figures/complete_system.png  us
  [17
 
  <./content/system_design/./figures/complete_system.png>] [18]) (./content/system_design/ground_station.tex
-<content/system_design/./figures/gs_system.png, id=785, 1156.32pt x 601.4972pt>
+<content/system_design/./figures/gs_system.png, id=787, 1156.32pt x 601.4972pt>
 File: content/system_design/./figures/gs_system.png Graphic file (type png)
 <use content/system_design/./figures/gs_system.png>
 Package pdftex.def Info: content/system_design/./figures/gs_system.png  used on input line 8.
 (pdftex.def)             Requested size: 448.6987pt x 233.39899pt.
  [19 <./content/system_design/./figures/gs_system.png>]
-<content/system_design/./figures/az_elevation.png, id=791, 445.665pt x 319.94531pt>
+<content/system_design/./figures/az_elevation.png, id=793, 445.665pt x 319.94531pt>
 File: content/system_design/./figures/az_elevation.png Graphic file (type png)
 <use content/system_design/./figures/az_elevation.png>
 Package pdftex.def Info: content/system_design/./figures/az_elevation.png  used on input line 22.
 (pdftex.def)             Requested size: 188.9235pt x 135.63077pt.
  [20 <./content/system_design/./figures/az_elevation.png>]
-<content/system_design/./figures/antennaMount.png, id=801, 404.35065pt x 557.9244pt>
+<content/system_design/./figures/antennaMount.png, id=803, 404.35065pt x 557.9244pt>
 File: content/system_design/./figures/antennaMount.png Graphic file (type png)
 <use content/system_design/./figures/antennaMount.png>
 Package pdftex.def Info: content/system_design/./figures/antennaMount.png  used on input line 37.
 (pdftex.def)             Requested size: 188.9235pt x 260.67508pt.
 ) [21 <./content/system_design/./figures/antennaMount.png>] (./content/system_design/pq_unit.tex
-<content/system_design/./figures/pqunit_system.png, id=810, 759.58781pt x 584.1825pt>
+<content/system_design/./figures/pqunit_system.png, id=812, 759.58781pt x 584.1825pt>
 File: content/system_design/./figures/pqunit_system.png Graphic file (type png)
 <use content/system_design/./figures/pqunit_system.png>
 Package pdftex.def Info: content/system_design/./figures/pqunit_system.png  used on input line 8.
@@ -838,25 +838,25 @@ Chapter 5.
 (./content/detailed_design/component_selection.tex [23
 
 ] [24] [25]) [26] (./content/detailed_design/ground_station_pcb.tex [27]
-<content/detailed_design/./figures/gs_pcb_design.png, id=853, 613.54219pt x 575.14874pt>
+<content/detailed_design/./figures/gs_pcb_design.png, id=855, 613.54219pt x 575.14874pt>
 File: content/detailed_design/./figures/gs_pcb_design.png Graphic file (type png)
 <use content/detailed_design/./figures/gs_pcb_design.png>
-Package pdftex.def Info: content/detailed_design/./figures/gs_pcb_design.png  used on input line 40.
+Package pdftex.def Info: content/detailed_design/./figures/gs_pcb_design.png  used on input line 44.
 (pdftex.def)             Requested size: 283.39244pt x 265.65987pt.
-) [28 <./content/detailed_design/./figures/gs_pcb_design.png>] (./content/detailed_design/pq_unit_pcb.tex
-<content/detailed_design/./figures/pqunit_pcb_design_front.png, id=864, 595.47469pt x 579.66562pt>
+) [28 <./content/detailed_design/./figures/gs_pcb_design.png>] (./content/detailed_design/pq_unit_pcb.tex [29]
+<content/detailed_design/./figures/pqunit_pcb_design_front.png, id=877, 595.47469pt x 579.66562pt>
 File: content/detailed_design/./figures/pqunit_pcb_design_front.png Graphic file (type png)
 <use content/detailed_design/./figures/pqunit_pcb_design_front.png>
-Package pdftex.def Info: content/detailed_design/./figures/pqunit_pcb_design_front.png  used on input line 30.
+Package pdftex.def Info: content/detailed_design/./figures/pqunit_pcb_design_front.png  used on input line 38.
 (pdftex.def)             Requested size: 182.7819pt x 177.92549pt.
-<content/detailed_design/./figures/pqunit_pcb_design_back.png, id=865, 587.19376pt x 575.90157pt>
+<content/detailed_design/./figures/pqunit_pcb_design_back.png, id=878, 587.19376pt x 575.90157pt>
 File: content/detailed_design/./figures/pqunit_pcb_design_back.png Graphic file (type png)
 <use content/detailed_design/./figures/pqunit_pcb_design_back.png>
-Package pdftex.def Info: content/detailed_design/./figures/pqunit_pcb_design_back.png  used on input line 36.
+Package pdftex.def Info: content/detailed_design/./figures/pqunit_pcb_design_back.png  used on input line 44.
 (pdftex.def)             Requested size: 182.7819pt x 179.2658pt.
-) [29 <./content/detailed_design/./figures/pqunit_pcb_design_front.png> <./content/detailed_design/./figures/pqunit_pcb_design_back.png>] (./content/detailed_design/link_budget.tex) (./content/detailed_design/ground_station_antenna.tex [30]) [31]
+) [30 <./content/detailed_design/./figures/pqunit_pcb_design_front.png> <./content/detailed_design/./figures/pqunit_pcb_design_back.png>] (./content/detailed_design/link_budget.tex [31]) (./content/detailed_design/ground_station_antenna.tex) [32] [33]
 Chapter 6.
-(./content/conclusion/conclusion.tex)) (build/report.bbl [32
+(./content/conclusion/conclusion.tex)) (build/report.bbl [34
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 28--31
@@ -903,7 +903,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--75
 \OT1/lmr/m/n/12 (+20) ,[]-[]A % 20low % 20Earth & text = It % 20is % 20normally % 20at % 20an ,[] very % 20far % 20above %
  []
 
-[33
+[35
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 82--85
@@ -965,22 +965,22 @@ Underfull \hbox (badness 4120) in paragraph at lines 138--141
 []\OT1/lmr/m/n/12 (+20) Proteus, ``Pcb via stitch-ing and shield-ing,'' [][]$https : / / www . labcenter . com / blog /
  []
 
-[34]
-Underfull \hbox (badness 1983) in paragraph at lines 163--166
+[36]
+Underfull \hbox (badness 1983) in paragraph at lines 168--171
 []\OT1/lmr/m/n/12 (+20) STMicroelectronics, ``L6219 step-per mo-tor driver,'' [][]$https : / / www . mantech . co . za /
  []
 
 
-Underfull \hbox (badness 4013) in paragraph at lines 168--171
+Underfull \hbox (badness 4013) in paragraph at lines 173--176
 []\OT1/lmr/m/n/12 (+20) Gravitech, ``Ar-duino nano,'' [][]$https : / / www . arduino . cc / en / uploads / Main / Arduino[]
  []
 
-) (./endmatter/appendix.tex [35]
+) (./endmatter/appendix.tex [37]
 Appendix A.
 (./endmatter/planning/planning.tex)
 
 pdfTeX warning: pdflatex (file ./endmatter//gs_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//gs_schematic.pdf, id=970, 597.55246pt x 845.07724pt>
+<endmatter//gs_schematic.pdf, id=989, 597.55246pt x 845.07724pt>
 File: endmatter//gs_schematic.pdf Graphic file (type pdf)
 <use endmatter//gs_schematic.pdf>
 Package pdftex.def Info: endmatter//gs_schematic.pdf  used on input line 6.
@@ -998,7 +998,7 @@ pdfTeX warning: pdflatex (file ./endmatter//gs_schematic.pdf): PDF inclusion: fo
 
 
 pdfTeX warning: pdflatex (file ./endmatter//gs_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//gs_schematic.pdf, id=973, page=1, 597.55246pt x 845.07724pt>
+<endmatter//gs_schematic.pdf, id=992, page=1, 597.55246pt x 845.07724pt>
 File: endmatter//gs_schematic.pdf Graphic file (type pdf)
 <use endmatter//gs_schematic.pdf, page 1>
 Package pdftex.def Info: endmatter//gs_schematic.pdf , page1 used on input line 6.
@@ -1007,7 +1007,7 @@ File: endmatter//gs_schematic.pdf Graphic file (type pdf)
 <use endmatter//gs_schematic.pdf, page 1>
 Package pdftex.def Info: endmatter//gs_schematic.pdf , page1 used on input line 6.
 (pdftex.def)             Requested size: 328.65486pt x 464.79391pt.
-[36
+[38
 
 ]
 File: endmatter//gs_schematic.pdf Graphic file (type pdf)
@@ -1024,12 +1024,12 @@ File: endmatter//gs_schematic.pdf Graphic file (type pdf)
 <use endmatter//gs_schematic.pdf, page 1>
 Package pdftex.def Info: endmatter//gs_schematic.pdf , page1 used on input line 6.
 (pdftex.def)             Requested size: 328.65486pt x 464.79391pt.
-[37
+[39
 
  <./endmatter//gs_schematic.pdf>]
 
 pdfTeX warning: pdflatex (file ./endmatter//pq_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//pq_schematic.pdf, id=983, 597.55246pt x 845.07724pt>
+<endmatter//pq_schematic.pdf, id=1003, 597.55246pt x 845.07724pt>
 File: endmatter//pq_schematic.pdf Graphic file (type pdf)
 <use endmatter//pq_schematic.pdf>
 Package pdftex.def Info: endmatter//pq_schematic.pdf  used on input line 9.
@@ -1047,7 +1047,7 @@ pdfTeX warning: pdflatex (file ./endmatter//pq_schematic.pdf): PDF inclusion: fo
 
 
 pdfTeX warning: pdflatex (file ./endmatter//pq_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//pq_schematic.pdf, id=986, page=1, 597.55246pt x 845.07724pt>
+<endmatter//pq_schematic.pdf, id=1006, page=1, 597.55246pt x 845.07724pt>
 File: endmatter//pq_schematic.pdf Graphic file (type pdf)
 <use endmatter//pq_schematic.pdf, page 1>
 Package pdftex.def Info: endmatter//pq_schematic.pdf , page1 used on input line 9.
@@ -1069,7 +1069,7 @@ File: endmatter//pq_schematic.pdf Graphic file (type pdf)
 <use endmatter//pq_schematic.pdf, page 1>
 Package pdftex.def Info: endmatter//pq_schematic.pdf , page1 used on input line 9.
 (pdftex.def)             Requested size: 388.4045pt x 549.2937pt.
-[38
+[40
 
  <./endmatter//pq_schematic.pdf>])
 
@@ -1078,21 +1078,21 @@ See the caption package documentation for explanation.
 
 (build/report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 26EA75BA00E6E0BACD24A4ED18145BD8;8149.
+(rerunfilecheck)             Checksum: 14FB0BE381D33EBFF055464479C46A6F;8182.
  ) 
 Here is how much of TeX's memory you used:
- 22475 strings out of 480171
- 424161 string characters out of 5894489
- 808541 words of memory out of 5000000
- 39512 multiletter control sequences out of 15000+600000
+ 22487 strings out of 480171
+ 424368 string characters out of 5894489
+ 808679 words of memory out of 5000000
+ 39515 multiletter control sequences out of 15000+600000
  537313 words of font info for 170 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  71i,18n,86p,1263b,1086s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on build/report.pdf (48 pages, 6577282 bytes).
+Output written on build/report.pdf (50 pages, 6582650 bytes).
 PDF statistics:
- 1106 PDF objects out of 1200 (max. 8388607)
- 960 compressed objects within 10 object streams
- 213 named destinations out of 1000 (max. 500000)
+ 1130 PDF objects out of 1200 (max. 8388607)
+ 982 compressed objects within 10 object streams
+ 222 named destinations out of 1000 (max. 500000)
  43693 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -17,7 +17,7 @@ Current calculations should be done to ensure that the voltage regulators and th
   Motors                    & 24 V                & 0.5 A (x4)           & 48 W             \\ \hline
   ESP32 Dev Board           & 5 V                 & 120 mA               & 660 mW           \\ \hline
   RA-02                     & 3.3 V               & 100 mA               & 330 mW           \\ \hline
-  ATGM332D-5N               & 3.3 V               & 25 mA                & 82.5 mW          \\ \hline
+  ATGM332D-5N31             & 3.3 V               & 25 mA                & 82.5 mW          \\ \hline
   MPU-9250                  & 3.3 V               & 3.7 mA               & 12.21 mW         \\ \hline
   \end{tabular}
   \caption{Ground Station Component Power Consumption}
@@ -35,10 +35,14 @@ The L6219 drivers require a reference voltage to set the maximum current. Accord
 The RA-02 RF module states that not all data pins are necessary. A connector is provided for unused GPIO pins, the SPI, and the unused RF module pins, to allow for flexibility once the PCB is manufactured.
 
 \subsection{PCB Design}
+\subsubsection{Stackup}
+A 2-layer stackup was decided on, so that the board could be manufactured in-house early on in the project (as the in-house PCB machine has a 2-layer limitation).
+
+\subsubsection{Final Design}
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.6\textwidth]{gs_pcb_design}
   \caption{Ground Station PCB Design}
   \label{fig:gs_pcb}
 \end{figure}
-The final PCB was designed in KiCAD. It was designed to have a compatible form factor as the previous antenna mount PCB i.e. with a 198 mm outer diameter, outer mounting holes, and holes for the stepper motors. The front layer of this design is shown in Figure \ref{fig:gs_pcb}
+The final PCB was designed in KiCAD. It was designed to have a compatible form factor as the previous antenna mount PCB i.e. with a 198 mm outer diameter, outer mounting holes, and holes for the stepper motors. The front layer of this design is shown in Figure \ref{fig:gs_pcb}. Female headers were used for most of the modules, since development boards were being used. Two PCB pours were exposed below the voltage regulators for added heat dissipation.
