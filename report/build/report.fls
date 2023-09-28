@@ -1263,6 +1263,14 @@ INPUT content/system_design/ground_station.tex
 INPUT ./content/system_design/ground_station.tex
 INPUT ./content/system_design/ground_station.tex
 INPUT content/system_design/ground_station.tex
+INPUT ./content/system_design/./figures/gs_system.png
+INPUT content/system_design/./figures/gs_system.png
+INPUT ./content/system_design/./figures/gs_system.png
+INPUT ./content/system_design/./figures/gs_system.png
+INPUT ./content/system_design/./figures/az_elevation.png
+INPUT content/system_design/./figures/az_elevation.png
+INPUT ./content/system_design/./figures/az_elevation.png
+INPUT ./content/system_design/./figures/az_elevation.png
 INPUT ./content/detailed_design/components.tex
 INPUT ./content/detailed_design/components.tex
 INPUT ./content/detailed_design/components.tex
@@ -1270,10 +1278,6 @@ INPUT content/detailed_design/components.tex
 INPUT ./content/detailed_design/components.tex
 INPUT ./content/detailed_design/components.tex
 INPUT content/detailed_design/components.tex
-INPUT ./content/detailed_design/./figures/az_elevation.png
-INPUT content/detailed_design/./figures/az_elevation.png
-INPUT ./content/detailed_design/./figures/az_elevation.png
-INPUT ./content/detailed_design/./figures/az_elevation.png
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ts1-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ts1-lmr6.tfm
 INPUT ./content/conclusion/conclusion.tex
