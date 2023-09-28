@@ -29,7 +29,9 @@ The transciever for both the custom and proprietary protocol needs to be conside
 \end{itemize}
 
 \subsubsection{Custom Communication}
-For the custom protocol, a dedicated RF module will be used. LoRa will be used, however since this technology is relatively new, GFSK will be used as a secondary technique. This is relatively simple,as many LoRa modules also offer GFSK as an option. Table \ref{tab:rfTransceivers} contrasts the two most common modules in the 433 MHz LoRa band which offer this feature. Most modules available are based on \textit{Semtech} chipsets due to the company's patent on the technology, and so there is little variation in performance. The RA-02 is ultimately selected due to its availability and cost.
+For the custom protocol, a dedicated RF module will be used. Unfortunately, few modules exist that support 405 MHz for the proprietary protocol, meaning a dedicated module would be needed. The module for custom communication will therefore be chosen to be as close as possible in frequency to 405 MHz.
+
+LoRa will be used, however since this technology is relatively new, GFSK will be used as a secondary technique. This is relatively simple, as many LoRa modules also offer GFSK as an option. Table \ref{tab:rfTransceivers} contrasts the two most common modules in the 433 MHz LoRa band which offer this feature. Most modules available are based on \textit{Semtech} chipsets due to the company's patent on the technology, and so there is little variation in performance. The RA-02 is ultimately selected due to its availability and cost.
 
 \begin{table}[!htb]
   \centering

@@ -179,6 +179,9 @@ I.~Campbell~Scientific, ``The link budget and fade margin,''
   \url{https://s.campbellsci.com/documents/us/technical-papers/link-budget.pdf},
   [Accessed 03-09-2023].
 
+\bibitem{textbook-helicalAntenna}
+J.~D. Kraus, ``Antennas for all applications,'' [Accessed 29-09-2023].
+
 \bibitem{datasheet-NEO6}
 u~blox, ``Neo-6,''
   \url{https://content.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf},
@@ -190,8 +193,5 @@ u~blox, ``Neo-6,''
 
 \bibitem{textbook-antennasForAll}
 J.~D. Kraus, ``Antennas for all applications,'' [Accessed 29-09-2023].
-
-\bibitem{textbook-helicalAntenna}
-------, ``Antennas for all applications,'' [Accessed 29-09-2023].
 
 \end{thebibliography}
