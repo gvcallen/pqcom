@@ -6,61 +6,104 @@ If it is acceptable to estabilish the link a few minutes after the launch, Signa
 
 If communication with the satellite from the beginning of launch is necessary (e.g. for direct GPS tracking), then the ground station would need to be raised above sea level. Considering Cape Town as a location would require a height of around 1 km (measured to Saldanha Airfield), which is mostly impractical, unless accessibility into Table Mountain is granted. Therefore, a location scout would need to be conducted closer to the launch site. At 200 m altitude, the site could be up to 50 km away from launch. In this case, a maximum elevation angle of between $25 \circ$ and $30 \circ$ will need to be considered.
 
-The software mentioned in Section \ref{sec:link_budget} was used to compute attenuation effects in the link budget, with Saldanha Airfield as the satellite location, and Signal Hill as the ground station location. 
+The \textit{receiver sensitivity} is a value which denotes the minimum power level required at the receiver for successful communication. Depending on set parameters, the SX1278 quotes varying receiver sensitivity values. Notable configurations are listed in Table \ref{tab:sensitivity_values}.
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c|c|c|c| }
+  \hline
+  \textbf{Description} & \textbf{Modulation} & \textbf{Parameters} & \textbf{Bit Rate} & \textbf{Sensitivity} \\
+  \hline
+  Maximum Bit Rate &
+  GFSK &
+  62.5 kHz &
+  250 000 bps &
+  -92 dBm \\
+  \hline
+  High Bit Rate &
+  GFSK &
+  40 kHz &
+  38400 bps &
+  -109 dBm \\
+  \hline
+  Target Bit Rate ($\approx 9600 bps$) &
+  GFSK &
+  5 kHz &
+  4800 bps &
+  -115 dBm \\
+  \hline
+  - &
+  LoRa &
+  500 kHz, SF 8 &
+  10417 bps &
+  -119 dBm \\
+  \hline
+  Maximum Sensitivity &
+  LoRa &
+  62.5 kHz, SF 12 &
+  24 bps &
+  -147 dBm \\
+  \hline
+  \end{tabular}
+  \caption{Notable SX1278 Configurations}
+  \label{tab:sensitivity_values}
+\end{table}
 
-**Transmitter Power**
-+18 dBm (RA-02)
+The software mentioned in Section \ref{sec:link_budget} was used to compute attenuation effects in the link budget, with Saldanha Airfield as the satellite location, and Signal Hill as the ground station location.
+All calculations were based on the RA-02's internal SX1278 chip and its specifications, half-wavelength dipoles as antennas, and worst-case impedance mismatch loss of 1.2 dBi (a VSWR 3:1, taken from the SX1278 datasheet). Then, the resultant margin will be analysed, and an appropriate directive antenna will be designed for the ground station to allow for increased margin and performance. The LoRa "target bit rate" sensitivity value of -119 dBm is used in this budget.
 
-**GS Gain**
-+1.2 dBi
+\newpage
 
-**Satellite Gain**
-+1.2 dBi + G (if directive antenna is used)
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  Transmitter Power             & 17 dBm                    \\ \hline
+  Mismatch Loss                 & (1.2 dBi)                 \\ \hline
+  Transmission Line Loss        & (0.1 dB)                  \\ \hline
+  Antenna Gain                  & 2.15 dB                   \\ \hline \hline
+  \textbf{EIRP}                 & \textbf{17.85 dBm}        \\ \hline
+  \end{tabular}
+  \caption{Link Budget - Satellite}
+  \label{tab:link_budget_satellite}
+\end{table}
 
-**Receiver Sensitivity**
-Target of around 9600 bps:
-    +118 dBm (LoRa, SF 6, 125 kHz, CR2, 7812 bps)
-    +120 dBm (LoRa, SF 7, 250 kHz, CR2, 9115 bps)
-    +119 dBm (LoRa, SF 8, 500 kHz, CR2, 10417 bps)
-Target of maximum sensitivity:
-    +139 dBm (LoRa, SF 12, 62.5 kHz, CR1, 146 bps)
-    +147 dBm (LoRa, SF 12, 62.5 kHz, CR1, 24 bps)
-Target of maximum speed:
-    +116 dBm (LoRa, SF 7, 500 kHz, CR2, 18230 bps) (high)
-    +111 dBm (LoRa, SF 6, 500 kHz, CR2, 37500 bps) (very high)
-    +109 dBm (GFSK 40 kHz, 38400 bps) (very high)
-    +108 dBm (OOK, 32000 bps) (very high)
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  Free space path loss (110 km) & 125.9 dB                  \\ \hline
+  Atmospheric loss              & 0.22 dB                   \\ \hline
+  Scintillation loss            & 0.37 dB                   \\ \hline
+  Polarization Mismatch         & 3 dB                      \\ \hline
+  \textbf{Total Loss}           & \textbf{129.49 dB}         \\ \hline
+  \end{tabular}
+  \caption{Link Budget - Channel}
+  \label{tab:link_budget_channel}
+\end{table}
 
-**Free space loss**
--133 dB (250 km)
--153 dB (2500 km)
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  Antenna Gain                  & 2.15 dBi        \\ \hline
+  Transmission Line Loss        & (0.1 dB)        \\ \hline
+  Mismatch Loss                 & (1.2 dB)        \\ \hline
+  Receiver Sensitivity          & 119 dBm         \\ \hline
+  \textbf{GS Sensitivity}       & 119.85 dBm      \\ \hline
+  \end{tabular}
+  \caption{Link Budget - Ground Station}
+  \label{tab:link_budget_gs}
+\end{table}
 
-**Polarization mismatch**
--3 dB
+The final link budget therefore results in 17.85 dBm - 129.49 dB + 119.85 dBm = 8.21 dB of link margin. Although this is theoretically adequate, there are a few considerations to be made:
+\begin{itemize}
+    \item The application note in \cite{paper-linkBudget} suggests a minimum link margin of 10 dB. It also further suggests a margin of above 20 dB for critical links.
+    \item If a higher bit rate is required, e.g. 38.4 kbps, then the margin drops to -1.79 dB.
+    \item If a longer range (e.g. for future projects) is required, free space path loss will drastically increase. For example, for a 250 km range, the loss becomes 133 dB, meaning the margin drops to only 1.11 dB.
+\end{itemize}
 
-**Helical parameters**
-Disc diameter = 762
-N               Gain (dBi)          Length (mm)
------------------------------------------------------
-3               10.55               520
-4               11.80               693
-5               12.77               866
-8               14.81               1385
-10              15.78               1732
-15              17.54               2598
-
-**Budgets**
-Range           Speed               Budget
----------------------------------------------------------------------------------------------------
-Close           Medium              18dBm + 1.2dBi + 1.2dBi + 119dBm - 133dB - 3dB = +3.4dB margin
-Close           High                18dBm + 1.2dBi + 1.2dBi + 116dBm - 133dB - 3dB = +0.4dB margin
-Close           Very high           18dBm + 1.2dBi + 1.2dBi + 108dBm - 133dB - 3dB = -7.6dB short
-Far             Low                 18dBm + 1.2dBi + 1.2dBi + 139dBm - 153dB - 3dB = +3.4dB margin
-Far             Medium              18dBm + 1.2dBi + 1.2dBi + 119dBm - 153dB - 3dB = -16.6dB short
-Far             High                18dBm + 1.2dBi + 1.2dBi + 116dBm - 153dB - 3dB = -19.6dB short
-Far             Very high           18dBm + 1.2dBi + 1.2dBi + 108dBm - 153dB - 3dB = -27.6dB short
-
-Therefore:
-- A simple half-wave dipole will work for close-range medium-speed LoRa, and far-range high-speed LoRa
-- Around 10 dBi antenna gain is needed for high-speed close-range applications (leaving 2.4 dB margin)
-- Around 20 dBi antenna gain is needed for medium-speed far-range applications (leaving 2.4 dB margin)
+To achieve the 10 dB recommended margin, an antenna with at least 1.79 dB additional gain (i.e. 3.94 dBi total) should be designed for the ground station. Then, if necessary, the 20 dB recommendation can be reached by lowering the bit rate.

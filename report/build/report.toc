@@ -85,10 +85,10 @@
 \contentsline {subsubsection}{Stackup}{29}{subsubsection*.45}%
 \contentsline {subsubsection}{Final Design}{30}{subsubsection*.46}%
 \contentsline {section}{\numberline {5.4}Link Budget}{31}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Ground Station Antenna}{32}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Mechanical Integration}{32}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.5}Ground Station Antenna}{33}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Mechanical Considerations}{33}{subsection.5.5.1}%
 \contentsline {chapter}{\numberline {6}Conclusion}{34}{chapter.6}%
-\contentsline {chapter}{Bibliography}{35}{chapter*.48}%
+\contentsline {chapter}{Bibliography}{35}{chapter*.53}%
 \contentsline {chapter}{\numberline {A}Appendix A}{38}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Appendix B}{39}{appendix.B}%
 \contentsline {chapter}{\numberline {C}Appendix C}{40}{appendix.C}%
