@@ -78,6 +78,7 @@
         "xutility": "cpp",
         "future": "cpp",
         "hash_map": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "iomanip": "cpp"
     }
 }

@@ -1,65 +1,42 @@
-#include <MPU6500_WE.h>
-const int csPin = 22;  // Chip Select Pin
-bool useSPI = true;    // SPI use flag
+#include <SPI.h>
+#include <LoRa.h>
 
+// SX1278 has the following connections:
+uint32_t nss = 27;
+uint32_t dio0 = 15;
+uint32_t reset = 13;
 
-/* There is only one construictor for SPI: */
-MPU6500_WE myMPU6500 = MPU6500_WE(&SPI, csPin, useSPI);
+int counter = 0;
 
 void setup() {
   Serial.begin(115200);
-  if(!myMPU6500.init()){
-    Serial.println("MPU6500 does not respond");
-  }
-  else{
-    Serial.println("MPU6500 is connected");
+  while (!Serial);
+
+  delay(1000);
+
+  Serial.println("LoRa Sender");
+
+  LoRa.setPins(nss, reset, dio0);
+
+  if (!LoRa.begin(500E6)) {
+    Serial.println("Starting LoRa failed!");
+    while (1);
   }
 
-  Serial.println("Position you MPU6500 flat and don't move it - calibrating...");
-  delay(1000);
-  myMPU6500.autoOffsets();
-  Serial.println("Done!");
-    
-  //myMPU6500.setAccOffsets(-14240.0, 18220.0, -17280.0, 15590.0, -20930.0, 12080.0);
-  //myMPU6500.setGyrOffsets(45.0, 145.0, -105.0);
-  myMPU6500.enableGyrDLPF();
-  //myMPU6500.disableGyrDLPF(MPU6500_BW_WO_DLPF_8800); // bandwdith without DLPF
-  myMPU6500.setGyrDLPF(MPU6500_DLPF_6);
-  myMPU6500.setSampleRateDivider(5);
-  myMPU6500.setGyrRange(MPU6500_GYRO_RANGE_250);
-  myMPU6500.setAccRange(MPU6500_ACC_RANGE_2G);
-  myMPU6500.enableAccDLPF(true);
-  myMPU6500.setAccDLPF(MPU6500_DLPF_6);
-  //myMPU6500.enableAccAxes(MPU6500_ENABLE_XYZ);
-  //myMPU6500.enableGyrAxes(MPU6500_ENABLE_XYZ);
+  LoRa.setTxPower(10);
 }
 
 void loop() {
-  xyzFloat gValue = myMPU6500.getGValues();
-  xyzFloat gyr = myMPU6500.getGyrValues();
-  float temp = myMPU6500.getTemperature();
-  float resultantG = myMPU6500.getResultantG(gValue);
+  Serial.print("Sending packet: ");
+  Serial.println(counter);
 
-  Serial.println("Acceleration in g (x,y,z):");
-  Serial.print(gValue.x);
-  Serial.print("   ");
-  Serial.print(gValue.y);
-  Serial.print("   ");
-  Serial.println(gValue.z);
-  Serial.print("Resultant g: ");
-  Serial.println(resultantG);
+  // send packet
+  LoRa.beginPacket();
+  LoRa.print("hello ");
+  LoRa.print(counter);
+  LoRa.endPacket();
 
-  Serial.println("Gyroscope data in degrees/s: ");
-  Serial.print(gyr.x);
-  Serial.print("   ");
-  Serial.print(gyr.y);
-  Serial.print("   ");
-  Serial.println(gyr.z);
+  counter++;
 
-  Serial.print("Temperature in °C: ");
-  Serial.println(temp);
-
-  Serial.println("********************************************");
-
-  delay(1000);
+  delay(2000);
 }

@@ -1,0 +1,107 @@
+#include <Arduino.h>
+
+// Azimuthal
+const int AZ_I01 = 14;
+const int AZ_I02 = 26;
+const int AZ_I11 = 12;
+const int AZ_I12 = 25;
+const int AZ_PH1 = 32;
+const int AZ_PH2 = 33;
+
+// Elevation
+const int EL_I01 = 0;
+const int EL_I02 = 2;
+const int EL_I11 = 3;
+const int EL_I12 = 4;
+const int EL_PH1 = 21;
+const int EL_PH2 = 5;
+
+// Full step
+boolean val_I01[] = {0,0,0,0};
+boolean val_I11[] = {0,0,0,0};
+boolean val_PH1[] = {0,1,1,0};
+boolean val_PH2[] = {0,0,1,1};
+boolean val_I02[] = {0,0,0,0};
+boolean val_I12[] = {0,0,0,0};
+
+const unsigned int numStates = 4;
+unsigned int stepAz = 0, stepEl = 0;
+
+void update_az()
+{
+    if (stepAz >= numStates)
+        stepAz = 0;
+
+    digitalWrite(AZ_PH1, val_PH1[stepAz]);
+    digitalWrite(AZ_PH2, val_PH2[stepAz]);
+}
+
+void update_el()
+{
+    if (stepEl >= numStates)
+        stepEl = 0;
+
+    digitalWrite(EL_PH1, val_PH1[stepEl]);
+    digitalWrite(EL_PH2, val_PH2[stepEl]);
+}
+
+void setup()
+{
+    // Set the various pins to output
+    pinMode (EL_I01, OUTPUT);
+    pinMode (EL_I02, OUTPUT);
+    pinMode (EL_I11, OUTPUT);
+    pinMode (EL_I12, OUTPUT);
+    pinMode (EL_PH1, OUTPUT);
+    pinMode (EL_PH2, OUTPUT);
+
+    pinMode (AZ_I01, OUTPUT);
+    pinMode (AZ_I02, OUTPUT);
+    pinMode (AZ_I11, OUTPUT);
+    pinMode (AZ_I12, OUTPUT);
+    pinMode (AZ_PH1, OUTPUT);
+    pinMode (AZ_PH2, OUTPUT);
+
+    // Set current to max
+    digitalWrite(EL_I01, val_I01[stepEl]);
+    digitalWrite(EL_I02, val_I02[stepEl]);
+    digitalWrite(EL_I11, val_I11[stepEl]);
+    digitalWrite(EL_I12, val_I12[stepEl]);
+    digitalWrite(AZ_I01, val_I01[stepAz]);
+    digitalWrite(AZ_I02, val_I02[stepAz]);
+    digitalWrite(AZ_I11, val_I11[stepAz]);
+    digitalWrite(AZ_I12, val_I12[stepAz]);
+
+
+    // "Lock" motors into initial holding state
+    update_el();
+    update_az();
+
+    int azSteps = 80;
+    int elSteps = 92;
+    const int delayInMs = 100;
+    
+    delay(5000);
+    
+    // Step az 90 full steps
+    for (int i = 0; i < azSteps; i++)
+    {
+        stepAz++;
+        update_az();
+        delay(delayInMs);
+    }
+
+    delay(1000);
+
+    // Step el 120 full steps
+    for (int i = 0; i < elSteps; i++)
+    {
+        stepEl++;
+        update_el();
+        delay(delayInMs);
+    }
+}
+
+void loop()
+{
+}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  11 SEP 2023 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  27 SEP 2023 21:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -494,7 +494,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip71
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 111.
+Package hyperref Info: Option `colorlinks' set `true' on input line 102.
  (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
@@ -540,7 +540,7 @@ Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
  (/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
 Package: import 2020/04/01  v 6.2
 ))
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 134.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 125.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (build/report.aux (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/af/babel-afrikaans.tex
@@ -552,24 +552,24 @@ Package babel Info: Hyphen rules for 'afrikaans' set to \l@english
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -634,18 +634,18 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Info: Redefining \microtypecontext on input line 134.
-Package microtype Info: Applying patch `item' on input line 134.
-Package microtype Info: Applying patch `toc' on input line 134.
-Package microtype Info: Applying patch `eqnum' on input line 134.
-Package microtype Info: Applying patch `footnote' on input line 134.
+LaTeX Info: Redefining \microtypecontext on input line 125.
+Package microtype Info: Applying patch `item' on input line 125.
+Package microtype Info: Applying patch `toc' on input line 125.
+Package microtype Info: Applying patch `eqnum' on input line 125.
+Package microtype Info: Applying patch `footnote' on input line 125.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 134.
+LaTeX Info: Redefining \showhyphens on input line 125.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -654,8 +654,8 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 ) (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 134.
-Package hyperref Info: Link coloring ON on input line 134.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 125.
+Package hyperref Info: Link coloring ON on input line 125.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -665,9 +665,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count335
 )
-LaTeX Info: Redefining \ref on input line 134.
-LaTeX Info: Redefining \pageref on input line 134.
-LaTeX Info: Redefining \nameref on input line 134.
+LaTeX Info: Redefining \ref on input line 125.
+LaTeX Info: Redefining \pageref on input line 125.
+LaTeX Info: Redefining \nameref on input line 125.
  (build/report.out) (build/report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
@@ -819,9 +819,9 @@ File: content/detailed_design/./figures/antennaMount.png Graphic file (type png)
 <use content/detailed_design/./figures/antennaMount.png>
 Package pdftex.def Info: content/detailed_design/./figures/antennaMount.png  used on input line 12.
 (pdftex.def)             Requested size: 165.31346pt x 228.09496pt.
-) [19 <./content/detailed_design/./figures/antennaMount.png>]
+ [19 <./content/detailed_design/./figures/antennaMount.png>]) [20]
 Chapter 6.
-(./content/conclusion/conclusion.tex)) (build/report.bbl [20
+(./content/conclusion/conclusion.tex)) (build/report.bbl [21
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 28--31
@@ -873,7 +873,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--80
 []\OT1/lmr/m/n/12 (+20) Intermet, ``imet-54,'' [][]$https : / / intermet . co / wp-[]content / uploads /
  []
 
-[21
+[22
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 93--96
@@ -895,14 +895,14 @@ Underfull \hbox (badness 4120) in paragraph at lines 103--106
 []\OT1/lmr/m/n/12 (+20) Proteus, ``Pcb via stitch-ing and shield-ing,'' [][]$https : / / www . labcenter . com / blog /
  []
 
-) (./endmatter/appendix.tex [22]
+) (./endmatter/appendix.tex [23]
 Appendix A.
 (./endmatter/planning/planning.tex))
 
-Package caption Warning: Unused \captionsetup[algorithm] on input line 117.
+Package caption Warning: Unused \captionsetup[algorithm] on input line 108.
 See the caption package documentation for explanation.
 
-[23
+[24
 
 ] (build/report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
@@ -910,21 +910,21 @@ Package rerunfilecheck Info: File `report.out' has not changed.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 149 (\begingroup)
+### semi simple group (level 1) entered at line 140 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 22050 strings out of 480171
- 414856 string characters out of 5894489
- 803439 words of memory out of 5000000
+ 22051 strings out of 480171
+ 414863 string characters out of 5894489
+ 803332 words of memory out of 5000000
  39206 multiletter control sequences out of 15000+600000
  536467 words of font info for 161 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  71i,12n,79p,1263b,1142s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on build/report.pdf (31 pages, 5766653 bytes).
+Output written on build/report.pdf (32 pages, 5764433 bytes).
 PDF statistics:
- 735 PDF objects out of 1000 (max. 8388607)
- 634 compressed objects within 7 object streams
- 136 named destinations out of 1000 (max. 500000)
+ 739 PDF objects out of 1000 (max. 8388607)
+ 637 compressed objects within 7 object streams
+ 137 named destinations out of 1000 (max. 500000)
  45487 words of extra memory for PDF output out of 51595 (max. 10000000)
 
