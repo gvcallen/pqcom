@@ -102,6 +102,23 @@ sgcderek, ``Helical antenna calculator,''
   https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8822972}, [Accessed
   03-09-2023].
 
+\bibitem{site-satelliteModulationOverview}
+LinkedIn, ``What are the benefits and drawbacks of using different modulation
+  and coding schemes for satcom?''
+  \url{https://www.linkedin.com/advice/0/what-benefits-drawbacks-using-different-6f#:~:text=The%20most%20common%20digital%20modulation,quadrature%20amplitude%20modulation%20(QAM).},
+  [Accessed 29-09-2023].
+
+\bibitem{site-satelliteModulationComparison}
+------, ``What are the benefits and drawbacks of using different modulation and
+  coding schemes for satcom?''
+  \url{https://www.linkedin.com/advice/0/what-advantages-disadvantages-using-qam-over},
+  [Accessed 29-09-2023].
+
+\bibitem{design-FOSSASATLink}
+J.~Fernandez, ``Link budget calculation,''
+  \url{https://github.com/FOSSASystems/FOSSASAT-1/blob/master/FOSSA%20Documents/FOSSASAT-1%20Link%20Budget.pdf},
+  [Accessed 29-09-2023].
+
 \bibitem{site-stratoballooningPredictionTracking}
 ``{P}rediction and {T}racking a {B}alloon — {S}tratospheric {B}allooning
   {A}ssociation --- stratoballooning.org,''

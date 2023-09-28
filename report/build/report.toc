@@ -3,7 +3,7 @@
 \contentsline {chapter}{List of Figures}{iv}{chapter*.2}%
 \contentsline {chapter}{List of Tables}{v}{chapter*.3}%
 \contentsline {chapter}{Nomenclature}{vi}{chapter*.4}%
-\contentsline {chapter}{Abstract}{vii}{chapter*.5}%
+\contentsline {chapter}{Abstract}{viii}{chapter*.5}%
 \babel@toc {afrikaans}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {afrikaans}{}\relax 
@@ -55,6 +55,12 @@
 \contentsline {subsection}{\numberline {5.1.1}Existing Components}{20}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}GPS}{20}{subsection.5.1.2}%
 \contentsline {subsection}{\numberline {5.1.3}IMU}{21}{subsection.5.1.3}%
-\contentsline {chapter}{\numberline {6}Conclusion}{22}{chapter.6}%
-\contentsline {chapter}{Bibliography}{23}{chapter*.29}%
-\contentsline {chapter}{\numberline {A}Appendix A}{26}{appendix.A}%
+\contentsline {subsection}{\numberline {5.1.4}RF Communication}{21}{subsection.5.1.4}%
+\contentsline {subsubsection}{Custom Communication}{22}{subsubsection*.29}%
+\contentsline {subsubsection}{Proprietary Communication}{22}{subsubsection*.31}%
+\contentsline {subsection}{\numberline {5.1.5}Stepper Motor Driver}{22}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}Power Distribution}{23}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.1.7}Microcontroller}{23}{subsection.5.1.7}%
+\contentsline {chapter}{\numberline {6}Conclusion}{24}{chapter.6}%
+\contentsline {chapter}{Bibliography}{25}{chapter*.32}%
+\contentsline {chapter}{\numberline {A}Appendix A}{28}{appendix.A}%
