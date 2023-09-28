@@ -49,6 +49,11 @@ N.~T., ``Standard 4- and 6-layer pcb stackups,''
   \url{https://www.bitweenie.com/listings/standard-4-and-6-layer-pcb-stackups/},
   [Accessed 18-08-2023].
 
+\bibitem{site-azElevationVisual}
+Celestis, ``What are the "azimuth" and "elevation" of a satellite?''
+  \url{https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/},
+  [Accessed 29-09-2023].
+
 \bibitem{site-antennaTheory}
 P.~J. Bevelacqua, ``Antenna theory,'' \url{https://www.antenna-theory.com/},
   2022, [Accessed 16-08-2023].
@@ -77,6 +82,19 @@ Intermet, ``imet-3100m,''
 Intermet, ``imet-54,''
   \url{https://intermet.co/wp-content/uploads/iMet-54-403MHz-GPS-Radiosonde-Brochure-V5.5.pdf},
   [Accessed 13-08-2023].
+
+\bibitem{textbook-antennaTheoryAnalysisDesign}
+C.~A. Balanis, ``Antenna theory analysis and design,'' [Accessed 29-09-2023].
+
+\bibitem{site-helixAntennas}
+``Helix antennas,''
+  \url{https://www.microwaves101.com/encyclopedias/helix-antennas}, 2018,
+  [Accessed 16-08-2023].
+
+\bibitem{site-helicalCalculator}
+sgcderek, ``Helical antenna calculator,''
+  \url{https://sgcderek.github.io/tools/helix-calc.html/}, [Accessed
+  29-09-2023].
 
 \bibitem{paper-lowProfileRingAntenna}
 ``A compact low-profile ring antenna with dual circular polarization and
@@ -119,8 +137,24 @@ L.~Engineering, ``High torque motor,''
   \url{https://cnctar.hobbycnc.hu/ZOTYK%C3%93/NEMA%2017%20motorom%20adatlapja%204218M-01.pdf},
   [Accessed 13-08-2023].
 
+\bibitem{datasheet-H22A1}
+Fairchild, ``Slotted optical switch,''
+  \url{https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/H22A1,2,3.pdf},
+  [Accessed 29-09-2023].
+
+\bibitem{datasheet-NEO6}
+u~blox, ``Neo-6,''
+  \url{https://content.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf},
+  [Accessed 18-08-2023].
+
 \bibitem{paper-reviewTrackingMethods}
 ``Review of tracking methods,'' \url{: http://www.jstor.com/stable/73457},
   [Accessed 13-08-2023].
+
+\bibitem{textbook-antennasForAll}
+J.~D. Kraus, ``Antennas for all applications,'' [Accessed 29-09-2023].
+
+\bibitem{textbook-helicalAntenna}
+------, ``Antennas for all applications,'' [Accessed 29-09-2023].
 
 \end{thebibliography}

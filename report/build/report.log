@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  27 SEP 2023 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  28 SEP 2023 11:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -548,7 +548,7 @@ Package babel Info: Importing basic data for afrikaans
 (babel)             from babel-af.ini. Reported on input line 11.
 )
 Package babel Info: Hyphen rules for 'afrikaans' set to \l@english
-(babel)             (\language0). Reported on input line 35.
+(babel)             (\language0). Reported on input line 36.
 )
 \openout1 = `report.aux'.
 
@@ -727,7 +727,7 @@ Chapter 1.
 ]
 Chapter 2.
 (./content/problem/overview.tex
-<content/problem/./figures//balloon_path.png, id=407, 713.66624pt x 550.30594pt>
+<content/problem/./figures//balloon_path.png, id=406, 713.66624pt x 550.30594pt>
 File: content/problem/./figures//balloon_path.png Graphic file (type png)
 <use content/problem/./figures//balloon_path.png>
 Package pdftex.def Info: content/problem/./figures//balloon_path.png  used on input line 11.
@@ -735,7 +735,7 @@ Package pdftex.def Info: content/problem/./figures//balloon_path.png  used on in
 ) [2
 
  <./content/problem/./figures//balloon_path.png>] (./content/problem/requirements.tex) [3] (./content/problem/specifications.tex
-<content/problem/./figures/gs_existing.jpeg, id=429, 963.6pt x 1284.8pt>
+<content/problem/./figures/gs_existing.jpeg, id=428, 963.6pt x 1284.8pt>
 File: content/problem/./figures/gs_existing.jpeg Graphic file (type jpg)
 <use content/problem/./figures/gs_existing.jpeg>
 Package pdftex.def Info: content/problem/./figures/gs_existing.jpeg  used on input line 11.
@@ -747,81 +747,76 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) [5]
 Chapter 3.
 (./content/background/pocketqube.tex
-<content/background/./figures/pq_enclosure.png, id=457, 815.29594pt x 462.97969pt>
+<content/background/./figures/pq_enclosure.png, id=456, 815.29594pt x 462.97969pt>
 File: content/background/./figures/pq_enclosure.png Graphic file (type png)
 <use content/background/./figures/pq_enclosure.png>
 Package pdftex.def Info: content/background/./figures/pq_enclosure.png  used on input line 9.
 (pdftex.def)             Requested size: 283.39244pt x 160.92912pt.
 ) [6
 
- <./content/background/./figures/pq_enclosure.png>] (./content/background/antennas.tex
-<content/background/./figures/dipole.png, id=467, 602.25pt x 296.60812pt>
+ <./content/background/./figures/pq_enclosure.png>] (./content/background/antenna_theory.tex
+<content/background/./figures/dipole.png, id=466, 602.25pt x 296.60812pt>
 File: content/background/./figures/dipole.png Graphic file (type png)
 <use content/background/./figures/dipole.png>
-Package pdftex.def Info: content/background/./figures/dipole.png  used on input line 17.
+Package pdftex.def Info: content/background/./figures/dipole.png  used on input line 20.
 (pdftex.def)             Requested size: 188.9235pt x 93.04282pt.
  [7 <./content/background/./figures/dipole.png>]
-<content/background/./figures/whip.png, id=478, 301.125pt x 301.125pt>
+<content/background/./figures/whip.png, id=480, 301.125pt x 301.125pt>
 File: content/background/./figures/whip.png Graphic file (type png)
 <use content/background/./figures/whip.png>
-Package pdftex.def Info: content/background/./figures/whip.png  used on input line 32.
+Package pdftex.def Info: content/background/./figures/whip.png  used on input line 37.
 (pdftex.def)             Requested size: 141.69621pt x 141.69876pt.
-<content/background/./figures/helical_uni.jpg, id=479, 564.1075pt x 551.05875pt>
+<content/background/./figures/helical_uni.jpg, id=481, 564.1075pt x 551.05875pt>
 File: content/background/./figures/helical_uni.jpg Graphic file (type jpg)
 <use content/background/./figures/helical_uni.jpg>
-Package pdftex.def Info: content/background/./figures/helical_uni.jpg  used on input line 40.
+Package pdftex.def Info: content/background/./figures/helical_uni.jpg  used on input line 45.
 (pdftex.def)             Requested size: 94.46175pt x 92.27452pt.
  [8 <./content/background/./figures/whip.png> <./content/background/./figures/helical_uni.jpg>]
-<content/background/./figures/yagi.jpg, id=487, 702.625pt x 468.75125pt>
+<content/background/./figures/yagi.jpg, id=498, 702.625pt x 468.75125pt>
 File: content/background/./figures/yagi.jpg Graphic file (type jpg)
 <use content/background/./figures/yagi.jpg>
-Package pdftex.def Info: content/background/./figures/yagi.jpg  used on input line 57.
+Package pdftex.def Info: content/background/./figures/yagi.jpg  used on input line 65.
 (pdftex.def)             Requested size: 188.9235pt x 126.03523pt.
-<content/background/./figures/invertedF.png, id=491, 4028.29968pt x 2105.61656pt>
+<content/background/./figures/invertedF.png, id=502, 4028.29968pt x 2105.61656pt>
 File: content/background/./figures/invertedF.png Graphic file (type png)
 <use content/background/./figures/invertedF.png>
-Package pdftex.def Info: content/background/./figures/invertedF.png  used on input line 66.
+Package pdftex.def Info: content/background/./figures/invertedF.png  used on input line 74.
 (pdftex.def)             Requested size: 141.69621pt x 74.05753pt.
- [9 <./content/background/./figures/yagi.jpg> <./content/background/./figures/invertedF.png>]
-Overfull \hbox (55.23756pt too wide) in paragraph at lines 85--96
- []|   [] 
- []
-
-) [10] (./content/background/satellite_tracking.tex
-<content/background/./figures//gps_relay.png, id=511, 361.35pt x 361.35pt>
+ [9 <./content/background/./figures/yagi.jpg>] [10 <./content/background/./figures/invertedF.png>]) [11] (./content/background/telecommunication_theory.tex) [12] (./content/background/satellite_tracking.tex
+<content/background/./figures//gps_relay.png, id=547, 361.35pt x 361.35pt>
 File: content/background/./figures//gps_relay.png Graphic file (type png)
 <use content/background/./figures//gps_relay.png>
-Package pdftex.def Info: content/background/./figures//gps_relay.png  used on input line 24.
+Package pdftex.def Info: content/background/./figures//gps_relay.png  used on input line 25.
 (pdftex.def)             Requested size: 188.9235pt x 188.92313pt.
- [11]) [12 <./content/background/./figures//gps_relay.png>] (./content/background/pcb_design.tex
-<content/background/./figures/4layerPCB.png, id=529, 664.4825pt x 510.90875pt>
+ [13]) [14 <./content/background/./figures//gps_relay.png>] (./content/background/pcb_design.tex
+<content/background/./figures/4layerPCB.png, id=564, 664.4825pt x 510.90875pt>
 File: content/background/./figures/4layerPCB.png Graphic file (type png)
 <use content/background/./figures/4layerPCB.png>
 Package pdftex.def Info: content/background/./figures/4layerPCB.png  used on input line 10.
 (pdftex.def)             Requested size: 141.69621pt x 108.94672pt.
- [13 <./content/background/./figures/4LayerPCB.png>]) [14]
+ [15 <./content/background/./figures/4LayerPCB.png>]) [16]
 Chapter 4.
-(./content/system_design/overview.tex) (./content/system_design/complete_system.tex
-<content/system_design/./figures/complete_system.png, id=558, 803.25093pt x 557.83406pt>
+(./content/system_design/overview.tex) (./content/system_design/high_level_system.tex
+<content/system_design/./figures/complete_system.png, id=592, 803.25093pt x 557.83406pt>
 File: content/system_design/./figures/complete_system.png Graphic file (type png)
 <use content/system_design/./figures/complete_system.png>
 Package pdftex.def Info: content/system_design/./figures/complete_system.png  used on input line 8.
 (pdftex.def)             Requested size: 377.85419pt x 262.41185pt.
- [15
+ [17
 
- <./content/system_design/./figures/complete_system.png>]) [16]
+ <./content/system_design/./figures/complete_system.png>] [18]) (./content/system_design/ground_station.tex) [19]
 Chapter 5.
-(./content/detailed_design/components.tex) (./content/detailed_design/pq_unit.tex) (./content/detailed_design/link_budget.tex [17
+(./content/detailed_design/components.tex
+<content/detailed_design/./figures/az_elevation.png, id=612, 445.665pt x 319.94531pt>
+File: content/detailed_design/./figures/az_elevation.png Graphic file (type png)
+<use content/detailed_design/./figures/az_elevation.png>
+Package pdftex.def Info: content/detailed_design/./figures/az_elevation.png  used on input line 13.
+(pdftex.def)             Requested size: 188.9235pt x 135.63077pt.
+ [20
 
-]) (./content/detailed_design/gs_antenna.tex [18]
-<content/detailed_design/./figures/antennaMount.png, id=582, 404.35065pt x 557.9244pt>
-File: content/detailed_design/./figures/antennaMount.png Graphic file (type png)
-<use content/detailed_design/./figures/antennaMount.png>
-Package pdftex.def Info: content/detailed_design/./figures/antennaMount.png  used on input line 12.
-(pdftex.def)             Requested size: 165.31346pt x 228.09496pt.
- [19 <./content/detailed_design/./figures/antennaMount.png>]) [20]
+ <./content/detailed_design/./figures/az_elevation.png>]) [21]
 Chapter 6.
-(./content/conclusion/conclusion.tex)) (build/report.bbl [21
+(./content/conclusion/conclusion.tex)) (build/report.bbl [22
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 28--31
@@ -834,97 +829,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
  []
 
 
-Underfull \hbox (badness 3428) in paragraph at lines 57--60
+Underfull \hbox (badness 3428) in paragraph at lines 62--65
 []\OT1/lmr/m/n/12 (+20) ``Weather Bal-loons --- weather.gov,'' [][]$https : / / www . weather . gov / bmx / kidscorner[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--60
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
 \OT1/lmr/m/n/12 (+20) weatherballoons# : [] : text = The % 20balloon % 20^^Mights % 20last % 20for ,[] 20 % 20miles )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--65
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
 []\OT1/lmr/m/n/12 (+20) Intermet, ``imet-3100m,'' [][]$https : / / intermet . co / wp-[]content / uploads /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--65
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
 \OT1/lmr/m/n/12 (+20) iMet-[]3100M-[]403MHz-[]Military-[]Antenna-[]Receiver-[]Brochure-[]V4 . 5 . pdf$[][], [Ac-cessed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--70
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
 []\OT1/lmr/m/n/12 (+20) ``Types of or-bits --- esa.int,'' [][]$https : / / www . esa . int / Enabling[]Support /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--70
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
 \OT1/lmr/m/n/12 (+20) Space[]Transportation / Types[]of[]orbits# : [] : text = Low % 20Earth % 20orbit % 20(LEO )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--70
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
 \OT1/lmr/m/n/12 (+20) ,[]-[]A % 20low % 20Earth & text = It % 20is % 20normally % 20at % 20an ,[] very % 20far % 20above %
  []
 
+[23
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
+]
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 []\OT1/lmr/m/n/12 (+20) Intermet, ``imet-54,'' [][]$https : / / intermet . co / wp-[]content / uploads /
  []
 
-[22
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 []\OT1/lmr/m/n/12 (+20) C. P. SO-LU-TIONS, ``Pcb lay-ers ex-plained: Mul-ti-layer boards
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 \OT1/lmr/m/n/12 (+20) and stackup rules,'' [][]$https : / / resources . pcb . cadence . com / blog /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 \OT1/lmr/m/n/12 (+20) 2019-[]pcb-[]layers-[]explained-[]multilayer-[]boards-[]and-[]stackup-[]rules$[][], [Ac-cessed 18-08-
  []
 
 
-Underfull \hbox (badness 4120) in paragraph at lines 103--106
+Underfull \hbox (badness 4120) in paragraph at lines 121--124
 []\OT1/lmr/m/n/12 (+20) Proteus, ``Pcb via stitch-ing and shield-ing,'' [][]$https : / / www . labcenter . com / blog /
  []
 
-) (./endmatter/appendix.tex [23]
+[24]) (./endmatter/appendix.tex [25]
 Appendix A.
 (./endmatter/planning/planning.tex))
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 108.
 See the caption package documentation for explanation.
 
-[24
+[26
 
 ] (build/report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: A1579570266929C34EF1B462A666A1A4;4976.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 140 (\begingroup)
-### bottom level 
+(rerunfilecheck)             Checksum: 0CE9746AA30FB962CE2F6C32644DD511;5128.
+ ) 
 Here is how much of TeX's memory you used:
- 22051 strings out of 480171
- 414863 string characters out of 5894489
- 803332 words of memory out of 5000000
- 39206 multiletter control sequences out of 15000+600000
- 536467 words of font info for 161 fonts, out of 8000000 for 9000
+ 22080 strings out of 480171
+ 415363 string characters out of 5894489
+ 805838 words of memory out of 5000000
+ 39212 multiletter control sequences out of 15000+600000
+ 536922 words of font info for 166 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 71i,12n,79p,1263b,1142s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on build/report.pdf (32 pages, 5764433 bytes).
+ 71i,12n,79p,1263b,1044s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on build/report.pdf (34 pages, 4371119 bytes).
 PDF statistics:
- 739 PDF objects out of 1000 (max. 8388607)
- 637 compressed objects within 7 object streams
- 137 named destinations out of 1000 (max. 500000)
- 45487 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 803 PDF objects out of 1000 (max. 8388607)
+ 694 compressed objects within 7 object streams
+ 156 named destinations out of 1000 (max. 500000)
+ 43439 words of extra memory for PDF output out of 51595 (max. 10000000)
 
