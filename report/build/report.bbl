@@ -159,6 +159,16 @@ Fairchild, ``Slotted optical switch,''
   \url{https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/H22A1,2,3.pdf},
   [Accessed 29-09-2023].
 
+\bibitem{datasheet-L6219}
+STMicroelectronics, ``L6219 stepper motor driver,''
+  \url{https://www.mantech.co.za/datasheets/products/L6219.pdf}, [Accessed
+  29-09-2023].
+
+\bibitem{design-arduinoNano}
+Gravitech, ``Arduino nano,''
+  \url{https://www.arduino.cc/en/uploads/Main/Arduino_Nano-Rev3.2-SCH.pdf},
+  [Accessed 29-09-2023].
+
 \bibitem{datasheet-NEO6}
 u~blox, ``Neo-6,''
   \url{https://content.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf},
