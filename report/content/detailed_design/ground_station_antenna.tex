@@ -126,9 +126,7 @@ It was therefore decided that the antenna would initially be built with a large 
     \item $G_\lambda = 0.6 \therefore G = \SI{350}{mm}$
 \end{itemize}
 
-\newpage
 \subsection{Matching}
-
 Impedance matching should be done if the helical antenna is to be fed by a $\SI{50}{\ohm}$ coaxial cable. It was decided to match the antenna to the custom protocol's frequency of $f = \SI{433}{MHz}$ using the strip method mention in Section \ref{sec:helical_matching} for an uncupped ground plane. The FEKO model for this method is shown in Figure \ref{fig:helix7_model}.
 
 \begin{figure}[!htb]
@@ -138,7 +136,7 @@ Impedance matching should be done if the helical antenna is to be fed by a $\SI{
   \label{fig:helix7_model}
 \end{figure}
 
-The strip is recommended to be relatively flat, and extend for approximately the first quarter turn. Its pitch angle was therefore chosen to be half that of the full helix, and it was chosen to extend for $0.15$ turns. The unknown parameters for the strip are then its height above the ground plane (also the height of the coaxial pin), and its strip width. The FEKO optimizer was used to optimize these two parameters for a minimum return loss. The resulting return loss as a function of frequency is shown in Figure \ref{fig:helix7_returnLoss}, with the optimized values being $h = \SI{19.43}{mm}$ and $w = \SI{77.7}{mm}$. The resultant mismatch loss is then close to 0 dB at the target frequency, and 0.451 dB at 405 MHz.
+The strip is recommended to be relatively flat, and extend for approximately the first quarter turn. Its pitch angle was therefore chosen to be half that of the full helix, and it was chosen to extend for $0.15$ turns. The unknown parameters for the strip are then its height above the ground plane (also the height of the coaxial pin), and its strip width. The FEKO optimizer was used to optimize these two parameters for a minimum return loss. The resulting return loss as a function of frequency is shown in Figure \ref{fig:helix7_returnLoss}. The resultant mismatch loss is then close to 0 dB at the target frequency, and 0.451 dB at 405 MHz.
 
 \begin{figure}[!htb]
   \centering
@@ -146,3 +144,24 @@ The strip is recommended to be relatively flat, and extend for approximately the
   \caption{Helical Antenna Return Loss vs Frequency}
   \label{fig:helix7_returnLoss}
 \end{figure}
+
+The final antenna parameters are:
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Parameter}                  & \textbf{Value}    \\
+  \hline
+  Diameter (D)                        & 187.1 mm          \\ \hline
+  Turn Spacing (S)                    & 88.2 mm           \\ \hline
+  No. of Turns (n)                    & 4                 \\ \hline
+  Ground plane diameter (G)           & $> \SI{350}{mm}$  \\ \hline
+  Strip height (sh)                   & 19.4 mm          \\ \hline
+  Strip width (sw)                    & 77.7 mm           \\ \hline
+  Strip length (sl)                   & 13.2 mm          \\ \hline
+  Cup height, if used (ch)            & 88.2 mm           \\ \hline
+  \end{tabular}
+  \caption{Helical Antenna Final Parameters}
+  \label{tab:helicalParameters}
+\end{table}
