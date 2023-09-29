@@ -1,0 +1,4 @@
+f = 439 MHz
+dipole length = 0.45 lambda = 307 mm
+feed_length = 38.5 mm
+feed_gap = 5 mm

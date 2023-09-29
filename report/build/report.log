@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  29 SEP 2023 00:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  29 SEP 2023 11:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -680,7 +680,7 @@ LaTeX Info: Redefining \nameref on input line 126.
  (./frontmatter/title_page.tex
 
 pdfTeX warning: pdflatex (file ./frontmatter/./figures//SU_logo_RGB_without_slogan.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<frontmatter/./figures//SU_logo_RGB_without_slogan.pdf, id=285, 441.01764pt x 506.96803pt>
+<frontmatter/./figures//SU_logo_RGB_without_slogan.pdf, id=297, 441.01764pt x 506.96803pt>
 File: frontmatter/./figures//SU_logo_RGB_without_slogan.pdf Graphic file (type pdf)
 <use frontmatter/./figures//SU_logo_RGB_without_slogan.pdf>
 Package pdftex.def Info: frontmatter/./figures//SU_logo_RGB_without_slogan.pdf  used on input line 7.
@@ -696,7 +696,7 @@ Package microtype Info: Loading generic protrusion settings for font family
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./frontmatter/./figures//SU_logo_RGB_without_slogan.pdf>]) (./frontmatter/declaration.tex
-<USlogo-top.pdf, id=305, 560.0925pt x 183.68625pt>
+<USlogo-top.pdf, id=317, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
 Package pdftex.def Info: USlogo-top.pdf  used on input line 7.
@@ -715,15 +715,15 @@ LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <17.28> not available
 
  [5
 
-] (build/report.lot)
+] [6] (build/report.lot)
 \tf@lot=\write6
 \openout6 = `report.lot'.
 
- (./frontmatter/nomenclature.tex [6
+ (./frontmatter/nomenclature.tex [7
 
-]) (./frontmatter/abstract.tex [7
+]) (./frontmatter/abstract.tex [8
 
-] [8]) [9
+] [9]) [10
 
 ] (./content/content.tex
 Chapter 1.
@@ -732,11 +732,9 @@ Chapter 1.
 ]
 Chapter 2.
 (./content/problem/overview.tex
-<content/problem/./figures//balloon_path.png, id=607, 713.66624pt x 550.30594pt>
+<content/problem/./figures//balloon_path.png, id=663, 713.66624pt x 550.30594pt>
 File: content/problem/./figures//balloon_path.png Graphic file (type png)
 <use content/problem/./figures//balloon_path.png>
 Package pdftex.def Info: content/problem/./figures//balloon_path.png  used on input line 11.
 (pdftex.def)             Requested size: 377.85419pt x 291.35846pt.
 ) [2
-
- <./

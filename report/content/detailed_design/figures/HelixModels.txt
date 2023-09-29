@@ -1,0 +1,44 @@
+Helix1
+gp_lambda = 1
+n = 3
+S_lambda = 0.15
+
+Helix2
+gp_lambda = 0.5
+S_lambda = 0.15
+n = 3
+
+Helix3
+gp_lambda = 0.7
+S_lambda = 0.15
+n = 3
+
+Helix4
+gp_lambda = 0.7
+S_lambda = 0.16
+n = 4.5
+gp_cup_n = 1
+
+Helix5
+gp_lambda = 0.6
+S_lambda = 0.16
+n = 4.5
+gp_cup_n = 0
+
+Helix6
+gp_lambda = 0.6
+S_lambda = 0.16
+n = 4.5
+gp_cup_n = 1
+
+Helix7
+gp_lambda = 0.7
+S_lambda = 0.16
+n = 4.5
+gp_cup_n = 0
+
+Helix8
+gp_lambda = 0.7
+S_lambda = 0.16
+n = 4.5
+gp_cup_n = 1

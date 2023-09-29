@@ -3,7 +3,7 @@
 \section{Ground Station Antenna}
 \subsection{Mechanical Considerations}
 
-The existing antennna mount is shown in Figure \ref{fig:antennaMount}. Azimuthal and elevation stepper motors are connected directly through Gear A and B respectively. Gear A rotates the centre shaft to provide azimuthal steering, whereas Gear B rotates through Gear D and E to allow a change in elevation (pointing angle). The 
+The existing antennna mount is shown in Figure \ref{fig:antennaMount}. Azimuthal and elevation stepper motors are connected directly through Gear A and B respectively. Gear A rotates the centre shaft to provide azimuthal steering, whereas Gear B rotates through Gear D and E to allow a change in elevation. The 
 specifications in Table \ref{tab:mount_specifications} were realized.
 
 \begin{table}[!htb]
@@ -30,45 +30,119 @@ The azimuthal motor need not be considered, as all torques from the mount to its
 
 The centre of gravity of the antenna, as well as its weight, will affect the motor's ability to hold it in place. The horizontal distance between the pivot axle and the mount in the upright position is measured to be 40mm. Therefore, in the worst-case (when the mount is upright as in Figure \ref{fig:antennaMount}) a planar antenna could weigh up to $\frac{2}{(9.8 \times 0.04)} = \SI{5.1}{kg}$. In general, the "mass-distance" product of the antenna (mass times distance of centre of gravity from mount) should not be more than $\SI{0.2}{kg \cdot m}$. This should be strongly considered if a longer antenna is desired.
 
-The physical dimensions of the antenna's ground plane is also constrained. If the mount's is raised adequately, the constraint will be imposed by the when the ground plane first makes contact with the mount's base. For a circular ground plane, this is around $\SI{0}{mm}$.
+The physical dimensions of the antenna's ground plane is also constrained. If the mount's is raised adequately, the constraint will be imposed by the when the ground plane first makes contact with the mount's base. For a circular ground plane, this is around $\SI{360}{mm}$ diameter.
 
 \subsection{Theoretical Design}
-As discussed, the antenna should be capable of receiving from both the 405 MHz proprietary protocol, as well as the 410 MHz LoRa custom protocol. A helical antenna is suggested, for the following reasons:
+As discussed, the antenna should be capable of receiving from both the 405 MHz proprietary protocol, as well as the custom LoRa-based protocol in the amateur radio band of 430 to 440 MHz. A helical antenna is suggested, for the following reasons:
 \begin{itemize}
     \item Ability to increase gain arbitrarily by increasing the number of windings
     \item High fractional bandwidth of 56\%, which may allow for a smaller antenna than other antenna types
     \item Ease of manufacture
 \end{itemize}
 
+The centre frequency $f_c$ of the antenna should first be selected. With a fractional bandwidth of 56\%, the inequality $f_c \times (1 - \frac{0.56}{2}) < \SI{405}{MHz}$ must hold. This gives an upper bound on the centre frequency of 562.5 MHz. A minimum ground plane diameter of no smaller than $0.5 \lambda$ is recommended in \cite{textbook-antennaTheoryAnalysisDesign}, and $0.75 \lambda$ into \cite{textbook-helicalAntenna}. It is, however, probable that a ground plane as small as $0.5 \lambda$ will adversely affect the radiation pattern near the end of the specified bandwidth.
 
-The centre frequency $f_c$ of the antenna should first be designed. With a fractional bandwidth of 56\%, the inequality $f_c \times (1 - \frac{0.56}{2}) < \SI{405}{MHz}$ must hold. This gives an upper bound on the centre frequency of 562.5 MHz. A minimum ground plane diameter of no smaller than $0.5 \lambda$ is recommended in \cite{textbook-antennaTheoryAnalysisDesign}, and $0.75 \lambda$ into \cite{textbook-helicalAntenna}. Selecting the larger constraint, this corresponds to $0.75 \times \frac{3e8}{562.5e6} = \SI{400}{mm}$, which is close to the mechanical size constraint. $f_c = \SI{550}{MHz}$ will therefore be chosen, to be close to the upper frequency, while decreasing the ground plane appropriately towards $G_\lambda = 0.5$ (\SI{270}{mm}) to accomodate mechanical constraints. The custom protocol will therefore run at \SI{439}{MHz}, which is the closest frequency to \SI{550}{MHz} that is still in the amateur band.
+Assuming the larger ground plane recommendation, the resulting ground plane diameter is $0.75 \times \frac{3e8}{562.5e6} = \SI{400}{mm}$, which is larger than the mechanical size constraint. Neverthless, $f_c = \SI{550}{MHz}$ is chosen as the initial centre frequency for simulations. Then, the ground plane should be decreased in size appropriately (towards $G_\lambda = 0.5$ i.e. \SI{270}{mm}).
 
-% ...Mechanical justifications
+% ...Mechanical justifications e.g. pvc pipe weight, dowel weight etc.
 
-The design inputs are $f_c$ (centre frequency), $n$ (number of turns), $S_\lambda$ (the spacing between terms relative to wavelength) and $C_\lambda$ (circumference relative to wavelength). Design formulae are provided in \cite{textbook-antennaTheoryAnalysisDesign}, and have been modified below to use the relative instead of absolute values (i.e. $S_\lambda$ and $C_\lambda$ instead of $S$ and $C$). Directivity, in dBi, is given by:
+The design parameters for a helical antenna are $f_c$ (centre frequency), $n$ (number of turns), $S$ (the spacing between turns), $C$ (the circumference) and $G$ (the ground plane diameter). Design formulae are provided in \cite{textbook-antennaTheoryAnalysisDesign}, and have been modified below to use relative values instead of absolute ones (i.e. $S_\lambda$ and $C_\lambda$ instead of $S$ and $C$). Directivity, in dBi, is given by:
 $$
 D_0 = 10 \log(15 \cdot n S_\lambda \cdot C_\lambda)
 $$
 
-$C_\lambda$ is typically kept at 1.0 (since it is equivalent to varying the resulting centre frequency). As mentioned, a gain of 4 dBi is required. However, a 3 dB bandwidth drop is estimated down to 400 MHz (the edge of the specified helical bandwidth). Further, the effect of a smaller ground plane may further decrease overall performance, and this is estimated to be at least 1 dB. Therefore, a centre-frequency gain of 8 dBi will be designed for. For this gain, the $n S_\lambda$ product should equal around 0.45. Although the optimal value is $S_\lambda = 0.23$, smaller values have been quoted to work and are mechanically easier to construct. Therefore, choose $S_\lambda = 0.15$, and finally $n = 3$.
+$C_\lambda$ is typically kept at 1.0, meaning the cirumference is equal to the operating wavelength. As mentioned, a gain of 4 dBi is required. However, a 3 dB bandwidth drop is estimated nearer to 400 MHz. Further, the effect of a smaller ground plane will likely decrease performance by an estimated minimum of at least 1 dB. Therefore, a centre-frequency gain of 8 dBi will be designed for. For this gain, the $n S_\lambda$ product should equal around 0.45. Although the optimal value for $S_\lambda$ is 0.23 \cite{textbook-antennaTheoryAnalysisDesign}, smaller values have been quoted to work \cite{site-helicalCalculator} and are mechanically easier to construct. Therefore, choose $S_\lambda = 0.15$, and finally $n = 3$.
 
+\newpage
 \subsection{Simulation Design}
-Simulating a helical antenna is relatively easy, and therefore the parameters can be varied iteratively depending on simulation results. For this project, FEKO software is used. The initial antenna model with the above parameters and a large ground plane ($\approx \lambda$) is shown in Figure . The resulting radiation pattern at $f = \SI{550}{MHz}$ is shown in , with a maximum gain of .
+Simulation of a helical antenna is well documented in literature, and therefore the parameters can be varied iteratively and integrated into the antenna design process. For this project, FEKO software is used. An initial model with the above parameters, a large ground plane ($G_\lambda \approx 1.0$), and a wire diameter of $\SI{2.5}{mm}$ (chosen due to availability) is simulated. The resulting radiation pattern at the centre frequency of $f = \SI{550}{MHz}$ is shown in Figure \ref{fig:helix1_pattern_550MHz}, with a maximum gain of around 9.5 dBi.
 
-The next step is to decrease the ground plane due to the mechanical constraints. The radiation pattern at $f = \SI{405}{MHz}$ with $G_\lambda = 0.5$ is shown in Figure , and that for $G_\lambda = 0.7$ (380 mm) is shown in Figure . It is clear that the recommendation of $G_\lambda = 0.5$ from \cite{textbook-antennaTheoryAnalysisDesign} will not work near the edge of quoted bandwidth. However, it appears that $G_\lambda = 0.7$ (380 mm) is adequate.
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{helix1_pattern_550MHz}
+  \caption{Initial Helical Antenna Radiation Pattern ($f=\SI{550}{MHz}$)}
+  \label{fig:helix1_pattern_550MHz}
+\end{figure}
 
-Since the mount can support it, it was then decided to over-design the number of turns by 50\% in order to cater for manufacturing imperfections, such as an aluminium foil ground plane and diversions from the helical shape in the coil. However, it was found experimentally that, for a smaller ground planes, the radiation pattern was negatively affected as the number of turns \textit{increased}. This is intuitive from the theory, as the non-idealities present in the finitely-sized ground plane will become more apparent as distance from the ground plane increases. The maximum directivity, however, was still found to increase as more turns were added, irrespective of the morphed radiation pattern, with a gain of 7.5 dBi at $f = \SI{405}{MHz}$ for $n = 4.5$.
+Most of the initial design is conducted around the lower frequency of $f = \SI{405}{MHz}$. The radiation patterns for $G_\lambda = 0.5$ and $G_\lambda = 0.7$ ($G = \SI{273}{mm}$ and $G = \SI{382}{mm}$) are shown in Figures \ref{fig:helix2_pattern_405MHz} and \ref{fig:helix3_pattern_405MHz} respectively. It is clear that the recommended value of $G_\lambda = 0.5$ from \cite{textbook-antennaTheoryAnalysisDesign} will not work near this lower frequency, as shown by the morphed radiation pattern. The pattern is found to be acceptable at around $G_\lambda = 0.7$. However, after analysing the input impedance for this ground plane size (shown in Figure \ref{fig:helix3_impedance}) it is clear that broadband matching would be difficult, due to the drastic change in impedance near the lower end of the spectrum.
 
-The ground plane was then cupped added and the results observed. For $G_\lambda = 0.5$, no cup height resolved the morphed radiation pattern. This is most likely due to the interaction between the coil and the cup becoming substantial due to the close distance between them. However, at $G_\lambda = 0.6$, a cup height equal to the height of 1 turn was found to greatly improve the radiation pattern, as compared in Figures and .
+\begin{figure}[!htb]
+  \begin{minipage}{.48\textwidth}
+    \centering
+    \includegraphics[width=0.6\linewidth]{helix2_pattern_405MHz}
+    \caption{Helical Antenna Pattern at $f = \SI{405}{MHz}$ ($f_c = \SI{550}{MHz}$, $G_\lambda = 0.5$)}
+    \label{fig:helix2_pattern_405MHz}
+  \end{minipage}
+  \begin{minipage}{.48\textwidth}
+    \centering
+    \includegraphics[width=0.75\linewidth]{helix3_pattern_405MHz}
+    \caption{Helical Antenna Pattern at $f = \SI{405}{MHz}$ ($f_c = \SI{550}{MHz}$, $G_\lambda = 0.7$)}
+    \label{fig:helix3_pattern_405MHz}
+  \end{minipage}
+\end{figure}
 
-It was therefore decided that the antenna would initially be built with the following parameters:
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.65\textwidth]{helix3_impedance}
+  \caption{Helical Antenna Input Impedance ($f_c = \SI{550}{MHz}$, $G_\lambda = 0.7$)}
+  \label{fig:helix3_impedance}
+\end{figure}
+
+The common amateur band frequency of 433 MHz is chosen for the LoRa communication link. In order to ease matching, a lower centre frequency should ideally be used, to move the input impedance at 405 MHz and at 433 MHz closer together. This will, however, require either a larger ground plane, or a cupped ground plane (discussed further on).
+
+Unfortunately, FEKO does not allow for an optimization goal that depends on two frequencies. Therefore, an iterative approach was used to find the centre frequency which minimizes the difference between the two impedances. The resulting centre frequency was found to be around $f_c = \SI{510}{MHz}$ at $G_\lambda = 0.6$ ($\approx \SI{350}{mm}$), with a resultant input impedance close to $\SI{250}{\ohm}$, as shown in Figure \ref{fig:helix4_impedance}.
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.65\textwidth]{helix4_impedance}
+  \caption{Helical Antenna Input Impedance ($f_c = \SI{510}{MHz}$, $G_\lambda = 0.6$)}
+  \label{fig:helix4_impedance}
+\end{figure}
+
+Since the mount can support a larger weight than the 3 turn coil, it was decided to experiment with larger a turn count (i.e. $n=4$), both for increased directivity/performance, and to potentially cater for manufacturing imperfections, such as a thin aluminium foil ground plane, and any diversions from the ideal helical shape. It was found that, for small ground plane diameters, the radiation pattern for $f = \SI{405}{MHz}$ was negatively affected as the number of turns increased. This is intuitive when referring to image theory, as the non-idealities due to the finitely-sized ground plane become more apparent as distance to the plane increases. It should be noted that the pattern at $f = \SI{433}{MHz}$ was not as badly affected.
+
+The ground plane was therefore cupped, and the results observed. At $G_\lambda = 0.6$, a cup height equal to 1 helical turn was found to greatly improve the radiation pattern. This is shown in Figures \ref{fig:helix5_pattern_405MHz} and \ref{fig:helix6_pattern_405MHz}.
+
+\begin{figure}[!htb]
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[width=0.5\linewidth]{helix5_pattern_405MHz}
+    \caption{Helical Antenna Pattern without Cup ($G_\lambda = 0.6$, $f=\SI{405}{MHz}$)}
+    \label{fig:helix5_pattern_405MHz}
+  \end{minipage}
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[width=0.75\linewidth]{helix6_pattern_405MHz}
+    \caption{Helical Antenna Pattern with Cup ($G_\lambda = 0.6$, $f=\SI{405}{MHz}$)}
+    \label{fig:helix6_pattern_405MHz}
+  \end{minipage}
+\end{figure}
+
+It was therefore decided that the antenna would initially be built with a large ground plane and higher number of turns. Then, after measurement results and protocol implementation, the ground plane would be decreased appropriately to fit onto the mount. If time allows, a cup will then be added, to improve the pattern and antenna performance, and cater for the proprietary protocol. The final model parameters are then:
 \begin{itemize}
-    \item $S_\lambda = 0.16$ (87.2 mm)
-    \item $n = 4.5$
-    \item $G_\lambda = 0.7$ (380 mm)
+    \item $C_\lambda = 1.0 \therefore D = \SI{187.1}{mm}$
+    \item $S_\lambda = 0.15 \therefore S = \SI{88.2}{mm}$
+    \item $n = 4$
+    \item $G_\lambda = 0.6 \therefore G = \SI{350}{mm}$
 \end{itemize}
 
-Then, the ground plane can be decreased in size if necessary, and cupped for improved performance, if necessary.
-
+\newpage
 \subsection{Matching}
 
+Impedance matching should be done if the helical antenna is to be fed by a $\SI{50}{\ohm}$ coaxial cable. It was decided to match the antenna to the custom protocol's frequency of $f = \SI{433}{MHz}$ using the strip method mention in Section \ref{sec:helical_matching} for an uncupped ground plane. The FEKO model for this method is shown in Figure \ref{fig:helix7_model}.
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{helix7_model}
+  \caption{Helix Antenna Model with Matching Strip}
+  \label{fig:helix7_model}
+\end{figure}
+
+The strip is recommended to be relatively flat, and extend for approximately the first quarter turn. Its pitch angle was therefore chosen to be half that of the full helix, and it was chosen to extend for $0.15$ turns. The unknown parameters for the strip are then its height above the ground plane (also the height of the coaxial pin), and its strip width. The FEKO optimizer was used to optimize these two parameters for a minimum return loss. The resulting return loss as a function of frequency is shown in Figure \ref{fig:helix7_returnLoss}, with the optimized values being $h = \SI{19.43}{mm}$ and $w = \SI{77.7}{mm}$. The resultant mismatch loss is then close to 0 dB at the target frequency, and 0.451 dB at 405 MHz.
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.7\textwidth]{helix7_returnLoss}
+  \caption{Helical Antenna Return Loss vs Frequency}
+  \label{fig:helix7_returnLoss}
+\end{figure}

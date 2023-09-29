@@ -85,13 +85,13 @@ Although not strictly an antenna array, \textit{Yagi-Uda} antennas are one of th
 
 Many variations on these designs exist, and the literature may be further consulted in the design phase. A multi-frequency inverted-F design is illustrated in Figure \ref{fig:invertedF}.
 
-\subsection{Feeding}
-In general, \textit{feeding} an antenna is more complicated than simply connecting the supply's positive an negative terminals to the antenna's terminals. Generally, a $\SI{50}{\ohm}$ system impedance is used in RF design. Since each antenna has a unique \textit{input impedance} which is generally different from this value, it should be \textit{match} appropriately for optimal performance. A few techniques for the most common antennas in Section \ref{sec:antenna_types} are reviewed below.
+\subsection{Feedline}
+In general, \textit{feeding} an antenna is more complicated than simply connecting the supply's positive an negative terminals to the antenna's terminals. Generally, a $\SI{50}{\ohm}$ system impedance is used in RF design. Since each antenna has a unique \textit{input impedance} which is generally different from this value, it should be \textit{match} appropriately for optimal performance. The most general, narrow-band technique for lower frequency is to employed a "lumped element" matching circuit. The most common example of this is an L-section (e.g. a capacitor and inductor). A few specific techniques for some of the antennas in Section \ref{sec:antenna_types} are reviewed below.
 
 \subsubsection{Half-Wavelength Dipole}
 A dipole antenna has an input impedance of around $\SI{73}{ohms}$, varying only due to the wire diameter used. A common method to reduce this impedance to $\SI{50}{ohms}$ is simply to reduce the length of the dipole. In this case, matched resonance occurs at between $\SI{0.42}{\ohm}$ and $\SI{0.44}{\ohm}$. \cite{textbook-antennaTheoryAnalysisDesign}
 
-\subsubsection{Helical}
+\subsubsection{Helical}\label{sec:helical_matching}
 The input impedance of a helical antenna varies between 100 to 200 ohms. A common method to reduce this impedance is for the first quarter turn of the helix to be in the form of a conductive strip, and for the pitch angle of this section to be close to zero or vary slowly \cite{textbook-antennaTheoryAnalysisDesign}. The height above the ground plane can then be varied to match the antenna appropriately, with the following equation approximately providing an approximate $\SI{50}{\ohm}$ match \cite{textbook-antennaTheoryAnalysisDesign}:
 $$h = \frac{w}{\frac{377}{\sqrt{\epsilon_r} Z_0} - 2}$$
 
