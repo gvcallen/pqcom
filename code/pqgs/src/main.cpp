@@ -1,23 +1,20 @@
 #include <Arduino.h>
 
-// #include "Mount.h"
-#include "StepperMotor.h"
-#include "Radio.h"
-// #include "Imu.h"
+#include "gel.h"
 
 // Objects
+gel::Radio radio;
+gel::Imu imu;
 // gel::Mount mount;
 gel::StepperMotor azMotor;
 gel::StepperMotor elMotor;
-gel::Radio radio;
-// gel::Imu imu;
 
 void handleError(gel::Error err, const char* msg = nullptr, bool print = true)
 {
     if (print)
     {
-        Serial.print(msg);
-        Serial.print("Error: ");
+        if (msg)
+            Serial.print(msg);
         Serial.println(err);
     }
 
@@ -32,6 +29,12 @@ void setupRadio()
     pins.nss = 27;
     pins.dio0 = 15;
     pins.reset = 13;
+
+    // TODO: Fix this.
+    config.modConfig.lora = gel::LoRaConfig{};
+    config.modType = gel::ModulationType::LoRa;
+    // config.modConfig.fsk = gel::FSKConfig{};
+    // config.modType = gel::ModulationType::FSK;
 
     Serial.println("Initializing RF...");
     if (gel::Error err = radio.begin(pins, config))
@@ -111,7 +114,7 @@ void setup()
     // setupMount();
     
     Serial.println("Initializing serial...");
-    Serial.begin(9600);
+    Serial.begin(115200);
     delay(1000);
     Serial.println("Initialized serial.");
     setupRadio();
@@ -121,13 +124,59 @@ void setup()
 }
 
 
-size_t counter = 0;
+const unsigned long MESSAGE_TIMEOUT = 5000;
+
 void loop()
 {   
-    if (gel::Error err = radio.send("Hello " + String(counter)))
+    static bool timeout = true;
+    static unsigned long startReceiveTime = 0;
+    static size_t messageCounter = 0;
+
+    auto radioState = radio.getState();
+
+    switch (radioState)
     {
-        handleError(err, "Could not send message.");
+    case gel::Radio::Idle:
+        // If we are idle, we either have finished transmitting and must start receiving,
+        // or must send a new message (either due to timeout or receival of the message)
+        if (timeout || (radio.getPrevState() == gel::Radio::Receiving))
+        {
+            timeout = false;
+            delay(1000);
+
+            if (gel::Error err = radio.startTransmit("Hello " + String(messageCounter)))
+            {
+                handleError(err, "Could not send message.");
+                return;
+            }
+
+            Serial.println("Sending message #" + String(messageCounter));
+            messageCounter++;
+        }
+        else
+        {
+            Serial.println("Awaiting response...");
+            radio.startReceive();
+            startReceiveTime = millis();
+        }
+
+        break;
+
+    case gel::Radio::Receiving:
+        // If we in receiving state, we need to see if the message is availble, or if it timed out
+        if (radio.available())
+        {
+            Serial.println(radio.readData().value_or("Message corrupt"));
+            radio.standby();
+        }
+        else if ((millis() - startReceiveTime) > MESSAGE_TIMEOUT)
+        {
+            timeout = true;
+            Serial.println("Response timed out");
+            radio.standby();
+        }
+
+    default:
+        break;
     }
-    counter++;
-    delay(1000);
 }
