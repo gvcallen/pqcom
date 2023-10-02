@@ -1,90 +1,52 @@
-#include <RadioLib.h>
+#include <gel.h>
 
-SX1278 radio = new Module(10, 2, 9);
+gel::Radio radio;
 
-void setFlag(void);
+void handleError(gel::Error err, const char* msg = nullptr, bool print = true)
+{
+    if (print)
+    {
+        Serial.print(msg);
+        Serial.print("Error: ");
+        Serial.println(err);
+    }
 
-// or using RadioShield
-// https://github.com/jgromes/RadioShield
-//SX1278 radio = RadioShield.ModuleA;
-
-void setup() {
-  Serial.begin(9600);
-
-  // initialize SX1278 with default settings
-  Serial.print(F("[SX1278] Initializing ... "));
-  int state = radio.begin();
-  if (state == RADIOLIB_ERR_NONE) {
-    Serial.println(F("success!"));
-  } else {
-    Serial.print(F("failed, code "));
-    Serial.println(state);
-    while (true);
-  }
-
-  // set the function that will be called
-  // when new packet is received
-  radio.setPacketReceivedAction(setFlag);
-
-  // start listening for LoRa packets
-  Serial.print(F("[SX1278] Starting to listen ... "));
-  state = radio.startReceive();
-  if (state == RADIOLIB_ERR_NONE) {
-    Serial.println(F("success!"));
-  } else {
-    Serial.print(F("failed, code "));
-    Serial.println(state);
-    while (true);
-  }
+    while (1);
 }
 
-// flag to indicate that a packet was received
-volatile bool receivedFlag = false;
+void setupRadio()
+{
+    gel::RadioPins pins;
+    gel::RadioConfig config;
 
-void setFlag(void) {
-  // we got a packet, set the flag
-  receivedFlag = true;
+    pins.nss = 10;
+    pins.dio0 = 2;
+    pins.reset = 9;
+
+    Serial.println("Initializing RF...");
+    if (gel::Error err = radio.begin(pins, config))
+    {
+        handleError(err, "Could not begin radio.");
+    }
+    Serial.println("Initialized successfully.");
+}
+
+void setup()
+{
+    Serial.begin(9600);
+  
+    setupRadio();
+    radio.startListening();
 }
 
 void loop() {
-  if(receivedFlag) {
-    receivedFlag = false;
-
-    String str;
-    int state = radio.readData(str);
-
-    if (state == RADIOLIB_ERR_NONE) {
-      // packet was successfully received
-      Serial.println(F("[SX1278] Received packet!"));
-
-      // print data of the packet
-      Serial.print(F("[SX1278] Data:\t\t"));
-      Serial.println(str);
-
-      // print RSSI (Received Signal Strength Indicator)
-      Serial.print(F("[SX1278] RSSI:\t\t"));
-      Serial.print(radio.getRSSI());
-      Serial.println(F(" dBm"));
-
-      // print SNR (Signal-to-Noise Ratio)
-      Serial.print(F("[SX1278] SNR:\t\t"));
-      Serial.print(radio.getSNR());
-      Serial.println(F(" dB"));
-
-      // print frequency error
-      Serial.print(F("[SX1278] Frequency error:\t"));
-      Serial.print(radio.getFrequencyError());
-      Serial.println(F(" Hz"));
-
-    } else if (state == RADIOLIB_ERR_CRC_MISMATCH) {
-      // packet was received, but is malformed
-      Serial.println(F("[SX1278] CRC error!"));
-
-    } else {
-      // some other error occurred
-      Serial.print(F("[SX1278] Failed, code "));
-      Serial.println(state);
-
+    if (radio.available() > 0)
+    {
+        auto msg = radio.readData();
+    
+        if (!msg.has_value())
+            handleError(msg.error(), "Message receive error.");
+        else
+            Serial.println(msg.value());
     }
-  }
 }
