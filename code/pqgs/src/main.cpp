@@ -124,9 +124,10 @@ void setup()
 size_t counter = 0;
 void loop()
 {   
-    if (gel::Error err = radio.send("Hello " + counter))
+    if (gel::Error err = radio.send("Hello " + String(counter)))
     {
         handleError(err, "Could not send message.");
     }
+    counter++;
     delay(1000);
 }
