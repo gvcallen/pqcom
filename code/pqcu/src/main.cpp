@@ -1,34 +1,5 @@
-/*
-   RadioLib SX127x Receive with Interrupts Example
-
-   This example listens for LoRa transmissions and tries to
-   receive them. Once a packet is received, an interrupt is
-   triggered. To successfully receive data, the following
-   settings have to be the same on both transmitter
-   and receiver:
-    - carrier frequency
-    - bandwidth
-    - spreading factor
-    - coding rate
-    - sync word
-
-   Other modules from SX127x/RFM9x family can also be used.
-
-   For default module settings, see the wiki page
-   https://github.com/jgromes/RadioLib/wiki/Default-configuration#sx127xrfm9x---lora-modem
-
-   For full API reference, see the GitHub Pages
-   https://jgromes.github.io/RadioLib/
-*/
-
-// include the library
 #include <RadioLib.h>
 
-// SX1278 has the following connections:
-// NSS pin:   10
-// DIO0 pin:  2
-// RESET pin: 9
-// DIO1 pin:  3
 SX1278 radio = new Module(10, 2, 9);
 
 void setFlag(void);
@@ -65,15 +36,6 @@ void setup() {
     Serial.println(state);
     while (true);
   }
-
-  // if needed, 'listen' mode can be disabled by calling
-  // any of the following methods:
-  //
-  // radio.standby()
-  // radio.sleep()
-  // radio.transmit();
-  // radio.receive();
-  // radio.scanChannel();
 }
 
 // flag to indicate that a packet was received
@@ -85,21 +47,11 @@ void setFlag(void) {
 }
 
 void loop() {
-  // check if the flag is set
   if(receivedFlag) {
-    // reset flag
     receivedFlag = false;
 
-    // you can read received data as an Arduino String
     String str;
     int state = radio.readData(str);
-
-    // you can also read received data as byte array
-    /*
-      byte byteArr[8];
-      int numBytes = radio.getPacketLength();
-      int state = radio.readData(byteArr, numBytes);
-    */
 
     if (state == RADIOLIB_ERR_NONE) {
       // packet was successfully received
