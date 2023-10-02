@@ -1,3 +1,7 @@
 [submodule "code/pqgs/lib/gel"]
 	path = code/pqgs/lib/gel
 	url = git@github.com:gvcallen/gel.git
+
+[submodule "code/pqcu/lib/gel"]
+	path = code/pqcu/lib/gel
+	url = git@github.com:gvcallen/gel.git

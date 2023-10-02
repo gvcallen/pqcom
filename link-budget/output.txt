@@ -1,0 +1,34 @@
+ -------------------------------|-------------------------------
+ Parameter                      | Value                         
+ -------------------------------|-------------------------------
+ Elevation                      | 12.94 degrees                 
+ Azimuth                        | 334.57 degrees                
+ Distance                       | 108.97 km                     
+WARNING The polarization angle is inaccurate for non-geostationary satellites
+ Polarizationa angle            | -0.72 degrees                 
+ Rx dish inferred diameter      | 0.93 m                        
+ Rx dish gain                   | 10.00 dB                      
+ Rx dish effective aperture     | 38.15 dm2                     
+ EIRP                           | 12.00 dBW                     
+ Path loss                      | 125.92 dB                     
+ Rain attenuation @ 1%          | 0.00 dB                       
+ Cloud attenuation @ 1%         | 0.00 dB                       
+ Gaseous attenuation @ 1%       | 0.05 dB                       
+ Tropo. scintillation @ 1%      | 0.12 dB                       
+ Total atmospheric loss         | 0.16 dB                       
+ Coax loss                      | 0.12 dB                       
+ Coax noise figure              | 0.12 dB                       
+ LNB noise figure               | 0.60 dB                       
+ Rx noise figure                | 0.60 dB                       
+ Input-noise temperature        | 42.98 K                       
+ Antenna noise temperature      | 9.96 K                        
+ System noise temperature       | 52.94 K (17.24 dBK)           
+ Rx flux density                | -99.90 dBW/m2                 
+ Rx Power (LNB Input)           | -74.09 dBm                    
+ IF Power (LNB Output)          | -34.09 dBm                    
+ Noise Power                    | -121.36 dBm                   
+ Rx signal PSD                  | -134.09 dBm/Hz                
+ Noise PSD                      | -181.36 dBm/Hz                
+ G/T                            | -7.24 dB/K                    
+ C/N                            | 47.28 dB                      
+ Capacity                       | 15.70 Mbps                    
