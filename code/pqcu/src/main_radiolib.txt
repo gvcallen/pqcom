@@ -1,7 +1,5 @@
 #include <RadioLib.h>
 
-#include <etl/optional.h>
-
 SX1278 radio = new Module(10, 2, 9);
 
 void setFlag(void);
@@ -27,16 +25,16 @@ void setup() {
 }
 
 // flag to indicate that a packet was received
-volatile bool receivedFlag = false;
+volatile bool operationDone = false;
 
 void setFlag(void) {
   // we got a packet, set the flag
-  receivedFlag = true;
+  operationDone = true;
 }
 
 void loop() {
-  if(receivedFlag) {
-    receivedFlag = false;
+  if(operationDone) {
+    operationDone = false;
 
     String str;
     int state = radio.readData(str);

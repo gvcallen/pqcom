@@ -36,17 +36,34 @@ void setup()
     Serial.begin(9600);
   
     setupRadio();
-    radio.startListening();
+    radio.startReceive();
 }
 
-void loop() {
+void loop()
+{
     if (radio.available() > 0)
     {
         auto msg = radio.readData();
     
         if (!msg.has_value())
+        {
             handleError(msg.error(), "Message receive error.");
+        }
         else
-            Serial.println(msg.value());
+        {
+            auto str = msg.value();
+            Serial.print("Received: ");
+            Serial.print(msg.value());
+            Serial.print(" with RSSI = ");
+            Serial.println(radio.getRssi());
+
+            // Delay 100 ms then send message back
+            radio.sleep();
+            radio.startTransmit("I hear you! " + str);
+
+            while (radio.getState() != gel::Radio::Idle);
+            radio.startReceive();
+        }
     }
+
 }
