@@ -1,20 +1,29 @@
 #include <SoftwareSerial.h>
-
 #include <gel.h>
+
+#include "Message.h"
 
 gel::Radio radio{};
 gel::Link link{};
 gel::Gps gps{};
 SoftwareSerial gpsSerial(7, 6);
 
-gel::Error streamingCallback(gel::span<uint8_t> payload)
+gel::Error telemetryCallback(gel::span<uint8_t> payload)
 {
     static size_t streamMsg = 0;
     
-    String msg = "Hello" + String(streamMsg);
+    String msg = "Dummy telemetry number #" + String(streamMsg) + "\n";
     strcpy((char*)payload.data(), msg.c_str());
 
     streamMsg++;
+
+    return gel::Error::None;
+}
+
+gel::Error telecommandCallback(gel::span<uint8_t> command, gel::span<uint8_t> response)
+{
+    String msg = "Responding to " + String((const char*)command.data());
+    strcpy((char*)response.data(), msg.c_str());   
 
     return gel::Error::None;
 }
@@ -51,7 +60,8 @@ gel::Error setupLink()
     if (gel::Error err = link.begin(radio, config))
         return err;
 
-    link.setStreamingCallback(streamingCallback);
+    link.setTelemetryCallback(telemetryCallback);
+    link.setTelecommandCallback(telecommandCallback);
 
     return gel::Error::None;
 }
@@ -88,34 +98,9 @@ void setup()
 
 void loop()
 {
-    gps.update();
-    link.update();
-
-    // i
-
-    // if (radio.available() > 0)
-    // {
-    //     auto msg = radio.readData();
-    // 
-    //     if (!msg.has_value())
-    //     {
-    //         handleError(msg.error(), "Message receive error.");
-    //     }
-    //     else
-    //     {
-    //         auto str = msg.value();
-    //         Serial.print("Received: ");
-    //         Serial.print(str);
-    //         Serial.print(" with RSSI = ");
-    //         Serial.println(radio.getRssi());
-// 
-    //         // Delay 100 ms then send message back
-    //         radio.startTransmit("I hear you! Got " + str);
-    //         delay(1000);
-// 
-    //         while (!(radio.getState() == gel::Radio::Idle));
-    //         radio.startReceive();
-    //     }
-    // }
-
+    // gps.update();
+    if (gel::Error err = link.update())
+        handleError(err, "Could not setup communication link.", true);
+    else
+        Serial.println("Link initialized.");
 }
