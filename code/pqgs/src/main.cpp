@@ -163,7 +163,7 @@ void loop()
         break;
 
     case gel::Radio::Receiving:
-        // If we in receiving state, we need to see if the message is availble, or if it timed out
+        // If we in receiving state, we need to see if the message is available, or if it timed out
         if (radio.available())
         {
             Serial.println(radio.readData().value_or("Message corrupt"));
