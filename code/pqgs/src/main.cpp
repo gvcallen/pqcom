@@ -1,27 +1,26 @@
 #include <Arduino.h>
 
-#include "gel.h"
+#include <gel.h>
 
 // Objects
-gel::Radio radio;
+gel::Radio radio{};
+gel::Link mylink{};
 gel::Imu imu;
-// gel::Mount mount;
+gel::Mount mount;
 gel::StepperMotor azMotor;
 gel::StepperMotor elMotor;
 
-void handleError(gel::Error err, const char* msg = nullptr, bool print = true)
+void handleError(gel::Error err, const char* msg = nullptr)
 {
-    if (print)
-    {
-        if (msg)
-            Serial.print(msg);
-        Serial.println(err);
-    }
+    if (msg)
+        Serial.print(msg);
+    Serial.println(err);
 
+    delay(1000);
     while (1);
 }
 
-void setupRadio()
+gel::Error setupRadio()
 {
     gel::RadioPins pins;
     gel::RadioConfig config;
@@ -30,18 +29,21 @@ void setupRadio()
     pins.dio0 = 15;
     pins.reset = 13;
 
-    // TODO: Fix this.
     config.modConfig.lora = gel::LoRaConfig{};
     config.modType = gel::ModulationType::LoRa;
-    // config.modConfig.fsk = gel::FSKConfig{};
-    // config.modType = gel::ModulationType::FSK;
 
-    Serial.println("Initializing RF...");
-    if (gel::Error err = radio.begin(pins, config))
-    {
-        handleError(err, "Could not begin radio.");
-    }
-    Serial.println("Initialized successfully.");
+    return radio.begin(pins, config);
+}
+
+gel::Error setupLink()
+{
+    gel::LinkConfig config{};
+
+    config.controller = true;
+    if (gel::Error err = mylink.begin(radio, config))
+        return err;
+
+    return gel::Error::None;
 }
 
 // void setupImu()
@@ -58,12 +60,11 @@ void setupRadio()
     // imu.begin(pins);
 // }
 
-void setupMount()
+gel::Error setupMount()
 {
     gel::StepperMotorPins azimuthalPins {};
     gel::StepperMotorPins elevationPins {};
-    gel::StepperMotorConfig azimuthalConfig {};
-    gel::StepperMotorConfig elevationConfig {};
+    gel::MountConfig mountConfig {};
 
     azimuthalPins.i01 = 14;
     azimuthalPins.i02 = 26;
@@ -79,104 +80,60 @@ void setupMount()
     elevationPins.ph1 = 21;
     elevationPins.ph2 = 5;
 
-    elevationConfig.reverseDirection = true;
-    elevationConfig.stepRange = 1200;
+    mountConfig.elevationAngleBounds.min = 40.0  * PI_OVER_180;
+    mountConfig.elevationAngleBounds.max = 152.6 * PI_OVER_180;
+    mountConfig.gearCorrectionRatio = 1.15;
+    mountConfig.azimuthalRevolutionNumSteps = 800.0; // 200 * 60/15
+    mountConfig.elevationRevolutionNumSteps = 1610.0; // 200 * 92/20 * 140/80
 
-    azMotor.begin(azimuthalPins, azimuthalConfig);
-    elMotor.begin(elevationPins, elevationConfig);
+    if (gel::Error err = mount.begin(elevationPins, azimuthalPins, mountConfig))
+        return err;
 
-    azMotor.setSpeed(0.1);
-    unsigned int numSteps = 0;
+    if (gel::Error err = mount.calibrate())
+        return err;
 
-    // AZ CALCULATIONS
-    float ratio = 4.0/3.0;
-    
-    float azSteps = 90.0;
-    float elSteps = azSteps * ratio; // 240
+    while(1)
+    {
+        delay(2000);
+        mount.setElevationAngleDegrees(90.0);
+        delay(2000);
+        mount.setElevationAngleDegrees(45.0);
+    }
 
-    // -1.7, 0.5
-    
-    azMotor.setSpeed(0.001);
-    elMotor.setSpeed(0.001);
-    elMotor.enableFullStepping(3.0/3.0);
-    azMotor.enableFullStepping(3.0/3.0);
-    delay(5000);
-    
-    azMotor.stepForward(azSteps);
-    delay(1000);
-    elMotor.stepForward(azSteps*ratio);
-    
-    // mount.begin(elevationPins, azimuthalPins);
+    return gel::Error::None;
 }
 
 void setup()
 {
-    // setupMount();
-    
-    Serial.println("Initializing serial...");
     Serial.begin(115200);
     delay(1000);
-    Serial.println("Initialized serial.");
-    setupRadio();
-    // setupImu();
 
-    // delay(1000);
+    Serial.println("Initializing system");
+
+    // Initialize moount
+    if (gel::Error err = setupMount())
+        handleError(err, "Could not initialize mount.");
+    else
+        Serial.println("Mount initialized.");
+
+    // // Initialize radio
+    // if (gel::Error err = setupRadio())
+    //     handleError(err, "Could not initialize radio.");
+    // else
+    //     Serial.println("Radio initialized.");
+    
+    // // Initialize link
+    // if (gel::Error err = setupLink())
+    //     handleError(err, "Could not setup communication link.");
+    // else
+    //     Serial.println("Link initialized.");
 }
-
-
-const unsigned long MESSAGE_TIMEOUT = 5000;
 
 void loop()
 {   
-    static bool timeout = true;
-    static unsigned long startReceiveTime = 0;
-    static size_t messageCounter = 0;
-
-    auto radioState = radio.getState();
-
-    switch (radioState)
-    {
-    case gel::Radio::Idle:
-        // If we are idle, we either have finished transmitting and must start receiving,
-        // or must send a new message (either due to timeout or receival of the message)
-        if (timeout || (radio.getPrevState() == gel::Radio::Receiving))
-        {
-            timeout = false;
-            delay(1000);
-
-            if (gel::Error err = radio.startTransmit("Hello " + String(messageCounter)))
-            {
-                handleError(err, "Could not send message.");
-                return;
-            }
-
-            Serial.println("Sending message #" + String(messageCounter));
-            messageCounter++;
-        }
-        else
-        {
-            Serial.println("Awaiting response...");
-            radio.startReceive();
-            startReceiveTime = millis();
-        }
-
-        break;
-
-    case gel::Radio::Receiving:
-        // If we in receiving state, we need to see if the message is available, or if it timed out
-        if (radio.available())
-        {
-            Serial.println(radio.readData().value_or("Message corrupt"));
-            radio.standby();
-        }
-        else if ((millis() - startReceiveTime) > MESSAGE_TIMEOUT)
-        {
-            timeout = true;
-            Serial.println("Response timed out");
-            radio.standby();
-        }
-
-    default:
-        break;
-    }
+    // if (radio.available() > 0)
+    // {
+        // String message = radio.readData().value();
+        // Serial.println("Received: " + message);
+    // }
 }
