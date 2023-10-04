@@ -82,7 +82,7 @@ gel::Error setupMount()
 
     mountConfig.elevationAngleBounds.min = 40.0  * PI_OVER_180;
     mountConfig.elevationAngleBounds.max = 152.6 * PI_OVER_180;
-    mountConfig.gearCorrectionRatio = 1.15;
+    mountConfig.azelRatio = 1.15;
     mountConfig.azimuthalRevolutionNumSteps = 800.0; // 200 * 60/15
     mountConfig.elevationRevolutionNumSteps = 1610.0; // 200 * 92/20 * 140/80
 
@@ -92,12 +92,15 @@ gel::Error setupMount()
     if (gel::Error err = mount.calibrate())
         return err;
 
-    while(1)
+    double elAngle = 90.0;
+    delay(1000);
+    mount.setElevationAngleDegrees(elAngle);
+    double azAngle = 30.0;
+    while (1)
     {
-        delay(2000);
-        mount.setElevationAngleDegrees(90.0);
-        delay(2000);
-        mount.setElevationAngleDegrees(45.0);
+        delay(1000);
+        mount.setAzimuthalAngleDegrees(azAngle);
+        azAngle += 30.0;
     }
 
     return gel::Error::None;
