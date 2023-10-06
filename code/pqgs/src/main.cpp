@@ -62,46 +62,36 @@ gel::Error setupLink()
 
 gel::Error setupMount()
 {
-    gel::StepperMotorPins azimuthalPins {};
-    gel::StepperMotorPins elevationPins {};
-    gel::MountConfig mountConfig {};
+    gel::MountConfig config {};
+    gel::MountPins pins {};
 
-    azimuthalPins.i01 = 14;
-    azimuthalPins.i02 = 26;
-    azimuthalPins.i11 = 12;
-    azimuthalPins.i12 = 25;
-    azimuthalPins.ph1 = 32;
-    azimuthalPins.ph2 = 33;
+    pins.azimuthalPins.i01 = 14;
+    pins.azimuthalPins.i02 = 26;
+    pins.azimuthalPins.i11 = 12;
+    pins.azimuthalPins.i12 = 25;
+    pins.azimuthalPins.ph1 = 32;
+    pins.azimuthalPins.ph2 = 33;
 
-    elevationPins.i01 = 0;
-    elevationPins.i02 = 2;
-    elevationPins.i11 = 3;
-    elevationPins.i12 = 4;
-    elevationPins.ph1 = 21;
-    elevationPins.ph2 = 5;
+    pins.azimuthalZeroSensor = 36;
 
-    mountConfig.elevationAngleBounds.min = 40.0  * PI_OVER_180;
-    mountConfig.elevationAngleBounds.max = 152.6 * PI_OVER_180;
-    mountConfig.azelRatio = 1.15;
-    mountConfig.azimuthalRevolutionNumSteps = 800.0; // 200 * 60/15
-    mountConfig.elevationRevolutionNumSteps = 1610.0; // 200 * 92/20 * 140/80
+    pins.elevationPins.i01 = 0;
+    pins.elevationPins.i02 = 2;
+    pins.elevationPins.i11 = 16;
+    pins.elevationPins.i12 = 4;
+    pins.elevationPins.ph1 = 21;
+    pins.elevationPins.ph2 = 5;
 
-    if (gel::Error err = mount.begin(elevationPins, azimuthalPins, mountConfig))
+    config.elevationAngleBounds.min = 40.0  * PI_OVER_180;
+    config.elevationAngleBounds.max = 148.0 * PI_OVER_180;
+    config.azelRatio = 1.15;
+    config.azimuthalRevolutionNumSteps = 800.0; // 200 * 60/15
+    config.elevationRevolutionNumSteps = 1610.0; // 200 * 92/20 * 140/80
+
+    if (gel::Error err = mount.begin(pins, config))
         return err;
 
     if (gel::Error err = mount.calibrate())
         return err;
-
-    double elAngle = 90.0;
-    delay(1000);
-    mount.setElevationAngleDegrees(elAngle);
-    double azAngle = 30.0;
-    while (1)
-    {
-        delay(1000);
-        mount.setAzimuthalAngleDegrees(azAngle);
-        azAngle += 30.0;
-    }
 
     return gel::Error::None;
 }
@@ -118,7 +108,7 @@ void setup()
         handleError(err, "Could not initialize mount.");
     else
         Serial.println("Mount initialized.");
-
+    
     // // Initialize radio
     // if (gel::Error err = setupRadio())
     //     handleError(err, "Could not initialize radio.");
