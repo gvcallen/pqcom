@@ -1,25 +1,29 @@
 #pragma once
 
-enum class ProtocolCommand
+namespace suncq
 {
-    SetTncMode = 0x00,
-    SetTrackMode = 0x01,
-    SetPathData = 0x02,
-    GetSignalRSSI = 0x40,
-    Reset = 0x7F,
+
+enum Command
+{
+    Reset = 0x00,
+    Calibrate = 0x01,
+    SetTncMode = 0x30,
+    SetTrackMode = 0x31,
+    SetPathData = 0x32,
+    GetSignalRSSI = 0x60,
     TncStatus = 0x80,
     TncMessage = 0x81,
     SignalRSSI = 0xA0,
-    Reserved = 0xFF,
+    Invalid = 0xFF,
 };
 
-enum class TncMode
+enum TncMode
 {
     Normal = 0x00,
     Kiss = 0x01,
 };
 
-enum class TrackMode
+enum TrackMode
 {
     None = 0x00,
     GpsUploaded = 0x01,
@@ -27,8 +31,10 @@ enum class TrackMode
     SignalStrength = 0x04,
 };
 
-enum class StatusCode
+enum StatusCode
 {
     Acknowledge = 0x00,
     TrackingUnsuccessful = 0x01,
 };
+
+} // namespace suncq

@@ -1,6 +1,6 @@
 // Serial comms
 #define BAUD_RATE                       115200
-#define FLIGHT_PATH_CSV_MAX_SIZE        20480
+#define FLIGHT_PATH_MAX_SIZE            10240
 
 // Mount control
 #define MOUNT_EL_ANGLE_MIN              40.0

@@ -1,28 +1,27 @@
 #include "PqTnc.h"
+#include "Suncq.h"
 
 #define EEPROM_HEADER_SIZE                  1
 
 #define EEPROM_OFFSET_HEADER                0
 #define EEPROM_OFFSET_FLIGHT_PATH           (EEPROM_HEADER_SIZE)
-#define EEPROM_END                          (EEPROM_OFFSET_FLIGHT_PATH + FLIGHT_PATH_CSV_MAX_SIZE)
+#define EEPROM_END                          (EEPROM_OFFSET_FLIGHT_PATH + sizeof (FlightPathHeader) + FLIGHT_PATH_MAX_SIZE)
 
-void PqTnc::setup()
-{
-    setupSerial();
+#define FLIGHT_PATH_TRACKING_INTERVAL       1000
+
+void PqTnc::begin()
+{   
+    gel::Error err;
+    
     setupEEPROM();
-    setupFlightPath();
-    setupGroundStation();
+    
+    if (err = loadFlightPath())
+        handleError(err, "Could not load flight path");
 }
 
 void PqTnc::update()
 {
     updateSerial();
-}
-
-void PqTnc::setupSerial()
-{
-    Serial.begin(BAUD_RATE);
-    delay(1000);
 }
 
 void PqTnc::setupEEPROM()
@@ -36,81 +35,45 @@ void PqTnc::setupEEPROM()
         EEPROM.writeBytes(0, &zero, EEPROM_END);
 }
 
-void PqTnc::setupGroundStation()
+gel::Error PqTnc::loadFlightPath()
 {
-    gel::GroundStationConfig config;
-    gel::GroundStationPins pins;
-
-    // MOUNT PINS
-    pins.mount.azimuthalZeroSensor = PIN_AZ_ZERO_SENSOR;
-    pins.mount.azimuthalPins.i01 = PIN_AZ_IO1;
-    pins.mount.azimuthalPins.i02 = PIN_AZ_IO2;
-    pins.mount.azimuthalPins.i11 = PIN_AZ_I11;
-    pins.mount.azimuthalPins.i12 = PIN_AZ_I12;
-    pins.mount.azimuthalPins.ph1 = PIN_AZ_PH1;
-    pins.mount.azimuthalPins.ph2 = PIN_AZ_PH2;
-    pins.mount.elevationPins.i01 = PIN_EL_IO1;
-    pins.mount.elevationPins.i02 = PIN_EL_IO2;
-    pins.mount.elevationPins.i11 = PIN_EL_I11;
-    pins.mount.elevationPins.i12 = PIN_EL_I12;
-    pins.mount.elevationPins.ph1 = PIN_EL_PH1;
-    pins.mount.elevationPins.ph2 = PIN_EL_PH2;
-
-    // MOUNT CONFIG
-    config.mount.elevationAngleBounds.min = MOUNT_EL_ANGLE_MIN  * GEL_PI_OVER_180;
-    config.mount.elevationAngleBounds.max = MOUNT_EL_ANGLE_MAX * GEL_PI_OVER_180;
-    config.mount.azelRatio = MOUNT_AZEL_RATIO;
-    config.mount.azimuthalRevolutionNumSteps = MOUNT_AZ_NUM_STEPS; // 200 * 60/15
-    config.mount.elevationRevolutionNumSteps = MOUNT_EL_NUM_STEPS; // 200 * 92/20 * 140/80    
-    config.mount.reverseElevationDirection = MOUNT_EL_REVERSE_DIRECTION;
-
-    // LINK CONFIG
-    config.link.controller = true;
-    
-    // RADIO PINS
-    pins.radio.nss = PIN_RADIO_NSS;
-    pins.radio.dio0 = PIN_RADIO_DIO0;
-    pins.radio.reset = PIN_RADIO_RESET;
-
-    // IMU PINS
-    pins.imu.nss = PIN_IMU_NSS;
-    pins.imu.interrupt = PIN_IMU_INT;
-    
-    Serial.println("Initializing...");
-
-    // BEGIN GROUND STATION
-    if (gel::Error err = groundStation.begin(config, pins))
-        handleError(err, "Error initializing ground station.");
-    else
-        Serial.println("Ground station initialized.");
-
-    delay(1000);
-}
-
-void PqTnc::setupFlightPath()
-{
-    // Our header stores the size, in bytes, of the current csv file. Can be 0.
-    struct FlightPathHeader
-    {
-        size_t size;
-    } header;
-
+    // Our header stores the size, in bytes, of the current flight path. Can be 0.
+    FlightPathHeader header;
     EEPROM.readBytes(EEPROM_OFFSET_FLIGHT_PATH, &header, sizeof (FlightPathHeader));
 
-    if (!header.size)
-        return;
+    // Nothing to load
+    if (!header.numInstances)
+        return gel::Error::None;
+
+    // We store the flight path in a local array
+    numPathInstants = header.numInstances;
+    EEPROM.readBytes(EEPROM_OFFSET_FLIGHT_PATH + sizeof(FlightPathHeader), path, header.numInstances * sizeof (gel::GeoInstant));
+
+    return gel::Error::None;
+}
+
+gel::Error PqTnc::saveFlightPath()
+{
+    if (!numPathInstants)
+        return gel::Error::None;
     
-    // We store the flight path on a local array
-    EEPROM.readBytes(EEPROM_OFFSET_FLIGHT_PATH + sizeof(FlightPathHeader), flightPathCsv, FLIGHT_PATH_CSV_MAX_SIZE);
+    // Our header stores the size, in bytes, of the current flight path.
+    FlightPathHeader header;
+    header.numInstances = numPathInstants * sizeof(gel::GeoInstant);
+
+    EEPROM.writeBytes(EEPROM_OFFSET_FLIGHT_PATH, &header, sizeof (FlightPathHeader));    
+    EEPROM.writeBytes(EEPROM_OFFSET_FLIGHT_PATH + sizeof(FlightPathHeader), path, header.numInstances * sizeof (gel::GeoInstant));
+    
+    return gel::Error::None;
 }
 
 void PqTnc::updateSerial()
 {    
-    while (Serial.available())
+    while (Serial.available() || receivingByteStream)
     {
         uint8_t c = Serial.read();
         
-        if (tncMode == TncMode::Normal)
+        if (tncMode == suncq::TncMode::Normal)
             updateSerialNormal(c);
         else
             updateSerialKISS(c);
@@ -119,39 +82,47 @@ void PqTnc::updateSerial()
 
 void PqTnc::updateSerialNormal(uint8_t c)
 {
-    // We use the RESERVED command as a NONE command
-    static ProtocolCommand currentCommand = ProtocolCommand::Reserved;
+    // We use the Invalid command as a NONE command
+    gel::Error err;
+    currentCommand = suncq::Command::Invalid;
+    
+    bool commandFinished = true;
     switch (currentCommand)
     {    
-        case ProtocolCommand::Reserved:
-            // If and no else as we silently ignore invalid commands
-            if (c < (uint8_t)ProtocolCommand::TncStatus)
-                currentCommand = ProtocolCommand::Reserved;
+        case suncq::Command::Invalid:
             break;
         
-        case ProtocolCommand::SetTncMode:
-            setTncMode((TncMode)c);
+        case suncq::Command::SetTncMode:
+            setTncMode((suncq::TncMode)c);
             break;
 
-        case ProtocolCommand::SetTrackMode:
-            setTrackingMode((TrackMode)c);
+        case suncq::Command::SetTrackMode:
+            setTrackMode((suncq::TrackMode)c);
             break;
 
-        case ProtocolCommand::SetPathData:
-            updatePathData((uint8_t)c);
+        case suncq::Command::SetPathData:
+            err = addFlightPathData((uint8_t)c);
+
+            if (err == gel::Error::None)
+                commandFinished = false;
+            else if (err != gel::Error::Ignored)
+                handleError(err);
             break;
         
-        case ProtocolCommand::GetSignalRSSI:
+        case suncq::Command::GetSignalRSSI:
             sendSignalRSSI();
             break;
 
-        case ProtocolCommand::Reset:
+        case suncq::Command::Reset:
             reset();
             break;
 
         default:
             break; // Shouldn't get here
     }
+
+    if (commandFinished)
+        currentCommand = suncq::Command::Invalid;
 }
 
 void PqTnc::updateSerialKISS(uint8_t c)
@@ -159,19 +130,97 @@ void PqTnc::updateSerialKISS(uint8_t c)
     // Not yet implemented
 }
 
-void PqTnc::setTncMode(TncMode mode)
+void PqTnc::updateTracking()
+{
+    switch (trackMode)
+    {
+        case suncq::TrackMode::None:
+            break;
+
+        case suncq::TrackMode::GpsUploaded:
+            updateTrackingGPSUploaded();
+            // No break
+
+        // case suncq::TrackMode::
+    }
+}
+
+void PqTnc::updateTrackingGPSUploaded()
+{
+    // We get the current time, and then run through the path instants to find the next instant
+    // after the current one that is past this time. Theoretically, this should be the instant
+    // right after the current one, and then the loop should break.
+    uint64_t currentSecondsSinceEpoch = groundStation->getCurrentSecondsSinceEpoch();
+
+    gel::GeoInstant& nextPathInstant = path[nextPathInstantIdx];
+    if (currentSecondsSinceEpoch < nextPathInstant.secondsSinceEpoch)
+        return; // the instant we are heading towards is still the next instant
+
+    // We need to find the latest path instant that has not happened yet
+    size_t i;
+    for (i = nextPathInstantIdx + 1; i < numPathInstants; i++)
+    {
+        gel::GeoInstant& testInstant = path[i];
+        if (currentSecondsSinceEpoch < testInstant.secondsSinceEpoch)
+            break;
+    }
+
+    // Update the next path instant and add it to the ground station as a new estimated location
+    if (i < numPathInstants)
+    {
+        gel::GeoInstant& nextInstant = path[i];
+        groundStation->addEstimatedLocation(nextInstant);
+        nextPathInstantIdx = i;
+    }
+
+    return;
+}
+
+void PqTnc::setTncMode(suncq::TncMode mode)
 {
     tncMode = mode;
 }
 
-void PqTnc::setTrackingMode(TrackMode mode)
+gel::Error PqTnc::setTrackMode(suncq::TrackMode mode)
 {
-    groundStation.setTrackingMode((gel::TrackingMode)mode);
+    if (mode > suncq::TrackMode::SignalStrength)
+        mode = suncq::TrackMode::None;
+    
+    this->trackMode = mode;
+
+    return gel::Error::None;
 }
 
-void PqTnc::updatePathData(uint8_t newData)
+gel::Error PqTnc::addFlightPathData(uint8_t newData)
 {
+    // First byte in binary stream
+    if (flightPathByteIdx == 0)
+        numPathInstants = newData << 8;
+    else if (flightPathByteIdx == 1)
+        numPathInstants += newData << 8;
+    else
+    {
+        size_t flightPathDataByteIdx = flightPathByteIdx - 2;
+        bool finished = flightPathDataByteIdx >= numPathInstants * sizeof (gel::GeoInstant);
+        if (finished)
+        {
+            saveFlightPath();
+            nextPathInstantIdx = 0;
+            flightPathByteIdx = 0;
+            receivingByteStream = false;
+            return gel::Error::Ignored;
+        }
+        else
+        {
+            receivingByteStream = true;
+            uint8_t* data = (uint8_t*)path;
+            data[flightPathDataByteIdx] = newData;
+        }
 
+    }
+
+    flightPathByteIdx++;
+    return gel::Error::None;
 }
 
 void PqTnc::reset()
@@ -181,7 +230,7 @@ void PqTnc::reset()
 
 void PqTnc::sendAcknowledge()
 {
-    uint8_t message[2] = {(uint8_t)ProtocolCommand::TncStatus, (uint8_t)StatusCode::Acknowledge};
+    uint8_t message[2] = {(uint8_t)suncq::Command::TncStatus, (uint8_t)suncq::StatusCode::Acknowledge};
 
     Serial.write((const char*)message, sizeof(message));
 }
@@ -190,9 +239,9 @@ void PqTnc::sendSignalRSSI()
 {
     uint8_t message[5];
 
-    float rssi = groundStation.getRadio().getRssi();
+    float rssi = groundStation->getRadio().getRssi();
     
-    message[0] = (uint8_t)ProtocolCommand::SignalRSSI;
+    message[0] = (uint8_t)suncq::Command::SignalRSSI;
     memcpy(message, &rssi, sizeof(rssi));
 
     Serial.write((const char*)message, sizeof(message));
@@ -200,9 +249,5 @@ void PqTnc::sendSignalRSSI()
 
 void PqTnc::handleError(gel::Error err, const char* msg)
 {
-    if (msg)
-        Serial.println(msg);
-    Serial.println(err);
 
-    while (1);
 }
