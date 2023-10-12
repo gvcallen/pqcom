@@ -9,9 +9,12 @@
 
 #define FLIGHT_PATH_TRACKING_INTERVAL       1000
 
+#define SERIAL_DEBUG
+
 void PqTnc::begin()
 {   
     gel::Error err;
+    Serial.begin(BAUD_RATE);
     
     setupEEPROM();
     
@@ -68,8 +71,8 @@ gel::Error PqTnc::saveFlightPath()
 }
 
 void PqTnc::updateSerial()
-{    
-    while (Serial.available() || receivingByteStream)
+{        
+    while (Serial.available())
     {
         uint8_t c = Serial.read();
         
@@ -81,15 +84,17 @@ void PqTnc::updateSerial()
 }
 
 void PqTnc::updateSerialNormal(uint8_t c)
-{
+{   
     // We use the Invalid command as a NONE command
     gel::Error err;
-    currentCommand = suncq::Command::Invalid;
-    
+    if (currentCommand == suncq::Command::Invalid);
+        currentCommand = (suncq::Command)c;
+
     bool commandFinished = true;
     switch (currentCommand)
     {    
-        case suncq::Command::Invalid:
+        case suncq::Command::Calibrate:
+            groundStation->calibrate();
             break;
         
         case suncq::Command::SetTncMode:

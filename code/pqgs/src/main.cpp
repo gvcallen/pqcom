@@ -30,9 +30,10 @@ gel::Error setupGroundStation()
     config.mount.elevationAngleBounds.min = MOUNT_EL_ANGLE_MIN  * GEL_PI_OVER_180;
     config.mount.elevationAngleBounds.max = MOUNT_EL_ANGLE_MAX * GEL_PI_OVER_180;
     config.mount.azelRatio = MOUNT_AZEL_RATIO;
-    config.mount.azimuthalRevolutionNumSteps = MOUNT_AZ_NUM_STEPS; // 200 * 60/15
-    config.mount.elevationRevolutionNumSteps = MOUNT_EL_NUM_STEPS; // 200 * 92/20 * 140/80    
-    config.mount.reverseElevationDirection = MOUNT_EL_REVERSE_DIRECTION;
+    config.mount.azimuthalRevolutionNumSteps = MOUNT_AZ_NUM_STEPS;
+    config.mount.elevationRevolutionNumSteps = MOUNT_EL_NUM_STEPS;
+    config.mount.reverseElevationDirection = !MOUNT_EL_START_NEAR_CUTOUT;
+    config.mount.calibrateElevationNearMax = MOUNT_EL_START_NEAR_CUTOUT;
 
     // LINK CONFIG
     config.link.controller = true;
@@ -46,8 +47,6 @@ gel::Error setupGroundStation()
     pins.imu.nss = PIN_IMU_NSS;
     pins.imu.interrupt = PIN_IMU_INT;
     
-    Serial.println("Initializing...");
-
     // BEGIN GROUND STATION
     if (gel::Error err = groundStation.begin(config, pins))
         return err;

@@ -58,7 +58,7 @@ private:
     size_t numPathInstants = 0;
     
     size_t flightPathByteIdx = 0;
-    bool receivingByteStream = true;
+    bool receivingByteStream = false;
     
     suncq::Command currentCommand = suncq::Command::Invalid;
     suncq::TncMode tncMode = suncq::TncMode::Normal;

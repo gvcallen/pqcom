@@ -1,0 +1,14 @@
+#include <Arduino.h>
+
+void setup()
+{
+    Serial.begin(115200);
+}
+
+size_t count = 0;
+void loop()
+{
+    Serial.println("Hello world #" + String(count));
+    count++;
+    delay(1000);
+}
