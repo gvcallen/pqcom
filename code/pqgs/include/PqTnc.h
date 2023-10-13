@@ -6,7 +6,17 @@
 
 #include "Settings.h"
 #include "Suncq.h"
-#include "FlightPath.h"
+
+struct FlightPathHeader
+{
+    uint16_t numInstances;
+};
+
+struct TncSettings
+{
+    suncq::TncMode tncMode = suncq::TncMode::Normal;
+    suncq::TrackMode trackMode = suncq::TrackMode::None;
+};
 
 /*  Class for a PocketQube terminal node which implements the SUNCQ protocol.
     It handles communication with a host PC via Serial, including error and status messages.
@@ -28,7 +38,9 @@ public:
 
 private:
     // Setup
-    void setupEEPROM();
+    void beginEEPROM();
+    gel::Error loadSettings();
+    gel::Error loadFlightPath();
     
     // Update
     void updateSerial();
@@ -38,9 +50,8 @@ private:
     void updateTrackingGPSUploaded();
     
     // Flight path commands
-    gel::Error loadFlightPath();
     gel::Error saveFlightPath();
-    gel::Error addFlightPathData(uint8_t newData);
+    bool addFlightPathData(uint8_t newData);
 
     // Protocol commands
     void setTncMode(suncq::TncMode mode);
@@ -50,19 +61,18 @@ private:
     // Protocol responses
     void sendAcknowledge();
     void sendSignalRSSI();
-
+    void sendMessage(String msg);
 
 private:
     gel::GeoInstant path[FLIGHT_PATH_MAX_SIZE / sizeof (gel::GeoInstant)];
     size_t nextPathInstantIdx = 0; // the path instant the payload is next heading towards
     size_t numPathInstants = 0;
     
-    size_t flightPathByteIdx = 0;
+    size_t pathByteIdx = 0;
     bool receivingByteStream = false;
     
     suncq::Command currentCommand = suncq::Command::Invalid;
-    suncq::TncMode tncMode = suncq::TncMode::Normal;
-    suncq::TrackMode trackMode = suncq::TrackMode::None;
+    TncSettings settings;
     
     gel::GroundStation* groundStation = nullptr;
 };

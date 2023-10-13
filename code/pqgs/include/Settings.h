@@ -1,11 +1,11 @@
 // Serial comms
 #define BAUD_RATE                       115200
-#define FLIGHT_PATH_MAX_SIZE            10240
+#define FLIGHT_PATH_MAX_SIZE            5120
 
 // Mount control
 #define MOUNT_EL_ANGLE_MIN              30.0
 #define MOUNT_EL_ANGLE_MAX              142.0
-#define MOUNT_AZEL_RATIO                1.15
+#define MOUNT_AZEL_RATIO                -1.15
 #define MOUNT_EL_START_NEAR_CUTOUT      true
 #define MOUNT_EL_NUM_STEPS              (200.0 * (92.0/20.0) * (140.0/80.0))
 #define MOUNT_AZ_NUM_STEPS              (200.0 * (60.0/15.0))
@@ -28,4 +28,5 @@
 #define PIN_RADIO_DIO0                  15
 #define PIN_RADIO_RESET                 13
 #define PIN_IMU_NSS                     22
-#define PIN_IMU_INT                     39
+#define PIN_GPS_RX                      39
+#define PIN_GPS_TX                      16

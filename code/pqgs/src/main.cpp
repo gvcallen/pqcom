@@ -45,18 +45,24 @@ gel::Error setupGroundStation()
 
     // IMU PINS
     pins.imu.nss = PIN_IMU_NSS;
-    pins.imu.interrupt = PIN_IMU_INT;
+
+    // GPS PINS
+    pins.gps.rx = PIN_GPS_RX;
+    pins.gps.tx = PIN_GPS_TX;
     
     // BEGIN GROUND STATION
     if (gel::Error err = groundStation.begin(config, pins))
         return err;
 
-    delay(1000);
     return gel::Error::None;
 }
 
 void setup()
 {
+    Serial.begin(BAUD_RATE);
+    while (!Serial);
+    delay(100);
+
     tnc.begin();
     if (gel::Error err = setupGroundStation())
         tnc.handleError(err, "Could not initialize ground station");

@@ -7,6 +7,8 @@ enum Command
 {
     Reset = 0x00,
     Calibrate = 0x01,
+    ReturnToStart = 0x02,
+    ReturnToStow = 0x03,
     SetTncMode = 0x30,
     SetTrackMode = 0x31,
     SetPathData = 0x32,
