@@ -1,0 +1,4 @@
+/home/gary/data/university/2023/skripsie/code/pqui/build/GCC 11.3.0 x86_64-linux-gnu/Debug/CMakeFiles/pqui.dir
+/home/gary/data/university/2023/skripsie/code/pqui/build/GCC 11.3.0 x86_64-linux-gnu/Debug/CMakeFiles/edit_cache.dir
+/home/gary/data/university/2023/skripsie/code/pqui/build/GCC 11.3.0 x86_64-linux-gnu/Debug/CMakeFiles/rebuild_cache.dir
+/home/gary/data/university/2023/skripsie/code/pqui/build/GCC 11.3.0 x86_64-linux-gnu/Debug/CMakeFiles/pqui_autogen.dir

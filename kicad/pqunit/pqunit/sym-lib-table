@@ -7,4 +7,5 @@
   (lib (name "10137062-00021LF")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/USB-10137062-00021LF/10137062-00021LF.kicad_sym")(options "")(descr ""))
   (lib (name "MAX485")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/MAX485/MAX485.kicad_sym")(options "")(descr ""))
   (lib (name "ATGM332D-5N31-PCB")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/ATGM332D-5N31/ATGM332D-5N31-PCB.kicad_sym")(options "")(descr ""))
+  (lib (name "ATGM332D-5N31")(type "KiCad")(uri "//wsl.localhost/Ubuntu/home/gary/data/university/2023/skripsie/kicad/components/ATGM332D-5N31/ATGM332D-5N31.kicad_sym")(options "")(descr ""))
 )

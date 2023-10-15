@@ -1,0 +1,48 @@
+#include <SPI.h>
+#include <LoRa.h>
+
+int counter = 0;
+
+boolean runEvery(unsigned long interval);
+void onTxDone();
+
+void setup() {
+  Serial.begin(115200);
+  while (!Serial);
+
+  Serial.println("LoRa Sender non-blocking Callback");
+
+//   pins.nss = 10;
+//   pins.dio0 = 2;
+//   pins.reset = 9
+  
+  LoRa.setPins(10, 9, 2);
+
+  if (!LoRa.begin(433E6)) {
+    Serial.println("Starting LoRa failed!");
+    delay(500);
+    while (1);
+  }
+
+  LoRa.setSpreadingFactor(7);
+  LoRa.onTxDone(onTxDone);
+  Serial.println("Starting LoRa success!");
+}
+
+void loop() {
+    Serial.print("Sending packet non-blocking: ");
+    Serial.println(counter);
+
+    // send in async / non-blocking mode
+    LoRa.beginPacket();
+    LoRa.print("hello ");
+    LoRa.print(counter);
+    LoRa.endPacket(true); // true = async / non-blocking mode
+
+    counter++;
+    delay(5000);
+}
+
+void onTxDone() {
+  Serial.println("TxDone");
+}
