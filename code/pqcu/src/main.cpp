@@ -1,115 +1,89 @@
-// #include <SoftwareSerial.h>
-#include <gel.h>
+#include <RadioLib.h>
 
-#include "Message.h"
+SX1278 radio = new Module(10, 2, 9);
 
-gel::Radio radio;
-gel::Link link;
+void setFlag(void);
 
-// gel::Gps gps{};
-// SoftwareSerial gpsSerial(7, 6);
+int transmissionState = 0;
 
-gel::Error telemetryCallback(gel::span<uint8_t> payload)
-{
-    char c = 'a';
-    for (int i = 0; i < payload.size(); i++)
-    {
-        payload[i] = c;
-        c++;
+void setup() {
+  Serial.begin(9600);
 
-        if (c > 'z')
-            c = 'a';
+  // initialize SX1278 with default settings
+  Serial.print(F("[SX1278] Initializing ... "));
+  
+  int16_t state = radio.begin(434.0, 500.0, 8, 7, 0x12, 10, 8, 0);
+  if (state == 0) {
+    Serial.println(F("success!"));
+  } else {
+    Serial.print(F("failed, code "));
+    Serial.println(state);
+    while (true);
+  }
+
+  // set the function that will be called
+  // when packet transmission is finished
+  radio.setPacketSentAction(setFlag);
+
+  Serial.print(F("[SX1278] Sending first packet ... "));
+
+  transmissionState = radio.startTransmit("Hello");
+
+}
+
+// flag to indicate that a packet was sent
+volatile bool transmittedFlag = false;
+void setFlag(void) {
+  transmittedFlag = true;
+  uint16_t flags = radio.getIRQFlags();
+
+  Serial.print("Flags = ");
+  Serial.println(flags);
+}
+
+int count = 0;
+
+void loop() {
+  // check if the previous transmission finished
+  if(transmittedFlag) {
+    // reset flag
+    transmittedFlag = false;
+
+    if (transmissionState == 0) {
+      // packet was successfully sent
+      Serial.println(F("transmission finished!"));
+
+      // NOTE: when using interrupt-driven transmit method,
+      //       it is not possible to automatically measure
+      //       transmission data rate using getDataRate()
+
+    } else {
+      Serial.print(F("failed, code "));
+      Serial.println(transmissionState);
+
     }
-    payload[payload.size()-1] = '\0';
 
-    return gel::Error::None;
-}
+    // clean up after transmission is finished
+    // this will ensure transmitter is disabled,
+    // RF switch is powered down etc.
+    // radio.finishTransmit();
 
-gel::Error telecommandCallback(gel::span<uint8_t> command, gel::span<uint8_t> response)
-{
-    memcpy(response.data(), command.data(), command.size_bytes());
-    return gel::Error::None;
-}
-
-void handleError(gel::Error err, const __FlashStringHelper* msg = nullptr, bool critical = true)
-{
-    if (msg)
-        Serial.println(msg);
-    Serial.println(err);
-    
+    // wait a second before transmitting again
     delay(1000);
-    if (critical)
-        while (1);
-}
 
-gel::Error setupRadio()
-{
-    gel::RadioPins pins{};
-    gel::RadioConfig config{};
+    // send another one
+    Serial.print(F("[SX1278] Sending another packet ... "));
 
-    config.modConfig.lora = gel::LoRaConfig{};
+    // you can transmit C-string or Arduino string up to
+    // 255 characters long
+    String str = "Hello World! #" + String(count++);
+    transmissionState = radio.startTransmit(str);
 
-    pins.nss = 10;
-    pins.dio0 = 2;
-    pins.reset = 9;
-
-    return radio.begin(pins, config);
-}
-
-gel::Error setupLink()
-{
-    gel::LinkConfig config{};
-
-    config.controller = false;
-    if (gel::Error err = link.begin(radio, config))
-        return err;
-
-    link.setTelemetryCallback(telemetryCallback);
-    link.setTelecommandCallback(telecommandCallback);
-
-    return gel::Error::None;
-}
-// 
-// gel::Error setupGps()
-// {
-//     gpsSerial.begin(9600);
-//     return gps.begin(&gpsSerial);
-// }
-
-void setup()
-{
-    Serial.begin(9600);
-    while(!Serial);
-
-    // Initialize radio
-    if (gel::Error err = setupRadio())
-        handleError(err, F("Could not initialize radio."), true);
-    else
-        Serial.println(F("Radio initialized."));
-
-    // Initialize link
-    if (gel::Error err = setupLink())
-        handleError(err, F("Could not setup communication link."), true);
-    else
-        Serial.println(F("Link initialized."));
-
-    // Initialize GPS
-    // if (gel::Error err = setupGps())
-        // handleError(err, "Could not initialize GPS.");
-    // else
-        // Serial.println("GPS initialized.");
-}
-
-unsigned long lastPrintTime = 0, printInterval = 1000;
-void loop()
-{
-    // gps.update();
-    if (gel::Error err = link.update())
-        handleError(err, F("Could not update communication link."));
-
-    if (millis() - lastPrintTime > printInterval)
-    {
-        lastPrintTime = millis();
-        Serial.print("Bit rate = "); Serial.print(link.getDataRate()); Serial.println(" bps");
-    }
+    // you can also transmit byte array up to 255 bytes long
+    /*
+      byte byteArr[] = {0x01, 0x23, 0x45, 0x67,
+                        0x89, 0xAB, 0xCD, 0xEF};
+      transmissionState = radio.startTransmit(byteArr, 8);
+    */
+  }
 }
