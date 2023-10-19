@@ -1,6 +1,7 @@
 #include "PqTnc.h"
 #include "Suncq.h"
 
+PqTnc* PqTnc::singletonTnc = nullptr;
 
 // EEPROM storage members
 #define EEPROM_SIZE_HEADER                  1
@@ -19,12 +20,25 @@
 void PqTnc::begin()
 {   
     beginEEPROM();
+    PqTnc::singletonTnc = this;
 }
 
 void PqTnc::update()
 {
     updateSerial();
     updateTracking();
+}
+
+void PqTnc::setGroundStation(gel::GroundStation& groundStation)
+{
+    this->groundStation = &groundStation;
+    this->groundStation->getLink().setTelemetryCallback(PqTnc::telemetryCallback);
+}
+
+gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
+{
+    // sendMessage((const char*)payload.data());
+    return gel::Error::None;
 }
 
 void PqTnc::beginEEPROM()
@@ -267,5 +281,5 @@ void PqTnc::sendMessage(String msg)
 
 void PqTnc::handleError(gel::Error err, const char* msg)
 {
-
+    sendMessage(msg);
 }

@@ -61,13 +61,16 @@ void setup()
 {
     Serial.begin(BAUD_RATE);
     while (!Serial);
-    delay(100);
+    delay(1000);
 
     tnc.begin();
     if (gel::Error err = setupGroundStation())
         tnc.handleError(err, "Could not initialize ground station");
     else
+    {
+        Serial.println("Initialized ground station");
         tnc.setGroundStation(groundStation);
+    }
 }
 
 void loop()

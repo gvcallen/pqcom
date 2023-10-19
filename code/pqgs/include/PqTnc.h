@@ -33,7 +33,7 @@ class PqTnc
 public:
     void begin();
     void update();
-    void setGroundStation(gel::GroundStation& groundStation) {this->groundStation = &groundStation; }
+    void setGroundStation(gel::GroundStation& groundStation);
     void handleError(gel::Error err, const char* msg = nullptr);
 
 private:
@@ -63,7 +63,15 @@ private:
     void sendSignalRSSI();
     void sendMessage(String msg);
 
+    // Interfaceing
+    gel::Error handleTelemetry(gel::span<uint8_t> payload);
+
+    // Static
+    static gel::Error telemetryCallback(gel::span<uint8_t> payload) {return PqTnc::getTnc()->handleTelemetry(payload); };
+    static PqTnc* getTnc() { return singletonTnc; };
+
 private:
+    static PqTnc* singletonTnc;
     gel::GeoInstant path[FLIGHT_PATH_MAX_SIZE / sizeof (gel::GeoInstant)];
     size_t nextPathInstantIdx = 0; // the path instant the payload is next heading towards
     size_t numPathInstants = 0;

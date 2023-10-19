@@ -1,0 +1,35 @@
+{
+    "name": "LoRaLib",
+    "version": "8.2.0",
+    "description": "LoRa interface library",
+    "keywords": "communication",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/jgromes/LoRaLib"
+    },
+    "authors":
+    [
+      {
+        "name": "Jan Gromes",
+        "email": "gromes.jan@gmail.com",
+        "url": "https://github.com/jgromes/LoRaLib"
+      }
+    ],
+    "build":
+    {
+      "flags":
+        [
+          "-ISource/src",
+          "-ISource/src/modules",
+          "-ISource/src/protocols",
+          "-I LoRaLib/src",
+          "-I LoRaLib/src/modules",
+          "-I LoRaLib/src/modules/protocols"
+        ]
+    },
+    "dependencies":
+    {
+      "PinChangeInterrupt": "*"
+    }
+  }
