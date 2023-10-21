@@ -1,2 +1,3 @@
+12.3V 
 179 mA in idle mode (GPS idle, not receiving, mount not moving)
 maximum current draw of 1.653 A during 30 degree elevation testing

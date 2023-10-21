@@ -78,7 +78,7 @@ gel::Error PqTnc::setupGroundStation()
     
     // GROUND STATION CONFIG
     config.tracking.estimatedBeamwidth = GEL_RADIANS(GS_ESTIMATED_BEAMWIDTH);
-    config.tracking.numBeamwidthScanSegments = GS_ESTIMATED_BEAMWIDTH;
+    config.tracking.numBeamwidthScanSegments = GS_NUM_BEAMWIDTH_SCAN_SEGMENTS;
     config.tracking.numAzimuthScanSamples = GS_NUM_AZIMUTH_SCAN_SAMPLES;
     config.tracking.scanTimeout = GS_SCAN_TIMEOUT;
     config.tracking.updateInterval = GS_UPDATE_INTERVAL;
@@ -155,29 +155,40 @@ gel::Error PqTnc::saveFlightPath()
 
 void PqTnc::update()
 {
+    gel::Error err;
+    
     static gel::RunEvery run(1000);
 
     if (run)
         Serial.println("Updating...");
-    updateSerial();
-    updateTracking();
-    groundStation.update();
+    
+    if (err = updateSerial())
+        sendError(err);
+
+    if (err = updateTracking())
+        sendError(err);
+    
+    auto gsErrors = groundStation.update();
+    for (auto& err : gsErrors)
+        sendError(err);
 }
 
-void PqTnc::updateSerial()
+gel::Error PqTnc::updateSerial()
 {        
     while (Serial.available())
     {
         uint8_t c = Serial.read();
         
         if (settings.tncMode == suncq::TncMode::Normal)
-            updateSerialNormal(c);
+            return updateSerialNormal(c);
         else
             updateSerialKISS(c);
     }
+
+    return gel::Error::None;
 }
 
-void PqTnc::updateSerialNormal(uint8_t c)
+gel::Error PqTnc::updateSerialNormal(uint8_t c)
 {   
     // We use the Invalid command as a NONE command
     gel::Error err;
@@ -189,13 +200,13 @@ void PqTnc::updateSerialNormal(uint8_t c)
         switch (c)
         {
         case suncq::Command::Calibrate:
-            groundStation.calibrate();
+            err = groundStation.calibrate();
             break;
         case suncq::Command::ReturnToStart:
-            groundStation.returnToStart();
+            err = groundStation.returnToStart();
             break;
         case suncq::Command::ReturnToStow:
-            groundStation.returnToStow();
+            err = groundStation.returnToStow();
             break;
         case suncq::Command::GetSignalRSSI:
             sendSignalRSSI();
@@ -214,10 +225,10 @@ void PqTnc::updateSerialNormal(uint8_t c)
         switch (currentCommand)
         {    
         case suncq::Command::SetTncMode:
-            setTncMode((suncq::TncMode)c);
+            err = setTncMode((suncq::TncMode)c);
             break;
         case suncq::Command::SetTrackMode:
-            setTrackMode((suncq::TrackMode)c);
+            err = setTrackMode((suncq::TrackMode)c);
             break;
         case suncq::Command::SetPathData:
             commandFinished = addFlightPathData((uint8_t)c);
@@ -229,19 +240,23 @@ void PqTnc::updateSerialNormal(uint8_t c)
 
     if (commandFinished)
         currentCommand = suncq::Command::Invalid;
+
+    return err;
 }
 
-void PqTnc::updateSerialKISS(uint8_t c)
+gel::Error PqTnc::updateSerialKISS(uint8_t c)
 {
-    // Not yet implemented
+    return gel::Error::NotImplemented;
 }
 
-void PqTnc::updateTracking()
+gel::Error PqTnc::updateTracking()
 {
     if (settings.trackMode & suncq::TrackMode::GpsUploaded)
-        updateTrackingGPSUploaded();
+        return updateTrackingGPSUploaded();
     if (settings.trackMode & suncq::TrackMode::GpsReceived)
-        updateTrackingGPSReceived();
+        return updateTrackingGPSReceived();
+
+    return gel::Error::None;
 }
 
 gel::Error PqTnc::updateTrackingGPSUploaded()
@@ -282,15 +297,19 @@ gel::Error PqTnc::updateTrackingGPSReceived()
     return groundStation.addKnownLocation(latestReceivedInstant);
 }
 
-void PqTnc::setTncMode(suncq::TncMode mode)
+gel::Error PqTnc::setTncMode(suncq::TncMode mode)
 {
     settings.tncMode = mode;
+    return gel::Error::None;
 }
 
 gel::Error PqTnc::setTrackMode(suncq::TrackMode mode)
 {
     settings.trackMode = mode;
     sendMessage("Setting tracking mode to " + String(mode));
+
+    if (mode & suncq::TrackMode::SignalStrengthInitial)
+        return groundStation.scanBruteForce();
 
     return gel::Error::None;
 }
@@ -331,7 +350,13 @@ bool PqTnc::addFlightPathData(uint8_t newData)
 
 void PqTnc::reset()
 {
-
+    groundStation.returnToStow();
+    #ifdef ESP32
+    ESP.restart();
+    #endif
+    
+    // void(* resetFunc) (void) = 0;
+    // resetFunc();
 }
 
 void PqTnc::sendAcknowledge()
@@ -356,6 +381,11 @@ void PqTnc::sendMessage(String msg)
 {
     // Serial.write((uint8_t)suncq::Command::TncMessage);
     Serial.println(msg.c_str());
+}
+
+void PqTnc::sendError(gel::Error& err)
+{
+    Serial.println(err);
 }
 
 gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)

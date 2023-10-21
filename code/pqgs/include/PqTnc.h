@@ -40,10 +40,10 @@ private:
     gel::Error loadFlightPath();
     
     // Update
-    void updateSerial();
-    void updateSerialNormal(uint8_t c);
-    void updateSerialKISS(uint8_t c);
-    void updateTracking();
+    gel::Error updateSerial();
+    gel::Error updateSerialNormal(uint8_t c);
+    gel::Error updateSerialKISS(uint8_t c);
+    gel::Error updateTracking();
     gel::Error updateTrackingGPSUploaded();
     gel::Error updateTrackingGPSReceived();
     
@@ -52,7 +52,7 @@ private:
     bool addFlightPathData(uint8_t newData);
 
     // Protocol commands
-    void setTncMode(suncq::TncMode mode);
+    gel::Error setTncMode(suncq::TncMode mode);
     gel::Error setTrackMode(suncq::TrackMode mode);
     void reset();
 
@@ -60,6 +60,7 @@ private:
     void sendAcknowledge();
     void sendSignalRSSI();
     void sendMessage(String msg);
+    void sendError(gel::Error& err);
 
     // Interfacing
     gel::Error handleTelemetry(gel::span<uint8_t> payload);

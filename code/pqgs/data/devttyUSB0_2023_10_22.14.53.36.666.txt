@@ -1,0 +1,189 @@
+available!
+MET:
+  Num: 000002034
+GPS:
+  Lat: -34.04764
+  Lng: +18.43783
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -75.00
+Returning after callback with radio state = 0
+startReceive()
+Updating...
+updateControllerTelemetry
+updateControllerTelemetry
+available!
+PS:
+  Lat: -34.04764
+  Lng: +18.43782
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -81.00
+Returning after callback with radio state = 0
+Updating...
+startReceive()
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000002059
+GPS:
+  Lat: -34.04764
+  Lng: +18.43782
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -79.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000002060
+GPS:
+  Lat: -34.04764
+  Lng: +18.43782
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -78.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000002061
+GPS:
+  Lat: -34.04764
+  Lng: +18.43782
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -78.00
+Returning after callback with radio state = 0
+startReceive()
+startReceive()
+available!
+MET:
+  Num: 000002068
+GPS:
+  Lat: -34.04765
+  Lng: +18.43782
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -78.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000002069
+GPS:
+  Lat: -34.04765
+  Lng: +18.43782
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -79.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000002070
+GPS:
+  Lat: -34.04765
+  Lng: +18.43782
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -82.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000002071
+GPS:
+  Lat: -34.04765
+  Lng: +18.43782
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -85.00
+Returning after callback with radio state = 0
+startReceive()
+Updating...
+updateControllerTelemetry
+available!
+MET:
+  Num: 000002072
+GPS:
+  Lat: -34.04765
+  Lng: +18.43782
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -80.00
+Returning after callback with radio state = 0
+startReceive()
+Updating...
+updateControllerTelemetry
+Updating...
+updateControllerTelemetry
+available!
+MET:
+  Num: 000002073
+GPS:
+  Lat: -34.04765
+  Lng: +18.43782
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -81.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+startReceive()
+available!
+MET:
+  Num: 000002074
+GPS:
+  Lat: -34.04765
+  Lng: +18.43782
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -82.00
+Returning after callback with radio state = 2
+updateControllerTelemetry
+Updating...
+updateControllerTelemetry
+Updating...
+updateControllerTelemetry
+Updating...
+Updating...
+updateControllerTelemetry
+updateControllerTelemetry
+Updating...
+updateControllerTelemetry
+Updating...
+Updating...
+updateControllerTelemetry
+Updating...
+updateControllerTelemetry
+Updating...
+updateControllerTelemetry
+Updating...
+updateControllerTelemetry

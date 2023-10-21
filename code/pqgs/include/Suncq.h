@@ -30,7 +30,7 @@ enum TrackMode
     None = 0x00,
     GpsUploaded = 0x01,
     GpsReceived = 0x02,
-    SignalStrength = 0x04,
+    SignalStrengthInitial = 0x04,
 };
 
 enum StatusCode

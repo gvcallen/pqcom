@@ -1,0 +1,131 @@
+available!
+MET:
+  Num: 000001326
+GPS:
+  Lat: -34.04768
+  Lng: +18.43785
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -78.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000001327
+GPS:
+  Lat: -34.04768
+  Lng: +18.43785
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -78.00
+Returning after callback with radio state = 0
+startReceive()
+Updating...
+updateControllerTelemetry
+available!
+	Code: 8
+	Message: Error updating communication link
+startReceive()
+updateControllerTelemetry
+available!
+347
+GPS:
+  Lat: -34.04768
+  Lng: +18.43785
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -80.00
+Returning after callback with radio state = 0
+Updating...
+startReceive()
+available!
+MET:
+  Num: 000001348
+GPS:
+  Lat: -34.04768
+  Lng: +18.43785
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -78.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000001349
+GPS:
+  Lat: -34.04768
+  Lng: +18.43785
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -79.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000001350
+GPS:
+  Lat: -34.04768
+  Lng: +18.43785
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -78.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000001351
+GPS:
+  Lat: -34.04768
+  Lng: +18.43785
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -78.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000001352
+GPS:
+  Lat: -34.04768
+  Lng: +18.43785
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -78.00
+Returning after callback with radio state = 0
+startReceive()
+updateControllerTelemetry
+Updating...
+updateControllerTelemetry
+Updating...
+available!
+MET:
+  Num: 000001353
+GPS:
+  Lat: -34.04768
+  Lng: +18.43785
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -79.00
+Returning after callback with radio state = 0
+startReceive()
