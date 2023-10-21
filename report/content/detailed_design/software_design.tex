@@ -1,0 +1,112 @@
+\graphicspath{{./figures}}
+
+\section{Software Design}
+
+It was decided to follow a modular approach when designing the software, since many systems components were either re-usable, such as the GPS or two stepper motors, or logically containable. A shared library was designed for C++ to be re-used between the PocketQube and ground station code. Composition was used in code instead of inheritance, to follow the component-based design. The following describes the various classes planned to be used, as well as their expected functionality:
+
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}        & \textbf{Description}    \\
+  \hline
+    stepForward(numSteps)  & Blocking and non-blocking options \\
+    saveZeroPosition() & Used for calibration \\
+    getPosition() & Used for open-loop feedback \\
+    setSpeed() & Sets the delay between steps \\
+    setCurrentMultiplier() & Set the amount of current \\
+  \hline
+  \end{tabular}
+  \caption{\textbf{StepperMotor} Class}
+  \label{tab:stepperMotorUML}
+\end{table}
+
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}        & \textbf{Description}    \\
+  \hline
+    calibrate()                         & Calbrate the mount \\
+    setAzimuthalElevation(az, el)       & Set the azimuthal and elevation angles \\
+    setBoresight(boresightVec)          & Set the boresight pointing vector \\
+  \hline
+  \end{tabular}
+  \caption{\textbf{Mount} Class}
+  \label{tab:mountUML}
+\end{table}
+
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}        & \textbf{Description}    \\
+  \hline
+    startTransmit(message)              & Transmit non-blocking \\
+    startReceive()                      & Receive non-blocking \\
+    getRssi()                           & Get signal strength \\
+    getSnr()                            & Get signal-to-noise ratio \\
+  \hline
+  \end{tabular}
+  \caption{\textbf{Radio} Class}
+  \label{tab:radioUML}
+\end{table}
+
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}        & \textbf{Description}    \\
+  \hline
+    getLocation()              & Return latitude, longitude and altitude \\
+    getTime()                  & Return seconds since epoch \\
+    getDate()                  & Return date \\
+  \hline
+  \end{tabular}
+  \caption{\textbf{GPS} Class}
+  \label{tab:gpsUML}
+\end{table}
+
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}        & \textbf{Description}    \\
+  \hline
+    getLinearAccel()              & Return the current linear acceleration \\
+    getRotationalAccel()           & Return the current rotational acceleration \\
+    getOrientation()                  & Return the current orientation rotation matrix \\
+  \hline
+  \end{tabular}
+  \caption{\textbf{IMU} Class}
+  \label{tab:imuUML}
+\end{table}
+
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}             & \textbf{Description}    \\
+  \hline
+    calibrate()                 & Calibrate the entire GS \\
+    addEstimatedLocation(loc)      & Add an estimated input GPS location for open-loop tracking \\
+    addKnownLocation(loc)          & Add a known GPS location for closed-loop tracking \\
+  \hline
+  \end{tabular}
+  \caption{\textbf{GroundStation} Class}
+  \label{tab:groundStationUML}
+\end{table}
+
+\newpage
+Various smaller modules will also be needed with limited functionality, such as:
+\begin{enumerate}
+    \item \textbf{Math} module, for vector calculations, WGS84 GPS coordinate projection, angle radian-degrees conversions
+    \item \textbf{Magnetic declination} lookup table, for determining the magnetic declination at given instant given a GPS co-ordinate
+    \item \textbf{PqTnc} class, which provides the serial connection between the GS and a computer.
+\end{enumerate}

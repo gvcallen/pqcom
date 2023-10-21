@@ -1,0 +1,378 @@
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00435
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		7.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9631.73 bps *****
+[SX1278] Received packet #00436
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00437
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00438
+[SX1278] RSSI:		-87.00 dBm
+[SX1278] SNR:		6.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9649.95 bps *****
+[SX1278] Received packet #00439
+[SX1278] RSSI:		-87.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00440
+[SX1278] RSSI:		-87.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00441
+[SX1278] RSSI:		-87.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00442
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00443
+[SX1278] RSSI:		-90.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00444
+[SX1278] RSSI:		-91.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00445
+[SX1278] RSSI:		-93.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00446
+[SX1278] RSSI:		-93.00 dBm
+[SX1278] SNR:		6.25 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00447
+[SX1278] RSSI:		-93.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00448
+[SX1278] RSSI:		-92.00 dBm
+[SX1278] SNR:		6.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00449
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		7.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00450
+[SX1278] RSSI:		-87.00 dBm
+[SX1278] SNR:		6.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9649.95 bps *****
+[SX1278] Received packet #00451
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00452
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00453
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00454
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00455
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9649.95 bps *****
+[SX1278] Received packet #00456
+[SX1278] RSSI:		-90.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00457
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00458
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00459
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		7.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00460
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9654.52 bps *****
+[SX1278] Received packet #00461
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00462
+[SX1278] RSSI:		-87.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9649.95 bps *****
+[SX1278] Received packet #00463
+[SX1278] RSSI:		-91.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00464
+[SX1278] RSSI:		-91.00 dBm
+[SX1278] SNR:		6.25 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00465
+[SX1278] RSSI:		-94.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9649.95 bps *****
+[SX1278] Received packet #00466
+[SX1278] RSSI:		-94.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9654.52 bps *****
+[SX1278] Received packet #00467
+[SX1278] RSSI:		-93.00 dBm
+[SX1278] SNR:		6.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9659.09 bps *****
+[SX1278] Received packet #00468
+[SX1278] RSSI:		-91.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9649.95 bps *****
+[SX1278] Received packet #00469
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00470
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		7.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00471
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9649.95 bps *****
+[SX1278] Received packet #00472
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		7.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9654.52 bps *****
+[SX1278] Received packet #00473
+[SX1278] RSSI:		-90.00 dBm
+[SX1278] SNR:		7.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00474
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00475
+[SX1278] RSSI:		-90.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00476
+[SX1278] RSSI:		-87.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00477
+[SX1278] RSSI:		-87.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9649.95 bps *****
+[SX1278] Received packet #00478
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00479
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9649.95 bps *****
+[SX1278] Received packet #00480
+[SX1278] RSSI:		-85.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00481
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00482
+[SX1278] RSSI:		-90.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00483
+[SX1278] RSSI:		-93.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00484
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00485
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00486
+[SX1278] RSSI:		-85.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9631.73 bps *****
+[SX1278] Received packet #00487
+[SX1278] RSSI:		-85.00 dBm
+[SX1278] SNR:		7.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00488
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		7.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00489
+[SX1278] RSSI:		-85.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00490
+[SX1278] RSSI:		-87.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00491
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		6.00 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00492
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9640.83 bps *****
+[SX1278] Received packet #00493
+[SX1278] RSSI:		-89.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9636.28 bps *****
+[SX1278] Received packet #00494
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00495
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		6.50 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9645.39 bps *****
+[SX1278] Received packet #00496
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+
+***** Running at 9654.52 bps *****
+[SX1278] Received packet #00497
+[SX1278] RSSI:		-88.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+

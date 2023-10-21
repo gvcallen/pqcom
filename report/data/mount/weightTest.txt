@@ -1,0 +1,12 @@
+Mount weight test
+    +9g fine
+    +11g fine
+    +10.2 fine
+    +10.3 fine
+    +9.94 fine
+    +10.27 fine
+    +10.5 fine
+    +10.15 fine
+    +10.5 fine
+    +11g drop
+    = between 92g and 103g extra weight causes drop at 40cm distance = 0.04 N.m extra torque

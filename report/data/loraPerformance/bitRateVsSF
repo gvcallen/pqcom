@@ -1,0 +1,13 @@
+LoRa measured bit-rate vs spreading factor (CR2, preamble=8, payload=255, BW=500 kHz, 10ms delay)
+    SF=7    17200
+    SF=8    10240
+    SF=9    5800
+    SF=10   3320
+    SF=11   1846
+
+LoRa measured bit-rate vs spreading factor (CR2, preamble=8, payload=255, BW=125 kHz, 10ms delay)
+    SF=7    4686
+    SF=8    2690
+    SF=9    1512
+    SF=10   843
+    SF=11   380

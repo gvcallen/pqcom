@@ -18,6 +18,13 @@
 \contentsline {table}{\numberline {5.7}{\ignorespaces Link Budget - Ground Station\relax }}{32}{table.caption.51}%
 \contentsline {table}{\numberline {5.8}{\ignorespaces Mount Component Specifications\relax }}{33}{table.caption.52}%
 \contentsline {table}{\numberline {5.9}{\ignorespaces Helical Antenna Final Parameters\relax }}{38}{table.caption.60}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces \textbf {StepperMotor} Class\relax }}{40}{table.caption.63}%
+\contentsline {table}{\numberline {5.11}{\ignorespaces \textbf {Mount} Class\relax }}{40}{table.caption.64}%
+\contentsline {table}{\numberline {5.12}{\ignorespaces \textbf {Radio} Class\relax }}{40}{table.caption.65}%
+\contentsline {table}{\numberline {5.13}{\ignorespaces \textbf {GPS} Class\relax }}{40}{table.caption.66}%
+\contentsline {table}{\numberline {5.14}{\ignorespaces \textbf {IMU} Class\relax }}{41}{table.caption.67}%
+\contentsline {table}{\numberline {5.15}{\ignorespaces \textbf {GroundStation} Class\relax }}{41}{table.caption.68}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

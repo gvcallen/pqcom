@@ -1,0 +1,15 @@
+All landmark azimuths appeared to be correct given ruler projection
+
+Calibrations: 30 to 140 degrees az limit
+
+Elevation commands vs measurements:
+
+Expected            Commanded       Measured
+-1.41               30              29
+6.38                30              27
+21.57               30              26
+56.74               56.74           56
+52.42               52.42           48
+71.64               71.64           67
+
+Using these combined measurements, the code was updated to to have degrees higher 

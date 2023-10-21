@@ -1,0 +1,9760 @@
+available!
+MET:
+  Num: 000000105
+GPS:
+  Lat: -34.04443
+  Lng: +18.42931
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -52.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000106
+GPS:
+  Lat: -34.04443
+  Lng: +18.42931
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -51.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000107
+GPS:
+  Lat: -34.04444
+  Lng: +18.42931
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -51.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000108
+GPS:
+  Lat: -34.04444
+  Lng: +18.42931
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -50.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000109
+GPS:
+  Lat: -34.04444
+  Lng: +18.42931
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -59.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000110
+GPS:
+  Lat: -34.04443
+  Lng: +18.42931
+  Alt: 000000081
+  Age: 000000000
+
+RSSI = -52.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000111
+GPS:
+  Lat: -34.04445
+  Lng: +18.42929
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -51.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000112
+GPS:
+  Lat: -34.04445
+  Lng: +18.42928
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -51.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000113
+GPS:
+  Lat: -34.04446
+  Lng: +18.42927
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -52.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000114
+GPS:
+  Lat: -34.04447
+  Lng: +18.42925
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -53.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000115
+GPS:
+  Lat: -34.04448
+  Lng: +18.42923
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -53.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000116
+GPS:
+  Lat: -34.04448
+  Lng: +18.42922
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -54.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000117
+GPS:
+  Lat: -34.04449
+  Lng: +18.42920
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -56.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000118
+GPS:
+  Lat: -34.04451
+  Lng: +18.42918
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -59.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000119
+GPS:
+  Lat: -34.04452
+  Lng: +18.42917
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -58.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000120
+GPS:
+  Lat: -34.04453
+  Lng: +18.42915
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -56.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000120
+GPS:
+  Lat: -34.04453
+  Lng: +18.42915
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -112.50
+startReceive()
+available!
+MET:
+  Num: 000000121
+GPS:
+  Lat: -34.04454
+  Lng: +18.42914
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -58.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000122
+GPS:
+  Lat: -34.04456
+  Lng: +18.42914
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -58.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000123
+GPS:
+  Lat: -34.04458
+  Lng: +18.42913
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -59.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000124
+GPS:
+  Lat: -34.04459
+  Lng: +18.42911
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -58.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000125
+GPS:
+  Lat: -34.04461
+  Lng: +18.42908
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -58.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000126
+GPS:
+  Lat: -34.04461
+  Lng: +18.42908
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -59.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000127
+GPS:
+  Lat: -34.04462
+  Lng: +18.42906
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -60.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000128
+GPS:
+  Lat: -34.04462
+  Lng: +18.42906
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -61.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000129
+GPS:
+  Lat: -34.04464
+  Lng: +18.42904
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -60.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000130
+GPS:
+  Lat: -34.04465
+  Lng: +18.42903
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -60.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000131
+GPS:
+  Lat: -34.04465
+  Lng: +18.42902
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -59.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000132
+GPS:
+  Lat: -34.04466
+  Lng: +18.42900
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -58.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000133
+GPS:
+  Lat: -34.04467
+  Lng: +18.42899
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -61.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000134
+GPS:
+  Lat: -34.04467
+  Lng: +18.42898
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -59.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000135
+GPS:
+  Lat: -34.04468
+  Lng: +18.42897
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -63.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000136
+GPS:
+  Lat: -34.04469
+  Lng: +18.42896
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -65.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000137
+GPS:
+  Lat: -34.04471
+  Lng: +18.42894
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -60.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000138
+GPS:
+  Lat: -34.04472
+  Lng: +18.42892
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -61.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000139
+GPS:
+  Lat: -34.04473
+  Lng: +18.42891
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -61.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000140
+GPS:
+  Lat: -34.04474
+  Lng: +18.42889
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000141
+GPS:
+  Lat: -34.04475
+  Lng: +18.42888
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000142
+GPS:
+  Lat: -34.04476
+  Lng: +18.42887
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -63.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000143
+GPS:
+  Lat: -34.04476
+  Lng: +18.42886
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -62.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000144
+GPS:
+  Lat: -34.04478
+  Lng: +18.42884
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -66.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000145
+GPS:
+  Lat: -34.04478
+  Lng: +18.42883
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -65.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000145
+GPS:
+  Lat: -34.04478
+  Lng: +18.42883
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -114.75
+startReceive()
+Updating...
+available!
+MET:
+  Num: 000000146
+GPS:
+  Lat: -34.04479
+  Lng: +18.42882
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -64.00
+startReceive()
+Using position with age 1
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000147
+GPS:
+  Lat: -34.04480
+  Lng: +18.42881
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -62.00
+startReceive()
+Updating...
+Using position with age 1
+startReceive()
+available!
+MET:
+  Num: 000000148
+GPS:
+  Lat: -34.04482
+  Lng: +18.42879
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -63.00
+Updating...
+Using position with age 1
+Updating...
+Using position with age 2
+Updating...
+Using position with age 3
+Updating...
+Using position with age 4
+Updating...
+Updating...
+Using position with age 5
+Updating...
+Using position with age 6
+Updating...
+Using position with age 8
+Updating...
+Using position with age 9
+Updating...
+Using position with age 10
+Updating...
+Using position with age 11
+Updating...
+Using position with age 12
+Updating...
+Using position with age 13
+Updating...
+Using position with age 14
+Updating...
+Using position with age 15
+Updating...
+Updating...
+Using position with age 16
+Updating...
+Using position with age 17
+Updating...
+Using position with age 19
+Updating...
+Using position with age 20
+Updating...
+Using position with age 21
+Updating...
+Using position with age 22
+Updating...
+Using position with age 23
+Updating...
+Using position with age 24
+Updating...
+Using position with age 25
+Updating...
+Using position with age 26
+Updating...
+Updating...
+Using position with age 27
+Updating...
+Using position with age 28
+Updating...
+Using position with age 30
+Updating...
+Using position with age 31
+Updating...
+Using position with age 32
+Updating...
+Using position with age 33
+Updating...
+Using position with age 38
+Updating...
+Setting tracking mode to 0
+Updating...
+Updating...
+Updating...
+Updating...
+Updating...
+Updating...
+
+available!
+MET:
+  Num: 000000208
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Updating...
+available!
+MET:
+  Num: 000000209
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+available!
+ 000000221
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -85.00
+Updating...
+startReceive()
+available!
+MET:
+  Num: 000000222
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Updating...
+available!
+MET:
+  Num: 000000223
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Setting tracking mode to 2
+Updating...
+available!
+
+  Num: 000000228
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -75.00
+Using position with age 6
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000229
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000230
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000231
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000232
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000233
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000234
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -69.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000235
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000236
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -71.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000237
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000238
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000239
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000240
+GPS:
+  Lat: -34.04491
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000241
+GPS:
+  Lat: -34.04492
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000242
+GPS:
+  Lat: -34.04492
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000243
+GPS:
+  Lat: -34.04492
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000244
+GPS:
+  Lat: -34.04492
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000245
+GPS:
+  Lat: -34.04492
+  Lng: +18.42869
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000246
+GPS:
+  Lat: -34.04493
+  Lng: +18.42870
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -77.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000247
+GPS:
+  Lat: -34.04493
+  Lng: +18.42870
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000248
+GPS:
+  Lat: -34.04494
+  Lng: +18.42871
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000249
+GPS:
+  Lat: -34.04494
+  Lng: +18.42871
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -68.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000250
+GPS:
+  Lat: -34.04496
+  Lng: +18.42872
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -72.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000251
+GPS:
+  Lat: -34.04496
+  Lng: +18.42872
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000252
+GPS:
+  Lat: -34.04497
+  Lng: +18.42872
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000253
+GPS:
+  Lat: -34.04498
+  Lng: +18.42873
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -72.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000254
+GPS:
+  Lat: -34.04499
+  Lng: +18.42873
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000255
+GPS:
+  Lat: -34.04499
+  Lng: +18.42874
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000256
+GPS:
+  Lat: -34.04499
+  Lng: +18.42875
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000257
+GPS:
+  Lat: -34.04500
+  Lng: +18.42874
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000258
+GPS:
+  Lat: -34.04501
+  Lng: +18.42874
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000259
+GPS:
+  Lat: -34.04501
+  Lng: +18.42875
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000260
+GPS:
+  Lat: -34.04501
+  Lng: +18.42875
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000261
+GPS:
+  Lat: -34.04502
+  Lng: +18.42876
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000262
+GPS:
+  Lat: -34.04503
+  Lng: +18.42876
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000263
+GPS:
+  Lat: -34.04504
+  Lng: +18.42877
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000264
+GPS:
+  Lat: -34.04504
+  Lng: +18.42882
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000265
+GPS:
+  Lat: -34.04504
+  Lng: +18.42883
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000266
+GPS:
+  Lat: -34.04504
+  Lng: +18.42883
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000267
+GPS:
+  Lat: -34.04505
+  Lng: +18.42883
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000268
+GPS:
+  Lat: -34.04506
+  Lng: +18.42883
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000269
+GPS:
+  Lat: -34.04507
+  Lng: +18.42883
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000270
+GPS:
+  Lat: -34.04508
+  Lng: +18.42883
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -68.00
+startReceive()
+Using position with age 1
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000271
+GPS:
+  Lat: -34.04509
+  Lng: +18.42883
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -69.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000272
+GPS:
+  Lat: -34.04510
+  Lng: +18.42881
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -67.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000273
+GPS:
+  Lat: -34.04511
+  Lng: +18.42879
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -69.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000274
+GPS:
+  Lat: -34.04512
+  Lng: +18.42878
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -68.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000275
+GPS:
+  Lat: -34.04513
+  Lng: +18.42876
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -69.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000276
+GPS:
+  Lat: -34.04514
+  Lng: +18.42875
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -68.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000277
+GPS:
+  Lat: -34.04514
+  Lng: +18.42874
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -68.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000278
+GPS:
+  Lat: -34.04515
+  Lng: +18.42872
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000279
+GPS:
+  Lat: -34.04517
+  Lng: +18.42871
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000280
+GPS:
+  Lat: -34.04518
+  Lng: +18.42869
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -69.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000281
+GPS:
+  Lat: -34.04519
+  Lng: +18.42868
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -71.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000282
+GPS:
+  Lat: -34.04519
+  Lng: +18.42867
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -71.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+available!
+MET:
+  Num: 000000283
+GPS:
+  Lat: -34.04521
+  Lng: +18.42865
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -69.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000284
+GPS:
+  Lat: -34.04522
+  Lng: +18.42864
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -72.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000285
+GPS:
+  Lat: -34.04522
+  Lng: +18.42863
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000286
+GPS:
+  Lat: -34.04523
+  Lng: +18.42861
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -71.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000287
+GPS:
+  Lat: -34.04524
+  Lng: +18.42860
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -71.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000288
+GPS:
+  Lat: -34.04525
+  Lng: +18.42859
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -71.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000289
+GPS:
+  Lat: -34.04526
+  Lng: +18.42858
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000290
+GPS:
+  Lat: -34.04527
+  Lng: +18.42856
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -72.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000291
+GPS:
+  Lat: -34.04528
+  Lng: +18.42855
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000292
+GPS:
+  Lat: -34.04529
+  Lng: +18.42854
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000293
+GPS:
+  Lat: -34.04530
+  Lng: +18.42853
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -72.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000294
+GPS:
+  Lat: -34.04531
+  Lng: +18.42852
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000295
+GPS:
+  Lat: -34.04532
+  Lng: +18.42850
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000296
+GPS:
+  Lat: -34.04533
+  Lng: +18.42849
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000297
+GPS:
+  Lat: -34.04535
+  Lng: +18.42847
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -71.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000298
+GPS:
+  Lat: -34.04535
+  Lng: +18.42846
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -72.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000299
+GPS:
+  Lat: -34.04536
+  Lng: +18.42845
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000300
+GPS:
+  Lat: -34.04537
+  Lng: +18.42844
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000301
+GPS:
+  Lat: -34.04539
+  Lng: +18.42843
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000302
+GPS:
+  Lat: -34.04541
+  Lng: +18.42843
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000303
+GPS:
+  Lat: -34.04542
+  Lng: +18.42843
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000304
+GPS:
+  Lat: -34.04543
+  Lng: +18.42843
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000305
+GPS:
+  Lat: -34.04544
+  Lng: +18.42844
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000306
+GPS:
+  Lat: -34.04545
+  Lng: +18.42844
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000307
+GPS:
+  Lat: -34.04546
+  Lng: +18.42844
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000308
+GPS:
+  Lat: -34.04548
+  Lng: +18.42844
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000308
+GPS:
+  Lat: -34.04548
+  Lng: +18.42844
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -116.25
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000309
+GPS:
+  Lat: -34.04549
+  Lng: +18.42844
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000310
+GPS:
+  Lat: -34.04551
+  Lng: +18.42843
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000311
+GPS:
+  Lat: -34.04552
+  Lng: +18.42843
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000312
+GPS:
+  Lat: -34.04554
+  Lng: +18.42843
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000313
+GPS:
+  Lat: -34.04555
+  Lng: +18.42844
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -77.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000314
+GPS:
+  Lat: -34.04556
+  Lng: +18.42844
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000315
+GPS:
+  Lat: -34.04557
+  Lng: +18.42844
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -72.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000316
+GPS:
+  Lat: -34.04559
+  Lng: +18.42842
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000317
+GPS:
+  Lat: -34.04559
+  Lng: +18.42841
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000318
+GPS:
+  Lat: -34.04560
+  Lng: +18.42840
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000319
+GPS:
+  Lat: -34.04561
+  Lng: +18.42838
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000320
+GPS:
+  Lat: -34.04562
+  Lng: +18.42836
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000321
+GPS:
+  Lat: -34.04563
+  Lng: +18.42836
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Using position with age 1
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000322
+GPS:
+  Lat: -34.04564
+  Lng: +18.42835
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000323
+GPS:
+  Lat: -34.04566
+  Lng: +18.42833
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000324
+GPS:
+  Lat: -34.04567
+  Lng: +18.42832
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000325
+GPS:
+  Lat: -34.04568
+  Lng: +18.42830
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000326
+GPS:
+  Lat: -34.04568
+  Lng: +18.42828
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000327
+GPS:
+  Lat: -34.04569
+  Lng: +18.42825
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -77.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000328
+GPS:
+  Lat: -34.04571
+  Lng: +18.42824
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000329
+GPS:
+  Lat: -34.04573
+  Lng: +18.42823
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000330
+GPS:
+  Lat: -34.04574
+  Lng: +18.42821
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000331
+GPS:
+  Lat: -34.04575
+  Lng: +18.42819
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000332
+GPS:
+  Lat: -34.04576
+  Lng: +18.42818
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000333
+GPS:
+  Lat: -34.04577
+  Lng: +18.42817
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000334
+GPS:
+  Lat: -34.04578
+  Lng: +18.42816
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000335
+GPS:
+  Lat: -34.04578
+  Lng: +18.42815
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000336
+GPS:
+  Lat: -34.04580
+  Lng: +18.42812
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000337
+GPS:
+  Lat: -34.04581
+  Lng: +18.42810
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000338
+GPS:
+  Lat: -34.04581
+  Lng: +18.42808
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000339
+GPS:
+  Lat: -34.04582
+  Lng: +18.42807
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000340
+GPS:
+  Lat: -34.04583
+  Lng: +18.42807
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000341
+GPS:
+  Lat: -34.04583
+  Lng: +18.42807
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000342
+GPS:
+  Lat: -34.04584
+  Lng: +18.42806
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000343
+GPS:
+  Lat: -34.04585
+  Lng: +18.42805
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000344
+GPS:
+  Lat: -34.04585
+  Lng: +18.42805
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000345
+GPS:
+  Lat: -34.04586
+  Lng: +18.42804
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000346
+GPS:
+  Lat: -34.04586
+  Lng: +18.42803
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000347
+GPS:
+  Lat: -34.04587
+  Lng: +18.42803
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 1
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000348
+GPS:
+  Lat: -34.04588
+  Lng: +18.42802
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000349
+GPS:
+  Lat: -34.04589
+  Lng: +18.42800
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000350
+GPS:
+  Lat: -34.04589
+  Lng: +18.42799
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000351
+GPS:
+  Lat: -34.04590
+  Lng: +18.42798
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000352
+GPS:
+  Lat: -34.04591
+  Lng: +18.42797
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000353
+GPS:
+  Lat: -34.04592
+  Lng: +18.42795
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000354
+GPS:
+  Lat: -34.04593
+  Lng: +18.42794
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000355
+GPS:
+  Lat: -34.04593
+  Lng: +18.42793
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000356
+GPS:
+  Lat: -34.04594
+  Lng: +18.42791
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000357
+GPS:
+  Lat: -34.04596
+  Lng: +18.42789
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000358
+GPS:
+  Lat: -34.04597
+  Lng: +18.42788
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000359
+GPS:
+  Lat: -34.04597
+  Lng: +18.42787
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000360
+GPS:
+  Lat: -34.04599
+  Lng: +18.42785
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000361
+GPS:
+  Lat: -34.04600
+  Lng: +18.42784
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000362
+GPS:
+  Lat: -34.04601
+  Lng: +18.42783
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000363
+GPS:
+  Lat: -34.04602
+  Lng: +18.42782
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000364
+GPS:
+  Lat: -34.04602
+  Lng: +18.42780
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000365
+GPS:
+  Lat: -34.04604
+  Lng: +18.42779
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000366
+GPS:
+  Lat: -34.04606
+  Lng: +18.42778
+  Alt: 000000082
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000367
+GPS:
+  Lat: -34.04607
+  Lng: +18.42777
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000368
+GPS:
+  Lat: -34.04609
+  Lng: +18.42775
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000369
+GPS:
+  Lat: -34.04609
+  Lng: +18.42774
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000370
+GPS:
+  Lat: -34.04610
+  Lng: +18.42773
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000371
+GPS:
+  Lat: -34.04610
+  Lng: +18.42772
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000372
+GPS:
+  Lat: -34.04611
+  Lng: +18.42770
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000373
+GPS:
+  Lat: -34.04611
+  Lng: +18.42770
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000374
+GPS:
+  Lat: -34.04612
+  Lng: +18.42769
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000375
+GPS:
+  Lat: -34.04614
+  Lng: +18.42767
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000376
+GPS:
+  Lat: -34.04615
+  Lng: +18.42766
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000377
+GPS:
+  Lat: -34.04615
+  Lng: +18.42765
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000378
+GPS:
+  Lat: -34.04616
+  Lng: +18.42764
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000379
+GPS:
+  Lat: -34.04617
+  Lng: +18.42762
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -92.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000380
+GPS:
+  Lat: -34.04618
+  Lng: +18.42761
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000381
+GPS:
+  Lat: -34.04619
+  Lng: +18.42760
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000382
+GPS:
+  Lat: -34.04620
+  Lng: +18.42759
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000383
+GPS:
+  Lat: -34.04621
+  Lng: +18.42757
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000384
+GPS:
+  Lat: -34.04622
+  Lng: +18.42756
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -93.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000385
+GPS:
+  Lat: -34.04623
+  Lng: +18.42755
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000386
+GPS:
+  Lat: -34.04624
+  Lng: +18.42753
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000386
+GPS:
+  Lat: -34.04624
+  Lng: +18.42753
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -96.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000388
+GPS:
+  Lat: -34.04625
+  Lng: +18.42751
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000389
+GPS:
+  Lat: -34.04626
+  Lng: +18.42749
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000390
+GPS:
+  Lat: -34.04628
+  Lng: +18.42747
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -97.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000391
+GPS:
+  Lat: -34.04629
+  Lng: +18.42746
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000391
+GPS:
+  Lat: -34.04629
+  Lng: +18.42746
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -121.75
+startReceive()
+Updating...
+available!
+MET:
+  Num: 000000392
+GPS:
+  Lat: -34.04629
+  Lng: +18.42745
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 1
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000393
+GPS:
+  Lat: -34.04630
+  Lng: +18.42743
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000394
+GPS:
+  Lat: -34.04631
+  Lng: +18.42741
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000395
+GPS:
+  Lat: -34.04632
+  Lng: +18.42740
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000396
+GPS:
+  Lat: -34.04633
+  Lng: +18.42739
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000397
+GPS:
+  Lat: -34.04634
+  Lng: +18.42737
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000398
+GPS:
+  Lat: -34.04635
+  Lng: +18.42736
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000399
+GPS:
+  Lat: -34.04636
+  Lng: +18.42735
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000400
+GPS:
+  Lat: -34.04637
+  Lng: +18.42734
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000401
+GPS:
+  Lat: -34.04639
+  Lng: +18.42732
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000402
+GPS:
+  Lat: -34.04640
+  Lng: +18.42731
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000403
+GPS:
+  Lat: -34.04641
+  Lng: +18.42730
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000404
+GPS:
+  Lat: -34.04643
+  Lng: +18.42728
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000405
+GPS:
+  Lat: -34.04644
+  Lng: +18.42727
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000406
+GPS:
+  Lat: -34.04645
+  Lng: +18.42726
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000407
+GPS:
+  Lat: -34.04647
+  Lng: +18.42725
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000408
+GPS:
+  Lat: -34.04650
+  Lng: +18.42723
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000409
+GPS:
+  Lat: -34.04650
+  Lng: +18.42723
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000410
+GPS:
+  Lat: -34.04652
+  Lng: +18.42723
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000411
+GPS:
+  Lat: -34.04653
+  Lng: +18.42722
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000412
+GPS:
+  Lat: -34.04655
+  Lng: +18.42721
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000413
+GPS:
+  Lat: -34.04657
+  Lng: +18.42721
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000414
+GPS:
+  Lat: -34.04657
+  Lng: +18.42720
+  Alt: 000000084
+  Age:tReceive()
+ 000000000
+
+RSSI = -88.00
+starUsing position with age 1
+Updating...
+available!
+MET:
+  Num: 000000415
+GPS:
+  Lat: -34.04659
+  Lng: +18.42720
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000416
+GPS:
+  Lat: -34.04660
+  Lng: +18.42719
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000417
+GPS:
+  Lat: -34.04662
+  Lng: +18.42719
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000418
+GPS:
+  Lat: -34.04662
+  Lng: +18.42718
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000419
+GPS:
+  Lat: -34.04663
+  Lng: +18.42718
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000420
+GPS:
+  Lat: -34.04666
+  Lng: +18.42718
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000421
+GPS:
+  Lat: -34.04667
+  Lng: +18.42718
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000422
+GPS:
+  Lat: -34.04668
+  Lng: +18.42719
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000423
+GPS:
+  Lat: -34.04671
+  Lng: +18.42719
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000424
+GPS:
+  Lat: -34.04672
+  Lng: +18.42719
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000425
+GPS:
+  Lat: -34.04673
+  Lng: +18.42719
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000426
+GPS:
+  Lat: -34.04674
+  Lng: +18.42719
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000427
+GPS:
+  Lat: -34.04676
+  Lng: +18.42720
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000428
+GPS:
+  Lat: -34.04677
+  Lng: +18.42720
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000429
+GPS:
+  Lat: -34.04678
+  Lng: +18.42721
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000430
+GPS:
+  Lat: -34.04679
+  Lng: +18.42721
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000431
+GPS:
+  Lat: -34.04681
+  Lng: +18.42722
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000432
+GPS:
+  Lat: -34.04682
+  Lng: +18.42722
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000433
+GPS:
+  Lat: -34.04683
+  Lng: +18.42723
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000434
+GPS:
+  Lat: -34.04686
+  Lng: +18.42723
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000435
+GPS:
+  Lat: -34.04687
+  Lng: +18.42724
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000436
+GPS:
+  Lat: -34.04688
+  Lng: +18.42724
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000437
+GPS:
+  Lat: -34.04689
+  Lng: +18.42725
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000438
+GPS:
+  Lat: -34.04691
+  Lng: +18.42726
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000439
+GPS:
+  Lat: -34.04692
+  Lng: +18.42726
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000440
+GPS:
+  Lat: -34.04693
+  Lng: +18.42727
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000441
+GPS:
+  Lat: -34.04694
+  Lng: +18.42728
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000442
+GPS:
+  Lat: -34.04696
+  Lng: +18.42729
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000443
+GPS:
+  Lat: -34.04697
+  Lng: +18.42730
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000444
+GPS:
+  Lat: -34.04698
+  Lng: +18.42731
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000445
+GPS:
+  Lat: -34.04698
+  Lng: +18.42731
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000446
+GPS:
+  Lat: -34.04701
+  Lng: +18.42733
+  Alt: 000000083
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000447
+GPS:
+  Lat: -34.04702
+  Lng: +18.42733
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000448
+GPS:
+  Lat: -34.04703
+  Lng: +18.42734
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000449
+GPS:
+  Lat: -34.04704
+  Lng: +18.42736
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000450
+GPS:
+  Lat: -34.04705
+  Lng: +18.42737
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000451
+GPS:
+  Lat: -34.04706
+  Lng: +18.42738
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+available!
+MET:
+  Num: 000000451
+GPS:
+  Lat: -34.04706
+  Lng: +18.42738
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -118.75
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000452
+GPS:
+  Lat: -34.04707
+  Lng: +18.42739
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000453
+GPS:
+  Lat: -34.04708
+  Lng: +18.42742
+  Alt: 000000087
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000454
+GPS:
+  Lat: -34.04709
+  Lng: +18.42743
+  Alt: 000000087
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000455
+GPS:
+  Lat: -34.04710
+  Lng: +18.42744
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000456
+GPS:
+  Lat: -34.04711
+  Lng: +18.42745
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000457
+GPS:
+  Lat: -34.04712
+  Lng: +18.42748
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000458
+GPS:
+  Lat: -34.04713
+  Lng: +18.42749
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000459
+GPS:
+  Lat: -34.04713
+  Lng: +18.42750
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000460
+GPS:
+  Lat: -34.04714
+  Lng: +18.42751
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000461
+GPS:
+  Lat: -34.04715
+  Lng: +18.42754
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000462
+GPS:
+  Lat: -34.04715
+  Lng: +18.42755
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000463
+GPS:
+  Lat: -34.04716
+  Lng: +18.42756
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000464
+GPS:
+  Lat: -34.04717
+  Lng: +18.42759
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000465
+GPS:
+  Lat: -34.04718
+  Lng: +18.42760
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000466
+GPS:
+  Lat: -34.04718
+  Lng: +18.42761
+  Alt: 000000086
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000467
+GPS:
+  Lat: -34.04719
+  Lng: +18.42763
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000468
+GPS:
+  Lat: -34.04719
+  Lng: +18.42765
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000469
+GPS:
+  Lat: -34.04720
+  Lng: +18.42766
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000470
+GPS:
+  Lat: -34.04720
+  Lng: +18.42768
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000471
+GPS:
+  Lat: -34.04720
+  Lng: +18.42769
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000472
+GPS:
+  Lat: -34.04721
+  Lng: +18.42771
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -94.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000472
+GPS:
+  Lat: -34.04721
+  Lng: +18.42771
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -105.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000472
+GPS:
+  Lat: -34.04721
+  Lng: +18.42771
+  Alt: 000000085
+  Age: 000000000
+
+RSSI = -99.75
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000475
+GPS:
+  Lat: -34.04723
+  Lng: +18.42770
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000476
+GPS:
+  Lat: -34.04724
+  Lng: +18.42770
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -96.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000477
+GPS:
+  Lat: -34.04725
+  Lng: +18.42770
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 1
+Updating...
+startReceive()
+available!
+MET:
+  Num: 000000478
+GPS:
+  Lat: -34.04725
+  Lng: +18.42770
+  Alt: 000000084
+  Age: 000000000
+
+RSSI = -89.00
+Updating...
+Using position with age 0
+Updating...
+Using position with age 2
+Updating...
+Using position with age 3
+Updating...
+Using position with age 4
+Updating...
+Using position with age 5
+Updating...
+Using position with age 6
+Updating...
+Using position with age 7
+Updating...
+Using position with age 8
+Updating...
+Using position with age 9
+Updating...
+Using position with age 10
+Updating...
+Updating...
+Using position with age 11
+Updating...
+Using position with age 13
+Updating...
+Using position with age 14
+Updating...
+Using position with age 15
+Updating...
+Using position with age 16
+Updating...
+Using position with age 17
+Updating...
+Using position with age 18
+Updating...
+Using position with age 19
+Updating...
+Using position with age 20
+Updating...
+Using position with age 21
+Updating...
+Updating...
+Using position with age 22
+Updating...
+Using position with age 24
+Updating...
+Using position with age 25
+Updating...
+Using position with age 26
+Updating...
+Using position with age 27
+Updating...
+Using position with age 28
+Updating...
+Setting tracking mode to 0
+Using position with age 29
+Updating...
+Using position with age 30
+Updating...
+Updating...
+Updating...
+Updating...
+Updating...
+
+available!
+MET:
+  Num: 000000525
+GPS:
+  Lat: -34.04742
+  Lng: +18.42772
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -105.00
+startReceive()
+Updating...
+available!
+MET:
+  Num: 000000526
+GPS:
+  Lat: -34.04742
+  Lng: +18.42772
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -112.50
+startReceive()
+Updating...
+Updating...
+available!
+MET:
+  Num: 000000527
+GPS:
+  Lat: -34.04742
+  Lng: +18.42772
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -98.00
+startReceive()
+Updating...
+available!
+MET:
+  Num: 000000528
+GPS:
+  Lat: -34.04742
+  Lng: +18.42772
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -97.00
+startReceive()
+Updating...
+available!
+MET:
+  Num: 000000529
+GPS:
+  Lat: -34.04742
+  Lng: +18.42772
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -98.00
+startReceive()
+Updating...
+Updating...
+available!
+000000542
+GPS:
+  Lat: -34.04742
+  Lng: +18.42772
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -91.00
+Updating...
+startReceive()
+Setting tracking mode to 2
+Updating...
+available!
+  Num: 000000548
+GPS:
+  Lat: -34.04741
+  Lng: +18.42771
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -89.00
+Using position with age 23
+startReceive()
+available!
+MET:
+  Num: 000000549
+GPS:
+  Lat: -34.04741
+  Lng: +18.42771
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000550
+GPS:
+  Lat: -34.04741
+  Lng: +18.42771
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000551
+GPS:
+  Lat: -34.04741
+  Lng: +18.42771
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000552
+GPS:
+  Lat: -34.04741
+  Lng: +18.42771
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000553
+GPS:
+  Lat: -34.04741
+  Lng: +18.42772
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -85.00
+Using position with age 1
+startReceive()
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000554
+GPS:
+  Lat: -34.04742
+  Lng: +18.42773
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000555
+GPS:
+  Lat: -34.04741
+  Lng: +18.42775
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000556
+GPS:
+  Lat: -34.04741
+  Lng: +18.42776
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000557
+GPS:
+  Lat: -34.04741
+  Lng: +18.42777
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000558
+GPS:
+  Lat: -34.04741
+  Lng: +18.42778
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000559
+GPS:
+  Lat: -34.04741
+  Lng: +18.42781
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000560
+GPS:
+  Lat: -34.04741
+  Lng: +18.42782
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000561
+GPS:
+  Lat: -34.04741
+  Lng: +18.42784
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000562
+GPS:
+  Lat: -34.04741
+  Lng: +18.42785
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000563
+GPS:
+  Lat: -34.04741
+  Lng: +18.42788
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000564
+GPS:
+  Lat: -34.04741
+  Lng: +18.42789
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000565
+GPS:
+  Lat: -34.04741
+  Lng: +18.42790
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000566
+GPS:
+  Lat: -34.04741
+  Lng: +18.42794
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000567
+GPS:
+  Lat: -34.04741
+  Lng: +18.42795
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000568
+GPS:
+  Lat: -34.04741
+  Lng: +18.42796
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000569
+GPS:
+  Lat: -34.04741
+  Lng: +18.42797
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000570
+GPS:
+  Lat: -34.04741
+  Lng: +18.42800
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000571
+GPS:
+  Lat: -34.04740
+  Lng: +18.42802
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000572
+GPS:
+  Lat: -34.04741
+  Lng: +18.42803
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000573
+GPS:
+  Lat: -34.04741
+  Lng: +18.42804
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000574
+GPS:
+  Lat: -34.04741
+  Lng: +18.42807
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000575
+GPS:
+  Lat: -34.04741
+  Lng: +18.42809
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000576
+GPS:
+  Lat: -34.04741
+  Lng: +18.42810
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000577
+GPS:
+  Lat: -34.04741
+  Lng: +18.42812
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000578
+GPS:
+  Lat: -34.04740
+  Lng: +18.42815
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000579
+GPS:
+  Lat: -34.04740
+  Lng: +18.42817
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000580
+GPS:
+  Lat: -34.04740
+  Lng: +18.42818
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 1
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000581
+GPS:
+  Lat: -34.04739
+  Lng: +18.42820
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000582
+GPS:
+  Lat: -34.04739
+  Lng: +18.42823
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000582
+GPS:
+  Lat: -34.04739
+  Lng: +18.42823
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -96.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000584
+GPS:
+  Lat: -34.04739
+  Lng: +18.42826
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000585
+GPS:
+  Lat: -34.04739
+  Lng: +18.42827
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000586
+GPS:
+  Lat: -34.04739
+  Lng: +18.42830
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000587
+GPS:
+  Lat: -34.04739
+  Lng: +18.42831
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -84.00
+Using position with age 1
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000588
+GPS:
+  Lat: -34.04739
+  Lng: +18.42833
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000589
+GPS:
+  Lat: -34.04739
+  Lng: +18.42834
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000590
+GPS:
+  Lat: -34.04739
+  Lng: +18.42837
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000591
+GPS:
+  Lat: -34.04739
+  Lng: +18.42839
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000592
+GPS:
+  Lat: -34.04739
+  Lng: +18.42840
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000593
+GPS:
+  Lat: -34.04739
+  Lng: +18.42843
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000594
+GPS:
+  Lat: -34.04739
+  Lng: +18.42845
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000595
+GPS:
+  Lat: -34.04739
+  Lng: +18.42846
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000596
+GPS:
+  Lat: -34.04739
+  Lng: +18.42847
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000597
+GPS:
+  Lat: -34.04739
+  Lng: +18.42850
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+startReceive()
+available!
+MET:
+  Num: 000000598
+GPS:
+  Lat: -34.04739
+  Lng: +18.42852
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -84.00
+Using position with age 1
+Updating...
+Using position with age 2
+Updating...
+Using position with age 3
+Updating...
+Using position with age 4
+Updating...
+Using position with age 5
+Updating...
+Updating...
+Using position with age 6
+Updating...
+Using position with age 7
+Updating...
+Using position with age 8
+Updating...
+Using position with age 9
+Updating...
+Using position with age 10
+Updating...
+Using position with age 12
+Updating...
+Using position with age 13
+Updating...
+Using position with age 14
+Updating...
+Using position with age 15
+Updating...
+Using position with age 16
+Updating...
+Updating...
+Using position with age 20
+Updating...
+Setting tracking mode to 0
+
+Updating...
+available!
+MET:
+  Num: 000000668
+GPS:
+  Lat: -34.04739
+  Lng: +18.42866
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -96.00
+startReceive()
+Updating...
+available!
+MET:
+  Num: 000000669
+GPS:
+  Lat: -34.04739
+  Lng: +18.42866
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -95.00
+startReceive()
+Updating...
+available!
+MET:
+  Num: 000000670
+GPS:
+  Lat: -34.04739
+  Lng: +18.42866
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -95.00
+startReceive()
+Updating...
+available!
+000000683
+GPS:
+  Lat: -34.04740
+  Lng: +18.42867
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -91.00
+Updating...
+startReceive()
+Setting tracking mode to 2
+Updating...
+available!
+000000683
+GPS:
+  Lat: -34.04740
+  Lng: +18.42867
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -83.00
+Using position with age 10
+startReceive()
+Updating...
+available!
+MET:
+  Num: 000000691
+GPS:
+  Lat: -34.04740
+  Lng: +18.42867
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000692
+GPS:
+  Lat: -34.04740
+  Lng: +18.42867
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000693
+GPS:
+  Lat: -34.04740
+  Lng: +18.42867
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000694
+GPS:
+  Lat: -34.04740
+  Lng: +18.42867
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000695
+GPS:
+  Lat: -34.04740
+  Lng: +18.42868
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000696
+GPS:
+  Lat: -34.04739
+  Lng: +18.42869
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000697
+GPS:
+  Lat: -34.04739
+  Lng: +18.42870
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000698
+GPS:
+  Lat: -34.04739
+  Lng: +18.42873
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000699
+GPS:
+  Lat: -34.04738
+  Lng: +18.42874
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000700
+GPS:
+  Lat: -34.04739
+  Lng: +18.42876
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000701
+GPS:
+  Lat: -34.04739
+  Lng: +18.42879
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000702
+GPS:
+  Lat: -34.04738
+  Lng: +18.42880
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000703
+GPS:
+  Lat: -34.04738
+  Lng: +18.42882
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000704
+GPS:
+  Lat: -34.04738
+  Lng: +18.42883
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000705
+GPS:
+  Lat: -34.04738
+  Lng: +18.42886
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000706
+GPS:
+  Lat: -34.04738
+  Lng: +18.42887
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000707
+GPS:
+  Lat: -34.04737
+  Lng: +18.42889
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000708
+GPS:
+  Lat: -34.04737
+  Lng: +18.42890
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000709
+GPS:
+  Lat: -34.04737
+  Lng: +18.42893
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000710
+GPS:
+  Lat: -34.04737
+  Lng: +18.42894
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000711
+GPS:
+  Lat: -34.04737
+  Lng: +18.42896
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000712
+GPS:
+  Lat: -34.04737
+  Lng: +18.42897
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000713
+GPS:
+  Lat: -34.04737
+  Lng: +18.42900
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000714
+GPS:
+  Lat: -34.04737
+  Lng: +18.42901
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000715
+GPS:
+  Lat: -34.04738
+  Lng: +18.42902
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000716
+GPS:
+  Lat: -34.04738
+  Lng: +tReceive()
+18.42904
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -89.00
+starUsing position with age 0
+Updating...
+available!
+MET:
+  Num: 000000717
+GPS:
+  Lat: -34.04737
+  Lng: +18.42907
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000718
+GPS:
+  Lat: -34.04737
+  Lng: +18.42908
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000719
+GPS:
+  Lat: -34.04737
+  Lng: +18.42909
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000720
+GPS:
+  Lat: -34.04737
+  Lng: +18.42910
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -92.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000721
+GPS:
+  Lat: -34.04737
+  Lng: +18.42913
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -92.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000722
+GPS:
+  Lat: -34.04737
+  Lng: +18.42914
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000723
+GPS:
+  Lat: -34.04737
+  Lng: +18.42913
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000724
+GPS:
+  Lat: -34.04737
+  Lng: +18.42913
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000725
+GPS:
+  Lat: -34.04736
+  Lng: +18.42912
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000726
+GPS:
+  Lat: -34.04736
+  Lng: +18.42913
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000727
+GPS:
+  Lat: -34.04735
+  Lng: +18.42915
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000728
+GPS:
+  Lat: -34.04735
+  Lng: +18.42917
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000729
+GPS:
+  Lat: -34.04735
+  Lng: +18.42919
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000730
+GPS:
+  Lat: -34.04736
+  Lng: +18.42920
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -77.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000731
+GPS:
+  Lat: -34.04736
+  Lng: +18.42922
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000732
+GPS:
+  Lat: -34.04736
+  Lng: +18.42925
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000733
+GPS:
+  Lat: -34.04736
+  Lng: +18.42926
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000734
+GPS:
+  Lat: -34.04736
+  Lng: +18.42928
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000735
+GPS:
+  Lat: -34.04736
+  Lng: +18.42929
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000736
+GPS:
+  Lat: -34.04735
+  Lng: +18.42932
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000737
+GPS:
+  Lat: -34.04735
+  Lng: +18.42933
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000738
+GPS:
+  Lat: -34.04735
+  Lng: +18.42935
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000739
+GPS:
+  Lat: -34.04735
+  Lng: +18.42937
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000740
+GPS:
+  Lat: -34.04734
+  Lng: +18.42938
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000741
+GPS:
+  Lat: -34.04734
+  Lng: +18.42940
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000742
+GPS:
+  Lat: -34.04734
+  Lng: +18.42940
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000743
+GPS:
+  Lat: -34.04734
+  Lng: +18.42941
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000744
+GPS:
+  Lat: -34.04736
+  Lng: +18.42945
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000745
+GPS:
+  Lat: -34.04736
+  Lng: +18.42945
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000746
+GPS:
+  Lat: -34.04736
+  Lng: +18.42947
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000746
+GPS:
+  Lat: -34.04736
+  Lng: +18.42947
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -95.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000748
+GPS:
+  Lat: -34.04735
+  Lng: +18.42952
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000748
+GPS:
+  Lat: -34.04735
+  Lng: +18.42952
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -100.75
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000750
+GPS:
+  Lat: -34.04735
+  Lng: +18.42956
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -96.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000751
+GPS:
+  Lat: -34.04735
+  Lng: +18.42959
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000752
+GPS:
+  Lat: -34.04735
+  Lng: +18.42961
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -95.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000753
+GPS:
+  Lat: -34.04735
+  Lng: +18.42962
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000754
+GPS:
+  Lat: -34.04734
+  Lng: +18.42964
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000755
+GPS:
+  Lat: -34.04735
+  Lng: +18.42967
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000756
+GPS:
+  Lat: -34.04735
+  Lng: +18.42969
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000757
+GPS:
+  Lat: -34.04735
+  Lng: +18.42970
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000758
+GPS:
+  Lat: -34.04735
+  Lng: +18.42972
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -97.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000759
+GPS:
+  Lat: -34.04735
+  Lng: +18.42975
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000760
+GPS:
+  Lat: -34.04735
+  Lng: +18.42976
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000761
+GPS:
+  Lat: -34.04735
+  Lng: +18.42977
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -93.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000762
+GPS:
+  Lat: -34.04735
+  Lng: +18.42979
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -98.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000763
+GPS:
+  Lat: -34.04735
+  Lng: +18.42982
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000764
+GPS:
+  Lat: -34.04735
+  Lng: +18.42983
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000765
+GPS:
+  Lat: -34.04735
+  Lng: +18.42985
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -98.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000766
+GPS:
+  Lat: -34.04734
+  Lng: +18.42986
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000767
+GPS:
+  Lat: -34.04734
+  Lng: +18.42989
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -98.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000768
+GPS:
+  Lat: -34.04734
+  Lng: +18.42990
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -97.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000769
+GPS:
+  Lat: -34.04734
+  Lng: +18.42992
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -100.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000770
+GPS:
+  Lat: -34.04734
+  Lng: +18.42994
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000771
+GPS:
+  Lat: -34.04733
+  Lng: +18.42995
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000771
+GPS:
+  Lat: -34.04733
+  Lng: +18.42995
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -92.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000771
+GPS:
+  Lat: -34.04733
+  Lng: +18.42995
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000774
+GPS:
+  Lat: -34.04729
+  Lng: +18.42997
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000775
+GPS:
+  Lat: -34.04729
+  Lng: +18.42997
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000776
+GPS:
+  Lat: -34.04728
+  Lng: +18.42998
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000777
+GPS:
+  Lat: -34.04728
+  Lng: +18.42998
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000778
+GPS:
+  Lat: -34.04728
+  Lng: +18.42998
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000779
+GPS:
+  Lat: -34.04728
+  Lng: +18.42998
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000780
+GPS:
+  Lat: -34.04727
+  Lng: +18.42999
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000781
+GPS:
+  Lat: -34.04726
+  Lng: +18.42999
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000782
+GPS:
+  Lat: -34.04724
+  Lng: +18.42999
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000783
+GPS:
+  Lat: -34.04723
+  Lng: +18.42999
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000784
+GPS:
+  Lat: -34.04721
+  Lng: +18.43000
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -97.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000785
+GPS:
+  Lat: -34.04721
+  Lng: +18.43001
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000786
+GPS:
+  Lat: -34.04719
+  Lng: +18.43003
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000787
+GPS:
+  Lat: -34.04718
+  Lng: +18.43004
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -97.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000788
+GPS:
+  Lat: -34.04718
+  Lng: +18.43005
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000789
+GPS:
+  Lat: -34.04716
+  Lng: +18.43007
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000790
+GPS:
+  Lat: -34.04715
+  Lng: +18.43008
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000791
+GPS:
+  Lat: -34.04714
+  Lng: +18.43008
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000792
+GPS:
+  Lat: -34.04714
+  Lng: +18.43009
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000793
+GPS:
+  Lat: -34.04712
+  Lng: +18.43010
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000794
+GPS:
+  Lat: -34.04711
+  Lng: +18.43009
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -99.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000795
+GPS:
+  Lat: -34.04710
+  Lng: +18.43008
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -94.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000796
+GPS:
+  Lat: -34.04709
+  Lng: +18.43008
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -96.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000797
+GPS:
+  Lat: -34.04707
+  Lng: +18.43007
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -93.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000798
+GPS:
+  Lat: -34.04706
+  Lng: +18.43007
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -94.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000799
+GPS:
+  Lat: -34.04705
+  Lng: +18.43007
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -93.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000800
+GPS:
+  Lat: -34.04704
+  Lng: +18.43007
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000801
+GPS:
+  Lat: -34.04701
+  Lng: +18.43008
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000802
+GPS:
+  Lat: -34.04700
+  Lng: +18.43009
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000803
+GPS:
+  Lat: -34.04700
+  Lng: +18.43010
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000804
+GPS:
+  Lat: -34.04699
+  Lng: +18.43010
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000805
+GPS:
+  Lat: -34.04697
+  Lng: +18.43012
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000806
+GPS:
+  Lat: -34.04696
+  Lng: +18.43012
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -93.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000807
+GPS:
+  Lat: -34.04695
+  Lng: +18.43013
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+startReceive()
+available!
+MET:
+  Num: 000000808
+GPS:
+  Lat: -34.04694
+  Lng: +18.43014
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -91.00
+Using position with age 0
+Updating...
+Using position with age 1
+Updating...
+Using position with age 2
+Updating...
+Using position with age 3
+Updating...
+Using position with age 4
+Updating...
+Using position with age 5
+Updating...
+Using position with age 6
+Updating...
+Using position with age 7
+Updating...
+Using position with age 8
+Updating...
+Updating...
+Using position with age 9
+Updating...
+Using position with age 11
+Updating...
+Using position with age 12
+Updating...
+Using position with age 13
+Updating...
+Using position with age 14
+Updating...
+Using position with age 15
+Updating...
+Using position with age 16
+Updating...
+Using position with age 17
+Updating...
+Using position with age 18
+Updating...
+Using position with age 19
+Updating...
+Using position with age 22
+Updating...
+Setting tracking mode to 0
+Using position with age 27
+Updating...
+
+Updating...
+available!
+MET:
+  Num: 000000846
+GPS:
+  Lat: -34.04679
+  Lng: +18.43034
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+available!
+MET:
+  Num: 000000847
+GPS:
+  Lat: -34.04679
+  Lng: +18.43034
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+available!
+ 000000859
+GPS:
+  Lat: -34.04679
+  Lng: +18.43034
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -86.00
+Updating...
+startReceive()
+Setting tracking mode to 2
+Updating...
+available!
+Num: 000000867
+GPS:
+  Lat: -34.04679
+  Lng: +18.43034
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -88.00
+Using position with age 11
+startReceive()
+available!
+MET:
+  Num: 000000868
+GPS:
+  Lat: -34.04679
+  Lng: +18.43034
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000869
+GPS:
+  Lat: -34.04679
+  Lng: +18.43034
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000870
+GPS:
+  Lat: -34.04679
+  Lng: +18.43034
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -94.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000871
+GPS:
+  Lat: -34.04678
+  Lng: +18.43035
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -92.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000872
+GPS:
+  Lat: -34.04677
+  Lng: +18.43036
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000873
+GPS:
+  Lat: -34.04676
+  Lng: +18.43037
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000874
+GPS:
+  Lat: -34.04675
+  Lng: +18.43038
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -94.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000875
+GPS:
+  Lat: -34.04673
+  Lng: +18.43039
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -101.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000876
+GPS:
+  Lat: -34.04672
+  Lng: +18.43040
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -93.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000877
+GPS:
+  Lat: -34.04671
+  Lng: +18.43041
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -94.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000878
+GPS:
+  Lat: -34.04672
+  Lng: +18.43043
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000879
+GPS:
+  Lat: -34.04671
+  Lng: +18.43044
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000880
+GPS:
+  Lat: -34.04670
+  Lng: +18.43044
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000880
+GPS:
+  Lat: -34.04670
+  Lng: +18.43044
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000882
+GPS:
+  Lat: -34.04668
+  Lng: +18.43047
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000883
+GPS:
+  Lat: -34.04667
+  Lng: +18.43048
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -92.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000884
+GPS:
+  Lat: -34.04665
+  Lng: +18.43048
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -92.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000885
+GPS:
+  Lat: -34.04665
+  Lng: +18.43050
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+available!
+MET:
+  Num: 000000886
+GPS:
+  Lat: -34.04662
+  Lng: +18.43051
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -86.00
+Using position with age 1
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000887
+GPS:
+  Lat: -34.04661
+  Lng: +18.43052
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000888
+GPS:
+  Lat: -34.04660
+  Lng: +18.43053
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000889
+GPS:
+  Lat: -34.04659
+  Lng: +18.43054
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -93.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000890
+GPS:
+  Lat: -34.04657
+  Lng: +18.43056
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -100.25
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000891
+GPS:
+  Lat: -34.04656
+  Lng: +18.43057
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000892
+GPS:
+  Lat: -34.04655
+  Lng: +18.43058
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000893
+GPS:
+  Lat: -34.04653
+  Lng: +18.43060
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000894
+GPS:
+  Lat: -34.04651
+  Lng: +18.43061
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000895
+GPS:
+  Lat: -34.04650
+  Lng: +18.43062
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000896
+GPS:
+  Lat: -34.04650
+  Lng: +18.43063
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -98.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000897
+GPS:
+  Lat: -34.04649
+  Lng: +18.43064
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -95.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000898
+GPS:
+  Lat: -34.04647
+  Lng: +18.43065
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -98.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000899
+GPS:
+  Lat: -34.04647
+  Lng: +18.43066
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -92.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000900
+GPS:
+  Lat: -34.04646
+  Lng: +18.43067
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000901
+GPS:
+  Lat: -34.04645
+  Lng: +18.43068
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000902
+GPS:
+  Lat: -34.04643
+  Lng: + 000000000
+
+RSSI = -92.00
+star18.43070
+  Alt: 000000076
+  Age:tReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000903
+GPS:
+  Lat: -34.04642
+  Lng: +18.43071
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -93.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000904
+GPS:
+  Lat: -34.04641
+  Lng: +18.43072
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -96.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000905
+GPS:
+  Lat: -34.04640
+  Lng: +18.43073
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -94.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000906
+GPS:
+  Lat: -34.04639
+  Lng: +18.43075
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -96.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000907
+GPS:
+  Lat: -34.04638
+  Lng: +18.43075
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -97.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000908
+GPS:
+  Lat: -34.04637
+  Lng: +18.43076
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000909
+GPS:
+  Lat: -34.04636
+  Lng: +18.43077
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000910
+GPS:
+  Lat: -34.04634
+  Lng: +18.43079
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000911
+GPS:
+  Lat: -34.04633
+  Lng: +18.43079
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -93.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000912
+GPS:
+  Lat: -34.04632
+  Lng: +18.43079
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -92.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000913
+GPS:
+  Lat: -34.04630
+  Lng: +18.43080
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000914
+GPS:
+  Lat: -34.04629
+  Lng: +18.43080
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000915
+GPS:
+  Lat: -34.04629
+  Lng: +18.43081
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000916
+GPS:
+  Lat: -34.04628
+  Lng: +18.43082
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000916
+GPS:
+  Lat: -34.04628
+  Lng: +18.43082
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -94.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000918
+GPS:
+  Lat: -34.04625
+  Lng: +18.43084
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000919
+GPS:
+  Lat: -34.04623
+  Lng: +18.43085
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000920
+GPS:
+  Lat: -34.04622
+  Lng: +18.43086
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000921
+GPS:
+  Lat: -34.04620
+  Lng: +18.43089
+  Alt: 000000074
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000922
+GPS:
+  Lat: -34.04618
+  Lng: +18.43089
+  Alt: 000000074
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000923
+GPS:
+  Lat: -34.04617
+  Lng: +18.43092
+  Alt: 000000073
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000924
+GPS:
+  Lat: -34.04616
+  Lng: +18.43093
+  Alt: 000000073
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000925
+GPS:
+  Lat: -34.04613
+  Lng: +18.43096
+  Alt: 000000073
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000926
+GPS:
+  Lat: -34.04612
+  Lng: +18.43096
+  Alt: 000000074
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000927
+GPS:
+  Lat: -34.04611
+  Lng: +18.43096
+  Alt: 000000074
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000928
+GPS:
+  Lat: -34.04610
+  Lng: +18.43097
+  Alt: 000000074
+  Age: 000000000
+
+RSSI = -92.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000929
+GPS:
+  Lat: -34.04609
+  Lng: +18.43098
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -93.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000930
+GPS:
+  Lat: -34.04608
+  Lng: +18.43098
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -89.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000931
+GPS:
+  Lat: -34.04607
+  Lng: +18.43099
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000932
+GPS:
+  Lat: -34.04605
+  Lng: +18.43099
+  Alt: 000000074
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000933
+GPS:
+  Lat: -34.04604
+  Lng: +18.43100
+  Alt: 000000074
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000934
+GPS:
+  Lat: -34.04603
+  Lng: +18.43100
+  Alt: 000000074
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000935
+GPS:
+  Lat: -34.04602
+  Lng: +18.43101
+  Alt: 000000074
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000936
+GPS:
+  Lat: -34.04601
+  Lng: +18.43101
+  Alt: 000000074
+  Age: 000000000
+
+RSSI = -98.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000937
+GPS:
+  Lat: -34.04599
+  Lng: +18.43101
+  Alt: 000000074
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000938
+GPS:
+  Lat: -34.04597
+  Lng: +18.43102
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000939
+GPS:
+  Lat: -34.04597
+  Lng: +18.43102
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000940
+GPS:
+  Lat: -34.04596
+  Lng: +18.43101
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -77.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000941
+GPS:
+  Lat: -34.04593
+  Lng: +18.43100
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000942
+GPS:
+  Lat: -34.04592
+  Lng: +18.43100
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000943
+GPS:
+  Lat: -34.04591
+  Lng: +18.43099
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000944
+GPS:
+  Lat: -34.04590
+  Lng: +18.43099
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000945
+GPS:
+  Lat: -34.04587
+  Lng: +18.43100
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -93.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000946
+GPS:
+  Lat: -34.04586
+  Lng: +18.43100
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000947
+GPS:
+  Lat: -34.04585
+  Lng: +18.43101
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000948
+GPS:
+  Lat: -34.04584
+  Lng: +18.43101
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -87.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000949
+GPS:
+  Lat: -34.04582
+  Lng: +18.43102
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000950
+GPS:
+  Lat: -34.04580
+  Lng: +18.43102
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -94.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000951
+GPS:
+  Lat: -34.04579
+  Lng: +18.43102
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000952
+GPS:
+  Lat: -34.04578
+  Lng: +18.43103
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000953
+GPS:
+  Lat: -34.04576
+  Lng: +18.43103
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000954
+GPS:
+  Lat: -34.04575
+  Lng: +18.43103
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -90.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000955
+GPS:
+  Lat: -34.04574
+  Lng: +18.43103
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000956
+GPS:
+  Lat: -34.04572
+  Lng: +18.43103
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000956
+GPS:
+  Lat: -34.04572
+  Lng: +18.43103
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -94.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000958
+GPS:
+  Lat: -34.04569
+  Lng: +18.43103
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -91.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000959
+GPS:
+  Lat: -34.04568
+  Lng: +18.43102
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000960
+GPS:
+  Lat: -34.04566
+  Lng: +18.43102
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -88.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000961
+GPS:
+  Lat: -34.04565
+  Lng: +18.43102
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000962
+GPS:
+  Lat: -34.04564
+  Lng: +18.43102
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000963
+GPS:
+  Lat: -34.04562
+  Lng: +18.43102
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000964
+GPS:
+  Lat: -34.04560
+  Lng: +18.43101
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000965
+GPS:
+  Lat: -34.04559
+  Lng: +18.43101
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000966
+GPS:
+  Lat: -34.04558
+  Lng: +18.43100
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000967
+GPS:
+  Lat: -34.04557
+  Lng: +18.43099
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -82.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000968
+GPS:
+  Lat: -34.04555
+  Lng: +18.43097
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000969
+GPS:
+  Lat: -34.04554
+  Lng: +18.43097
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000970
+GPS:
+  Lat: -34.04553
+  Lng: +18.43095
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000000971
+GPS:
+  Lat: -34.04552
+  Lng: +18.43094
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000972
+GPS:
+  Lat: -34.04550
+  Lng: +18.43093
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -86.00
+Updating...
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000973
+GPS:
+  Lat: -34.04549
+  Lng: +18.43093
+  Alt: 000000076
+  Age:tReceive()
+ 000000000
+
+RSSI = -83.00
+starUsing position with age 1
+Updating...
+available!
+MET:
+  Num: 000000974
+GPS:
+  Lat: -34.04548
+  Lng: +18.43092
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000975
+GPS:
+  Lat: -34.04547
+  Lng: +18.43092
+  Alt: 000000075
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000976
+GPS:
+  Lat: -34.04545
+  Lng: +18.43090
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -84.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000977
+GPS:
+  Lat: -34.04544
+  Lng: +18.43089
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000978
+GPS:
+  Lat: -34.04543
+  Lng: +18.43089
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000979
+GPS:
+  Lat: -34.04543
+  Lng: +18.43088
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000980
+GPS:
+  Lat: -34.04541
+  Lng: +18.43086
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -81.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000981
+GPS:
+  Lat: -34.04539
+  Lng: +18.43086
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000982
+GPS:
+  Lat: -34.04539
+  Lng: +18.43085
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -86.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000983
+GPS:
+  Lat: -34.04537
+  Lng: +18.43083
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000984
+GPS:
+  Lat: -34.04536
+  Lng: +18.43082
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000985
+GPS:
+  Lat: -34.04536
+  Lng: +18.43081
+  Alt: 000000076
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000986
+GPS:
+  Lat: -34.04535
+  Lng: +18.43080
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000987
+GPS:
+  Lat: -34.04534
+  Lng: +18.43078
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000988
+GPS:
+  Lat: -34.04533
+  Lng: +18.43077
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000989
+GPS:
+  Lat: -34.04533
+  Lng: +18.43076
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000990
+GPS:
+  Lat: -34.04531
+  Lng: +18.43075
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000991
+GPS:
+  Lat: -34.04530
+  Lng: +18.43073
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000992
+GPS:
+  Lat: -34.04529
+  Lng: +18.43072
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000993
+GPS:
+  Lat: -34.04528
+  Lng: +18.43071
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000994
+GPS:
+  Lat: -34.04527
+  Lng: +18.43070
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000000995
+GPS:
+  Lat: -34.04526
+  Lng: +18.43068
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -77.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000996
+GPS:
+  Lat: -34.04525
+  Lng: +18.43067
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000000997
+GPS:
+  Lat: -34.04524
+  Lng: +18.43066
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000000998
+GPS:
+  Lat: -34.04523
+  Lng: +18.43065
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000000999
+GPS:
+  Lat: -34.04522
+  Lng: +18.43063
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -79.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001000
+GPS:
+  Lat: -34.04521
+  Lng: +18.43062
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001001
+GPS:
+  Lat: -34.04520
+  Lng: +18.43061
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001002
+GPS:
+  Lat: -34.04519
+  Lng: +18.43060
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000001003
+GPS:
+  Lat: -34.04517
+  Lng: +18.43059
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001004
+GPS:
+  Lat: -34.04516
+  Lng: +18.43058
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001005
+GPS:
+  Lat: -34.04515
+  Lng: +18.43057
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000001006
+GPS:
+  Lat: -34.04515
+  Lng: +18.43056
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001007
+GPS:
+  Lat: -34.04513
+  Lng: +18.43054
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001008
+GPS:
+  Lat: -34.04512
+  Lng: +18.43053
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -74.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001009
+GPS:
+  Lat: -34.04512
+  Lng: +18.43052
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001010
+GPS:
+  Lat: -34.04510
+  Lng: +18.43050
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001011
+GPS:
+  Lat: -34.04509
+  Lng: +18.43049
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001012
+GPS:
+  Lat: -34.04509
+  Lng: +18.43048
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001013
+GPS:
+  Lat: -34.04508
+  Lng: +18.43047
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000001014
+GPS:
+  Lat: -34.04506
+  Lng: +18.43045
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -72.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001015
+GPS:
+  Lat: -34.04506
+  Lng: +18.43044
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001016
+GPS:
+  Lat: -34.04505
+  Lng: +18.43043
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001017
+GPS:
+  Lat: -34.04504
+  Lng: +18.43042
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -73.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001018
+GPS:
+  Lat: -34.04503
+  Lng: +18.43040
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001019
+GPS:
+  Lat: -34.04502
+  Lng: +18.43039
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -77.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001020
+GPS:
+  Lat: -34.04502
+  Lng: +18.43038
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001021
+GPS:
+  Lat: -34.04501
+  Lng: +18.43037
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -83.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000001022
+GPS:
+  Lat: -34.04499
+  Lng: +18.43035
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001023
+GPS:
+  Lat: -34.04498
+  Lng: +18.43034
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -77.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001024
+GPS:
+  Lat: -34.04498
+  Lng: +18.43033
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001025
+GPS:
+  Lat: -34.04497
+  Lng: +18.43032
+  Alt: 000000079
+  Age:tReceive()
+ 000000000
+
+RSSI = -85.00
+starUsing position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001026
+GPS:
+  Lat: -34.04495
+  Lng: +18.43030
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -78.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001027
+GPS:
+  Lat: -34.04494
+  Lng: +18.43029
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001028
+GPS:
+  Lat: -34.04494
+  Lng: +18.43028
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001029
+GPS:
+  Lat: -34.04493
+  Lng: +18.43027
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000001030
+GPS:
+  Lat: -34.04492
+  Lng: +18.43025
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -72.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001031
+GPS:
+  Lat: -34.04491
+  Lng: +18.43024
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -70.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001032
+GPS:
+  Lat: -34.04490
+  Lng: +18.43023
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -72.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 2
+available!
+MET:
+  Num: 000001033
+GPS:
+  Lat: -34.04490
+  Lng: +18.43021
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001034
+GPS:
+  Lat: -34.04488
+  Lng: +18.43019
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -76.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001035
+GPS:
+  Lat: -34.04487
+  Lng: +18.43018
+  Alt: 000000079
+  Age:tReceive()
+ 000000000
+
+RSSI = -71.00
+starUsing position with age 1
+Updating...
+available!
+MET:
+  Num: 000001036
+GPS:
+  Lat: -34.04486
+  Lng: +18.43017
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -71.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001037
+GPS:
+  Lat: -34.04485
+  Lng: +18.43015
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -63.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001038
+GPS:
+  Lat: -34.04485
+  Lng: +18.43014
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -68.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001039
+GPS:
+  Lat: -34.04484
+  Lng: +18.43012
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -75.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001040
+GPS:
+  Lat: -34.04483
+  Lng: +18.43011
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -85.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000001041
+GPS:
+  Lat: -34.04482
+  Lng: +18.43009
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -80.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001042
+GPS:
+  Lat: -34.04482
+  Lng: +18.43008
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -72.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001043
+GPS:
+  Lat: -34.04481
+  Lng: +18.43007
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -63.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001044
+GPS:
+  Lat: -34.04480
+  Lng: +18.43005
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -64.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001045
+GPS:
+  Lat: -34.04479
+  Lng: +18.43003
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -71.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001046
+GPS:
+  Lat: -34.04479
+  Lng: +18.43002
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -68.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001047
+GPS:
+  Lat: -34.04478
+  Lng: +18.43000
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -68.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001048
+GPS:
+  Lat: -34.04478
+  Lng: +18.42999
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -71.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000001049
+GPS:
+  Lat: -34.04478
+  Lng: +18.42996
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -63.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001050
+GPS:
+  Lat: -34.04477
+  Lng: + 000000000
+
+RSSI = -63.00
+star18.42995
+  Alt: 000000080
+  Age:tReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001051
+GPS:
+  Lat: -34.04477
+  Lng: +18.42994
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -65.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001052
+GPS:
+  Lat: -34.04477
+  Lng: +18.42992
+  Alt: 000000079
+  Age: 000000000
+
+RSSI = -66.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001053
+GPS:
+  Lat: -34.04477
+  Lng: +18.42989
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -64.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001054
+GPS:
+  Lat: -34.04477
+  Lng: +18.42988
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -59.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001055
+GPS:
+  Lat: -34.04477
+  Lng: +18.42986
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -64.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001056
+GPS:
+  Lat: -34.04476
+  Lng: +18.42985
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -63.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001057
+GPS:
+  Lat: -34.04476
+  Lng: +18.42982
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -61.00
+startReceive()
+Using position with age 0
+Updating...
+Updating...
+available!
+MET:
+  Num: 000001058
+GPS:
+  Lat: -34.04476
+  Lng: +18.42981
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -64.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001059
+GPS:
+  Lat: -34.04475
+  Lng: +18.42979
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -62.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001060
+GPS:
+  Lat: -34.04475
+  Lng: +18.42978
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -62.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000001061
+GPS:
+  Lat: -34.04476
+  Lng: +18.42975
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -61.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001062
+GPS:
+  Lat: -34.04476
+  Lng: +18.42973
+  Alt: 000000081
+  Age: 000000000
+
+RSSI = -64.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001063
+GPS:
+  Lat: -34.04476
+  Lng: +18.42972
+  Alt: 000000081
+  Age: 000000000
+
+RSSI = -59.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001064
+GPS:
+  Lat: -34.04476
+  Lng: +18.42971
+  Alt: 000000081
+  Age: 000000000
+
+RSSI = -57.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001065
+GPS:
+  Lat: -34.04477
+  Lng: +18.42968
+  Alt: 000000081
+  Age: 000000000
+
+RSSI = -60.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001066
+GPS:
+  Lat: -34.04477
+  Lng: +18.42966
+  Alt: 000000081
+  Age: 000000000
+
+RSSI = -59.00
+startReceive()
+Using position with age 1
+available!
+MET:
+  Num: 000001066
+GPS:
+  Lat: -34.04477
+  Lng: +18.42966
+  Alt: 000000081
+  Age: 000000000
+
+RSSI = -121.00
+startReceive()
+Updating...
+available!
+MET:
+  Num: 000001067
+GPS:
+  Lat: -34.04477
+  Lng: +18.42965
+  Alt: 000000081
+  Age: 000000000
+
+RSSI = -64.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001068
+GPS:
+  Lat: -34.04477
+  Lng: +18.42963
+  Alt: 000000081
+  Age: 000000000
+
+RSSI = -62.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001069
+GPS:
+  Lat: -34.04476
+  Lng: +18.42961
+  Alt: 000000081
+  Age: 000000000
+
+RSSI = -60.00
+startReceive()
+Updating...
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001070
+GPS:
+  Lat: -34.04475
+  Lng: +18.42960
+  Alt: 000000081
+  Age: 000000000
+
+RSSI = -61.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001071
+GPS:
+  Lat: -34.04474
+  Lng: +18.42959
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -60.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001072
+GPS:
+  Lat: -34.04472
+  Lng: +18.42957
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -60.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001073
+GPS:
+  Lat: -34.04471
+  Lng: +18.42957
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -63.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001074
+GPS:
+  Lat: -34.04469
+  Lng: +18.42956
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -65.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001075
+GPS:
+  Lat: -34.04468
+  Lng: +18.42956
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -65.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001076
+GPS:
+  Lat: -34.04466
+  Lng: +18.42955
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -61.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001077
+GPS:
+  Lat: -34.04465
+  Lng: +18.42955
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -60.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001078
+GPS:
+  Lat: -34.04464
+  Lng: +18.42956
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -59.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001079
+GPS:
+  Lat: -34.04462
+  Lng: +18.42956
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -59.00
+startReceive()
+Updating...
+Using position with age 0
+available!
+MET:
+  Num: 000001080
+GPS:
+  Lat: -34.04459
+  Lng: +18.42957
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -45.00
+startReceive()
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001081
+GPS:
+  Lat: -34.04458
+  Lng: +18.42957
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -49.00
+startReceive()
+Updating...
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001082
+GPS:
+  Lat: -34.04457
+  Lng: +18.42959
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -47.00
+startReceive()
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001083
+GPS:
+  Lat: -34.04456
+  Lng: +18.42960
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -49.00
+startReceive()
+Using position with age 0
+Updating...
+available!
+MET:
+  Num: 000001084
+GPS:
+  Lat: -34.04454
+  Lng: +18.42961
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -47.00
+startReceive()
+Using position with age 0
+Updating...
+Using position with age 1
+available!
+MET:
+  Num: 000001085
+GPS:
+  Lat: -34.04453
+  Lng: +18.42962
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -47.00
+startReceive()
+Updating...
+Setting tracking mode to 0
+Using position with age 1
+Updating...
+available!
+MET:
+  Num: 000001086
+GPS:
+  Lat: -34.04452
+  Lng: +18.42962
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -52.00
+startReceive()
+Using position with age 2
+Updating...
+available!
+MET:
+  Num: 000001087
+GPS:
+  Lat: -34.04451
+  Lng: +18.42963
+  Alt: 000000080
+  Age: 000000000
+
+RSSI = -55.00
+startReceive()
+Using position with age 3
+Updating...
+
+Updating...
+available!
+MET:
+  Num: 000001096
+GPS:
+  Lat: -34.04438
+  Lng: +18.42970
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -40.00
+startReceive()
+Using position with age 14
+Updating...
+Using position with age 15
+Updating...
+available!
+MET:
+  Num: 000001097
+GPS:
+  Lat: -34.04438
+  Lng: +18.42970
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -50.00
+startReceive()
+available!
+ET:
+  Num: 000001099
+GPS:
+  Lat: -34.04437
+  Lng: +18.42970
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -42.00
+Updating...
+startReceive()
+available!
+MET:
+  Num: 000001100
+GPS:
+  Lat: -34.04437
+  Lng: +18.42970
+  Alt: 000000078
+  Age: 000000000
+
+RSSI = -33.00
+startReceive()
+Updating...
+available!
+MET:
+  Num: 000001101
+GPS:
+  Lat: -34.04437
+  Lng: +18.42970
+  Alt: 000000077
+  Age: 000000000
+
+RSSI = -33.00
+startReceive()
+Updating...
+Updating...

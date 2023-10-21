@@ -1,0 +1,70 @@
+[SX1278] Received packet!
+[SX1278] RSSI:		-84.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1224.74 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-85.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1224.74 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-85.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1258.29 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-85.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1224.74 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1224.74 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1191.18 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-85.00 dBm
+[SX1278] SNR:		6.75 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1157.63 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1224.74 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-85.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1157.63 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-85.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1191.18 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		7.00 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1157.63 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		7.75 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1191.18 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-86.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1224.74 Hz
+[SX1278] Received packet!
+[SX1278] RSSI:		-85.00 dBm
+[SX1278] SNR:		7.25 dB
+[SX1278] PRR:		100.00 %
+[SX1278] Frequency error:	-1157.63 Hz
