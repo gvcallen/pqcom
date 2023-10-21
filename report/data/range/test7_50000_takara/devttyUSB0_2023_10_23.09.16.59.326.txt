@@ -1,0 +1,1718 @@
+***** Running at 6795.47 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001049
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.50 dBm
+[SX1278] SNR:		-5.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6790.95 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001050
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-115.50 dBm
+[SX1278] SNR:		-5.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6728.23 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001051
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.00 dBm
+[SX1278] SNR:		-5.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6723.80 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001052
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.00 dBm
+[SX1278] SNR:		-5.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6728.23 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001053
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-116.00 dBm
+[SX1278] SNR:		-6.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6759.44 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001054
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.75 dBm
+[SX1278] SNR:		-5.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6754.97 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001055
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-115.25 dBm
+[SX1278] SNR:		-6.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6757.20 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001056
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.00 dBm
+[SX1278] SNR:		-5.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6827.31 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001057
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.50 dBm
+[SX1278] SNR:		-5.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6818.18 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001058
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.00 dBm
+[SX1278] SNR:		-5.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6811.35 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001059
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.25 dBm
+[SX1278] SNR:		-5.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6868.69 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001060
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-113.75 dBm
+[SX1278] SNR:		-5.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6864.06 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001061
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-115.25 dBm
+[SX1278] SNR:		-6.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6864.06 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001062
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-115.75 dBm
+[SX1278] SNR:		-6.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6871.00 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001063
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-119.25 dBm
+[SX1278] SNR:		-9.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6873.32 bps *****
+[SX1278] Received packet
+
+[SX1278] CRC error!
+[SX1278] RSSI:		-125.75 dBm
+[SX1278] SNR:		-14.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6861.76 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001065
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-113.50 dBm
+[SX1278] SNR:		-4.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6820.46 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001066
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6818.18 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001067
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-108.50 dBm
+[SX1278] SNR:		-1.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6831.88 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001068
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-111.25 dBm
+[SX1278] SNR:		-3.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6813.63 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001069
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-110.00 dBm
+[SX1278] SNR:		-2.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6825.02 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001070
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6827.31 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001071
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6806.81 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001072
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-108.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6806.81 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001073
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6818.18 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001074
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6750.50 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001075
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6761.68 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001076
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-108.00 dBm
+[SX1278] SNR:		-1.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6759.44 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001077
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-108.00 dBm
+[SX1278] SNR:		-1.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6802.27 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001078
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6804.54 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001079
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6804.54 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001080
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6793.21 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001081
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6788.69 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001082
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6788.69 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001083
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6847.94 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001084
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6847.94 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001085
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6845.64 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001086
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6829.59 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001087
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6825.02 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001088
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6831.88 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001089
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6843.34 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001090
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6852.54 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001091
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6850.23 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001092
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.00 dBm
+[SX1278] SNR:		0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6790.95 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001093
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6786.43 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001094
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6784.17 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001095
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6710.53 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001096
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6710.53 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001097
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6695.11 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001098
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6664.49 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001099
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6673.21 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001100
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6675.39 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001101
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6723.80 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001102
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6730.45 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001103
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6730.45 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001104
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.00 dBm
+[SX1278] SNR:		0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6845.64 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001105
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.00 dBm
+[SX1278] SNR:		0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6847.94 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001106
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6857.14 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001107
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6908.23 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001108
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6903.55 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001109
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6905.89 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001110
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6884.91 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001111
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6889.56 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001112
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6889.56 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001113
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6804.54 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001114
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6802.27 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001115
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6802.27 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001116
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6781.92 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001117
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6777.41 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001118
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6779.66 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001119
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6800.00 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001120
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6793.21 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001121
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6795.47 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001122
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6802.27 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001123
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6802.27 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001124
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6797.73 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001125
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6790.95 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001126
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6795.47 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001127
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6793.21 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001128
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6795.47 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001129
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6790.95 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001130
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6795.47 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001131
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6809.08 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001132
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6815.90 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001133
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6820.46 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001134
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6815.90 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001135
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6820.46 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001136
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6825.02 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001137
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6795.47 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001138
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6806.81 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001139
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6804.54 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001140
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6779.66 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001141
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6779.66 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001142
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6784.17 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001143
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-106.00 dBm
+[SX1278] SNR:		0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6788.69 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001144
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.00 dBm
+[SX1278] SNR:		0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6777.41 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001145
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-108.75 dBm
+[SX1278] SNR:		-1.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6772.91 bps *****
+[SX1278] Received packet
+
+[SX1278] CRC error!
+[SX1278] RSSI:		-115.25 dBm
+[SX1278] SNR:		-5.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6737.12 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001147
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6726.01 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001148
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.00 dBm
+[SX1278] SNR:		-4.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6717.16 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001149
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.25 dBm
+[SX1278] SNR:		-5.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6708.32 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001150
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-113.75 dBm
+[SX1278] SNR:		-4.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6701.71 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001151
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.75 dBm
+[SX1278] SNR:		-4.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6697.31 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001152
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.50 dBm
+[SX1278] SNR:		-4.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 6723.80 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001153
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000339
+  Age: 000000000
+
+[SX1278] RSSI:		-114.50 dBm
+[SX1278] SNR:		-4.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 5116.63 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001154
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 4128.72 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001155
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-108.50 dBm
+[SX1278] SNR:		-1.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 3484.80 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001156
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 2999.56 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001157
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-106.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 2631.92 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001158
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-107.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 2351.04 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001159
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-108.25 dBm
+[SX1278] SNR:		-1.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 2119.48 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001160
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-107.75 dBm
+[SX1278] SNR:		-0.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 1928.71 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001161
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-109.25 dBm
+[SX1278] SNR:		-1.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 1914.59 bps *****
+[SX1278] Received packet
+
+[SX1278] CRC error!
+[SX1278] RSSI:		-125.75 dBm
+[SX1278] SNR:		-14.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 1991.99 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001162
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-108.00 dBm
+[SX1278] SNR:		-1.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 1991.80 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001163
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-108.00 dBm
+[SX1278] SNR:		0.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 2009.26 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001164
+GPS:
+  Lat: -34.08563
+  Lng: +18.42387
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-108.00 dBm
+[SX1278] SNR:		-1.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 2008.07 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001165
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-108.75 dBm
+[SX1278] SNR:		-1.75 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 2008.47 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001166
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-108.50 dBm
+[SX1278] SNR:		-1.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 2008.47 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001167
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-109.25 dBm
+[SX1278] SNR:		-1.25 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 2008.27 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001168
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-108.00 dBm
+[SX1278] SNR:		-1.00 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 2008.47 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001169
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-108.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 1850.00 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001170
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-107.50 dBm
+[SX1278] SNR:		-0.50 dB
+[SX1278] PRR:		0.40 %
+
+***** Running at 1784.15 bps *****
+[SX1278] Received packet
+MET:
+  Num: 000001171
+GPS:
+  Lat: -34.08563
+  Lng: +18.42386
+  Alt: 000000338
+  Age: 000000000
+
+[SX1278] RSSI:		-108.25 dBm
+[SX1278] SNR:		-0.25 dB
+[SX1278] PRR:		0.40 %
+
