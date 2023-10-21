@@ -3,8 +3,9 @@
 #define FLIGHT_PATH_MAX_SIZE            5120
 
 // Mount control
-#define MOUNT_EL_ANGLE_MIN              (20.0 + 8.0)
-#define MOUNT_EL_ANGLE_MAX              138.0
+// #define MOUNT_EL_ANGLE_MIN              (20.0 + 5.0)
+#define MOUNT_EL_ANGLE_MIN              (30.0)
+#define MOUNT_EL_ANGLE_MAX              140.0
 #define MOUNT_AZEL_RATIO                -1.15
 #define MOUNT_EL_START_NEAR_CUTOUT      true
 #define MOUNT_EL_NUM_STEPS              (200.0 * (92.0/20.0) * (140.0/80.0))

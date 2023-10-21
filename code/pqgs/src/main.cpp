@@ -1,80 +1,140 @@
-#include "PqTnc.h"
-
-#include <Arduino.h>
+#include <LoRaLib.h>
 #include <gel.h>
 
-PqTnc tnc;
-gel::GroundStation groundStation;
+void setFlag(void);
 
-gel::Error setupGroundStation()
-{
-    gel::GroundStationConfig config;
-    gel::GroundStationPins pins;
+SX1278 radio = new Module(27, 15, 13);
 
-    // MOUNT PINS
-    pins.mount.azimuthalZeroSensor = PIN_AZ_ZERO_SENSOR;
-    pins.mount.azimuthalPins.i01 = PIN_AZ_IO1;
-    pins.mount.azimuthalPins.i02 = PIN_AZ_IO2;
-    pins.mount.azimuthalPins.i11 = PIN_AZ_I11;
-    pins.mount.azimuthalPins.i12 = PIN_AZ_I12;
-    pins.mount.azimuthalPins.ph1 = PIN_AZ_PH1;
-    pins.mount.azimuthalPins.ph2 = PIN_AZ_PH2;
-    pins.mount.elevationPins.i01 = PIN_EL_IO1;
-    pins.mount.elevationPins.i02 = PIN_EL_IO2;
-    pins.mount.elevationPins.i11 = PIN_EL_I11;
-    pins.mount.elevationPins.i12 = PIN_EL_I12;
-    pins.mount.elevationPins.ph1 = PIN_EL_PH1;
-    pins.mount.elevationPins.ph2 = PIN_EL_PH2;
+size_t totalBits = 0;
+volatile bool receivedFlag = false;
+volatile bool receivedOne = false;
+unsigned long firstReceiveTime = 0;
 
-    // MOUNT CONFIG
-    config.mount.elevationAngleBounds.min = MOUNT_EL_ANGLE_MIN  * GEL_PI_OVER_180;
-    config.mount.elevationAngleBounds.max = MOUNT_EL_ANGLE_MAX * GEL_PI_OVER_180;
-    config.mount.azelRatio = MOUNT_AZEL_RATIO;
-    config.mount.azimuthalRevolutionNumSteps = MOUNT_AZ_NUM_STEPS;
-    config.mount.elevationRevolutionNumSteps = MOUNT_EL_NUM_STEPS;
-    config.mount.reverseElevationDirection = !MOUNT_EL_START_NEAR_CUTOUT;
-    config.mount.calibrateElevationNearMax = MOUNT_EL_START_NEAR_CUTOUT;
+uint8_t expectedPayload[] =
+  "00000#"
+  "abcdefghijklmnopqrstuvwxyz\n"
+  "abcdefghijklmnopqrstuvwxyz\n"
+  "abcdefghijklmnopqrstuvwxyz\n"
+  "abcdefghijklmnopqrstuvwxyz\n"
+  "abcdefghijklmnopqrstuvwxyz\n"
+  "abcdefghijklmnopqrstuvwxyz\n"
+  "abcdefghijklmnopqrstuvwxyz\n"
+  "abcdefghijklmnopqrstuvwxyz\n"
+  "abcdefghijklmnopqrstuvwxyz\n"
+  "Done\n";
 
-    // LINK CONFIG
-    config.link.controller = true;
-    
-    // RADIO PINS
-    pins.radio.nss = PIN_RADIO_NSS;
-    pins.radio.dio0 = PIN_RADIO_DIO0;
-    pins.radio.reset = PIN_RADIO_RESET;
+void setup() {
+  Serial.begin(115200);
+  
+  while (!Serial);
+  // initialize SX1278 with default settings
+  Serial.print(F("[SX1278] Initializing ... "));
 
-    // IMU PINS
-    pins.imu.nss = PIN_IMU_NSS;
+  int state = radio.begin(427.0, 500.0, 8, 4 + 2, 0x12, 10, 150, 8);
+  radio.implicitHeader(sizeof(expectedPayload));
+  
+  if (state == ERR_NONE) {
+    Serial.println(F("success!"));
+  } else {
+    Serial.print(F("failed, code "));
+    Serial.println(state);
+    while (true);
+  }
 
-    // GPS PINS
-    pins.gps.rx = PIN_GPS_RX;
-    pins.gps.tx = PIN_GPS_TX;
-    
-    // BEGIN GROUND STATION
-    if (gel::Error err = groundStation.begin(config, pins))
-        return err;
+  radio.setDio0Action(setFlag);
+  // radio.setPacketReceivedAction(setFlag);
 
-    return gel::Error::None;
+  Serial.print(F("[SX1278] Starting to listen ... "));
+  state = radio.startReceive();
+  if (state == ERR_NONE) {
+    Serial.println(F("success!"));
+  } else {
+    Serial.print(F("failed, code "));
+    Serial.println(state);
+    while (true);
+  }
 }
 
-void setup()
-{
-    Serial.begin(BAUD_RATE);
-    while (!Serial);
-    delay(1000);
+void setFlag(void) {
+  receivedFlag = true;
+  if (!receivedOne)
+  {
+    firstReceiveTime = millis();
+    receivedOne = true;
+  }
+}
 
-    tnc.begin();
-    if (gel::Error err = setupGroundStation())
-        tnc.handleError(err, "Could not initialize ground station");
+#define NUM_PACKET_AVG 10
+size_t packetReceiveTimes[NUM_PACKET_AVG] = {};
+size_t numPackets = 0;
+void loop() {
+  if(receivedFlag) {
+    receivedFlag = false;
+
+    String str;
+    int state = radio.readData(str);
+
+    unsigned long newestReceiveTime = packetReceiveTimes[numPackets++ % NUM_PACKET_AVG] = millis();
+    unsigned long oldestReceiveTime;
+    size_t numPacketsAvg;
+    if (numPackets >= NUM_PACKET_AVG)
+    {
+      numPacketsAvg = NUM_PACKET_AVG;
+      oldestReceiveTime = packetReceiveTimes[numPackets % NUM_PACKET_AVG];
+    }
     else
     {
-        Serial.println("Initialized ground station");
-        tnc.setGroundStation(groundStation);
+      numPacketsAvg = numPackets;
+      oldestReceiveTime = packetReceiveTimes[0];
     }
-}
 
-void loop()
-{   
-    tnc.update();
-    groundStation.update();
+    unsigned long deltaTime = newestReceiveTime - oldestReceiveTime;
+    float bitRate = (float)(numPacketsAvg * 8 * 255) / ((float)deltaTime / 1000.0);
+    Serial.println("***** Running at " + String(bitRate) + " bps *****");
+
+    if (state == ERR_NONE || state == ERR_CRC_MISMATCH) {
+      // packet was successfully received
+      Serial.println("[SX1278] Received packet #" + str.substring(0, 5));
+      if (state == ERR_CRC_MISMATCH)
+        Serial.println(F("[SX1278] CRC error!")); 
+
+      // print data of the packet
+      int expectedNum = sizeof(expectedPayload);
+      int receivedNum = 0;
+      const int offset = 6;
+      for (int i = offset; i < expectedNum; i++)
+      {
+        if (str[i] == expectedPayload[i])
+          receivedNum++;
+      }
+      float prr = (float)(receivedNum) / (float)(expectedNum - offset);
+
+      Serial.print(F("[SX1278] RSSI:\t\t"));
+      Serial.print(radio.getRSSI());
+      Serial.println(F(" dBm"));
+
+      // print SNR (Signal-to-Noise Ratio)
+      Serial.print(F("[SX1278] SNR:\t\t"));
+      Serial.print(radio.getSNR());
+      Serial.println(F(" dB"));
+
+      // print PRR
+      Serial.print(F("[SX1278] PRR:\t\t"));
+      Serial.print(prr * 100);
+      Serial.println(F(" %"));
+
+      // print frequency error
+      // Serial.print(F("[SX1278] Frequency error:\t"));
+      // Serial.print(radio.getFrequencyError());
+      // Serial.println(F(" Hz"));
+
+    } else {
+      // some other error occurred
+      Serial.print(F("[SX1278] Failed, code "));
+      Serial.println(state);
+    }
+
+    Serial.println();
+    state = radio.startReceive();
+  }
 }

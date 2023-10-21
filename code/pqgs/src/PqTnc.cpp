@@ -13,8 +13,6 @@ PqTnc* PqTnc::singletonTnc = nullptr;
 #define EEPROM_OFFSET_SETTINGS              (EEPROM_OFFSET_FLIGHT_PATH      + EEPROM_SIZE_FLIGHT_PATH)
 #define EEPROM_OFFSET_END                   (EEPROM_OFFSET_SETTINGS         + EEPROM_SIZE_SETTINGS)
 
-#define FLIGHT_PATH_TRACKING_INTERVAL       1000
-
 #define SERIAL_DEBUG
 
 void PqTnc::begin()
@@ -33,12 +31,6 @@ void PqTnc::setGroundStation(gel::GroundStation& groundStation)
 {
     this->groundStation = &groundStation;
     this->groundStation->getLink().setTelemetryCallback(PqTnc::telemetryCallback);
-}
-
-gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
-{
-    // sendMessage((const char*)payload.data());
-    return gel::Error::None;
 }
 
 void PqTnc::beginEEPROM()
@@ -172,6 +164,8 @@ void PqTnc::updateTracking()
 {
     if (settings.trackMode & suncq::TrackMode::GpsUploaded)
         updateTrackingGPSUploaded();
+    if (settings.trackMode & suncq::TrackMode::GpsReceived)
+        updateTrackingGPSReceived();
 }
 
 void PqTnc::updateTrackingGPSUploaded()
@@ -200,6 +194,11 @@ void PqTnc::updateTrackingGPSUploaded()
                 break;
         }
     }
+}
+
+void PqTnc::updateTrackingGPSReceived()
+{
+    
 }
 
 void PqTnc::setTncMode(suncq::TncMode mode)
@@ -277,6 +276,12 @@ void PqTnc::sendMessage(String msg)
 {
     Serial.write((uint8_t)suncq::Command::TncMessage);
     Serial.println(msg);
+}
+
+gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
+{
+    sendMessage(String(payload.data(), payload.size()));
+    return gel::Error::None;
 }
 
 void PqTnc::handleError(gel::Error err, const char* msg)

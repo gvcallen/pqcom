@@ -48,6 +48,7 @@ private:
     void updateSerialKISS(uint8_t c);
     void updateTracking();
     void updateTrackingGPSUploaded();
+    void updateTrackingGPSReceived();
     
     // Flight path commands
     gel::Error saveFlightPath();
