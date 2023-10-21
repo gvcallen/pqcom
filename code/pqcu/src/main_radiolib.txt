@@ -3,13 +3,16 @@
 #include <gel.h>
 
 int nss = 9; // PB1
-int dio0 = A1; // PC1
+int dio0 = 2; // PC1
 int reset = 8; // PB0
-SX1278 radio = new Module(nss, dio0, reset);
+// SX1278 radio = new Module(nss, dio0, reset);
+
+gel::Radio radio;
 
 size_t count = 0;
 
-const char payload[] =
+uint8_t payload[] =
+  "00000#"
   "abcdefghijklmnopqrstuvwxyz\n"
   "abcdefghijklmnopqrstuvwxyz\n"
   "abcdefghijklmnopqrstuvwxyz\n"
@@ -19,7 +22,7 @@ const char payload[] =
   "abcdefghijklmnopqrstuvwxyz\n"
   "abcdefghijklmnopqrstuvwxyz\n"
   "abcdefghijklmnopqrstuvwxyz\n"
-  "Finished!!\n";
+  "Done\n";
 
 void setFlag(void);
 
@@ -33,82 +36,48 @@ void myInterrupt()
 // https://github.com/jgromes/RadioShield
 //SX1278 radio = RadioShield.ModuleA;
 
-// save transmission state between loops
-int transmissionState = ERR_NONE;
-
 void setup() {
-  Serial.begin(9600);
+  OSCCAL = 101;
+  Serial.begin(115200);
 
   // initialize SX1278 with default settings
   Serial.print(F("[SX1278] Initializing ... "));
-  const float freq = 427.0;
-  const float bw = 500.0;
-  const uint8_t sf = 8;
-  const uint8_t cr = 2;
-  bool implicitHeader = false;
 
-  int state = radio.begin(freq, bw, sf, cr + 5, 0x12, 20, 240, 8);
+  gel::RadioConfig config;
+  gel::RadioPins pins;
 
-  if (implicitHeader)
-      radio.implicitHeader(sizeof(payload));
-  
-  if (state == ERR_NONE) {
-    Serial.println(F("success!"));
-  } else {
-    Serial.print(F("failed, code "));
-    Serial.println(state);
-    while (true);
-  }
+  pins.nss = nss;
+  pins.dio0 = dio0;
+  pins.reset = reset;
 
-  // set the function that will be called
-  // when packet transmission is finished
-  // radio.setPacketSentAction(setFlag);
-  radio.setDio0Action(setFlag, true);
+  radio.begin(pins, config);
 
-  // attachInterrupt(digitalPinToInterrupt(dio0), myInterrupt, RISING)
-  // attachPCINT(digitalPinToPCINT(dio0), myInterrupt, RISING);
-
-  // start transmitting the first packet
   Serial.print(F("[SX1278] Sending first packet ... "));
-
-  // you can transmit C-string or Arduino string up to
-  // 255 characters long
-  transmissionState = radio.startTransmit(payload);
-
+  radio.startTransmit({payload, sizeof (payload)});
 }
 
 // flag to indicate that a packet was sent
 volatile bool transmittedFlag = false;
 
-// this function is called when a complete packet
-// is transmitted by the module
-// IMPORTANT: this function MUST be 'void' type
-//            and MUST NOT have any arguments!
-#if defined(ESP8266) || defined(ESP32)
-  ICACHE_RAM_ATTR
-#endif
 void setFlag(void) {
-  // we sent a packet, set the flag
   transmittedFlag = true;
 }
 
 void loop() {
 
-  if(transmittedFlag) {
+  if(radio.getState() != gel::Radio::State::Transmitting) {
     // reset flag
     count++;
     transmittedFlag = false;
 
-    if (transmissionState == ERR_NONE) {
-      Serial.println("#" + String(count) + "transmission finished!");
-    } else {
-      Serial.print(F("failed, code "));
-      Serial.println(transmissionState);
+    Serial.println("#" + String(count) + " transmission finished!");
 
-    }
+    delay(24);
 
-    delay(500);
+    sprintf((char*)payload, "%05d", count);
+    payload[6] = '#';
 
-    transmissionState = radio.startTransmit(payload);
+    Serial.print("#1 "); Serial.println(millis());
+    radio.startTransmit({payload, sizeof (payload)});
   }
 }

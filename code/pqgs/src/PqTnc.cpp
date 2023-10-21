@@ -17,23 +17,86 @@ PqTnc* PqTnc::singletonTnc = nullptr;
 
 void PqTnc::begin()
 {   
-    beginEEPROM();
-    PqTnc::singletonTnc = this;
+    gel::Error err;
+
+    Serial.begin(BAUD_RATE);
+    while (!Serial);
+    delay(500);
+    
+    if (err = setupEEPROM())
+        handleError(err, "Could not setup EEPROM");
+
+    if (err = setupGroundStation())
+        handleError(err, "Could not setup ground station");
+    
+    PqTnc::singletonTnc = this;    
 }
 
-void PqTnc::update()
+gel::Error PqTnc::setupGroundStation()
 {
-    updateSerial();
-    updateTracking();
+    gel::GroundStationConfig config;
+    gel::GroundStationPins pins;
+
+    // MOUNT PINS
+    pins.mount.azimuthalZeroSensor = PIN_AZ_ZERO_SENSOR;
+    pins.mount.azimuthalPins.i01 = PIN_AZ_IO1;
+    pins.mount.azimuthalPins.i02 = PIN_AZ_IO2;
+    pins.mount.azimuthalPins.i11 = PIN_AZ_I11;
+    pins.mount.azimuthalPins.i12 = PIN_AZ_I12;
+    pins.mount.azimuthalPins.ph1 = PIN_AZ_PH1;
+    pins.mount.azimuthalPins.ph2 = PIN_AZ_PH2;
+    pins.mount.elevationPins.i01 = PIN_EL_IO1;
+    pins.mount.elevationPins.i02 = PIN_EL_IO2;
+    pins.mount.elevationPins.i11 = PIN_EL_I11;
+    pins.mount.elevationPins.i12 = PIN_EL_I12;
+    pins.mount.elevationPins.ph1 = PIN_EL_PH1;
+    pins.mount.elevationPins.ph2 = PIN_EL_PH2;
+
+    // MOUNT CONFIG
+    config.mount.elevationAngleBounds.min = MOUNT_EL_ANGLE_MIN  * GEL_PI_OVER_180;
+    config.mount.elevationAngleBounds.max = MOUNT_EL_ANGLE_MAX * GEL_PI_OVER_180;
+    config.mount.azelRatio = MOUNT_AZEL_RATIO;
+    config.mount.azimuthalRevolutionNumSteps = MOUNT_AZ_NUM_STEPS;
+    config.mount.elevationRevolutionNumSteps = MOUNT_EL_NUM_STEPS;
+    config.mount.reverseElevationDirection = !MOUNT_EL_START_NEAR_CUTOUT;
+    config.mount.calibrateElevationNearMax = MOUNT_EL_START_NEAR_CUTOUT;
+
+    // LINK CONFIG
+    config.link.controller = true;
+    
+    // RADIO PINS
+    pins.radio.nss = PIN_RADIO_NSS;
+    pins.radio.dio0 = PIN_RADIO_DIO0;
+    pins.radio.reset = PIN_RADIO_RESET;
+
+    // IMU PINS
+    pins.imu.nss = PIN_IMU_NSS;
+
+    // GPS PINS
+    pins.gps.rx = PIN_GPS_RX;
+    pins.gps.tx = PIN_GPS_TX;
+    
+    // GROUND STATION CONFIG
+    config.tracking.estimatedBeamwidth = GEL_RADIANS(GS_ESTIMATED_BEAMWIDTH);
+    config.tracking.numBeamwidthScanSegments = GS_ESTIMATED_BEAMWIDTH;
+    config.tracking.numAzimuthScanSamples = GS_NUM_AZIMUTH_SCAN_SAMPLES;
+    config.tracking.scanTimeout = GS_SCAN_TIMEOUT;
+    config.tracking.updateInterval = GS_UPDATE_INTERVAL;
+    config.tracking.magneticNorthDeltaAzAngle = GEL_RADIANS(GS_MNORTH_DELTA_AZ);
+    config.tracking.mapProjectionOrigin.lat = GS_MAP_PROJECTION_ORIGIN_LAT;
+    config.tracking.mapProjectionOrigin.lng = GS_MAP_PROJECTION_ORIGIN_LONG;
+    config.tracking.knownLocationTrustTimeout = GS_KNOWN_LOCATION_TRUST_TIMEOUT;
+
+    // Setup
+    if (gel::Error err = groundStation.begin(config, pins))
+        return err;
+
+    groundStation.getLink().setTelemetryCallback(PqTnc::telemetryCallback);
+
+    return gel::Error::None;
 }
 
-void PqTnc::setGroundStation(gel::GroundStation& groundStation)
-{
-    this->groundStation = &groundStation;
-    this->groundStation->getLink().setTelemetryCallback(PqTnc::telemetryCallback);
-}
-
-void PqTnc::beginEEPROM()
+gel::Error PqTnc::setupEEPROM()
 {
     EEPROM.begin(EEPROM_OFFSET_END);
 
@@ -44,7 +107,9 @@ void PqTnc::beginEEPROM()
         EEPROM.writeBytes(0, &zero, EEPROM_OFFSET_END);
 
     if (gel::Error err = loadFlightPath())
-        handleError(err, "Could not load flight path");
+        return err;
+
+    return gel::Error::None;
 }
 
 gel::Error PqTnc::loadFlightPath()
@@ -72,8 +137,8 @@ gel::Error PqTnc::saveFlightPath()
     if (!numPathInstants)
         return gel::Error::None;
 
-    groundStation->addEstimatedLocation(path[0]);
-    groundStation->addEstimatedLocation(path[0]);
+    groundStation.addEstimatedLocation(path[0]);
+    groundStation.addEstimatedLocation(path[0]);
     
     // Our header stores the size, in bytes, of the current flight path.
     FlightPathHeader header;
@@ -86,6 +151,17 @@ gel::Error PqTnc::saveFlightPath()
     sendMessage("Successfully added " + String(numPathInstants) + " locations");
 
     return gel::Error::None;
+}
+
+void PqTnc::update()
+{
+    static gel::RunEvery run(1000);
+
+    if (run)
+        Serial.println("Updating...");
+    updateSerial();
+    updateTracking();
+    groundStation.update();
 }
 
 void PqTnc::updateSerial()
@@ -113,13 +189,13 @@ void PqTnc::updateSerialNormal(uint8_t c)
         switch (c)
         {
         case suncq::Command::Calibrate:
-            groundStation->calibrate();
+            groundStation.calibrate();
             break;
         case suncq::Command::ReturnToStart:
-            groundStation->returnToStart();
+            groundStation.returnToStart();
             break;
         case suncq::Command::ReturnToStow:
-            groundStation->returnToStow();
+            groundStation.returnToStow();
             break;
         case suncq::Command::GetSignalRSSI:
             sendSignalRSSI();
@@ -168,12 +244,12 @@ void PqTnc::updateTracking()
         updateTrackingGPSReceived();
 }
 
-void PqTnc::updateTrackingGPSUploaded()
+gel::Error PqTnc::updateTrackingGPSUploaded()
 {
     // We get the current time, and then run through the path instants to find the next instant
     // after the current one that is past this time. Theoretically, this should be the instant
     // right after the current one, and then the loop should break.
-    uint64_t currentSecondsSinceEpoch = groundStation->getCurrentSecondsSinceEpoch();
+    uint64_t currentSecondsSinceEpoch = groundStation.getCurrentSecondsSinceEpoch();
     gel::GeoInstant& nextInstant = path[nextPathInstantIdx];
     
     // Check if we have passed the instant we were heading towards
@@ -184,8 +260,8 @@ void PqTnc::updateTrackingGPSUploaded()
         for (nextPathInstantIdx += 1; nextPathInstantIdx < numPathInstants; nextPathInstantIdx++)
         {
             gel::GeoInstant& testInstant = path[nextPathInstantIdx];
-            groundStation->addEstimatedLocation(testInstant);
-            sendMessage(String("Moving towards ")
+            groundStation.addEstimatedLocation(testInstant);
+            sendMessage(String("Approaching location in path: ")
                         + "Lat = " + String(testInstant.location.lat)           + ", "
                         + "Lng = " + String(testInstant.location.lng)           + ", "
                         + "Alt = " + String(testInstant.location.altitude));
@@ -194,11 +270,16 @@ void PqTnc::updateTrackingGPSUploaded()
                 break;
         }
     }
+
+    return gel::Error::None;
 }
 
-void PqTnc::updateTrackingGPSReceived()
+gel::Error PqTnc::updateTrackingGPSReceived()
 {
-    
+    if (!gpsRecieved)
+        return gel::Error::None;;
+
+    return groundStation.addKnownLocation(latestReceivedInstant);
 }
 
 void PqTnc::setTncMode(suncq::TncMode mode)
@@ -209,7 +290,6 @@ void PqTnc::setTncMode(suncq::TncMode mode)
 gel::Error PqTnc::setTrackMode(suncq::TrackMode mode)
 {
     settings.trackMode = mode;
-
     sendMessage("Setting tracking mode to " + String(mode));
 
     return gel::Error::None;
@@ -264,7 +344,7 @@ void PqTnc::sendSignalRSSI()
 {
     uint8_t message[5];
 
-    float rssi = groundStation->getRadio().getRssi();
+    float rssi = groundStation.getRadio().getRssi();
     
     message[0] = (uint8_t)suncq::Command::SignalRSSI;
     memcpy(message, &rssi, sizeof(rssi));
@@ -274,13 +354,35 @@ void PqTnc::sendSignalRSSI()
 
 void PqTnc::sendMessage(String msg)
 {
-    Serial.write((uint8_t)suncq::Command::TncMessage);
-    Serial.println(msg);
+    // Serial.write((uint8_t)suncq::Command::TncMessage);
+    Serial.println(msg.c_str());
 }
 
 gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
 {
+    String payloadStr{(const char*)payload.data()};
     sendMessage(String(payload.data(), payload.size()));
+
+    if (payloadStr.indexOf("GPS") > 0)
+    {
+        auto latIdx = payloadStr.indexOf("Lat: ");
+        auto lngIdx = payloadStr.indexOf("Lng: ");
+        auto altIdx = payloadStr.indexOf("Alt: ");
+        auto ageIdx = payloadStr.indexOf("Age: ");
+        auto lat = payloadStr.substring(latIdx + 5).toFloat();
+        auto lng = payloadStr.substring(lngIdx + 5).toFloat();
+        auto altitude = payloadStr.substring(altIdx + 5).toFloat();
+        auto age = payloadStr.substring(ageIdx + 5).toInt();
+
+        gpsRecieved = true;
+        latestReceivedInstant.location.lat = lat;
+        latestReceivedInstant.location.lng = lng;
+        latestReceivedInstant.location.altitude = altitude;
+        latestReceivedInstant.secondsSinceEpoch = groundStation.getCurrentSecondsSinceEpoch() - age;
+    }
+
+    Serial.println("RSSI = " + String(groundStation.getRadio().getRssi()));
+
     return gel::Error::None;
 }
 
