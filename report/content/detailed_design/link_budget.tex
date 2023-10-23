@@ -1,10 +1,8 @@
 \section{Link Budget}
 
-The link budget should now be conducted, as well as initial considerations for the ground station geo-location. This location will affect the range of elevation angles to accomodate, the distance to the horizon, as well as the free-space path loss.
+The link budget should now be conducted, and initial considerations for the ground station's base location should be made, as this location will affect the range of elevation angles to accomodate, the distance to the horizon, and the free-space path loss.
 
-If it is acceptable to estabilish the link a few minutes after the launch, Signal Hill in Cape Town is a viable location for the ground station, and is easily accessible. At its height of 350 m, communication with the balloon would move be available after the ballon reaches an altitude of 650 m. A maximum elevation angle of $13.5 \circ$ (to Worcester) should therefore be considered.
-
-If communication with the satellite from the beginning of launch is necessary (e.g. for direct GPS tracking), then the ground station would need to be raised above sea level. Considering Cape Town as a location would require a height of around 1 km (measured to Saldanha Airfield), which is mostly impractical, unless accessibility into Table Mountain is granted. Therefore, a location scout would need to be conducted closer to the launch site. At 200 m altitude, the site could be up to 50 km away from launch. In this case, a maximum elevation angle of between $25 \circ$ and $30 \circ$ will need to be considered.
+Signal Hill in Cape Town is a viable location for the ground station and is easily accessible. At its distance of 114 km, however, one would need to be at a height of 950 m due to the distance to the horizon. Therefore, the balloon would only be visible at an altitude of 600 m (from Signal Hill's 350 m height). A maximum elevation angle of $16.72 \circ$ at 30 km altitude above Worcester should be considered.
 
 The \textit{receiver sensitivity} is a value which denotes the minimum power level required at the receiver for successful communication. Depending on set parameters, the SX1278 quotes varying receiver sensitivity values. Notable configurations are listed in Table \ref{tab:sensitivity_values}.
 \begin{table}[!htb]
@@ -49,10 +47,7 @@ The \textit{receiver sensitivity} is a value which denotes the minimum power lev
   \label{tab:sensitivity_values}
 \end{table}
 
-The software mentioned in Section \ref{sec:link_budget} was used to compute attenuation effects in the link budget, with Saldanha Airfield as the satellite location, and Signal Hill as the ground station location.
-All calculations were based on the RA-02's internal SX1278 chip and its specifications, half-wavelength dipoles as antennas, and worst-case impedance mismatch loss of 1.2 dBi (a VSWR 3:1, taken from the SX1278 datasheet). Then, the resultant margin will be analysed, and an appropriate directive antenna will be designed for the ground station to allow for increased margin and performance. The LoRa "target bit rate" sensitivity value of -119 dBm is used in this budget.
-
-\newpage
+An online path loos calculator was used to attenuation due to distance, and the Python tool \textit{link budget} was used to calculate atmospheric losses. All values were based on the RA-02's internal SX1278 chip and its specifications, half-wavelength dipoles as antennas, an impedance mismatch loss of 0.5 dB (around -10 dB return loss), and an equivalent transmitter power of 100 mW (20 dBm). The resultant link margin should then be analysed accordingly, and an appropriate directive antenna designed for the ground station, to ensure adequate fade margin and performance. The LoRa "target bit rate" sensitivity value of -119 dBm is used in this budget.
 
 \begin{table}[!htb]
   \centering
@@ -60,10 +55,10 @@ All calculations were based on the RA-02's internal SX1278 chip and its specific
   \begin{tabular}{ |c|c| }
   \hline
   Transmitter Power             & 17 dBm                    \\ \hline
-  Mismatch Loss                 & (1.2 dBi)                 \\ \hline
-  Transmission Line Loss        & (0.1 dB)                  \\ \hline
+  Mismatch Loss                 & (0.5 dB)                 \\ \hline
+  Transmission Line Loss        & (1 dB)                  \\ \hline
   Antenna Gain                  & 2.15 dB                   \\ \hline \hline
-  \textbf{EIRP}                 & \textbf{17.85 dBm}        \\ \hline
+  \textbf{EIRP}                 & \textbf{17.65 dBm}        \\ \hline
   \end{tabular}
   \caption{Link Budget - Satellite}
   \label{tab:link_budget_satellite}
@@ -74,11 +69,11 @@ All calculations were based on the RA-02's internal SX1278 chip and its specific
   \renewcommand{\arraystretch}{1.2}
   \begin{tabular}{ |c|c| }
   \hline
-  Free space path loss (110 km) & 125.9 dB                  \\ \hline
+  Free space path loss (114 km) & 126.3 dB                  \\ \hline
   Atmospheric loss              & 0.22 dB                   \\ \hline
   Scintillation loss            & 0.37 dB                   \\ \hline
   Polarization Mismatch         & 3 dB                      \\ \hline
-  \textbf{Total Loss}           & \textbf{129.49 dB}         \\ \hline
+  \textbf{Total Loss}           & \textbf{129.89 dB}         \\ \hline
   \end{tabular}
   \caption{Link Budget - Channel}
   \label{tab:link_budget_channel}
@@ -90,20 +85,19 @@ All calculations were based on the RA-02's internal SX1278 chip and its specific
   \begin{tabular}{ |c|c| }
   \hline
   Antenna Gain                  & 2.15 dBi                \\ \hline
-  Transmission Line Loss        & (0.1 dB)                \\ \hline
-  Mismatch Loss                 & (1.2 dB)                \\ \hline
+  Mismatch Loss                 & (0.5 dB)                \\ \hline
+  Transmission Line Loss        & (1 dB)                  \\ \hline
   Receiver Sensitivity          & 119 dBm                 \\ \hline
-  \textbf{GS Sensitivity}       & \textbf{119.85 dBm}     \\ \hline
+  \textbf{GS Sensitivity}       & \textbf{119.65 dBm}     \\ \hline
   \end{tabular}
   \caption{Link Budget - Ground Station}
   \label{tab:link_budget_gs}
 \end{table}
 
-The final link budget therefore results in 17.85 dBm - 129.49 dB + 119.85 dBm = 8.21 dB of link margin. Although this is theoretically adequate, there are a few considerations to be made:
+The final link budget therefore results in 17.65 dBm - 129.89 dB + 119.65 dBm = 7.41 dB of link margin. Although this is theoretically adequate (above the 3 dB recommendation), there are a few considerations to be made:
 \begin{itemize}
-    \item The application note in \cite{paper-linkBudget} suggests a minimum link margin of 10 dB. It also further suggests a margin of above 20 dB for critical links.
-    \item If a higher bit rate is required, e.g. 38.4 kbps, then the margin drops to -1.79 dB.
-    \item If a longer range (e.g. for future projects) is required, free space path loss will drastically increase. For example, for a 250 km range, the loss becomes 133 dB, meaning the margin drops to only 1.11 dB.
+    \item If a higher bit rate is required, e.g. 38.4 kbps, then the margin drops to -2.59 dB.
+    \item If a longer range is required (e.g. for future projects), free space path loss will drastically increase. For example, for a 250 km range, the loss becomes 133 dB, meaning the margin drops to only 1.11 dB.
 \end{itemize}
 
-To achieve the 10 dB recommended margin, an antenna with at least 1.79 dB additional gain (i.e. 3.94 dBi total) should be designed for the ground station. Then, if necessary, the 20 dB recommendation can be reached by lowering the bit rate.
+To achieve the 10 dB recommended margin, an antenna with at least 2.59 dBi additional gain (i.e. 4.74 dBi total) should be designed for the ground station. Then, if necessary, the 20 dB recommendation can be reached by lowering the LoRa spreading factor (SF) to support any "mission critical" requirements. Practically, this could be set as the system "startup" state, until a link is made, where the SF can then be changed.

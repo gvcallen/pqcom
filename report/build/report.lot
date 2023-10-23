@@ -1,29 +1,28 @@
 \babel@toc {english}{}\relax 
-\babel@toc {afrikaans}{}\relax 
 \babel@toc {english}{}\relax 
-\babel@toc {afrikaans}{}\relax 
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Qualitative Comparison of Antenna Characteristics \cite {site-antennaTheory}\relax }}{13}{table.caption.26}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Qualitative Comparison of Antenna Characteristics \cite {site-antennaTheory}\relax }}{11}{table.caption.24}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces \relax }}{23}{table.caption.33}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Ground Station Component Power Consumption\relax }}{25}{table.caption.36}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces PocketQube Unit Component Power Consumption\relax }}{26}{table.caption.43}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Notable SX1278 Configurations\relax }}{28}{table.caption.48}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Link Budget - Satellite\relax }}{28}{table.caption.49}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Link Budget - Channel\relax }}{29}{table.caption.50}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Link Budget - Ground Station\relax }}{29}{table.caption.51}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Mount Component Specifications\relax }}{30}{table.caption.52}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Helical Antenna Final Parameters\relax }}{35}{table.caption.60}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces \textbf {GPS} Class\relax }}{37}{table.caption.63}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces \textbf {Radio} Class\relax }}{37}{table.caption.64}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces \textbf {Link} Class\relax }}{37}{table.caption.65}%
+\contentsline {table}{\numberline {4.13}{\ignorespaces \textbf {StepperMotor} Class\relax }}{37}{table.caption.66}%
+\contentsline {table}{\numberline {4.14}{\ignorespaces \textbf {Mount} Class\relax }}{38}{table.caption.67}%
+\contentsline {table}{\numberline {4.15}{\ignorespaces \textbf {GroundStation} Class\relax }}{38}{table.caption.68}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces \relax }}{25}{table.caption.33}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Ground Station Component Power Consumption\relax }}{27}{table.caption.36}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces PocketQube Unit Component Power Consumption\relax }}{29}{table.caption.43}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Notable SX1278 Configurations\relax }}{31}{table.caption.48}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Link Budget - Satellite\relax }}{32}{table.caption.49}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces Link Budget - Channel\relax }}{32}{table.caption.50}%
-\contentsline {table}{\numberline {5.7}{\ignorespaces Link Budget - Ground Station\relax }}{32}{table.caption.51}%
-\contentsline {table}{\numberline {5.8}{\ignorespaces Mount Component Specifications\relax }}{33}{table.caption.52}%
-\contentsline {table}{\numberline {5.9}{\ignorespaces Helical Antenna Final Parameters\relax }}{38}{table.caption.60}%
-\contentsline {table}{\numberline {5.10}{\ignorespaces \textbf {StepperMotor} Class\relax }}{40}{table.caption.63}%
-\contentsline {table}{\numberline {5.11}{\ignorespaces \textbf {Mount} Class\relax }}{40}{table.caption.64}%
-\contentsline {table}{\numberline {5.12}{\ignorespaces \textbf {Radio} Class\relax }}{40}{table.caption.65}%
-\contentsline {table}{\numberline {5.13}{\ignorespaces \textbf {GPS} Class\relax }}{40}{table.caption.66}%
-\contentsline {table}{\numberline {5.14}{\ignorespaces \textbf {IMU} Class\relax }}{41}{table.caption.67}%
-\contentsline {table}{\numberline {5.15}{\ignorespaces \textbf {GroundStation} Class\relax }}{41}{table.caption.68}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

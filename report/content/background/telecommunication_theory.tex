@@ -1,18 +1,33 @@
 \section{Telecommunication Theory}\label{sec:telecommunication_theory}
-A review of the communication techniques used for wireless links is conducted below. Since it is already planned to use modular components in the hardware design stage, and most modules handle error correction, modulation, demodulation and more with little effort, only a brief overview is given.
+A brief review of various concepts used in wireless communication links is conducted below.
 
 \subsection{Modulation Techniques}
-The \textit{modulation} technique used over a communication link essentially refers to the method used to encode analog or digital information into an electrical voltage. ASK, FSK, PSK, and QAM are the most common techniques \cite{site-satelliteModulationOverview} \cite{site-satelliteModulationComparison}:
+The \textit{modulation} technique used over a communication link refers to the method used to encode analog or digital information into an electrical voltage. ASK, FSK, PSK, and QAM are the most common techniques \cite{site-satelliteModulationOverview} \cite{site-satelliteModulationComparison}:
 \begin{itemize}
     \item \textit{Amplitude Shift Keying} (ASK). This technique modulates the amplitude of the voltage to represent various bit levels.
     \item \textit{Frequency Shift Keying} (FSK). This method changes the frequency of the signal to represent various signal levels. Commonly, \textit{Gaussian-FSK} (GFSK) is used, which implements a smoothing filter. This decreased the bandwidth for similar throughput, making it comparable to the following techniques.
-    \item \textit{Phase Shift Keying} (PSK). This is often seen as a variantion of FSK, where the phase of the signal is varied instead of the frequency. It required complex synchronisation, and has lower spectral efficiency compared to QAM.
-    \item \textit{Quadrature Amplitude Modulation} (QAM). This method modulates both the amplitude and phase of a signal, allowing for a large number of signal levels. It has very high spectral efficiency, and is commonly used for higher cost systems.
+    \item \textit{Phase Shift Keying} (PSK). This is often seen as a variation of FSK, where the phase of the signal is varied instead of the frequency. It requires complex synchronisation, and has lower spectral efficiency compared to QAM.
+    \item \textit{Quadrature Amplitude Modulation} (QAM). This method modulates both the amplitude and phase of a signal, allowing for a large number of signal levels. It has very high spectral efficiency, and is commonly used for high cost, high throughput systems.
 \end{itemize}
 
-\textit{loRa} ("Long-Range") is a relatively new technique which offers makes use of frequency-varying "chirps" to modulation the incoming signal. It has been seen to drastically increase range capacity, while sacrificing bit rate. Its practical use has also been demonstrated in an existing PocketQube application in \cite{design-FOSSASATLink}.
+\textit{LoRa} ("Long-Range") modulation is a relatively new technique. It makes use of frequency-varying "chirps" to modulation the incoming signal. It has been seen to drastically increase range capacity, at the expense of greater bandwidth requirements \cite{datasheet-SX1278}. Its practical use has also been demonstrated in an existing CubeSat system \cite{design-FOSSASATLink}.
 
+\newpage
 \subsection{Link Budget}\label{sec:link_budget}
 For any communication system, a "link-level" design or \textit{link budget} should be conducted. The goal of this design step is to determine the power requirements of the commuication system, taking into account transmitter power, antenna characteristics, receiver sensitivity, modulation technique, and any attenuation involved.
 
-Free software \textit{Python "Link Budget"} is available which employs calculations from the ITU-R to easily compute attenutation due to path loss, atmospheric effects, and more for a given satellite link at a given distance. It will be used during the link budget design.
+A number of the attenuation affects which may be taken into account in a satellite link budget include \cite{design-satelliteLinkBudget}:
+\begin{itemize}
+    \item Cable loss
+    \item Amplifier-antenna mismatch
+    \item Free-space path losses
+    \item Absorption losses due to clouds, rain etc.
+    \item \textit{Polarization} mismatch due to antennas not being aligned
+    \item \textit{Scintillation} effects due to changes in the air's refractive index
+    \item The effect of varying \textit{elevation angles}
+\end{itemize}
+
+\noindent Further, it is recommend to include a minimum margin or \textit{fade margin} of at least 3 dB for low frequency links \cite{paper-linkMargin}, up to 10 dB for links that require more up-time \cite{design-linkBudgetDesign}, and around 20 dB for mission critical links.
+
+\subsection{Protocols}
+A few link-layer and network-layer protocols exist that facilitate nano-satellite applications. The CubeSat Space Protocol (CSP) \cite{standard-csp} is a fully-fledged network delivery protocol for CubeSats, embedded systems, and similar. It allows for all devices in the PocketQube ecosystem (all PQ modules, the ground station, a control computer etc.) to communicate "directly" via packet forwarding etc. It relies on various link-layer protocols, such as I2C, CCSDS (\textit{Consultative Committee for Space Data Systems}) as its foundation. For this project, considerations will need to be made as to whether or not these protocols are applicable, or if more custom solutions should be developed.

@@ -24,6 +24,11 @@
 \bibitem{standard-pqsu}
 D.~Slabber, ``Pocketcube mechanical interface,'' [Accessed 16-08-2023].
 
+\bibitem{site-highaltitudescienceTrackingWeather}
+``{T}racking a {W}eather {B}alloon; {H}igh {A}ltitude {S}cience,''
+  \url{https://www.highaltitudescience.com/pages/tracking-a-weather-balloon},
+  [Accessed 13-08-2023].
+
 \bibitem{site-designingDipole}
 electronicsforu, ``Transmission basics: Designing a dipole antenna,''
   \url{https://www.electronicsforu.com/technology-trends/learn-electronics/transmission-basics-designing-dipole-antenna},
@@ -39,16 +44,6 @@ Wikipedia, ``Inverted-f antenna,''
   \url{https://en.wikipedia.org/wiki/Inverted-F_antenna}, 2023, [Accessed
   16-08-2023].
 
-\bibitem{site-highaltitudescienceTrackingWeather}
-``{T}racking a {W}eather {B}alloon; {H}igh {A}ltitude {S}cience,''
-  \url{https://www.highaltitudescience.com/pages/tracking-a-weather-balloon},
-  [Accessed 13-08-2023].
-
-\bibitem{site-4layerPCB}
-N.~T., ``Standard 4- and 6-layer pcb stackups,''
-  \url{https://www.bitweenie.com/listings/standard-4-and-6-layer-pcb-stackups/},
-  [Accessed 18-08-2023].
-
 \bibitem{site-azElevationVisual}
 Celestis, ``What are the "azimuth" and "elevation" of a satellite?''
   \url{https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/},
@@ -63,25 +58,25 @@ P.~J. Bevelacqua, ``Antenna theory,'' \url{https://www.antenna-theory.com/},
   \url{https://www.weather.gov/bmx/kidscorner_weatherballoons#:~:text=The%20balloon%20flights%20last%20for,20%20miles)%20in%20the%20atmosphere!},
   [Accessed 12-08-2023].
 
-\bibitem{datasheet-iMet3100M}
-Intermet, ``imet-3100m,''
-  \url{https://intermet.co/wp-content/uploads/iMet-3100M-403MHz-Military-Antenna-Receiver-Brochure-V4.5.pdf},
-  [Accessed 12-08-2023].
-
-\bibitem{site-esaTypesOrbits}
-``{T}ypes of orbits --- esa.int,''
-  \url{https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits#:~:text=Low%20Earth%20orbit%20(LEO),-A%20low%20Earth&text=It%20is%20normally%20at%20an,very%20far%20above%20Earth's%20surface.},
-  [Accessed 12-08-2023].
+\bibitem{datasheet-iMet54}
+Intermet, ``imet-54,''
+  \url{https://intermet.co/wp-content/uploads/iMet-54-403MHz-GPS-Radiosonde-Brochure-V5.5.pdf},
+  [Accessed 13-08-2023].
 
 \bibitem{paper-deployableAntenna}
 ``A multi frequency deployable antenna system for delfi-pq,''
   \url{https://pure.tudelft.nl/ws/portalfiles/portal/57402203/2019_f_74.pdf},
   [Accessed 13-08-2023].
 
-\bibitem{datasheet-iMet54}
-Intermet, ``imet-54,''
-  \url{https://intermet.co/wp-content/uploads/iMet-54-403MHz-GPS-Radiosonde-Brochure-V5.5.pdf},
-  [Accessed 13-08-2023].
+\bibitem{site-stratoballooningPredictionTracking}
+``{P}rediction and {T}racking a {B}alloon — {S}tratospheric {B}allooning
+  {A}ssociation --- stratoballooning.org,''
+  \url{https://www.stratoballooning.org/tracking}, [Accessed 13-08-2023].
+
+\bibitem{site-mercator}
+R.~Israel, ``Mercator's projection,''
+  \url{https://personal.math.ubc.ca/~israel/m103/mercator/mercator.html},
+  [Accessed 29-09-2023].
 
 \bibitem{textbook-antennaTheoryAnalysisDesign}
 C.~A. Balanis, ``Antenna theory analysis and design,'' [Accessed 29-09-2023].
@@ -114,45 +109,33 @@ LinkedIn, ``What are the benefits and drawbacks of using different modulation
   \url{https://www.linkedin.com/advice/0/what-advantages-disadvantages-using-qam-over},
   [Accessed 29-09-2023].
 
+\bibitem{datasheet-SX1278}
+Semtech, ``137 mhz to 1020 mhz low power long range transceiver,''
+  \url{https://www.semtech.com/products/wireless-rf/lora-connect/sx1278},
+  [Accessed 23-10-2023].
+
 \bibitem{design-FOSSASATLink}
 J.~Fernandez, ``Link budget calculation,''
   \url{https://github.com/FOSSASystems/FOSSASAT-1/blob/master/FOSSA%20Documents/FOSSASAT-1%20Link%20Budget.pdf},
   [Accessed 29-09-2023].
 
-\bibitem{site-stratoballooningPredictionTracking}
-``{P}rediction and {T}racking a {B}alloon — {S}tratospheric {B}allooning
-  {A}ssociation --- stratoballooning.org,''
-  \url{https://www.stratoballooning.org/tracking}, [Accessed 13-08-2023].
+\bibitem{design-satelliteLinkBudget}
+M.~Arias, ``Small satellite link budget calculation,''
+  \url{https://www.itu.int/en/ITU-R/space/workshops/2016-small-sat/Documents/Link_budget_uvigo.pdf},
+  [Accessed 05-10-2023].
 
-\bibitem{site-pcbLayers}
-C.~P. SOLUTIONS, ``Pcb layers explained: Multilayer boards and stackup rules,''
-  \url{https://resources.pcb.cadence.com/blog/2019-pcb-layers-explained-multilayer-boards-and-stackup-rules},
-  [Accessed 18-08-2023].
+\bibitem{paper-linkMargin}
+K.~Cheung, ``The role of margin in link design and optimization,''
+  \url{https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/15-0025_A1b.pdf},
+  [Accessed 23-10-2023].
 
-\bibitem{site-pcbBasics}
-SFUPTOWNMAKER, ``Pcb basics,''
-  \url{https://learn.sparkfun.com/tutorials/pcb-basics/all}, [Accessed
-  18-08-2023].
+\bibitem{design-linkBudgetDesign}
+I.~Campbell~Scientific, ``The link budget and fade margin,''
+  \url{https://s.campbellsci.com/documents/us/technical-papers/link-budget.pdf},
+  [Accessed 05-10-2023].
 
-\bibitem{site-viaStitching}
-Proteus, ``Pcb via stitching and shielding,''
-  \url{https://www.labcenter.com/blog/pcb-stitching-and-shielding/}, [Accessed
-  18-08-2023].
-
-\bibitem{datasheet-MAX2659}
-A.~Devices, ``Max2659 gps/gnss low-noise amplifier,''
-  \url{https://www.analog.com/media/en/technical-documentation/data-sheets/MAX2659.pdf},
-  [Accessed 18-08-2023].
-
-\bibitem{site-pcbRoutingGuidelines}
-P.~Electronics, ``Routing guidelines for rf pcbs,''
-  \url{https://www.proto-electronics.com/blog/routing-guidelines-rf-pcb},
-  [Accessed 29-09-2023].
-
-\bibitem{site-rfPCBGuidelines}
-A.~Devices, ``Pcbs layout guidelines for rf and mixed signal,''
-  \url{https://www.analog.com/en/technical-articles/pcbs-layout-guidelines-for-rf--mixedsignal.html},
-  [Accessed 18-08-2023].
+\bibitem{standard-csp}
+GOMspace, ``Cubesat space protocol (csp),'' [Accessed 24-10-2023].
 
 \bibitem{datasheet-4118}
 L.~Engineering, ``High torque motor,''
@@ -174,13 +157,18 @@ Gravitech, ``Arduino nano,''
   \url{https://www.arduino.cc/en/uploads/Main/Arduino_Nano-Rev3.2-SCH.pdf},
   [Accessed 29-09-2023].
 
-\bibitem{paper-linkBudget}
-I.~Campbell~Scientific, ``The link budget and fade margin,''
-  \url{https://s.campbellsci.com/documents/us/technical-papers/link-budget.pdf},
-  [Accessed 03-09-2023].
-
 \bibitem{textbook-helicalAntenna}
 J.~D. Kraus, ``Antennas for all applications,'' [Accessed 29-09-2023].
+
+\bibitem{datasheet-iMet3100M}
+Intermet, ``imet-3100m,''
+  \url{https://intermet.co/wp-content/uploads/iMet-3100M-403MHz-Military-Antenna-Receiver-Brochure-V4.5.pdf},
+  [Accessed 12-08-2023].
+
+\bibitem{datasheet-MAX2659}
+A.~Devices, ``Max2659 gps/gnss low-noise amplifier,''
+  \url{https://www.analog.com/media/en/technical-documentation/data-sheets/MAX2659.pdf},
+  [Accessed 18-08-2023].
 
 \bibitem{datasheet-NEO6}
 u~blox, ``Neo-6,''
@@ -190,6 +178,46 @@ u~blox, ``Neo-6,''
 \bibitem{paper-reviewTrackingMethods}
 ``Review of tracking methods,'' \url{: http://www.jstor.com/stable/73457},
   [Accessed 13-08-2023].
+
+\bibitem{paper-linkBudget}
+I.~Campbell~Scientific, ``The link budget and fade margin,''
+  \url{https://s.campbellsci.com/documents/us/technical-papers/link-budget.pdf},
+  [Accessed 03-09-2023].
+
+\bibitem{site-esaTypesOrbits}
+``{T}ypes of orbits --- esa.int,''
+  \url{https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits#:~:text=Low%20Earth%20orbit%20(LEO),-A%20low%20Earth&text=It%20is%20normally%20at%20an,very%20far%20above%20Earth's%20surface.},
+  [Accessed 12-08-2023].
+
+\bibitem{site-pcbLayers}
+C.~P. SOLUTIONS, ``Pcb layers explained: Multilayer boards and stackup rules,''
+  \url{https://resources.pcb.cadence.com/blog/2019-pcb-layers-explained-multilayer-boards-and-stackup-rules},
+  [Accessed 18-08-2023].
+
+\bibitem{site-viaStitching}
+Proteus, ``Pcb via stitching and shielding,''
+  \url{https://www.labcenter.com/blog/pcb-stitching-and-shielding/}, [Accessed
+  18-08-2023].
+
+\bibitem{site-pcbBasics}
+SFUPTOWNMAKER, ``Pcb basics,''
+  \url{https://learn.sparkfun.com/tutorials/pcb-basics/all}, [Accessed
+  18-08-2023].
+
+\bibitem{site-rfPCBGuidelines}
+A.~Devices, ``Pcbs layout guidelines for rf and mixed signal,''
+  \url{https://www.analog.com/en/technical-articles/pcbs-layout-guidelines-for-rf--mixedsignal.html},
+  [Accessed 18-08-2023].
+
+\bibitem{site-4layerPCB}
+N.~T., ``Standard 4- and 6-layer pcb stackups,''
+  \url{https://www.bitweenie.com/listings/standard-4-and-6-layer-pcb-stackups/},
+  [Accessed 18-08-2023].
+
+\bibitem{site-pcbRoutingGuidelines}
+P.~Electronics, ``Routing guidelines for rf pcbs,''
+  \url{https://www.proto-electronics.com/blog/routing-guidelines-rf-pcb},
+  [Accessed 29-09-2023].
 
 \bibitem{textbook-antennasForAll}
 J.~D. Kraus, ``Antennas for all applications,'' [Accessed 29-09-2023].

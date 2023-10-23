@@ -1,0 +1,115 @@
+\graphicspath{{./figures}}
+
+\section{Software}
+
+\subsection{Components}
+
+A shared library was designed in C++ to be re-used in both the PQ and GS code. Composition was used to to follow the component-based design. Tables \ref{tab:gpsUML} to \ref{tab:groundStationUML} describe the various classes planned, as well as their expected functionality, with \textit{setup}/\textit{update} functions excluded.
+
+The \textit{Link} class deserves additional explanation. Although mature protocols exist (such as CSP as mentioned) it was decided to develop only a very simple protocol between the PQ and GS. The link class is designed to encapsulate flow control of the radio communication link, and should be configurable to either be in \textit{Controller} or \textit{Responder} mode (for the GS and PQ respectively). It should allow for either \textit{Telemetry} or \textit{Telecommand} operating modes, and allow callers to simply use callbacks to populate/respond to data when necessary.
+
+\begin{table}[!htb]
+  \centering
+  \caption{\textbf{GPS} Class}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}        & \textbf{Description}    \\
+  \hline
+    getLocation()              & Return latitude, longitude and altitude \\
+    getTime()                  & Return seconds since epoch \\
+  \hline
+  \end{tabular}
+  \label{tab:gpsUML}
+\end{table}
+
+\begin{table}[!htb]
+  \centering
+  \caption{\textbf{Radio} Class}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}        & \textbf{Description}    \\
+  \hline
+    startTransmit(message)              & Transmit data (non-blocking i.e. with callback) \\
+    startReceive()                      & Start listening to receive data (non-blocking i.e. with callback) \\
+    getRssi()                           & Get signal strength \\
+    getSnr()                            & Get signal-to-noise ratio \\
+  \hline
+  \end{tabular}
+  \label{tab:radioUML}
+\end{table}
+
+\begin{table}[!htb]
+  \centering
+  \caption{\textbf{Link} Class}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}        & \textbf{Description}    \\
+  \hline
+  setTelemetryCallback(fn)                    & Set the "telemetry sent/received" function  \\
+  setTelecommandCallback(fn)                  & Set the "telecommand received" function (\textit{Responder} only) \\
+  \hline
+  \end{tabular}
+  \label{tab:linkUML}
+\end{table}
+
+\begin{table}[!htb]
+  \centering
+  \caption{\textbf{StepperMotor} Class}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}        & \textbf{Description}    \\
+  \hline
+    stepForward(numSteps)         & Blocking and non-blocking options \\
+    saveZeroPosition()            & Used for calibration \\
+    getPosition()                 & Used for open-loop feedback \\
+    setSpeed()                    & Sets the delay between steps \\
+    setCurrentMultiplier()        & Set the amount of current \\
+  \hline
+  \end{tabular}
+  \label{tab:stepperMotorUML}
+\end{table}
+
+\begin{table}[!htb]
+  \centering
+  \caption{\textbf{Mount} Class}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}        & \textbf{Description}    \\
+  \hline
+    calibrate()                         & Calbrate the mount \\
+    setAzimuthalElevation(az, el)       & Set the azimuthal and elevation angles \\
+    setBoresight(boresightVec)          & Set the boresight pointing vector \\
+  \hline
+  \end{tabular}
+  \label{tab:mountUML}
+\end{table}
+
+\begin{table}[!htb]
+  \centering
+  \caption{\textbf{GroundStation} Class}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c| }
+  \hline
+  \textbf{Function}             & \textbf{Description}    \\
+  \hline
+    calibrate()                 & Calibrate the entire GS \\
+    addEstimatedLocation(loc)      & Add an estimated input GPS location for open-loop tracking \\
+    addKnownLocation(loc)          & Add a known GPS location for closed-loop tracking \\
+  \hline
+  \end{tabular}
+  \label{tab:groundStationUML}
+\end{table}
+
+\newpage
+\noindent Two larger classes were designed to encapsulate the above components:
+\begin{enumerate}
+  \item \textbf{PqTnc} class, which acts as an interface between the GS, and a host computer. Here, the GS is referred to as a \textit{Terminal Node Controller} (TNC) when referring to the serial interface it exposes to a host computer. This class should contain the ground station object, handle serial commuication and errors, and store any data to provide the ground station object (e.g. GPS flight path information).
+  \item \textbf{PqUnit} class, which encapsulates all functionality for the PQ module, such as populating telemetry buffers, and responding to telecommands.
+\end{enumerate}
+
+\noindent A protocol titled the \textit{SUNCQ} protocol was drawn up to facilitate commands between the TNC and a computer. This can be found in Appendix \ref{sec:appendix_suncq}. Some commands were included for future contingency (e.g. the inclusion of a TNC "mode" with support for the common KISS (Keep It Simple Stupid) protocol).

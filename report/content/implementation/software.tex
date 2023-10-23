@@ -1,5 +1,34 @@
 \section{Software}
 
-The following section documents the algorithms and control loops implemented in software for both the ground station and PQ unit. All code can be found at https://github.com/gvcallen/pqcom/tree/main/code.
+The following section documents the algorithms implemented in software to satisfying the required functionality layed out in the design stage. All code can be found at \url{https://github.com/gvcallen/pqcom/tree/main/code}.
 
-\section{Motors}
+\subsection{Mount}
+The two-axis mount required some slightly advanced control. The end goal is to be able to set a specific azimuth and elevation angle. Adjusting the elevation angle while keeping the azimuthal angle fixed is simple. The azimuthal motor (controlled Gear C in \ref{fig:antennaMount}) should be held fixed, and the elevation axis (Gear D) should be stepped accordingly. For azimuthal angle, however, if the elevation axis is held fixed, rotating the azimuthal axis causes the mount to also "pivot" in elevation. The change in elevation therefore needs to be compensated for.
+
+The \textit{"azel"} ratio is therefore defined as the number of turns the elevation motor needs to make to tilt the elevation axis the same amount as that caused by the azimuthal motor. The formula for this ratio is found to be:
+$$
+\textnormal{azelRatio} = \frac{D_{\textnormal{outer}} / B}{C / A} = \frac{92 / 20}{60 / 15} = 1.15
+$$
+\noindent The elevation angle can be calculated as:
+$$
+(\textnormal{azPos} \times \textnormal{azelRatio} + \textnormal{elPos}) \times \frac{360 ^{\circ}}{\textnormal{elRev}}
+$$
+where \textit{elRev} is the number of steps per elevation revolution, equal to $200 \times \frac{92}{20} \times \frac{140}{80} = 1610$.
+
+\subsection{Ground Station}
+
+\subsubsection{Pointing}
+In order 
+
+\subsubsection{Flight Path Tracking}
+For open-loop flight path tracking, it was decided to store GPS path data in the TNC class itself, as opposed to streaming it from the host computer. This was chosen for two reasons:
+\begin{enumerate}
+  \item The host could disconnected, and the payload would still be tracked.
+  \item It is eases implementation on the host side (i.e. the binary GPS data can be uploaded and then "forgetten" about)
+\end{enumerate}
+
+The PqTnc class then simply needs to check if a location in the path has been reached, and add it as an estimated location to the GroundStation class. The GroundStation update loop will store two locations - the previous location in the path, and the location it is moving towards. Then, it should periodically update its position (e.g. once every second) and point at a location which linearly interpolates these two stored location instants based on the current time and the time of the two instants.
+
+
+\subsubsection{Direct GPS Tracking}
+To allow direct GPS tracking and flight path tracking to be used simultaneously, the flight path data should be followed until a location is received from the satellite. Then, this location is used for a specified timeout "trust" period until a new location is received and it is overwritten. If the trust period expires, the method falls back to the flight path data. Some form of low-pass filter should be implemented to prevent any possible pointing "jitter" that may occur when receiving slightly different coordinates.
