@@ -2,7 +2,7 @@
 
 \section{Radiosonde}
 
-The helical antenna was setup to receive the radiosonde GFSK signal using the RTL-SDR USB dongle. A resultant "squelch" signal was observed to be received by the radiosonde in one second intervals, and the frequency domain of this signal is shown in Figure \ref{fig:radiosondeSpectrum}.
+The helical antenna was setup to receive the radiosonde GFSK signal using the RTL-SDR USB dongle. A resultant "squelch" signal was observed to be received in one second intervals, and the frequency domain of this signal is plotted in Figure \ref{fig:radiosondeSpectrum} using GNU Radio software.
 
 \begin{figure}[!htb]
   \centering
@@ -10,5 +10,3 @@ The helical antenna was setup to receive the radiosonde GFSK signal using the RT
   \caption{Received Radiosonde Signal FFT}
   \label{fig:radiosondeSpectrum}
 \end{figure}
-
-\textcolor{red}{Hopefully I can decode this signal to at least get GPS location, otherwise an open-loop test might still be useful?}

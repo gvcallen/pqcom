@@ -4,13 +4,13 @@
 
 \subsection{Components}
 
-A shared library was designed in C++ to be re-used in both the PQ and GS code. Composition was used to to follow the component-based design. Tables \ref{tab:gpsUML} to \ref{tab:groundStationUML} describe the various classes planned, as well as their expected functionality, with \textit{setup}/\textit{update} functions excluded.
+A shared library was designed in C++ to be re-used in both the PQ and GS code. Composition was used to follow the component-based design. Tables \ref{tab:gpsUML} to \ref{tab:groundStationUML} describe the various classes planned, as well as their expected functionality, with \textit{setup}/\textit{update} functions excluded.
 
 The \textit{Link} class deserves additional explanation. Although mature protocols exist (such as CSP as mentioned) it was decided to develop only a very simple protocol between the PQ and GS. The link class is designed to encapsulate flow control of the radio communication link, and should be configurable to either be in \textit{Controller} or \textit{Responder} mode (for the GS and PQ respectively). It should allow for either \textit{Telemetry} or \textit{Telecommand} operating modes, and allow callers to simply use callbacks to populate/respond to data when necessary.
 
 \begin{table}[!htb]
   \centering
-  \caption{\textbf{GPS} Class}
+  \caption{GPS Class}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabular}{ |c|c| }
   \hline
@@ -25,7 +25,7 @@ The \textit{Link} class deserves additional explanation. Although mature protoco
 
 \begin{table}[!htb]
   \centering
-  \caption{\textbf{Radio} Class}
+  \caption{Radio Class}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabular}{ |c|c| }
   \hline
@@ -42,7 +42,7 @@ The \textit{Link} class deserves additional explanation. Although mature protoco
 
 \begin{table}[!htb]
   \centering
-  \caption{\textbf{Link} Class}
+  \caption{Link Class}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabular}{ |c|c| }
   \hline
@@ -57,7 +57,7 @@ The \textit{Link} class deserves additional explanation. Although mature protoco
 
 \begin{table}[!htb]
   \centering
-  \caption{\textbf{StepperMotor} Class}
+  \caption{StepperMotor Class}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabular}{ |c|c| }
   \hline
@@ -75,7 +75,7 @@ The \textit{Link} class deserves additional explanation. Although mature protoco
 
 \begin{table}[!htb]
   \centering
-  \caption{\textbf{Mount} Class}
+  \caption{Mount Class}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabular}{ |c|c| }
   \hline
@@ -91,7 +91,7 @@ The \textit{Link} class deserves additional explanation. Although mature protoco
 
 \begin{table}[!htb]
   \centering
-  \caption{\textbf{GroundStation} Class}
+  \caption{GroundStation Class}
   \renewcommand{\arraystretch}{1.2}
   \begin{tabular}{ |c|c| }
   \hline

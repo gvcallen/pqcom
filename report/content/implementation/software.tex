@@ -1,53 +1,50 @@
 \section{Software}
 
-The following section documents the algorithms implemented in software to satisfying the required functionality layed out in the design stage. All code can be found at \url{https://github.com/gvcallen/pqcom/tree/main/code}.
+The following section documents notable algorithms implemented in software to satisfy the required functionality layed out in the design stage. All code can be found at \url{https://github.com/gvcallen/pqcom/tree/main/code}.
 
-\subsection{Mount}
+\subsection{Motor Drive}
+The motor's were set to operate in half-stepping mode with a maximum current. The step sequence (as in the motor driver datasheet \cite{datasheet-L6219}) was implemented using an array. An index was used to then step through the array at regular intervals.
+
+\subsection{Mount Control}
 The two-axis mount requires some relatively involved control. The end goal is to be able to set a specific azimuth and elevation angle.
 
-Adjusting the elevation angle while keeping the azimuthal angle fixed is simple. The azimuthal motor (controlled Gear C in \ref{fig:antennaMount}) can be held fixed, and the elevation axis (Gear D) stepped accordingly. For azimuthal variation, if the elevation axis is held fixed, rotating the azimuthal axis causes the mount to also change in elevation, which needs to be compensated for. The \textit{"azel"} ratio is then defined as the number of turns the elevation motor requires to tilt the elevation by the same amount as that caused by a given azimuthal rotation. The formula for this ratio is found to be:
+Elevational variation is straight-forward. The azimuthal motor (controlled Gear C in \ref{fig:antennaMount}) can be held fixed, and the elevation axis (Gear D) stepped accordingly. However, for azimuthal variation, if the elevation axis is held fixed, rotating the azimuthal axis causes the mount to also change in elevation, which needs to be compensated for. The \textit{"azel"} ratio is then defined as the number of turns to tilt the elevation motor the same amount as that caused by a given azimuthal rotation. The formula for this ratio is:
 \begin{equation}\label{eqn:azelRatio}
 \textnormal{azelRatio} = \frac{D_{\textnormal{outer}} / B}{C / A} = \frac{92 / 20}{60 / 15} = 1.15
 \end{equation}
 
-\noindent The azimuthal and elevation angles can then be calculated as in Formulas \ref{eqn:azAngle} and \ref{eqn:elAngle}, where \textit{elRev} is the number of elevation motor steps per elevation revolution (equal to $200 \times \frac{92}{20} \times \frac{140}{80} = 1610)$, and \textit{azRev} the equivalent for azimuth (equal to $200 \times \frac{60}{15}$).
+\noindent The azimuthal and elevation angles can then be calculated as in Formulae \ref{eqn:azAngle} and \ref{eqn:elAngle}, where \textit{elRev} and \textit{azRev} are the number of elevation/azimuth motor steps per full revolution (equal to $200 \times \frac{92}{20} \times \frac{140}{80} = 1610$ and $200 \times \frac{60}{15} = 800$ respectively).
 \begin{align}
     \textnormal{azAngle} &= \textnormal{azPos} \times \frac{360 ^{\circ}}{\textnormal{azRev}} \label{eqn:azAngle} \\
     \textnormal{elAngle} &= (\textnormal{azPos} \times \textnormal{azelRatio} + \textnormal{elPos}) \times \frac{360 ^{\circ}}{\textnormal{elRev}} \label{eqn:elAngle}
 \end{align}
 
-\noindent The number of simultaneous \textit{"delta"} steps to make for each axis to move to (newAzAng, newElAng) in \textit{setAzimuthElevation()} is then given by Formulas \ref{eqn:deltaAzSteps} and \ref{eqn:deltaElSteps}. To do these steps simultaneously, the motor speeds can be set according to the ratio of the number of steps, ensuring there is a single, smooth movement from one position to another. Lastly, a conversion from cartesian to azimuthal-elevation is done to allow setting a boresight vector.
+\noindent The number of simultaneous \textit{"delta"} steps to make in order for each axis to move a new location \{\textit{newAzAng}, \textit{newElAng}\} implemented in \textit{setAzimuthElevation()} is then given by Formulae \ref{eqn:deltaAzSteps} and \ref{eqn:deltaElSteps}. To step both motors simultaneously, speeds are set according to the ratio \textit{deltaAzSteps} : \textit{deltaELSteps}, to ensure a single, smooth motion. A conversion from cartesian to azimuthal-elevation is then done to allow a boresight vector as input.
 \begin{align}
     \textnormal{deltaAzSteps} &= \textnormal{angToPosAz(newAzAng)} - \textnormal{azPos} \label{eqn:deltaAzSteps} \\ 
     \textnormal{deltaElSteps} &= \textnormal{-deltaAzSteps} \times \textnormal{azelRatio} + \textnormal {angToPosDeltaEl(newElAng - elAng)}\label{eqn:deltaElSteps} 
 \end{align}
 
-\subsection{Ground Station}
+\subsection{Pointing}
+In order to point the ground station at a specified GPS location, an internal \textit{pointAt()} function was developed. A small C++ header-only library titled \textit{wgs84} was used to perform a Mercator projection to cartesian co-ordinates, with Cape Town as the origin. This allows a pointing vector to be determined, which could be passed to the mount and set as the boresight.
 
-\subsubsection{Pointing}
-In order to point the ground station at a specified GPS location, an internal \textit{pointAt} function was developed. A small C++ header-only library titled \textit{wgs84} was used to perform a Mercator projection to cartesian co-ordinates, with Cape Town set as the origin. This then allowed a pointing vector to be determined, which could be passed to the mount and set as the boresight.
+Unfortunately, the purchased IMU (the MPU-9250) was found to be counterfeit and did not include a magnetometer. A constraint was therefore made that the ground station should be manually faced towards magnetic north using a compass, and then angle between the zero sensor and magnetic north was manually measured as a reference.
 
-Unfortunately, the purchased IMU (the MPU-9250) was found to be counterfeit and did not include a magnetometer. Therefore, a constraint was made that the ground station should be manually positioned to face magnetic north using a compass, and then the zero sensor location used.
-
-\subsubsection{Flight Path Tracking}
-For open-loop flight path tracking, it was decided to store GPS path data in the TNC object on the ESP32 itself, as opposed to streaming it from the host computer. This was chosen for two reasons:
+\subsection{Flight Path Tracking}
+For path tracking, it was decided to store GPS data in the TNC object on the ESP32, instead of streaming it from the host computer. The reasons for this choice include that:
 \begin{enumerate}
   \item The host can be disconnected, and the payload will still be tracked.
-  \item Easier implementation on the host side (i.e. the binary GPS data can be uploaded and then "forgetten" about)
+  \item The implementation on the host side becomes simpler (i.e. the binary GPS data can be uploaded once initially and then freed)
 \end{enumerate}
 
-The PqTnc class simply checks in its update loop if a location in the path has been reached based on time, and adds the following location as an estimated location to the GroundStation object. The GroundStation itself only stores two locations - the previous location in the path, and the location it is moving towards. Periodic updates (e.g. once every second) are done and the mount is pointed at a location which linearly interpolates the two stored location instants, based on the current time GPS epoch time, and the time of the two instants.
+The PqTnc object performs a check in its update loop to determine if a location in the path has been reached based on the current time. If so, the \textit{following} location is added as an estimated location to the GroundStation object. The GroundStation itself only stores two locations - the previous location in the path, and the location it is moving towards. Periodic updates (e.g. once every second) are done, and the mount is pointed at the location which linearly interpolates its two stored location instants. The interpolation factor is based on the current time GPS epoch time, and the time of the two instants.
 
-\subsubsection{Direct GPS Tracking}
-To allow direct GPS tracking and flight path tracking to be used simultaneously, it was decided to follow the flight path data until a location from the satellite is received. When a "known" location is received, it is used for a specified timeout "trust" period, until a new location is received and it is overwritten. If the trust period expires, the method falls back to the flight path data. A pseudo low-pass filter is added to the ground station to prevent pointing "jitter" that may occur when receiving slightly different coordinates. This filter simply does not re-point the mount if the angle is less than a specified amount (i.e. $5^{\circ}$).
+\subsection{Direct GPS Tracking}
+\textcolor{red}{I am not sure if a flow diagram should be added to represent the tracking algorithm? Maybe in the design section and then some of this should be removed?}
+To allow direct GPS tracking and flight path tracking to be used simultaneously, it was decided to follow the flight path data until a location from the satellite is received. When a "known" location is received, it is used for a specified timeout "trust" period, until a new location is received and it is overwritten. If the trust period expires, the method falls back to the flight path data. A pseudo low-pass filter is added to the ground station to prevent pointing "jitter" that may occur when receiving slightly different co-ordinates. This filter simply does not re-point the mount if the angle is less than a specified amount (i.e. $5^{\circ}$).
 
-\subsection{Radio and IMU}
-For the radio and GPS classes, existing Arduino libraries were utilized and wrapped into "cover classes". This was done to maintain a consistent interface, and to provide the ability to replace the underlying implementation, if necessary.
-
-Initially, the library \textit{Radiolib} was used for communication with the SX1278 module. However, it was found that its implementation was too large for the Atmega328. It was therefore replaced with its older implementation, \textit{LoRaLib}, which was considerably smaller in size. For the GPS, \textit{TinyGPSPlus} was used.
-
-\subsection{Motor Drive}
-The motor's were set to operate in half-stepping mode with a maximum current. The step sequence as in the motor driver datasheet was implemented using an array with code stepping through at regular intervals, as given in the L6219's datasheet \cite{datasheet-L6219}.
+\subsection{Radio and GPS}
+For the radio and GPS classes, existing Arduino libraries were utilized and wrapped into "cover classes". This was done to maintain a consistent interface, and to provide the ability to replace the underlying implementation, if necessary. This became helpful later. The library \textit{Radiolib} was initially used for communication with the LoRa module. However, it was found that its implementation was too large in program size for the Atmega328. It was therefore replaced with an older implementation, \textit{LoRaLib}, which was considerably smaller in size. For the GPS, \textit{TinyGPSPlus} was used.
 
 \subsection{GUI}
 A simple GUI application was development using the Qt framework to ease testing and flight path uploading. The ability to import a CSV in the format provided by habhub was provided. An image of this application can be found in Appendix \ref{sec:appendix_gui}.

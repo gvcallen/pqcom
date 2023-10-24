@@ -32,17 +32,11 @@ The power section also includes selector jumpers to isolate it from the rest of 
 The L6219 drivers require a reference voltage to set the maximum current. According to the datasheet \cite{datasheet-L6219}, a peak current of $I_{max} = 10 \times \frac{V_{ref}}{R_s}$ in mA is used. Since the recommended value of $R_s = \SI{1}{\ohm}$ is being used, $I_{max} = 10 \times V_{ref}$ mA. Since the motors allow up to 500 mA per winding, a current value of $I_{max} = \SI{475}{mA}$ is chosen to prevent damaging the motors. Therefore, $V_{ref} = \SI{4.75}{V}$. This can be implemented with a voltage divider. Setting the upper resistor $R_1 = \SI{1}{\kilo \ohm}$ results in $R_2 \approx \SI{20}{\kilo \ohm}$, as shown in the schematic. The disadvantage of this method is that the maximum current cannot be controlled dynamically. The reference voltage can be replaced with a DAC from the MCU if more control is required.
 
 \subsubsection{Connectors}
-The RA-02 RF module states that not all data pins are necessary. A connector is provided for unused GPIO pins, the SPI, and the unused RF module pins, to allow for flexibility once the PCB is manufactured.
+The RA-02 RF module states that not all data pins are necessary. Further, it was assumed that there may be some errors in the original design. A male header was therefore provided for unused GPIO pins, to allow for flexibility once the PCB was manufactured.
 
 \subsection{PCB Design}
 \subsubsection{Stackup}
 A 2-layer stackup was decided on, so that the board could be manufactured in-house early on in the project (as the in-house PCB machine has a 2-layer limitation).
 
 \subsubsection{Final Design}
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.6\textwidth]{gs_pcb_design}
-  \caption{Ground Station PCB Design}
-  \label{fig:gs_pcb}
-\end{figure}
-The final PCB was designed in KiCAD. It was designed to have be compatible with the mount i.e. with a 198 mm outer diameter, outer mounting holes, and cut-outs for the stepper motors. The front layer of this design is shown in Figure \ref{fig:gs_pcb}. Female headers were used for most of the modules, since development boards were being used. Two PCB pours were exposed below the voltage regulators for added heat dissipation.
+The final PCB was designed in KiCAD. A screenshot of the front layer is shown in Appendix \ref{sec:appendix_gs_pcb_design}. The board was designed to be compatible with the mount with the relevant mounting holes and motor cut-outs. Female headers were used for most of the modules, since development boards were being used. Two PCB pours were exposed below the voltage regulators to act as a heaet sink for added heat dissipation.

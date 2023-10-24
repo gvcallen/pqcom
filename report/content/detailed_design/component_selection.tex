@@ -3,31 +3,32 @@
 \section{Component Selection}
 The first step in the detailed design process is to select components for the various sub-systems. Components for both the ground station and PQ unit will be selected in one step, due to the overlapping research involved. Ideally, components should be readily available from local suppliers. Finally, through-hole components and breakout boards will mostly be used for the ground station, and surface mount components for the PQ unit.
 
-\subsection{Existing Components}
 The ground station has a number components which will be used without modification. As mentioned, two stepper motors are already mounted. These motors draw 0.50 A, and allow for up to $\SI{0.5}{N \cdot m}$ of torque \cite{datasheet-4118}. The ground station also includes a small zero-sensing circuit for the azimuthal direction, which integrates a \textit{H22A} optical switch \cite{datasheet-H22A1} and a low-pass filter.
 
 \subsection{GPS}\label{sec:components_gps}
-The same GPS will be selected for both the ground station and PQ unit to simplify development. A 1 degree pointing accuracy will be designed for, which is an order of magnitude larger than any typical narrow-beam antenna. A distance of \SI{110}{km} therefore results in a required accuracy of $2 \times 110 000 \times \pi \times \frac{1}{360} \approx \SI{2}{km}$, which is very large.
+The same GPS will be selected for both the ground station and PQ unit to simplify development. A 1 degree pointing accuracy will be designed for, which is an order of magnitude larger than any typical narrow-beam antenna. A distance of \SI{120}{km} therefore results in a required accuracy of $2 \times 120 000 \times \pi \times \frac{1}{360} \approx \SI{2}{km}$, which is very large.
 
 The NEO line of GPS modules from \textit{u-blox} (e.g. the \textit{NEO-6M}) are very commonly used, and are quoted to have a 2.5 m accuracy, however there was limited availability of these modules from local suppliers at the time of ordering. Modules with similiar specifications from \textit{Makerbase} were therefore considered, such as the \textit{ATGM336H} and the \textit{ATGM332D}. Since both of these advertise 2.5 m accuracy, active antenna support, and current consumption less than 100 mA, the ATGM332D-5N31 was chosen for its lower price.
 
 \subsection{IMU}
-To determine absolute azimuthal rotation, the ground station (either the base or the platform) should either be manually positioned to face north, or a magnetometer may be used. Further, to allow for further flexibility, the ground station may be mounted on a tripod. In this case, an intertial measurement unit (IMU) may be needed to determine the mount's absolute rotation.
+To determine absolute azimuthal rotation, the ground station (either the base or the platform) should either be manually positioned to face north, or a magnetometer may be used. Further, to allow for further flexibility, the ground station may be mounted and tilted on a tripod. In this case, an intertial measurement unit (IMU) may be needed to determine the mount's absolute rotation.
 
-As seen in Section \ref{sec:components_gps}, low accuracy is required. A low-accuracy IMU will therefore be included, with an accelerometer and magnetometer. The \textit{BNO055} is a 9-axis IMU which integrates an ARM Cortex-M0 for signal processing. It operates at 100 Hz, has $\SI{0.3}{\micro T}$ magnetic field resolution, and around 16 bit sensors. It is, however, very expensive (around R800). The \textit{MPU-9250}, and the \textit{MPU} line of IMU's are seen as cheaper alternatives. Since the ground station's mount will not be moving, only an accelerometer is adequate for orientation. The MPU-9250 also has a 16-bit accelerometer, and only a slightly lower magnetic field accuracy (\SI{0.6}{\micro T}), and therefore was purchased at a price of around R150.
+As seen in Section \ref{sec:components_gps}, low accuracy is required. A low-accuracy IMU will therefore be included, with an accelerometer and magnetometer. The \textit{BNO055} is a 9-axis IMU which integrates an ARM Cortex-M0 for signal processing. It operates at 100 Hz, has $\SI{0.3}{\micro T}$ magnetic field resolution, and around 16 bit sensors. It is, however, very expensive (around R800). The \textit{MPU-9250}, and the \textit{MPU} line of IMU's are seen as cheaper alternatives. Since the ground station's mount will not be moving, only a low-accuracy accelerometer is assumed to be adequate for orientation, as research indicates. The MPU-9250 also has a 16-bit accelerometer, and only a slightly lower magnetic field accuracy (\SI{0.6}{\micro T}), and therefore was selected..
 
 \subsection{RF Module}
-The transciever for both the custom and radiosonde protocol needs to be considered. There are a few options in this regard, listed from more to less specialized:
+The transciever type for both the custom and radiosonde link needs to be considered. There are a few options in this regard, listed from more to less specialized:
 \begin{itemize}
     \item Fully custom design. Here, all components are discretely designed using transistors, MCUs etc. This option is listed for completeness, but is out of the scope of this project.
     \item Front-End Module (FEM). For this option, the FEM provides filters, a low-noise amplifier (LNA), antenna matching, and down-conversion. Then, a controller (e.g. FPGA or MCU) needs to be designed to perform modulation/demodulation functionality (the \textit{modem}) and interface with the FEM.
     \item Dedicated Transciever. A transciever provides both the FEM functionality and the software modulation, however still requires RF techniques for matching, as well as an additional RF shield.
-    \item Dedicated module. For this option, all functionality is provided in a dedicated modulate with an antenna and MCU interface. This method has little flexibility, since all matching is done internally and the frequency band is therefore constrained.
+    \item Dedicated module. For this option, all functionality is provided in a dedicated modulate, with a simple antenna connection/pin and MCU interface. This method has little flexibility, since all matching is done internally, and the frequency band is therefore constrained, however provides highest ease-of-use.
     \item Software-defined radio (SDR). This is the most general-purpose option, but does not exercise the highest performance. It is often directly connected to a computer.
 \end{itemize}
 
 \subsubsection{Custom Communication}
-For the custom protocol, a dedicated LoRa module will be used. Most of these modules have the added benefit of allowing GFSK modulation as an alternative. Unfortunately, few modules exist that allow for reception both in the 404 MHz and the 433 MHz bands. Table \ref{tab:rfTransceivers} contrasts the two most common modules in the 433 MHz LoRa band which offer this feature. Most modules available are based on \textit{Semtech} chipsets due to the company's patent on the technology, and so there is little variation in performance. The RA-02 is therefore selected due to its availability and cost.
+For the custom link, a dedicated LoRa module will be used. Most of these modules include GFSK as a built-in alternative, which makes them the ideal choice. All LoRa ICs are based on \textit{Semtech} chipsets due to the company's patent on the technology. Although dedicated transceivers are available, these require special RF considerations to be made, as discussed, and therefore a module will be utilized to ease development.
+
+Unfortunately, few modules exist that allow for reception both in the 405 MHz and the 433 MHz bands, even though some of the chipset are capable of this. Table \ref{tab:rfModules} contrasts the two most common modules in the 433 MHz LoRa band which offer this feature, both based on the SX1278 chipset. If time allows, a more custom module can be designed. The RA-02 is ultimately selected due to its availability and cost.
 
 \begin{table}[!htb]
   \centering
@@ -36,19 +37,19 @@ For the custom protocol, a dedicated LoRa module will be used. Most of these mod
   \hline
   \textbf{Name}   & \textbf{RX Sensitivity} & \textbf{TX Sensitivity}& \textbf{Frequency} \\
   \hline
-  RA-02           & -141 dBm             & +17 dBm              & 410 to 525 MHz     \\
+  RA-02           & -141 dBm             & +18 dBm              & 410 to 525 MHz     \\
   RFM98           & -148 dBm             & +20 dBm              & 410 to 525 MHz     \\
   \hline
   \end{tabular}
-  \caption{}
-  \label{tab:rfTransceivers}
+  \caption{Comparison of two LoRa modules}
+  \label{tab:rfModules}
 \end{table}
 
 \subsubsection{Radiosonde Communication}
-Since the radiosonde communication protocol will require some investigation, and the exact encoding and GFSK parameters are unknown, SDR will be utilized to allow for flexibility. Universal Radio Hacker (URH) (https://github.com/jopohl/urh) is software available to investigate wireless protocols using an SDR. The “RTLSDR” is considered the standard, low-cost solution for this, and will be used.
+Since the radiosonde communication protocol will require some investigation, and the exact encoding and GFSK parameters are unknown, software-defined radio (SDR) will be utilized to allow for flexibility. Universal Radio Hacker (URH) (\url{https://github.com/jopohl/urh}) and GNU-Radio (\url{https://www.gnuradio.org/}) are both free software solutions available to investigate wireless protocols using an SDR. The “RTL-SDR” USB dongle is considered the standard, low-cost solution for this, and is therefore selected for this project. If time allows, however, a more dedicated transceiver could be included, along with an RF switch, to remove the need for an additional USB connection.
 
 \subsection{Stepper Motor Driver}
-The original PCB of the previous antenna mount system contained two A3972 ICs to drive the stepper motors. Although these could be de-soldered and used, it is favourable to use a newer supported IC with better capabilities, and in case of damage. From the driver and motor datasheets, the following specifications are realized:
+The original PCB of the previous antenna mount system contained two A3972 ICs to drive the stepper motors. Although these could be de-soldered and used, it is favourable to use a newer supported IC with better capabilities, and for easy replacement in case of damage. From the driver and motor datasheets, the following specifications are realized:
 \begin{itemize}
     \item Dual DMOS Full-Bridge Output Configuration
     \item Bipolar PWM current control
@@ -56,17 +57,17 @@ The original PCB of the previous antenna mount system contained two A3972 ICs to
     \item 0.5A, 24V
 \end{itemize}
 
-Very few drivers fit these exact specifications. The \textit{A4970} is considered the follow-up version of the \textit{A3972}, however is not available in a single pack. The L6219 driver is found to match these specifications and will be selected due to availability.
+Very few drivers fit these exact specifications. The \textit{A4970} is considered the follow-up version of the \textit{A3972}, however is not available in a single pack or locally. The \textit{L6219} driver is found to match these specifications and will be selected due to availability.
 
 \subsection{Power}
-Both a 3.3V regulator and 5V regulator will be needed for the ground station power distribution. The LD1117V33C and L7805CP are chosen respectively due to their availability. A boost converter will also be needed to achieve the 24V motor drive voltage. Since each stepper motor will draw around 0.5 A per coil, the converter should support 2 A at its 12 V input. A breakout board based on the XL6009 IC will be used which meets this specification.
+Both a 3.3V regulator and 5V regulator will be needed for the ground station power distribution. The LD1117V33C and L7805CP are chosen respectively due to their availability. A boost converter will also be needed to achieve the 24V motor drive voltage. Since each stepper motor will draw around 0.5 A per coil, the converter should support 2 A at its 12 V input. A breakout board based on the XL6009 IC will be used, which meets this specification.
 
 \subsection{Microcontroller}
-As discussed later, a general-purpose MCU will be needed both on the GS and the PQ. The three most popular frameworks/MCU types for this the ESP32, Arduino, and STM32.
+A general-purpose MCU will be needed both on the GS and the PQ. The three most popular frameworks/MCU types for this are the ESP32, Arduino, and STM32.
 
-The \textit{ESP32-WROOM-32} is a commonly available ESP32 variant which has 32 GPIO pins, of which several can be used as an ADC input, SPI or I2C interface. This means that there are 23x GPIO available, enough for this project. Further, the ESP32 has the added benefit of WiFi and Bluetooth connectivity, which may allow “smart” features to be added to either devices in the future. The \textit{ATMEGA328PB} is an MCU commonly used in small Arduino boards. It, however, has fewer pins than the ESP, is an 8-bit MCU, and has only 32 KB of flash memory.. It does, however, allow a supply  voltage of as low as 1.8V. Finally, the common \textit{STM32F411} MCU is a high-performance, ARM-Cortex board with highly accurate ADCs, up to 81 GPIOs, and a fast internal FPU.
+The \textit{ESP32-WROOM-32} is a commonly available ESP32 variant which has 32 GPIO pins, of which several can be used as an ADC input, SPI or I2C interface. This means that there are 23x GPIO available - enough for this project. Further, the ESP32 has the added benefit of WiFi and Bluetooth connectivity, which may allow “smart” features to be added to either devices in the future. The \textit{ATMEGA328PB} is an MCU commonly used in small Arduino boards. It, however, has fewer pins than the ESP, is an 8-bit MCU, and has only 32 KB of flash memory.. It does, however, allow a supply voltage of as low as 1.8V, and has very low current consumption. Finally, the common \textit{STM32F411} MCU is a high-performance, ARM-Cortex board advertised to have highly accurate ADCs and up to 81 GPIOs.
 
-Since the processing requirements for this project are not very high, and the ESP32 is a relatively high-performance MCU which satisfies the pin requirements and has added smart capabilities, it will be selected for the GS. For the PQ unit, an ATMEGA328PB will be used, due to its exceptionally low current consumption, and many fewer pins being needed for the PQ unit.
+Since the processing requirements for this project are not very high, and the ESP32 is a relatively high-performance MCU which satisfies the pin requirements, with added "smart" capabilities, it will be selected for the GS. For the PQ unit, the ATMEGA328PB will be used, due to its exceptionally low current consumption, and many fewer pins being needed for the PQ unit.
 
 \subsection{RS-485 Driver}
 Most RS-485 drivers come in a common 8-pin form factor. Due to having very little requirements (i.e. short range communication, no speed specifications) the \textit{SN75179BDR} is selected due to its availability.

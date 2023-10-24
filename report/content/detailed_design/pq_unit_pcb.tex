@@ -1,11 +1,11 @@
 \graphicspath{{./figures}}
 
-\section{PocketQube Unit}
+\section{PocketQube Unit PCB}
 \subsection{Circuit Design}
 To design the PocketQube PCB, since no development boards were used, the Arduino Nano schematic in \cite{design-arduinoNano} was consulted as a reference design. It was decided to simply expose the relevant pins needed to flash the MCU, instead of integrating a USB connection directly, however this could be added for future iterations. The final circuit schematic can be found in Appendix \ref{sec:appendix_pq_schematic}.
 
 \subsubsection{Power}
-The maximum power consumptions of the on-board components is found in Table \ref{tab:pqunit_component_consumption}. A total maximum power consumption of around 600 mW is calculated. This equates to around 200 mA draw for a 3.7 V LiPo battery. To achieve the 2 hour specification, a capacity of 400 mAh is therefore required. A larger 2000 mAh battery was acquired for development.
+The maximum power consumptions of the on-board components is found in Table \ref{tab:pqunit_component_consumption}. A total maximum power consumption of around 600 mW is calculated. This equates to around 200 mA draw for a 3.7 V LiPo battery. To achieve the 2 hour specification, a capacity of 400 mAh is therefore required. A larger 2000 mAh battery was used for development.
 \begin{table}[!htb]
   \centering
   \renewcommand{\arraystretch}{1.2}
@@ -21,8 +21,8 @@ The maximum power consumptions of the on-board components is found in Table \ref
   \label{tab:pqunit_component_consumption}
 \end{table}
 
-\subsubsection{RF}
-Since the RA-02 RF module has a u.FL connector onboard, no considerations need to be taken with respect to impedance matching at the interface between the module and the antenna feed. However, the ATGM332D GPS module directly exposes its RF input via one of its SMD pins, meaning impedance matching may need to be done. The higher L1 GPS band operates around 1575.42 MHz, which is a wavelength of $\frac{3e8}{1575.42e6} = \SI{190}{mm}$. The "critical length" (the length at which reflections can be ignored) is therefore around \SI{19}{mm}. Since this is relatively large, if the trace length between the module and antenna interface is kept short than this, impedance matching will not be necessary.
+\subsubsection{RF and GPS Modules}
+Since the RA-02 RF module has a u.FL connector onboard, no considerations need to be taken with respect to impedance matching at the interface between the module and the antenna feed. However, the ATGM332D GPS module directly exposes its RF input via one of its SMD pins, meaning impedance matching may need to be done. The higher L1 GPS band operates around 1575.42 MHz, which is a wavelength of $\frac{3e8}{1575.42e6} = \SI{190}{mm}$. The "critical length" (the length at which reflections can be ignored) is therefore around \SI{19}{mm}. Since this is relatively large, if the trace length between the module and antenna interface is kept shorter than this, impedance matching will not be necessary.
 
 \subsection{PCB Design}
 \subsubsection{Stackup}

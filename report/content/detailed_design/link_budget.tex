@@ -2,8 +2,9 @@
 
 The link budget should now be conducted, and initial considerations for the ground station's base location should be made, as this location will affect the range of elevation angles to accomodate, the distance to the horizon, and the free-space path loss.
 
-Signal Hill in Cape Town is a viable location for the ground station and is easily accessible. At its distance of 114 km, however, one would need to be at a height of 950 m due to the distance to the horizon. Therefore, the balloon would only be visible at an altitude of 600 m (from Signal Hill's 350 m height). A maximum elevation angle of $16.72 \circ$ at 30 km altitude above Worcester should be considered.
+Signal Hill in Cape Town is a viable location for the ground station and is easily accessible. At its distance of 114 km, however, one would need to be at a height of 950 m due to the distance to the horizon. Therefore, the balloon would only be visible at an altitude of 600 m (from Signal Hill's 350 m height). A maximum elevation angle of $16.72^\circ$ at 30 km altitude above Worcester should be considered.
 
+\newpage
 The \textit{receiver sensitivity} is a value which denotes the minimum power level required at the receiver for successful communication. Depending on set parameters, the SX1278 quotes varying receiver sensitivity values. Notable configurations are listed in Table \ref{tab:sensitivity_values}.
 \begin{table}[!htb]
   \centering
@@ -47,7 +48,7 @@ The \textit{receiver sensitivity} is a value which denotes the minimum power lev
   \label{tab:sensitivity_values}
 \end{table}
 
-An online path loos calculator was used to calculate attenuation due to distance, and the Python tool \textit{link budget} was used to calculate atmospheric losses. All values were based on both the RA-02 and the SX1278 chip specifications, as well as half-wavelength dipoles as antennas, an impedance mismatch loss of 0.5 dB (around -10 dB return loss), and an maximum transmitter power (18 dBm). The resultant link margin should then be analysed accordingly, and an appropriate directive antenna should be designed for the ground station, to ensure adequate fade margin and performance. The LoRa "target bit rate" sensitivity value of -119 dBm is used in this budget.
+An online path loos calculator was used to calculate attenuation due to distance, and the Python tool \textit{link budget} was used to calculate atmospheric losses. All values were based on both the RA-02 and the SX1278 chip specifications, as well as half-wavelength dipoles as antennas, an impedance mismatch loss of 0.5 dB (around -10 dB return loss), and a maximum transmitter power setting (18 dBm).
 
 \begin{table}[!htb]
   \centering
@@ -94,10 +95,10 @@ An online path loos calculator was used to calculate attenuation due to distance
   \label{tab:link_budget_gs}
 \end{table}
 
-The final link budget therefore results in 18.65 dBm - 129.89 dB + 119.65 dBm = 8.41 dB of link margin. Although this is theoretically adequate (above the 3 dB recommendation), there are a few considerations to be made:
+The LoRa "target bit rate" sensitivity value of -119 dBm is used in the above calculations. The final link budget therefore results in 18.65 dBm - 129.89 dB + 119.65 dBm = 8.41 dB of link margin. Although this is theoretically adequate (above the 3 dB recommendation), there are a few considerations to be made:
 \begin{itemize}
-    \item If a higher bit rate is required, e.g. 38.4 kbps, then the margin drops to -2.59 dB.
-    \item If a longer range is required (e.g. for future projects), free space path loss will drastically increase. For example, for a 250 km range, the loss becomes 133 dB, meaning the margin drops to only 1.11 dB.
+    \item If a higher bit rate is required, e.g. 38.4 kbps, then the margin drops to -2.6 dB.
+    \item If a longer range is required (e.g. for future projects), free space path loss will drastically increase. For example, for a 250 km range, the loss becomes 133 dB, meaning the margin drops to only 1.1 dB.
 \end{itemize}
 
-To achieve the 10 dB recommended margin, an antenna with at least 2.59 dBi additional gain (i.e. 4.74 dBi total) should be designed for the ground station. Then, if necessary, the 20 dB recommendation can be reached by lowering the LoRa spreading factor (SF) to support any "mission critical" requirements. Practically, this could be set as the system "startup" state, until a link is made, where the SF can then be changed.
+To achieve the 10 dB recommended link margin, an antenna with at least 2.59 dBi additional gain (i.e. 4.74 dBi gain total) should be designed for the ground station. Then, if necessary, the 20 dB recommendation can be reached by lowering the LoRa spreading factor (SF) to support any "mission critical" requirements. Practically, this "mission critical" setting could be initialized as the system's "startup" state, until a connection is made, where the SF can then be changed to an appropriate value.

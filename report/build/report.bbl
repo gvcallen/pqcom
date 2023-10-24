@@ -21,6 +21,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{site-cyberBalloonLaunch}
+rose.edu, ``Rsc cyber students fly high with high altitude balloon launch,''
+  \url{https://www.rose.edu/content/news-events/news/2018/06-june/rsc-cyber-students-fly-high-with-high-altitude-balloon-launch/},
+  [Accessed 25-10-2023].
+
 \bibitem{standard-pqsu}
 D.~Slabber, ``Pocketcube mechanical interface,'' [Accessed 16-08-2023].
 
@@ -125,7 +130,7 @@ M.~Arias, ``Small satellite link budget calculation,''
   [Accessed 05-10-2023].
 
 \bibitem{paper-linkMargin}
-K.~Cheung, ``The role of margin in link design and optimization,''
+K.~Cheung, ``The role of margin in link design and optimisation,''
   \url{https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/15-0025_A1b.pdf},
   [Accessed 23-10-2023].
 
@@ -152,13 +157,13 @@ STMicroelectronics, ``L6219 stepper motor driver,''
   \url{https://www.mantech.co.za/datasheets/products/L6219.pdf}, [Accessed
   29-09-2023].
 
-\bibitem{textbook-helicalAntenna}
-J.~D. Kraus, ``Antennas for all applications,'' [Accessed 29-09-2023].
-
 \bibitem{design-arduinoNano}
 Gravitech, ``Arduino nano,''
   \url{https://www.arduino.cc/en/uploads/Main/Arduino_Nano-Rev3.2-SCH.pdf},
   [Accessed 29-09-2023].
+
+\bibitem{textbook-helicalAntenna}
+J.~D. Kraus, ``Antennas for all applications,'' [Accessed 29-09-2023].
 
 \bibitem{datasheet-iMet3100M}
 Intermet, ``imet-3100m,''
