@@ -7,7 +7,7 @@ The first step in the detailed design process is to select components for the va
 The ground station has a number components which will be used without modification. As mentioned, two stepper motors are already mounted. These motors draw 0.50 A, and allow for up to $\SI{0.5}{N \cdot m}$ of torque \cite{datasheet-4118}. The ground station also includes a small zero-sensing circuit for the azimuthal direction, which integrates a \textit{H22A} optical switch \cite{datasheet-H22A1} and a low-pass filter.
 
 \subsection{GPS}\label{sec:components_gps}
-The same GPS will be selected for both the ground station and PQ unit to simply development. A 1 degree pointing accuracy will be designed for, which is an order of magnitude larger than the typical narrow-beam antenna. A distance of \SI{110}{km} therefore results in a required accuracy of $2 \times 110 000 \times \pi \times \frac{1}{360} \approx \SI{2}{km}$, which is very large.
+The same GPS will be selected for both the ground station and PQ unit to simplify development. A 1 degree pointing accuracy will be designed for, which is an order of magnitude larger than any typical narrow-beam antenna. A distance of \SI{110}{km} therefore results in a required accuracy of $2 \times 110 000 \times \pi \times \frac{1}{360} \approx \SI{2}{km}$, which is very large.
 
 The NEO line of GPS modules from \textit{u-blox} (e.g. the \textit{NEO-6M}) are very commonly used, and are quoted to have a 2.5 m accuracy, however there was limited availability of these modules from local suppliers at the time of ordering. Modules with similiar specifications from \textit{Makerbase} were therefore considered, such as the \textit{ATGM336H} and the \textit{ATGM332D}. Since both of these advertise 2.5 m accuracy, active antenna support, and current consumption less than 100 mA, the ATGM332D-5N31 was chosen for its lower price.
 
@@ -17,7 +17,7 @@ To determine absolute azimuthal rotation, the ground station (either the base or
 As seen in Section \ref{sec:components_gps}, low accuracy is required. A low-accuracy IMU will therefore be included, with an accelerometer and magnetometer. The \textit{BNO055} is a 9-axis IMU which integrates an ARM Cortex-M0 for signal processing. It operates at 100 Hz, has $\SI{0.3}{\micro T}$ magnetic field resolution, and around 16 bit sensors. It is, however, very expensive (around R800). The \textit{MPU-9250}, and the \textit{MPU} line of IMU's are seen as cheaper alternatives. Since the ground station's mount will not be moving, only an accelerometer is adequate for orientation. The MPU-9250 also has a 16-bit accelerometer, and only a slightly lower magnetic field accuracy (\SI{0.6}{\micro T}), and therefore was purchased at a price of around R150.
 
 \subsection{RF Module}
-The transciever for both the custom and proprietary protocol needs to be considered. There are a few options in this regard, listed from more to less specialized:
+The transciever for both the custom and radiosonde protocol needs to be considered. There are a few options in this regard, listed from more to less specialized:
 \begin{itemize}
     \item Fully custom design. Here, all components are discretely designed using transistors, MCUs etc. This option is listed for completeness, but is out of the scope of this project.
     \item Front-End Module (FEM). For this option, the FEM provides filters, a low-noise amplifier (LNA), antenna matching, and down-conversion. Then, a controller (e.g. FPGA or MCU) needs to be designed to perform modulation/demodulation functionality (the \textit{modem}) and interface with the FEM.
@@ -44,8 +44,8 @@ For the custom protocol, a dedicated LoRa module will be used. Most of these mod
   \label{tab:rfTransceivers}
 \end{table}
 
-\subsubsection{Proprietary Communication}
-Since the proprietary communication protocol will require some investigation, and the exact encoding and GFSK parameters are unknown, SDR will be utilized to allow for flexibility. Universal Radio Hacker (URH) (https://github.com/jopohl/urh) is software available to investigate wireless protocols using an SDR. The “RTLSDR” is considered the standard, low-cost solution for this, and will be used.
+\subsubsection{Radiosonde Communication}
+Since the radiosonde communication protocol will require some investigation, and the exact encoding and GFSK parameters are unknown, SDR will be utilized to allow for flexibility. Universal Radio Hacker (URH) (https://github.com/jopohl/urh) is software available to investigate wireless protocols using an SDR. The “RTLSDR” is considered the standard, low-cost solution for this, and will be used.
 
 \subsection{Stepper Motor Driver}
 The original PCB of the previous antenna mount system contained two A3972 ICs to drive the stepper motors. Although these could be de-soldered and used, it is favourable to use a newer supported IC with better capabilities, and in case of damage. From the driver and motor datasheets, the following specifications are realized:

@@ -41,9 +41,13 @@ The PqTnc class simply checks in its update loop if a location in the path has b
 \subsubsection{Direct GPS Tracking}
 To allow direct GPS tracking and flight path tracking to be used simultaneously, it was decided to follow the flight path data until a location from the satellite is received. When a "known" location is received, it is used for a specified timeout "trust" period, until a new location is received and it is overwritten. If the trust period expires, the method falls back to the flight path data. A pseudo low-pass filter is added to the ground station to prevent pointing "jitter" that may occur when receiving slightly different coordinates. This filter simply does not re-point the mount if the angle is less than a specified amount (i.e. $5^{\circ}$).
 
-\subsection{Other}
+\subsection{Radio and IMU}
 For the radio and GPS classes, existing Arduino libraries were utilized and wrapped into "cover classes". This was done to maintain a consistent interface, and to provide the ability to replace the underlying implementation, if necessary.
 
 Initially, the library \textit{Radiolib} was used for communication with the SX1278 module. However, it was found that its implementation was too large for the Atmega328. It was therefore replaced with its older implementation, \textit{LoRaLib}, which was considerably smaller in size. For the GPS, \textit{TinyGPSPlus} was used.
 
-A simple GUI application was development using the Qt framework to ease testing and flight path uploading. An image of this application can be found in Appendix \ref{sec:appendix_gui}.
+\subsection{Motor Drive}
+The motor's were set to operate in half-stepping mode with a maximum current. The step sequence as in the motor driver datasheet was implemented using an array with code stepping through at regular intervals, as given in the L6219's datasheet \cite{datasheet-L6219}.
+
+\subsection{GUI}
+A simple GUI application was development using the Qt framework to ease testing and flight path uploading. The ability to import a CSV in the format provided by habhub was provided. An image of this application can be found in Appendix \ref{sec:appendix_gui}.

@@ -33,7 +33,7 @@ The centre of gravity of the antenna, as well as its weight, will affect the mot
 The physical dimensions of the antenna's ground plane is also constrained. A circular ground plane may make contact with the mount's base at low elevation angles (assuming the ground station itself is raised above the ground). When the mount is resting, this constraint is imposed when the ground plane first makes contact with the mount's base. For a circular ground plane, this is around $\SI{360}{mm}$ diameter at an elevation angle of around 35 degrees.
 
 \subsection{Theoretical Design}
-As discussed, the antenna should be capable of receiving from both the 405 MHz proprietary protocol, as well as the custom LoRa-based protocol in the amateur radio band of 430 to 440 MHz. A helical antenna is suggested, for the following reasons:
+As discussed, the antenna should be capable of receiving from both the 405 MHz radiosonde protocol, as well as the custom LoRa-based protocol in the amateur radio band of 430 to 440 MHz. A helical antenna is suggested, for the following reasons:
 \begin{itemize}
     \item Ability to increase gain arbitrarily by increasing the number of windings
     \item High fractional bandwidth of 56\%, which may allow for a smaller antenna than other antenna types
@@ -51,7 +51,6 @@ $$
 
 $C_\lambda$ is typically kept at 1.0, meaning the cirumference is equal to the operating wavelength. As mentioned, a gain of around 5 dBi is required. However, a 3 dB bandwidth drop is estimated nearer to 400 MHz since it as the edge of the operating band. Further, the effect of a smaller ground plane will likely decrease performance by an estimated minimum of at least 1 dB. Therefore, a centre-frequency gain of 8 dBi will be designed for. For this gain, the $n S_\lambda$ product should equal around 0.45. Although the optimal value for $S_\lambda$ is 0.23 \cite{textbook-antennaTheoryAnalysisDesign}, smaller values have been quoted to work \cite{site-helicalCalculator} and are mechanically easier to construct. Therefore, $S_\lambda = 0.15$ is chosen, and finally, $n = 3$.
 
-\newpage
 \subsection{Simulation Design}
 Simulation of a helical antenna is well documented in literature, and therefore the parameters can be varied iteratively and integrated into the antenna design process. For this project, FEKO software is used. An initial model with the above parameters, a large ground plane ($G_\lambda \approx 1.0$), and a wire diameter of $\SI{2.5}{mm}$ (chosen due to availability) is simulated. The resulting radiation pattern at the centre frequency of $f = \SI{550}{MHz}$ is shown in Figure \ref{fig:helix1_pattern_550MHz}, with a maximum gain of around 9.5 dBi.
 
@@ -116,7 +115,7 @@ The ground plane was therefore cupped, and the results observed. At $G_\lambda =
   \end{minipage}
 \end{figure}
 
-It was therefore decided that the antenna would initially be built with a large ground plane and higher number of turns. Then, after measurement results and protocol implementation, the ground plane would be decreased appropriately to fit onto the mount. If time allows and it is found to be necessary, a cup will then be added to the ground plane, to improve the pattern and antenna performance, and cater for the proprietary protocol. The final model parameters are then:
+It was therefore decided that the antenna would initially be built with a large ground plane and higher number of turns. Then, after measurement results and protocol implementation, the ground plane would be decreased appropriately to fit onto the mount. If time allows and it is found to be necessary, a cup will then be added to the ground plane, to improve the pattern and antenna performance, and cater for the radiosonde protocol. The final model parameters are then:
 \begin{itemize}
     \item $C_\lambda = 1.0 \therefore D = \SI{187.1}{mm}$
     \item $S_\lambda = 0.15 \therefore S = \SI{88.2}{mm}$

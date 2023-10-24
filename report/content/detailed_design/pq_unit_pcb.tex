@@ -5,14 +5,14 @@
 To design the PocketQube PCB, since no development boards were used, the Arduino Nano schematic in \cite{design-arduinoNano} was consulted as a reference design. It was decided to simply expose the relevant pins needed to flash the MCU, instead of integrating a USB connection directly, however this could be added for future iterations. The final circuit schematic can be found in Appendix \ref{sec:appendix_pq_schematic}.
 
 \subsubsection{Power}
-The maximum power consumptions of the on-board components is found in Table \ref{tab:pqunit_component_consumption}. A total maximum power consumption of around 600 mW is calculated. This equates to around 200 mA draw for a 3.7 V LiPo battery. To achieve the 2 hour specification, a capacity of 400 mAh is therefore required. A 2000 mAh battery was acquired for development.
+The maximum power consumptions of the on-board components is found in Table \ref{tab:pqunit_component_consumption}. A total maximum power consumption of around 600 mW is calculated. This equates to around 200 mA draw for a 3.7 V LiPo battery. To achieve the 2 hour specification, a capacity of 400 mAh is therefore required. A larger 2000 mAh battery was acquired for development.
 \begin{table}[!htb]
   \centering
   \renewcommand{\arraystretch}{1.2}
   \begin{tabular}{ |c|c|c| }
   \hline
   \textbf{Component}        & \textbf{Current}        & \textbf{Power (@ 3V3)}      \\ \hline 
-  ATmega328                 & 0.2 mA                  & 0.66 mW                     \\ \hline 
+  ATmega328                 & 12 mA                   & 39.6 mW                     \\ \hline 
   RA-02                     & 100 mA                  & 330 mW                      \\ \hline 
   ATGM332D-5N31             & 25 mA                   & 82.5 mW                     \\ \hline
   SN75179B                  & 57 mA                   & 188 mW                      \\ \hline

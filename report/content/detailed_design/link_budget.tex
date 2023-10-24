@@ -47,18 +47,18 @@ The \textit{receiver sensitivity} is a value which denotes the minimum power lev
   \label{tab:sensitivity_values}
 \end{table}
 
-An online path loos calculator was used to attenuation due to distance, and the Python tool \textit{link budget} was used to calculate atmospheric losses. All values were based on the RA-02's internal SX1278 chip and its specifications, half-wavelength dipoles as antennas, an impedance mismatch loss of 0.5 dB (around -10 dB return loss), and an equivalent transmitter power of 100 mW (20 dBm). The resultant link margin should then be analysed accordingly, and an appropriate directive antenna designed for the ground station, to ensure adequate fade margin and performance. The LoRa "target bit rate" sensitivity value of -119 dBm is used in this budget.
+An online path loos calculator was used to calculate attenuation due to distance, and the Python tool \textit{link budget} was used to calculate atmospheric losses. All values were based on both the RA-02 and the SX1278 chip specifications, as well as half-wavelength dipoles as antennas, an impedance mismatch loss of 0.5 dB (around -10 dB return loss), and an maximum transmitter power (18 dBm). The resultant link margin should then be analysed accordingly, and an appropriate directive antenna should be designed for the ground station, to ensure adequate fade margin and performance. The LoRa "target bit rate" sensitivity value of -119 dBm is used in this budget.
 
 \begin{table}[!htb]
   \centering
   \renewcommand{\arraystretch}{1.2}
   \begin{tabular}{ |c|c| }
   \hline
-  Transmitter Power             & 17 dBm                    \\ \hline
+  Transmitter Power             & 18 dBm                    \\ \hline
   Mismatch Loss                 & (0.5 dB)                 \\ \hline
   Transmission Line Loss        & (1 dB)                  \\ \hline
-  Antenna Gain                  & 2.15 dB                   \\ \hline \hline
-  \textbf{EIRP}                 & \textbf{17.65 dBm}        \\ \hline
+  Antenna Gain                  & 2.15 dB                   \\ \hline
+  \textbf{EIRP}                 & \textbf{18.65 dBm}        \\ \hline
   \end{tabular}
   \caption{Link Budget - Satellite}
   \label{tab:link_budget_satellite}
@@ -94,7 +94,7 @@ An online path loos calculator was used to attenuation due to distance, and the 
   \label{tab:link_budget_gs}
 \end{table}
 
-The final link budget therefore results in 17.65 dBm - 129.89 dB + 119.65 dBm = 7.41 dB of link margin. Although this is theoretically adequate (above the 3 dB recommendation), there are a few considerations to be made:
+The final link budget therefore results in 18.65 dBm - 129.89 dB + 119.65 dBm = 8.41 dB of link margin. Although this is theoretically adequate (above the 3 dB recommendation), there are a few considerations to be made:
 \begin{itemize}
     \item If a higher bit rate is required, e.g. 38.4 kbps, then the margin drops to -2.59 dB.
     \item If a longer range is required (e.g. for future projects), free space path loss will drastically increase. For example, for a 250 km range, the loss becomes 133 dB, meaning the margin drops to only 1.11 dB.

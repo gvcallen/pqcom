@@ -24,7 +24,7 @@ Current calculations should be done to ensure that the voltage regulators and th
   \label{tab:gs_component_consumption}
 \end{table}
 
-Therefore, maximum consumption - even at full motor current draw - is only 50 W, and will not place heavy load on the car socket battery supply. The 3.3 V regulator should be able to supply around 130 mA, and the 5 V regulator around $\SI{120}{mA} + (\SI{130}{mA} \times \frac{\SI{3.3}{V}}{\SI{5}{V}}) \approx \SI{210}{mA}$. The LD1117CV can supply up to $\SI{800}{mA}$, and the L7805CP up to $\SI{1.5}{A}$, meaning the limitations are met.
+Therefore, maximum consumption - even at full motor current draw - is only 50 W, and will not place heavy load on the car socket battery supply. The 3.3 V regulator should be capable of supplying around 130 mA, and the 5 V regulator around $\SI{120}{mA} + (\SI{130}{mA} \times \frac{\SI{3.3}{V}}{\SI{5}{V}}) \approx \SI{210}{mA}$. The LD1117CV can supply up to $\SI{800}{mA}$, and the L7805CP up to $\SI{1.5}{A}$, meaning the limitations are met.
 
 The power section also includes selector jumpers to isolate it from the rest of the board. In this way, if a component is damaged during implementation, or if the power section is found to not be working, external power can be supplied appropriately.
 

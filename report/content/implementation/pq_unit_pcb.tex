@@ -2,7 +2,7 @@
 
 \section{PocketQube Unit PCB}
 
-It was decided to order the PQ unit PCB, due to the higher complexity of the board. In order to begin initial development and testing, a breadboard prototype was initially created using an Arduino Nano, as shown in Appendix \ref{sec:appendix_pq_breadboard}. Since the Nano has the same MCU as the designed PCB, the developed software could then simply be flashed onto the PQ unit using an off-board programmer.
+It was decided to order the PQ unit PCB, due to the higher complexity of the board. In order to begin initial development and testing, a breadboard prototype was initially created using an Arduino Nano, as shown in Appendix \ref{sec:appendix_pq}. Since the Nano has the same MCU as the designed PCB, the developed software could then simply be flashed onto the PQ unit using an off-board programmer.
 
 The final module is shown in Figures \ref{fig:pqUnitPCB} and \ref{fig:pqUnitPower}. On the PCB itself, it was noted that the two required loading capacitors were mistakingly left out for the MCU's crystal oscillator (included in the appendix errata). The MCU's internal 8 MHz clock was therefore used. This clock, however, is generally badly calibrated, and resulted in software serial communication with the GPS module initially not working. The OSCCAL register was therefore optimized to re-calibrate the clock.
 

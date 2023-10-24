@@ -2,6 +2,7 @@
 
 % Project Planning
 \chapter{Project Planning}
+\textcolor{red}{Still to be formulated into a gantt chart}
 Week 01 (24/07 to 30/07): Problem formulation; requirements gathering
 Week 02 (31/07 to 06/08): Initial research; component selection
 Week 03 (07/08 to 13/08): System-level design; initial system layout; components ordered
@@ -21,9 +22,9 @@ Week 15 (30/10 to 05/11):
 % Schematics
 \includepdf[scale=0.65,pages=1,offset=0mm -35mm,pagecommand=\chapter{Schematics}\section{Ground Station}\label{sec:appendix_gs_schematics}]{docs/gs_schematic}
 \includepdf[scale=0.7,pages=1,pagecommand=\section{PocketQube Unit}\label{sec:appendix_pq_schematic}]{docs/pq_schematic}
-\section{Errata}
+\section{Errata}\label{sec:appendix_pcb_errata}
 \begin{itemize}
-    \item Mistake 1
+    \item \textcolor{red}{Full errata for PCB designs still to be added}
 \end{itemize}
 
 % Standards
@@ -33,26 +34,42 @@ Week 15 (30/10 to 05/11):
 
 % Implementations
 \chapter{Implementations}
-\section{Ground Station}
+\section{Ground Station}\label{sec:appendix_gs_antenna_original}
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=0.9\textwidth]{gsTripod}
-  \caption{Ground Station Final Implementation}
-  \label{fig:gsTripod}
+  \includegraphics[width=0.9\textwidth]{gsAntennaOriginal}
+  \caption{Ground Station Original Antenna Build}
+  \label{fig:gsAntennaOriginal}
 \end{figure}
 \newpage
-\section{PocketQube Breadboard}\label{sec:appendix_pq_breadboard}
+\section{PocketQube}\label{sec:appendix_pq}
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=0.8\textwidth]{pqBreadboard}
     \caption{PocketQube Breadboard for Testing}
     \label{fig:pqBreadboard}
 \end{figure}
-\newpage
-\section{GUI}
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=0.95\textwidth]{guiSnapshot}
+  \includegraphics[width=0.5\textwidth]{pqAntenna}
+  \caption{PocketQube Dipole Antenna}
+  \label{fig:pqAntenna}
+\end{figure}
+\newpage
+\section{GUI}\label{sec:appendix_gui}
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.95\textwidth]{guiSnapshot1}
   \caption{GUI Snapshot}
   \label{fig:guiSnapshot}
+\end{figure}
+
+% Tests
+\chapter{Tests}
+\section{Range Tests}\label{sec:appendix_range}
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{rangeTests}
+  \caption{Range Test Locations}
+  \label{fig:rangeTests}
 \end{figure}

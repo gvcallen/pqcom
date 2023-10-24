@@ -8,6 +8,8 @@ GPS:
   Age: 000000000
 
 RSSI = -52.00
+Lat: -34.04443
+  Lng: +18.42931
 startReceive()
 Updating...
 Using position with age 1
