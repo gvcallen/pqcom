@@ -152,13 +152,13 @@ STMicroelectronics, ``L6219 stepper motor driver,''
   \url{https://www.mantech.co.za/datasheets/products/L6219.pdf}, [Accessed
   29-09-2023].
 
+\bibitem{textbook-helicalAntenna}
+J.~D. Kraus, ``Antennas for all applications,'' [Accessed 29-09-2023].
+
 \bibitem{design-arduinoNano}
 Gravitech, ``Arduino nano,''
   \url{https://www.arduino.cc/en/uploads/Main/Arduino_Nano-Rev3.2-SCH.pdf},
   [Accessed 29-09-2023].
-
-\bibitem{textbook-helicalAntenna}
-J.~D. Kraus, ``Antennas for all applications,'' [Accessed 29-09-2023].
 
 \bibitem{datasheet-iMet3100M}
 Intermet, ``imet-3100m,''

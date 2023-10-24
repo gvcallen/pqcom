@@ -106,7 +106,9 @@ The \textit{Link} class deserves additional explanation. Although mature protoco
 \end{table}
 
 \newpage
-\noindent Two larger classes were designed to encapsulate the above components:
+
+\subsection{Containers}
+\noindent Two larger classes were designed to encapsulate/contain the above components:
 \begin{enumerate}
   \item \textbf{PqTnc} class, which acts as an interface between the GS, and a host computer. Here, the GS is referred to as a \textit{Terminal Node Controller} (TNC) when referring to the serial interface it exposes to a host computer. This class should contain the ground station object, handle serial commuication and errors, and store any data to provide the ground station object (e.g. GPS flight path information).
   \item \textbf{PqUnit} class, which encapsulates all functionality for the PQ module, such as populating telemetry buffers, and responding to telecommands.

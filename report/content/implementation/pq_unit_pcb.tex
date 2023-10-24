@@ -2,9 +2,9 @@
 
 \section{PocketQube Unit PCB}
 
-It was decided to order the PQ unit PCB in bulk from an external supplier, due to the higher complexity of the board. In order to begin initial development and testing, a breadboard prototype was initially created using an Arduino Nano. Since the Nano has the same MCU as the designed PCB, the developed software could then simply be flashed onto the PQ unit using an off-board programmer.
+It was decided to order the PQ unit PCB, due to the higher complexity of the board. In order to begin initial development and testing, a breadboard prototype was initially created using an Arduino Nano, as shown in Appendix \ref{sec:appendix_pq_breadboard}. Since the Nano has the same MCU as the designed PCB, the developed software could then simply be flashed onto the PQ unit using an off-board programmer.
 
-The final module is shown in Figures and . On the PCB itself, it was noted that the two required loading capacitors were mistakingly left out for the MCU's crystal oscillator. The MCU's internal 8 MHz clock was therefore used. The board was first bootloaded with an Arduino Nano, and then the programmer circuit in the Figure was developed to flash the board via UART. The programmer consists of a CH340 USB-to-serial module, a reset RC filter, as well as a 3.3V to 5V level converter (since the PocketQube PCB is designed to run at 3.3V).
+The final module is shown in Figures \ref{fig:pqUnitPCB} and \ref{fig:pqUnitPower}. On the PCB itself, it was noted that the two required loading capacitors were mistakingly left out for the MCU's crystal oscillator (included in the appendix errata). The MCU's internal 8 MHz clock was therefore used. This clock, however, is generally badly calibrated, and resulted in software serial communication with the GPS module initially not working. The OSCCAL register was therefore optimized to re-calibrate the clock.
 
 \begin{figure}[!htb]
   \begin{minipage}{.49\textwidth}
@@ -20,5 +20,7 @@ The final module is shown in Figures and . On the PCB itself, it was noted that 
     \label{fig:pqUnitPower}
   \end{minipage}
 \end{figure}
+
+The board was first bootloaded with an Arduino Nano, and then the programmer circuit below was developed to flash the board via UART. The programmer consists of a CH340 USB-to-serial module, a reset RC filter, as well as a 3.3V to 5V level converter (since the PocketQube PCB is designed to run at 3.3V).
 
 The board and dipole antenna was mounted onto a LiPo battery. The power section consists of a LiPo charger, a boost converter module, and a 3.3V linear voltage regulator circuit. This section was implemented in order to supply the PocketQube with power through the bus to allowing for testing without being connected to USB power.

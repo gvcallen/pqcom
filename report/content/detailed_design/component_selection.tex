@@ -16,7 +16,7 @@ To determine absolute azimuthal rotation, the ground station (either the base or
 
 As seen in Section \ref{sec:components_gps}, low accuracy is required. A low-accuracy IMU will therefore be included, with an accelerometer and magnetometer. The \textit{BNO055} is a 9-axis IMU which integrates an ARM Cortex-M0 for signal processing. It operates at 100 Hz, has $\SI{0.3}{\micro T}$ magnetic field resolution, and around 16 bit sensors. It is, however, very expensive (around R800). The \textit{MPU-9250}, and the \textit{MPU} line of IMU's are seen as cheaper alternatives. Since the ground station's mount will not be moving, only an accelerometer is adequate for orientation. The MPU-9250 also has a 16-bit accelerometer, and only a slightly lower magnetic field accuracy (\SI{0.6}{\micro T}), and therefore was purchased at a price of around R150.
 
-\subsection{RF Communication}
+\subsection{RF Module}
 The transciever for both the custom and proprietary protocol needs to be considered. There are a few options in this regard, listed from more to less specialized:
 \begin{itemize}
     \item Fully custom design. Here, all components are discretely designed using transistors, MCUs etc. This option is listed for completeness, but is out of the scope of this project.
@@ -58,7 +58,7 @@ The original PCB of the previous antenna mount system contained two A3972 ICs to
 
 Very few drivers fit these exact specifications. The \textit{A4970} is considered the follow-up version of the \textit{A3972}, however is not available in a single pack. The L6219 driver is found to match these specifications and will be selected due to availability.
 
-\subsection{Power Distribution}
+\subsection{Power}
 Both a 3.3V regulator and 5V regulator will be needed for the ground station power distribution. The LD1117V33C and L7805CP are chosen respectively due to their availability. A boost converter will also be needed to achieve the 24V motor drive voltage. Since each stepper motor will draw around 0.5 A per coil, the converter should support 2 A at its 12 V input. A breakout board based on the XL6009 IC will be used which meets this specification.
 
 \subsection{Microcontroller}

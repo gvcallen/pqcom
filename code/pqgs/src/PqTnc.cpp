@@ -13,8 +13,6 @@ PqTnc* PqTnc::singletonTnc = nullptr;
 #define EEPROM_OFFSET_SETTINGS              (EEPROM_OFFSET_FLIGHT_PATH      + EEPROM_SIZE_FLIGHT_PATH)
 #define EEPROM_OFFSET_END                   (EEPROM_OFFSET_SETTINGS         + EEPROM_SIZE_SETTINGS)
 
-#define SERIAL_DEBUG
-
 void PqTnc::begin()
 {   
     gel::Error err;
