@@ -9,3 +9,5 @@ bool calibrate(QSerialPort* serial);
 bool returnToStart(QSerialPort* serial);
 bool returnToStow(QSerialPort* serial);
 bool setTrackMode(QSerialPort* serial, suncq::TrackMode trackMode);
+bool setTrackTarget(QSerialPort* serial, suncq::TrackTarget trackTarget);
+bool setTrackLocation(QSerialPort* serial, suncq::GeoInstant& instant);

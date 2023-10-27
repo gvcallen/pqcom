@@ -1,7 +1,18 @@
 #pragma once
 
+#include <cstdint>
+
 namespace suncq
 {
+
+struct GeoInstant
+{
+    uint64_t secondsSinceEpoch;
+    float latitude;
+    float longitude;
+    float altitude;
+};
+
 
 enum Command
 {
@@ -12,6 +23,8 @@ enum Command
     SetTncMode = 0x30,
     SetTrackMode = 0x31,
     SetPathData = 0x32,
+    SetTrackLocation = 0x33,
+    SetTrackTarget = 0x34,
     GetSignalRSSI = 0x60,
     TncStatus = 0x80,
     TncMessage = 0x81,
@@ -31,6 +44,12 @@ enum TrackMode
     GpsUploaded = 0x01,
     GpsReceived = 0x02,
     SignalStrength = 0x04,
+};
+
+enum TrackTarget
+{
+    Internal = 0x00,
+    External = 0x01,
 };
 
 enum StatusCode

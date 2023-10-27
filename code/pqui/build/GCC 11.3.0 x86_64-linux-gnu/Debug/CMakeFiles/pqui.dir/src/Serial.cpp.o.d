@@ -2,8 +2,7 @@ CMakeFiles/pqui.dir/src/Serial.cpp.o: \
  /home/gary/data/university/2023/skripsie/code/pqui/src/Serial.cpp \
  /usr/include/stdc-predef.h \
  /home/gary/data/university/2023/skripsie/code/pqui/include/Suncq.h \
- /home/gary/data/university/2023/skripsie/code/pqui/include/rapidcsv.h \
- /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
+ /usr/include/c++/11/cstdint \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -15,6 +14,16 @@ CMakeFiles/pqui.dir/src/Serial.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
  /usr/include/c++/11/pstl/pstl_config.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /home/gary/data/university/2023/skripsie/code/pqui/include/rapidcsv.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \
  /usr/include/c++/11/type_traits /usr/include/c++/11/initializer_list \
@@ -32,9 +41,7 @@ CMakeFiles/pqui.dir/src/Serial.cpp.o: \
  /usr/include/c++/11/bits/ptr_traits.h /usr/include/c++/11/debug/debug.h \
  /usr/include/c++/11/bits/predefined_ops.h \
  /usr/include/c++/11/bits/stl_algo.h /usr/include/c++/11/cstdlib \
- /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+ /usr/include/stdlib.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
@@ -42,14 +49,10 @@ CMakeFiles/pqui.dir/src/Serial.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -128,7 +131,6 @@ CMakeFiles/pqui.dir/src/Serial.cpp.o: \
  /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
  /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -137,9 +139,7 @@ CMakeFiles/pqui.dir/src/Serial.cpp.o: \
  /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/bits/nested_exception.h \
- /usr/include/c++/11/bits/char_traits.h /usr/include/c++/11/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
  /usr/include/c++/11/clocale /usr/include/locale.h \

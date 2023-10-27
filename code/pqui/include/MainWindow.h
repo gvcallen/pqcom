@@ -5,6 +5,10 @@
 #include <QSerialPort>
 #include <QSerialPortInfo>
 #include <QSettings>
+#include <QProcess>
+#include <QMessageBox>
+#include <QTimer>
+#include <QDateTime>
 
 #include <vector>
 
@@ -25,6 +29,12 @@ public slots:
     void selectFlightPathFile();
     void toggleSerialPortConnection();
     void serialBytesReady();
+    void autoRXOutputReady();
+    void autoRXErrorReady();
+    void autoRXLogCheck();
+    void autoRXLogChanged();
+    void setAutoRXPath();
+    void onClose();
     
     // SUNCQ Slots
     void calibrate();
@@ -32,6 +42,13 @@ public slots:
     void returnToStow();
     void uploadData();
     void setTrackMode();
+    void setTrackTarget();
+
+    void showModified()
+    {
+        
+        QMessageBox::information(this,"Directory Modified", "Your Directory is modified");
+    }    
 
 private:
     void closeSerialPort();
@@ -40,9 +57,17 @@ private:
     void populateWidgets();
     void loadSettings();
     void loadSerialSettings();
+    void loadGroundStationSettings();
     void populateSerialDevices();
     void saveSettings();
     void saveSerialSettings();
+    void saveGroundStationSettings();
+
+    void setTrackTargetLoRa();
+    void setTrackTargetRadiosonde();
+    void setTrackLocation(float lat, float lng, float alt);
+
+    QString getLogFilePath();
 
 private:
     Ui::MainWindow *ui;
@@ -50,9 +75,14 @@ private:
     QSerialPort *serial;
     QList<QSerialPortInfo> serialInfo;
 
-    bool flightPathLoaded = false;
     QSettings settings;
 
+    bool flightPathLoaded = false;
+
     std::vector<uint8_t> serialBytes;
+
+    QProcess* autoRXProcess;
+    QTimer* autoRXTimer;
+    QDateTime lastLogCheckTime;
 };
 #endif // MAINWINDOW_H

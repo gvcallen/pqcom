@@ -331,6 +331,18 @@ CMakeFiles/pqui.dir/src/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
  /home/gary/data/university/2023/skripsie/code/pqui/build/GCC\ 11.3.0\ x86_64-linux-gnu/Debug/pqui_autogen/include/ui_MainWindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
@@ -343,7 +355,6 @@ CMakeFiles/pqui.dir/src/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
@@ -403,6 +414,9 @@ CMakeFiles/pqui.dir/src/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /home/gary/data/university/2023/skripsie/code/pqui/include/Suncq.h \
  /home/gary/data/university/2023/skripsie/code/pqui/include/Serial.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFileDialog \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qfiledialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
@@ -431,11 +445,11 @@ CMakeFiles/pqui.dir/src/MainWindow.cpp.o: \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTextStream \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QFileSystemWatcher \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfilesystemwatcher.h

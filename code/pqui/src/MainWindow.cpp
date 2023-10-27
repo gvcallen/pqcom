@@ -3,30 +3,47 @@
 #include "Suncq.h"
 #include "Serial.h"
 
+#include <QInputDialog>
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QSerialPortInfo>
 #include <QFile>
+#include <QDir>
 #include <QTextStream>
+#include <QProcess>
+#include <QFileSystemWatcher>
 
 QTextStream out(stdout);
 
 static const char* TEXT_TRACK_MODE_NONE = "None";
 static const char* TEXT_TRACK_MODE_GPS_UPLOADED = "GPS Uploaded";
+static const char* TEXT_TRACK_TARGET_LORA = "LoRa";
+static const char* TEXT_TRACK_TARGET_RADIOSONDE = "Radiosonde";
+static const char* KEY_AUTO_RX_PATH = "autoRxPath";
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , serial(new QSerialPort(this))
+    , settings(QSettings(QSettings::IniFormat, QSettings::UserScope, "Gary Allen", "PQUI"))
 {
     ui->setupUi(this);
+    this->connect(this, SIGNAL(aboutToQuit()), this, SLOT(onClose()));
+
     loadSettings();
     populateWidgets();
 }
 
 MainWindow::~MainWindow()
 {
+    if (autoRXProcess)
+        autoRXProcess->close();
+    saveSettings();
     delete ui;
+}
+
+void MainWindow::onClose()
+{
 }
 
 void MainWindow::populateWidgets()
@@ -34,17 +51,22 @@ void MainWindow::populateWidgets()
     populateSerialDevices();
     ui->trackModeCombo->addItems({TEXT_TRACK_MODE_NONE,
                                   TEXT_TRACK_MODE_GPS_UPLOADED});
+    ui->trackTargetCombo->addItems({TEXT_TRACK_TARGET_LORA,
+                                  TEXT_TRACK_TARGET_RADIOSONDE});
 }
 
 void MainWindow::loadSettings()
 {
     loadSerialSettings();
+    loadGroundStationSettings();
     saveSettings();
 }
 
 void MainWindow::saveSettings()
 {
     saveSerialSettings();
+    saveGroundStationSettings();
+    settings.sync();
 }
 
 void MainWindow::saveSerialSettings()
@@ -52,6 +74,12 @@ void MainWindow::saveSerialSettings()
     settings.setValue("baudRate", ui->baudRateEdit->text().toInt());
     settings.setValue("dataBits", ui->dataBitsCombo->currentText().toInt());
     settings.setValue("stopBits", ui->stopBitsCombo->currentText().toInt());
+}
+
+void MainWindow::saveGroundStationSettings()
+{
+    auto path = ui->autoRXPathLabel->text();
+    settings.setValue(KEY_AUTO_RX_PATH, path);
 }
 
 void MainWindow::populateSerialDevices()
@@ -75,7 +103,7 @@ void MainWindow::loadSerialSettings()
     // Load previous values from settings
     auto baudRate = settings.value("baudRate", 115200).toInt();
     auto dataBits = QSerialPort::DataBits(settings.value("dataBits", 8).toInt());
-    auto parity = QSerialPort::Parity(settings.value("parity", 0).toInt());
+    // auto parity = QSerialPort::Parity(settings.value("parity", 0).toInt());
     auto stopBits = QSerialPort::StopBits(settings.value("stopBits", 1).toInt());
 
     ui->dataBitsCombo->addItems({"5", "6", "7", "8"});
@@ -83,6 +111,11 @@ void MainWindow::loadSerialSettings()
     ui->stopBitsCombo->addItems({"1", "2", "3"});
     ui->stopBitsCombo->setCurrentText(QString::number(stopBits));
     ui->baudRateEdit->setText(QString::number(baudRate));
+}
+
+void MainWindow::loadGroundStationSettings()
+{
+    ui->autoRXPathLabel->setText(settings.value(KEY_AUTO_RX_PATH, "").toString());
 }
 
 void MainWindow::selectFlightPathFile()
@@ -160,6 +193,100 @@ void MainWindow::serialBytesReady()
     }
 }
 
+void MainWindow::autoRXOutputReady()
+{
+    auto outData = autoRXProcess->readAllStandardOutput();
+    ui->serialMonitor->append(outData);
+}
+
+void MainWindow::autoRXErrorReady()
+{
+    auto outData = autoRXProcess->readAllStandardError();
+    ui->serialMonitor->append(outData);
+}
+
+QString MainWindow::getLogFilePath()
+{
+    QString folderPath = settings.value(KEY_AUTO_RX_PATH).toString() + "/log";
+    auto fileNames = QDir(folderPath).entryList(QStringList() << "*.log", QDir::Files);
+
+    if (fileNames.empty())
+    {
+        QMessageBox::critical(this, "Could not find log file", "Could not open AutoRX log file. Please ensure the log file has been previously generated");
+        return "";
+    }
+    
+    auto fileName = fileNames[0];
+    QString filePath = folderPath + "/" + fileName;
+    return filePath;
+}
+
+void MainWindow::autoRXLogChanged()
+{
+    auto filePath = getLogFilePath();
+
+    QFile logFile(filePath);
+    if (logFile.open(QIODevice::ReadOnly))
+    {
+        auto headers = QString(logFile.readLine()).split(',');
+        
+        int latIdx = -1, lngIdx = -1, altIdx = -1;
+        for (int i = 0; i < headers.size(); i++)
+        {
+            if (headers[i] == "lat")
+                latIdx = i;
+            else if (headers[i] == "lon")
+                lngIdx = i;
+            else if (headers[i] == "alt")
+                altIdx = i;
+        }
+
+        if (latIdx == -1 || lngIdx == -1 || altIdx == -1)
+            return;
+
+        auto lineLength = logFile.readLine().size();
+        qint64 fileSize = logFile.size();
+        logFile.seek(fileSize - lineLength);
+        auto latestData = QString(logFile.read(lineLength));
+        logFile.close();
+
+        auto values = latestData.split(',');
+
+        auto latStr = values[latIdx];
+        auto lngStr = values[lngIdx];
+        auto altStr = values[altIdx];
+
+        float lat = latStr.toFloat(); 
+        float lng = lngStr.toFloat(); 
+        float alt = altStr.toFloat(); 
+
+        setTrackLocation(lat, lng, alt);
+    }
+}
+
+void MainWindow::autoRXLogCheck()
+{
+    auto filePath = getLogFilePath();
+    const QFileInfo info(filePath);
+    const QDateTime lastModified = info.lastModified();
+
+    if (lastModified > lastLogCheckTime)
+    {
+        lastLogCheckTime = lastModified;
+        autoRXLogChanged();
+    }
+}
+
+void MainWindow::setAutoRXPath()
+{
+    auto folderPath = QFileDialog::getExistingDirectory(this, tr("Select Folder 'radiosonde_auto_rx'"), QString());
+    if (folderPath != "")
+    {
+        settings.setValue(KEY_AUTO_RX_PATH, folderPath);
+        ui->autoRXPathLabel->setText(folderPath);
+    }
+}
+
 void MainWindow::closeSerialPort()
 {
     if (serial->isOpen())
@@ -184,6 +311,79 @@ void MainWindow::setTrackMode()
         ::setTrackMode(serial, suncq::TrackMode::None);
     else if (ui->trackModeCombo->currentText() == TEXT_TRACK_MODE_GPS_UPLOADED)
         ::setTrackMode(serial, suncq::TrackMode::GpsUploaded);
+}
+
+void MainWindow::setTrackTarget()
+{
+    auto currentText = ui->trackTargetCombo->currentText();
+    if (currentText == TEXT_TRACK_TARGET_LORA)
+        setTrackTargetLoRa();
+    else
+        setTrackTargetRadiosonde();
+}
+
+void MainWindow::setTrackTargetLoRa()
+{
+    if (autoRXProcess && autoRXProcess->isOpen())
+        autoRXProcess->close();
+    ui->trackTargetCombo->setCurrentIndex(0);
+    ::setTrackTarget(serial, suncq::TrackTarget::Internal);
+}
+
+void MainWindow::setTrackTargetRadiosonde()
+{
+    ui->trackTargetCombo->setCurrentIndex(1);
+    QString autoRXScriptDir = settings.value(KEY_AUTO_RX_PATH).toString();
+    bool error = false;
+
+    if (!QFileInfo::exists(autoRXScriptDir + "/auto_rx.py"))
+    {
+        QMessageBox::critical(this, "Error enabling Radiosonde", "Please ensure the AutoRX path is set to the 'auto_rx' directory.");
+        error = true;
+    }
+
+    bool ok;
+    QString password = QInputDialog::getText(this, tr("Enter Sudo Password"),
+                                             tr("Password:"), QLineEdit::Password,
+                                             "", &ok);
+
+    if (!ok || password.isEmpty())
+        error = true;
+
+    if (error)
+        return setTrackTargetLoRa();
+
+    if (autoRXProcess)
+        delete autoRXProcess;
+    autoRXProcess = new QProcess(this);
+
+    connect(autoRXProcess, SIGNAL(readyReadStandardOutput()), this, SLOT(autoRXOutputReady()));
+    connect(autoRXProcess, SIGNAL(readyReadStandardError()), this, SLOT(autoRXErrorReady()));
+
+    autoRXProcess->setWorkingDirectory(autoRXScriptDir);
+
+    QString script = "echo '" + password + "' | sudo -S python3 -u auto_rx.py";
+    autoRXProcess->start("bash", QStringList() << "-c" << script);
+    autoRXProcess->waitForStarted();
+
+    if (autoRXTimer)
+        delete autoRXTimer;
+
+    autoRXTimer = new QTimer(this);
+    this->connect(autoRXTimer, &QTimer::timeout, this, &MainWindow::autoRXLogCheck);
+    autoRXTimer->start(1000);
+
+    ::setTrackTarget(serial, suncq::TrackTarget::External);
+}
+
+void MainWindow::setTrackLocation(float lat, float lng, float alt)
+{
+    suncq::GeoInstant instant;
+    instant.secondsSinceEpoch = QDateTime::currentSecsSinceEpoch();
+    instant.latitude = lat;
+    instant.longitude = lng;
+    instant.altitude = alt;
+    ::setTrackLocation(serial, instant);
 }
 
 void MainWindow::calibrate()

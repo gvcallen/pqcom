@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    const uint offsetsAndSize[20];
-    char stringdata0[138];
+    const uint offsetsAndSize[36];
+    char stringdata0[255];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_MainWindow_t, stringdata0) + ofs), len 
@@ -34,17 +34,28 @@ QT_MOC_LITERAL(11, 20), // "selectFlightPathFile"
 QT_MOC_LITERAL(32, 0), // ""
 QT_MOC_LITERAL(33, 26), // "toggleSerialPortConnection"
 QT_MOC_LITERAL(60, 16), // "serialBytesReady"
-QT_MOC_LITERAL(77, 9), // "calibrate"
-QT_MOC_LITERAL(87, 13), // "returnToStart"
-QT_MOC_LITERAL(101, 12), // "returnToStow"
-QT_MOC_LITERAL(114, 10), // "uploadData"
-QT_MOC_LITERAL(125, 12) // "setTrackMode"
+QT_MOC_LITERAL(77, 17), // "autoRXOutputReady"
+QT_MOC_LITERAL(95, 16), // "autoRXErrorReady"
+QT_MOC_LITERAL(112, 14), // "autoRXLogCheck"
+QT_MOC_LITERAL(127, 16), // "autoRXLogChanged"
+QT_MOC_LITERAL(144, 13), // "setAutoRXPath"
+QT_MOC_LITERAL(158, 7), // "onClose"
+QT_MOC_LITERAL(166, 9), // "calibrate"
+QT_MOC_LITERAL(176, 13), // "returnToStart"
+QT_MOC_LITERAL(190, 12), // "returnToStow"
+QT_MOC_LITERAL(203, 10), // "uploadData"
+QT_MOC_LITERAL(214, 12), // "setTrackMode"
+QT_MOC_LITERAL(227, 14), // "setTrackTarget"
+QT_MOC_LITERAL(242, 12) // "showModified"
 
     },
     "MainWindow\0selectFlightPathFile\0\0"
     "toggleSerialPortConnection\0serialBytesReady\0"
-    "calibrate\0returnToStart\0returnToStow\0"
-    "uploadData\0setTrackMode"
+    "autoRXOutputReady\0autoRXErrorReady\0"
+    "autoRXLogCheck\0autoRXLogChanged\0"
+    "setAutoRXPath\0onClose\0calibrate\0"
+    "returnToStart\0returnToStow\0uploadData\0"
+    "setTrackMode\0setTrackTarget\0showModified"
 };
 #undef QT_MOC_LITERAL
 
@@ -54,7 +65,7 @@ static const uint qt_meta_data_MainWindow[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+      16,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -62,16 +73,32 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   62,    2, 0x0a,    1 /* Public */,
-       3,    0,   63,    2, 0x0a,    2 /* Public */,
-       4,    0,   64,    2, 0x0a,    3 /* Public */,
-       5,    0,   65,    2, 0x0a,    4 /* Public */,
-       6,    0,   66,    2, 0x0a,    5 /* Public */,
-       7,    0,   67,    2, 0x0a,    6 /* Public */,
-       8,    0,   68,    2, 0x0a,    7 /* Public */,
-       9,    0,   69,    2, 0x0a,    8 /* Public */,
+       1,    0,  110,    2, 0x0a,    1 /* Public */,
+       3,    0,  111,    2, 0x0a,    2 /* Public */,
+       4,    0,  112,    2, 0x0a,    3 /* Public */,
+       5,    0,  113,    2, 0x0a,    4 /* Public */,
+       6,    0,  114,    2, 0x0a,    5 /* Public */,
+       7,    0,  115,    2, 0x0a,    6 /* Public */,
+       8,    0,  116,    2, 0x0a,    7 /* Public */,
+       9,    0,  117,    2, 0x0a,    8 /* Public */,
+      10,    0,  118,    2, 0x0a,    9 /* Public */,
+      11,    0,  119,    2, 0x0a,   10 /* Public */,
+      12,    0,  120,    2, 0x0a,   11 /* Public */,
+      13,    0,  121,    2, 0x0a,   12 /* Public */,
+      14,    0,  122,    2, 0x0a,   13 /* Public */,
+      15,    0,  123,    2, 0x0a,   14 /* Public */,
+      16,    0,  124,    2, 0x0a,   15 /* Public */,
+      17,    0,  125,    2, 0x0a,   16 /* Public */,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -93,11 +120,19 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->selectFlightPathFile(); break;
         case 1: _t->toggleSerialPortConnection(); break;
         case 2: _t->serialBytesReady(); break;
-        case 3: _t->calibrate(); break;
-        case 4: _t->returnToStart(); break;
-        case 5: _t->returnToStow(); break;
-        case 6: _t->uploadData(); break;
-        case 7: _t->setTrackMode(); break;
+        case 3: _t->autoRXOutputReady(); break;
+        case 4: _t->autoRXErrorReady(); break;
+        case 5: _t->autoRXLogCheck(); break;
+        case 6: _t->autoRXLogChanged(); break;
+        case 7: _t->setAutoRXPath(); break;
+        case 8: _t->onClose(); break;
+        case 9: _t->calibrate(); break;
+        case 10: _t->returnToStart(); break;
+        case 11: _t->returnToStow(); break;
+        case 12: _t->uploadData(); break;
+        case 13: _t->setTrackMode(); break;
+        case 14: _t->setTrackTarget(); break;
+        case 15: _t->showModified(); break;
         default: ;
         }
     }
@@ -112,7 +147,7 @@ const QMetaObject MainWindow::staticMetaObject = { {
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t
 , QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
 
 
 >,
@@ -139,13 +174,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 16)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 16;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 16)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 16;
     }
     return _id;
 }

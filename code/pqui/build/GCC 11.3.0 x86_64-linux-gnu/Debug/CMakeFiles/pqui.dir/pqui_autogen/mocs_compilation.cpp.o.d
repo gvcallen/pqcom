@@ -334,4 +334,16 @@ CMakeFiles/pqui.dir/pqui_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h

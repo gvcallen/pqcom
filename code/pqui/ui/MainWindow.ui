@@ -141,6 +141,12 @@
             <layout class="QHBoxLayout" name="horizontalLayout_4">
              <item>
               <widget class="QPushButton" name="serialConnectionButton">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>0</height>
+                </size>
+               </property>
                <property name="maximumSize">
                 <size>
                  <width>16777215</width>
@@ -216,43 +222,118 @@
           <layout class="QVBoxLayout" name="verticalLayout_5">
            <item>
             <layout class="QGridLayout" name="gridLayout">
-             <item row="3" column="0">
+             <item row="0" column="0">
               <widget class="QLabel" name="label_5">
                <property name="text">
-                <string>Control Mount:</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <spacer name="horizontalSpacer_3">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item row="2" column="2">
-              <widget class="QComboBox" name="trackModeCombo">
-               <property name="maximumSize">
-                <size>
-                 <width>300</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="currentText">
-                <string/>
+                <string>Mount:</string>
                </property>
               </widget>
              </item>
              <item row="0" column="2">
+              <layout class="QHBoxLayout" name="horizontalLayout_14">
+               <item>
+                <widget class="QPushButton" name="pushButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>150</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Calibrate</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>150</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Return to Start</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>150</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Stow</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>AutoRX Path:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Tracking Mode:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>Tracking Target:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
               <layout class="QHBoxLayout" name="horizontalLayout_13">
                <item>
                 <widget class="QPushButton" name="flightPathFileButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>1</height>
+                  </size>
+                 </property>
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -266,6 +347,12 @@
                </item>
                <item>
                 <widget class="QPushButton" name="groundStationUploadButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
                  <property name="text">
                   <string>Upload</string>
                  </property>
@@ -301,58 +388,74 @@
                </item>
               </layout>
              </item>
-             <item row="2" column="0">
-              <widget class="QLabel" name="label_3">
-               <property name="text">
-                <string>Set Tracking Mode:</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
+             <item row="1" column="0">
               <widget class="QLabel" name="label_4">
                <property name="text">
-                <string>Select Flight Path File:</string>
+                <string>Flight Path:</string>
                </property>
               </widget>
              </item>
+             <item row="5" column="2">
+              <widget class="QComboBox" name="trackTargetCombo">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
              <item row="3" column="2">
-              <layout class="QHBoxLayout" name="horizontalLayout_14">
+              <widget class="QComboBox" name="trackModeCombo">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="currentText">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="2">
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
                <item>
-                <widget class="QPushButton" name="pushButton">
+                <widget class="QPushButton" name="pushButton_4">
                  <property name="maximumSize">
                   <size>
-                   <width>150</width>
+                   <width>100</width>
                    <height>16777215</height>
                   </size>
                  </property>
                  <property name="text">
-                  <string>Calibrate</string>
+                  <string>Select..</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_2">
-                 <property name="maximumSize">
-                  <size>
-                   <width>150</width>
-                   <height>16777215</height>
-                  </size>
-                 </property>
+                <widget class="QLabel" name="autoRXPathLabel">
                  <property name="text">
-                  <string>Return to Start</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QPushButton" name="pushButton_3">
-                 <property name="maximumSize">
-                  <size>
-                   <width>150</width>
-                   <height>16777215</height>
-                  </size>
-                 </property>
-                 <property name="text">
-                  <string>Stow</string>
+                  <string>&lt;No folder selected&gt;</string>
                  </property>
                 </widget>
                </item>
@@ -432,6 +535,12 @@
             <layout class="QHBoxLayout" name="horizontalLayout_6">
              <item>
               <widget class="QPushButton" name="Clear">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>0</height>
+                </size>
+               </property>
                <property name="text">
                 <string>Clear</string>
                </property>
@@ -487,8 +596,8 @@
    <slot>selectFlightPathFile()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>121</x>
-     <y>115</y>
+     <x>283</x>
+     <y>150</y>
     </hint>
     <hint type="destinationlabel">
      <x>796</x>
@@ -519,8 +628,8 @@
    <slot>setTrackMode()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>439</x>
-     <y>137</y>
+     <x>502</x>
+     <y>180</y>
     </hint>
     <hint type="destinationlabel">
      <x>798</x>
@@ -567,8 +676,8 @@
    <slot>calibrate()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>94</x>
-     <y>164</y>
+     <x>283</x>
+     <y>119</y>
     </hint>
     <hint type="destinationlabel">
      <x>3</x>
@@ -583,8 +692,8 @@
    <slot>returnToStart()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>94</x>
-     <y>194</y>
+     <x>395</x>
+     <y>119</y>
     </hint>
     <hint type="destinationlabel">
      <x>3</x>
@@ -599,8 +708,8 @@
    <slot>returnToStow()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>108</x>
-     <y>224</y>
+     <x>512</x>
+     <y>119</y>
     </hint>
     <hint type="destinationlabel">
      <x>0</x>
@@ -615,12 +724,60 @@
    <slot>uploadData()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>84</x>
-     <y>315</y>
+     <x>405</x>
+     <y>150</y>
     </hint>
     <hint type="destinationlabel">
      <x>10</x>
      <y>576</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>trackTargetCombo</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setTrackTarget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-4</x>
+     <y>262</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>trackTargetCombo</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setTrackTarget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>201</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setAutoRXPath()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>247</x>
+     <y>234</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>330</y>
     </hint>
    </hints>
   </connection>
@@ -635,5 +792,7 @@
   <slot>calibrate()</slot>
   <slot>returnToStart()</slot>
   <slot>returnToStow()</slot>
+  <slot>setTrackTarget()</slot>
+  <slot>setAutoRXPath()</slot>
  </slots>
 </ui>

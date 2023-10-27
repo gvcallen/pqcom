@@ -276,7 +276,10 @@
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSettings \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
@@ -285,11 +288,13 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompilerdetection.h \
@@ -299,6 +304,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h \
@@ -312,6 +318,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlogging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
@@ -326,6 +333,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
@@ -351,6 +359,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtaggedpointer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcore-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
@@ -385,7 +394,10 @@
   /usr/include/x86_64-linux-gnu/qt6/QtSerialPort/qserialportglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtSerialPort/qserialportinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \

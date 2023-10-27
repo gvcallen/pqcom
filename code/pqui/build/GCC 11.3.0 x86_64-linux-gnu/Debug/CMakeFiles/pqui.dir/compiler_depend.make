@@ -385,7 +385,19 @@ CMakeFiles/pqui.dir/pqui_autogen/mocs_compilation.cpp.o: pqui_autogen/mocs_compi
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h
 
 CMakeFiles/pqui.dir/src/MainWindow.cpp.o: ../../../src/MainWindow.cpp \
   /usr/include/stdc-predef.h \
@@ -771,6 +783,18 @@ CMakeFiles/pqui.dir/src/MainWindow.cpp.o: ../../../src/MainWindow.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
   pqui_autogen/include/ui_MainWindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
@@ -783,7 +807,6 @@ CMakeFiles/pqui.dir/src/MainWindow.cpp.o: ../../../src/MainWindow.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
@@ -843,6 +866,9 @@ CMakeFiles/pqui.dir/src/MainWindow.cpp.o: ../../../src/MainWindow.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
   ../../../include/Suncq.h \
   ../../../include/Serial.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFileDialog \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qfiledialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
@@ -882,21 +908,19 @@ CMakeFiles/pqui.dir/src/MainWindow.cpp.o: ../../../src/MainWindow.cpp \
   /usr/include/c++/11/bits/fs_ops.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QTextStream \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFileSystemWatcher \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfilesystemwatcher.h
 
 CMakeFiles/pqui.dir/src/Serial.cpp.o: ../../../src/Serial.cpp \
   /usr/include/stdc-predef.h \
   ../../../include/Suncq.h \
-  ../../../include/rapidcsv.h \
-  /usr/include/c++/11/algorithm \
-  /usr/include/c++/11/utility \
+  /usr/include/c++/11/cstdint \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -909,6 +933,18 @@ CMakeFiles/pqui.dir/src/Serial.cpp.o: ../../../src/Serial.cpp \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  ../../../include/rapidcsv.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/move.h \
@@ -931,7 +967,6 @@ CMakeFiles/pqui.dir/src/Serial.cpp.o: ../../../src/Serial.cpp \
   /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -940,14 +975,10 @@ CMakeFiles/pqui.dir/src/Serial.cpp.o: ../../../src/Serial.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
@@ -1045,7 +1076,6 @@ CMakeFiles/pqui.dir/src/Serial.cpp.o: ../../../src/Serial.cpp \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -1056,10 +1086,6 @@ CMakeFiles/pqui.dir/src/Serial.cpp.o: ../../../src/Serial.cpp \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
   /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/cstdint \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -1661,6 +1687,18 @@ CMakeFiles/pqui.dir/src/main.cpp.o: ../../../src/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
@@ -1670,11 +1708,8 @@ CMakeFiles/pqui.dir/src/main.cpp.o: ../../../src/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h
 
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime:
 
 /usr/include/c++/11/bits/fstream.tcc:
 
@@ -1685,12 +1720,6 @@ CMakeFiles/pqui.dir/src/main.cpp.o: ../../../src/main.cpp \
 /usr/include/c++/11/fstream:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h:
 
 /usr/include/c++/11/bits/fs_ops.h:
 
@@ -1717,6 +1746,10 @@ CMakeFiles/pqui.dir/src/main.cpp.o: ../../../src/main.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QDir:
 
 ../../../include/Suncq.h:
 
@@ -1752,8 +1785,6 @@ CMakeFiles/pqui.dir/src/main.cpp.o: ../../../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox:
-
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h:
@@ -1774,8 +1805,6 @@ CMakeFiles/pqui.dir/src/main.cpp.o: ../../../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h:
@@ -1789,6 +1818,26 @@ CMakeFiles/pqui.dir/src/main.cpp.o: ../../../src/main.cpp \
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant:
 
 pqui_autogen/include/ui_MainWindow.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h:
 
 /usr/include/c++/11/sstream:
 
@@ -1942,6 +1991,8 @@ pqui_autogen/include/ui_MainWindow.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess:
+
 /usr/include/asm-generic/errno-base.h:
 
 ../../../src/MainWindow.cpp:
@@ -2029,6 +2080,8 @@ pqui_autogen/include/ui_MainWindow.h:
 /usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qfilesystemwatcher.h:
 
 /usr/include/c++/11/bits/unordered_map.h:
 
@@ -2312,6 +2365,8 @@ pqui_autogen/6YEA5652QU/moc_MainWindow.cpp:
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QFileSystemWatcher:
+
 /usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/features.h:
@@ -2325,6 +2380,8 @@ pqui_autogen/6YEA5652QU/moc_MainWindow.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
