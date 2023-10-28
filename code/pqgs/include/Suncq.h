@@ -12,6 +12,8 @@ enum Command
     SetTncMode = 0x30,
     SetTrackMode = 0x31,
     SetPathData = 0x32,
+    SetTrackLocation = 0x33,
+    SetTrackTarget = 0x34,
     GetSignalRSSI = 0x60,
     TncStatus = 0x80,
     TncMessage = 0x81,

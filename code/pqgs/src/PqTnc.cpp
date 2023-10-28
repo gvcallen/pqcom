@@ -17,6 +17,12 @@ void PqTnc::begin()
 {   
     gel::Error err;
 
+    // This is a quick hack to compensate for the mount drive being synchronous.
+    // If the mount needs to move too far from one side to the other, the buffer overflows
+    // and the commands go out of sync. Ideally we should make the mount async with an update(),
+    // but this was not done due to time constraints. With a command coming in once every second,
+    // the buffer reaches around 425 when the mount needs to move far, so 10000 should be enough for now.
+    Serial.setRxBufferSize(10000);
     Serial.begin(BAUD_RATE);
     while (!Serial);
     delay(500);
@@ -130,7 +136,7 @@ gel::Error PqTnc::loadFlightPath()
 gel::Error PqTnc::saveFlightPath()
 {
     nextPathInstantIdx = 0;
-    pathByteIdx = 0;
+    byteStreamIdx = 0;
 
     if (!numPathInstants)
         return gel::Error::None;
@@ -155,11 +161,6 @@ void PqTnc::update()
 {
     gel::Error err;
     
-    static gel::RunEvery run(1000);
-
-    if (run)
-        Serial.println("Updating...");
-    
     if (err = updateSerial())
         sendError(err);
 
@@ -175,6 +176,7 @@ gel::Error PqTnc::updateSerial()
 {        
     while (Serial.available())
     {
+        Serial.println("AV = " + String(Serial.available()));
         uint8_t c = Serial.read();
         
         if (settings.tncMode == suncq::TncMode::Normal)
@@ -210,6 +212,7 @@ gel::Error PqTnc::updateSerialNormal(uint8_t c)
             sendSignalRSSI();
             break;
         case suncq::Command::Reset:
+            Serial.println("RESET !!!");
             reset();
             break;
         default:
@@ -230,6 +233,13 @@ gel::Error PqTnc::updateSerialNormal(uint8_t c)
             break;
         case suncq::Command::SetPathData:
             commandFinished = addFlightPathData((uint8_t)c);
+            break;
+        case suncq::Command::SetTrackTarget:
+            sendMessage(String(c));
+            break;
+        case suncq::Command::SetTrackLocation:
+            if (settings.trackMode & suncq::TrackMode::GpsReceived)
+                commandFinished = addKnownLocationData((uint8_t)c);
             break;
         default:
             break; // Shouldn't get here
@@ -312,34 +322,54 @@ gel::Error PqTnc::setTrackMode(suncq::TrackMode mode)
     return gel::Error::None;
 }
 
+bool PqTnc::addKnownLocationData(uint8_t newData)
+{
+    if (byteStreamIdx < sizeof (gel::GeoInstant))
+        ((uint8_t*)&latestReceivedInstant)[byteStreamIdx++] = newData;
+
+    if (byteStreamIdx < sizeof (gel::GeoInstant))
+    {
+        return false;
+    }
+    else
+    {
+        byteStreamIdx = 0;
+        Serial.println("Pointing at:");
+        Serial.println("Lat = " + String(latestReceivedInstant.location.lat));
+        Serial.println("Lat = " + String(latestReceivedInstant.location.lng));
+        gpsRecieved = true;
+        return true;
+    }
+}
+
 // True is returned if we are done receiving data for the flight path
 bool PqTnc::addFlightPathData(uint8_t newData)
 {
     bool finishedReceiving = false;
 
-    if (pathByteIdx == 0)
+    if (byteStreamIdx == 0)
     {
         numPathInstants = newData;
-        pathByteIdx++;
+        byteStreamIdx++;
     }
-    else if (pathByteIdx == 1)
+    else if (byteStreamIdx == 1)
     {
         numPathInstants += newData << 8;
-        pathByteIdx++;
+        byteStreamIdx++;
     }
     else
     {
-        ((uint8_t*)path)[pathByteIdx - 2] = newData;
+        ((uint8_t*)path)[byteStreamIdx - 2] = newData;
 
         size_t numExpectedBytes = numPathInstants * sizeof (gel::GeoInstant) + 2;
-        if (pathByteIdx == numExpectedBytes - 1)
+        if (byteStreamIdx == numExpectedBytes - 1)
         {
             saveFlightPath();
             finishedReceiving = true;
         }
         else
         {
-            pathByteIdx++;
+            byteStreamIdx++;
         }
     }
 

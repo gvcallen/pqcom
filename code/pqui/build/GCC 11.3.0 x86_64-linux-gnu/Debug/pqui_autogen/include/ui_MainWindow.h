@@ -63,26 +63,28 @@ public:
     QGroupBox *upload;
     QVBoxLayout *verticalLayout_5;
     QGridLayout *gridLayout;
+    QComboBox *trackModeCombo;
     QLabel *label_5;
+    QComboBox *trackTargetCombo;
+    QHBoxLayout *horizontalLayout_8;
+    QPushButton *pushButton_4;
+    QLabel *autoRXPathLabel;
+    QLabel *label_6;
+    QLabel *label_7;
     QHBoxLayout *horizontalLayout_14;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QSpacerItem *horizontalSpacer_5;
-    QLabel *label_7;
-    QLabel *label_3;
-    QLabel *label_6;
     QHBoxLayout *horizontalLayout_13;
     QPushButton *flightPathFileButton;
     QPushButton *groundStationUploadButton;
     QLabel *flightPathFileLabel;
     QLabel *label_4;
-    QComboBox *trackTargetCombo;
     QSpacerItem *horizontalSpacer_3;
-    QComboBox *trackModeCombo;
-    QHBoxLayout *horizontalLayout_8;
-    QPushButton *pushButton_4;
-    QLabel *autoRXPathLabel;
+    QLabel *label_3;
+    QLabel *label_8;
+    QPushButton *pushButton_5;
     QSpacerItem *verticalSpacer_2;
     QHBoxLayout *horizontalLayout_9;
     QSpacerItem *horizontalSpacer_2;
@@ -231,10 +233,49 @@ public:
         verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
         gridLayout = new QGridLayout();
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        trackModeCombo = new QComboBox(upload);
+        trackModeCombo->setObjectName(QString::fromUtf8("trackModeCombo"));
+        trackModeCombo->setMinimumSize(QSize(100, 0));
+        trackModeCombo->setMaximumSize(QSize(300, 16777215));
+
+        gridLayout->addWidget(trackModeCombo, 4, 2, 1, 1);
+
         label_5 = new QLabel(upload);
         label_5->setObjectName(QString::fromUtf8("label_5"));
 
-        gridLayout->addWidget(label_5, 0, 0, 1, 1);
+        gridLayout->addWidget(label_5, 1, 0, 1, 1);
+
+        trackTargetCombo = new QComboBox(upload);
+        trackTargetCombo->setObjectName(QString::fromUtf8("trackTargetCombo"));
+        trackTargetCombo->setMaximumSize(QSize(300, 16777215));
+
+        gridLayout->addWidget(trackTargetCombo, 6, 2, 1, 1);
+
+        horizontalLayout_8 = new QHBoxLayout();
+        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
+        pushButton_4 = new QPushButton(upload);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setMaximumSize(QSize(100, 16777215));
+
+        horizontalLayout_8->addWidget(pushButton_4);
+
+        autoRXPathLabel = new QLabel(upload);
+        autoRXPathLabel->setObjectName(QString::fromUtf8("autoRXPathLabel"));
+
+        horizontalLayout_8->addWidget(autoRXPathLabel);
+
+
+        gridLayout->addLayout(horizontalLayout_8, 7, 2, 1, 1);
+
+        label_6 = new QLabel(upload);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+
+        gridLayout->addWidget(label_6, 6, 0, 1, 1);
+
+        label_7 = new QLabel(upload);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+
+        gridLayout->addWidget(label_7, 7, 0, 1, 1);
 
         horizontalLayout_14 = new QHBoxLayout();
         horizontalLayout_14->setObjectName(QString::fromUtf8("horizontalLayout_14"));
@@ -264,22 +305,7 @@ public:
         horizontalLayout_14->addItem(horizontalSpacer_5);
 
 
-        gridLayout->addLayout(horizontalLayout_14, 0, 2, 1, 1);
-
-        label_7 = new QLabel(upload);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-
-        gridLayout->addWidget(label_7, 6, 0, 1, 1);
-
-        label_3 = new QLabel(upload);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-
-        gridLayout->addWidget(label_3, 3, 0, 1, 1);
-
-        label_6 = new QLabel(upload);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-
-        gridLayout->addWidget(label_6, 5, 0, 1, 1);
+        gridLayout->addLayout(horizontalLayout_14, 1, 2, 1, 1);
 
         horizontalLayout_13 = new QHBoxLayout();
         horizontalLayout_13->setObjectName(QString::fromUtf8("horizontalLayout_13"));
@@ -310,45 +336,32 @@ public:
         horizontalLayout_13->addWidget(flightPathFileLabel);
 
 
-        gridLayout->addLayout(horizontalLayout_13, 1, 2, 1, 1);
+        gridLayout->addLayout(horizontalLayout_13, 2, 2, 1, 1);
 
         label_4 = new QLabel(upload);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
-        gridLayout->addWidget(label_4, 1, 0, 1, 1);
-
-        trackTargetCombo = new QComboBox(upload);
-        trackTargetCombo->setObjectName(QString::fromUtf8("trackTargetCombo"));
-        trackTargetCombo->setMaximumSize(QSize(300, 16777215));
-
-        gridLayout->addWidget(trackTargetCombo, 5, 2, 1, 1);
+        gridLayout->addWidget(label_4, 2, 0, 1, 1);
 
         horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        gridLayout->addItem(horizontalSpacer_3, 3, 1, 1, 1);
+        gridLayout->addItem(horizontalSpacer_3, 4, 1, 1, 1);
 
-        trackModeCombo = new QComboBox(upload);
-        trackModeCombo->setObjectName(QString::fromUtf8("trackModeCombo"));
-        trackModeCombo->setMinimumSize(QSize(100, 0));
-        trackModeCombo->setMaximumSize(QSize(300, 16777215));
+        label_3 = new QLabel(upload);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
 
-        gridLayout->addWidget(trackModeCombo, 3, 2, 1, 1);
+        gridLayout->addWidget(label_3, 4, 0, 1, 1);
 
-        horizontalLayout_8 = new QHBoxLayout();
-        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
-        pushButton_4 = new QPushButton(upload);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setMaximumSize(QSize(100, 16777215));
+        label_8 = new QLabel(upload);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
 
-        horizontalLayout_8->addWidget(pushButton_4);
+        gridLayout->addWidget(label_8, 0, 0, 1, 1);
 
-        autoRXPathLabel = new QLabel(upload);
-        autoRXPathLabel->setObjectName(QString::fromUtf8("autoRXPathLabel"));
+        pushButton_5 = new QPushButton(upload);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setMaximumSize(QSize(100, 16777215));
 
-        horizontalLayout_8->addWidget(autoRXPathLabel);
-
-
-        gridLayout->addLayout(horizontalLayout_8, 6, 2, 1, 1);
+        gridLayout->addWidget(pushButton_5, 0, 2, 1, 1);
 
 
         verticalLayout_5->addLayout(gridLayout);
@@ -437,6 +450,7 @@ public:
         QObject::connect(trackTargetCombo, SIGNAL(currentIndexChanged(QString)), MainWindow, SLOT(setTrackTarget()));
         QObject::connect(trackTargetCombo, SIGNAL(currentIndexChanged(int)), MainWindow, SLOT(setTrackTarget()));
         QObject::connect(pushButton_4, SIGNAL(clicked()), MainWindow, SLOT(setAutoRXPath()));
+        QObject::connect(pushButton_5, SIGNAL(clicked()), MainWindow, SLOT(resetGroundStation()));
 
         tabWidget->setCurrentIndex(1);
 
@@ -457,20 +471,22 @@ public:
         statusLabel->setText(QCoreApplication::translate("MainWindow", "Not Connected", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(connectionTab), QCoreApplication::translate("MainWindow", "Connection", nullptr));
         upload->setTitle(QCoreApplication::translate("MainWindow", "Configure", nullptr));
+        trackModeCombo->setCurrentText(QString());
         label_5->setText(QCoreApplication::translate("MainWindow", "Mount:", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "Select..", nullptr));
+        autoRXPathLabel->setText(QCoreApplication::translate("MainWindow", "<No folder selected>", nullptr));
+        label_6->setText(QCoreApplication::translate("MainWindow", "Tracking Target:", nullptr));
+        label_7->setText(QCoreApplication::translate("MainWindow", "AutoRX Path:", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Calibrate", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Return to Start", nullptr));
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "Stow", nullptr));
-        label_7->setText(QCoreApplication::translate("MainWindow", "AutoRX Path:", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "Tracking Mode:", nullptr));
-        label_6->setText(QCoreApplication::translate("MainWindow", "Tracking Target:", nullptr));
         flightPathFileButton->setText(QCoreApplication::translate("MainWindow", "Open...", nullptr));
         groundStationUploadButton->setText(QCoreApplication::translate("MainWindow", "Upload", nullptr));
         flightPathFileLabel->setText(QCoreApplication::translate("MainWindow", "<No file selected>", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "Flight Path:", nullptr));
-        trackModeCombo->setCurrentText(QString());
-        pushButton_4->setText(QCoreApplication::translate("MainWindow", "Select..", nullptr));
-        autoRXPathLabel->setText(QCoreApplication::translate("MainWindow", "<No folder selected>", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "Tracking Mode:", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "System:", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("MainWindow", "Reset", nullptr));
         groundStationUploadStatusLabel->setText(QString());
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Monitor", nullptr));
         Clear->setText(QCoreApplication::translate("MainWindow", "Clear", nullptr));

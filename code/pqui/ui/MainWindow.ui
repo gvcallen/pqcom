@@ -222,14 +222,81 @@
           <layout class="QVBoxLayout" name="verticalLayout_5">
            <item>
             <layout class="QGridLayout" name="gridLayout">
-             <item row="0" column="0">
+             <item row="4" column="2">
+              <widget class="QComboBox" name="trackModeCombo">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="currentText">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
               <widget class="QLabel" name="label_5">
                <property name="text">
                 <string>Mount:</string>
                </property>
               </widget>
              </item>
-             <item row="0" column="2">
+             <item row="6" column="2">
+              <widget class="QComboBox" name="trackTargetCombo">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="2">
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <widget class="QPushButton" name="pushButton_4">
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Select..</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="autoRXPathLabel">
+                 <property name="text">
+                  <string>&lt;No folder selected&gt;</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>Tracking Target:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>AutoRX Path:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
               <layout class="QHBoxLayout" name="horizontalLayout_14">
                <item>
                 <widget class="QPushButton" name="pushButton">
@@ -303,28 +370,7 @@
                </item>
               </layout>
              </item>
-             <item row="6" column="0">
-              <widget class="QLabel" name="label_7">
-               <property name="text">
-                <string>AutoRX Path:</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="QLabel" name="label_3">
-               <property name="text">
-                <string>Tracking Mode:</string>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="0">
-              <widget class="QLabel" name="label_6">
-               <property name="text">
-                <string>Tracking Target:</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="2">
+             <item row="2" column="2">
               <layout class="QHBoxLayout" name="horizontalLayout_13">
                <item>
                 <widget class="QPushButton" name="flightPathFileButton">
@@ -388,24 +434,14 @@
                </item>
               </layout>
              </item>
-             <item row="1" column="0">
+             <item row="2" column="0">
               <widget class="QLabel" name="label_4">
                <property name="text">
                 <string>Flight Path:</string>
                </property>
               </widget>
              </item>
-             <item row="5" column="2">
-              <widget class="QComboBox" name="trackTargetCombo">
-               <property name="maximumSize">
-                <size>
-                 <width>300</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="1">
+             <item row="4" column="1">
               <spacer name="horizontalSpacer_3">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
@@ -418,48 +454,32 @@
                </property>
               </spacer>
              </item>
-             <item row="3" column="2">
-              <widget class="QComboBox" name="trackModeCombo">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>0</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>300</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="currentText">
-                <string/>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Tracking Mode:</string>
                </property>
               </widget>
              </item>
-             <item row="6" column="2">
-              <layout class="QHBoxLayout" name="horizontalLayout_8">
-               <item>
-                <widget class="QPushButton" name="pushButton_4">
-                 <property name="maximumSize">
-                  <size>
-                   <width>100</width>
-                   <height>16777215</height>
-                  </size>
-                 </property>
-                 <property name="text">
-                  <string>Select..</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="autoRXPathLabel">
-                 <property name="text">
-                  <string>&lt;No folder selected&gt;</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>System:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pushButton_5">
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Reset</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -596,8 +616,8 @@
    <slot>selectFlightPathFile()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>283</x>
-     <y>150</y>
+     <x>303</x>
+     <y>179</y>
     </hint>
     <hint type="destinationlabel">
      <x>796</x>
@@ -629,7 +649,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>502</x>
-     <y>180</y>
+     <y>209</y>
     </hint>
     <hint type="destinationlabel">
      <x>798</x>
@@ -644,7 +664,7 @@
    <slot>toggleSerialPortConnection()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>99</x>
+     <x>132</x>
      <y>438</y>
     </hint>
     <hint type="destinationlabel">
@@ -676,8 +696,8 @@
    <slot>calibrate()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>283</x>
-     <y>119</y>
+     <x>303</x>
+     <y>148</y>
     </hint>
     <hint type="destinationlabel">
      <x>3</x>
@@ -692,8 +712,8 @@
    <slot>returnToStart()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>395</x>
-     <y>119</y>
+     <x>409</x>
+     <y>148</y>
     </hint>
     <hint type="destinationlabel">
      <x>3</x>
@@ -708,8 +728,8 @@
    <slot>returnToStow()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>512</x>
-     <y>119</y>
+     <x>515</x>
+     <y>148</y>
     </hint>
     <hint type="destinationlabel">
      <x>0</x>
@@ -724,8 +744,8 @@
    <slot>uploadData()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>405</x>
-     <y>150</y>
+     <x>409</x>
+     <y>179</y>
     </hint>
     <hint type="destinationlabel">
      <x>10</x>
@@ -740,8 +760,8 @@
    <slot>setTrackTarget()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>308</x>
-     <y>203</y>
+     <x>502</x>
+     <y>238</y>
     </hint>
     <hint type="destinationlabel">
      <x>-4</x>
@@ -756,8 +776,8 @@
    <slot>setTrackTarget()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>334</x>
-     <y>190</y>
+     <x>502</x>
+     <y>238</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -772,12 +792,28 @@
    <slot>setAutoRXPath()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>247</x>
-     <y>234</y>
+     <x>303</x>
+     <y>268</y>
     </hint>
     <hint type="destinationlabel">
      <x>2</x>
      <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>resetGroundStation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>121</y>
     </hint>
    </hints>
   </connection>
@@ -794,5 +830,6 @@
   <slot>returnToStow()</slot>
   <slot>setTrackTarget()</slot>
   <slot>setAutoRXPath()</slot>
+  <slot>resetGroundStation()</slot>
  </slots>
 </ui>

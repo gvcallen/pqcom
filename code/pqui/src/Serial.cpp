@@ -48,6 +48,11 @@ bool uploadFlightPath(QSerialPort* serial, QString filepath)
     return serial->waitForBytesWritten();
 }
 
+bool reset(QSerialPort* serial)
+{
+    return sendCommand(serial, suncq::Command::Reset);
+}
+
 bool calibrate(QSerialPort* serial)
 {
     return sendCommand(serial, suncq::Command::Calibrate);
@@ -65,10 +70,10 @@ bool returnToStow(QSerialPort* serial)
 
 bool setTrackTarget(QSerialPort* serial, suncq::TrackTarget trackTarget)
 {
-    uint8_t c = (uint8_t)suncq::Command::SetTrackTarget;
-    serial->write((const char*)&c, 1);
-    serial->write((const char*)&trackTarget, 1);
-    return serial->waitForBytesWritten();
+    // uint8_t c = (uint8_t)suncq::Command::SetTrackTarget;
+    // serial->write((const char*)&c, 1);
+    // serial->write((const char*)&trackTarget, 1);
+    // return serial->waitForBytesWritten();
 }
 
 bool setTrackMode(QSerialPort* serial, suncq::TrackMode trackMode)

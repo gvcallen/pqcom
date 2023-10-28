@@ -50,6 +50,7 @@ private:
     // Flight path commands
     gel::Error saveFlightPath();
     bool addFlightPathData(uint8_t newData);
+    bool addKnownLocationData(uint8_t newData);
 
     // Protocol commands
     gel::Error setTncMode(suncq::TncMode mode);
@@ -79,7 +80,7 @@ private:
     gel::GeoInstant latestReceivedInstant;
     bool gpsRecieved = false;
     
-    size_t pathByteIdx = 0;
+    size_t byteStreamIdx = 0;
     bool receivingByteStream = false;
     
     suncq::Command currentCommand = suncq::Command::Invalid;

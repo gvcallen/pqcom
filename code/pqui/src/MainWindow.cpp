@@ -17,8 +17,12 @@ QTextStream out(stdout);
 
 static const char* TEXT_TRACK_MODE_NONE = "None";
 static const char* TEXT_TRACK_MODE_GPS_UPLOADED = "GPS Uploaded";
+static const char* TEXT_TRACK_MODE_GPS_RECEIVED = "GPS Recieved";
+static const char* TEXT_TRACK_MODE_GPS_UPLOADED_AND_RECEIVED = "GPS Uploaded & Received";
+
 static const char* TEXT_TRACK_TARGET_LORA = "LoRa";
 static const char* TEXT_TRACK_TARGET_RADIOSONDE = "Radiosonde";
+
 static const char* KEY_AUTO_RX_PATH = "autoRxPath";
 
 MainWindow::MainWindow(QWidget *parent)
@@ -32,6 +36,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     loadSettings();
     populateWidgets();
+    openSerialPort();
 }
 
 MainWindow::~MainWindow()
@@ -50,7 +55,9 @@ void MainWindow::populateWidgets()
 {
     populateSerialDevices();
     ui->trackModeCombo->addItems({TEXT_TRACK_MODE_NONE,
-                                  TEXT_TRACK_MODE_GPS_UPLOADED});
+                                  TEXT_TRACK_MODE_GPS_UPLOADED,
+                                  TEXT_TRACK_MODE_GPS_RECEIVED,
+                                  TEXT_TRACK_MODE_GPS_UPLOADED_AND_RECEIVED});
     ui->trackTargetCombo->addItems({TEXT_TRACK_TARGET_LORA,
                                   TEXT_TRACK_TARGET_RADIOSONDE});
 }
@@ -244,6 +251,14 @@ void MainWindow::autoRXLogChanged()
         if (latIdx == -1 || lngIdx == -1 || altIdx == -1)
             return;
 
+        // Debugging code - uncomment to read file line-by-line
+        // static int targetLine = 0;
+        // QString latestData;
+        // for (int i = 0; i <= targetLine; i++)
+            // latestData = logFile.readLine();
+        // qDebug() << "Line " << targetLine;
+        // targetLine++;
+
         auto lineLength = logFile.readLine().size();
         qint64 fileSize = logFile.size();
         logFile.seek(fileSize - lineLength);
@@ -251,6 +266,11 @@ void MainWindow::autoRXLogChanged()
         logFile.close();
 
         auto values = latestData.split(',');
+
+        auto largestIdx = std::max(latIdx, std::max(lngIdx, altIdx));
+
+        if (largestIdx > values.size())
+            return;
 
         auto latStr = values[latIdx];
         auto lngStr = values[lngIdx];
@@ -311,6 +331,10 @@ void MainWindow::setTrackMode()
         ::setTrackMode(serial, suncq::TrackMode::None);
     else if (ui->trackModeCombo->currentText() == TEXT_TRACK_MODE_GPS_UPLOADED)
         ::setTrackMode(serial, suncq::TrackMode::GpsUploaded);
+    else if (ui->trackModeCombo->currentText() == TEXT_TRACK_MODE_GPS_RECEIVED)
+        ::setTrackMode(serial, suncq::TrackMode::GpsReceived);
+    else if (ui->trackModeCombo->currentText() == TEXT_TRACK_MODE_GPS_UPLOADED_AND_RECEIVED)
+        ::setTrackMode(serial, (suncq::TrackMode)((int)suncq::TrackMode::GpsUploaded & (int)suncq::TrackMode::GpsReceived));
 }
 
 void MainWindow::setTrackTarget()
@@ -383,7 +407,19 @@ void MainWindow::setTrackLocation(float lat, float lng, float alt)
     instant.latitude = lat;
     instant.longitude = lng;
     instant.altitude = alt;
+    
+    qDebug() << "Setting track location";
+    qDebug() << "Lat: " << lat;
+    qDebug() << "Lng: " << lng;
+    qDebug() << "Alt: " << alt;
+    qDebug() << "Sec: " << instant.secondsSinceEpoch;
+    
     ::setTrackLocation(serial, instant);
+}
+
+void MainWindow::resetGroundStation()
+{
+    ::reset(serial);
 }
 
 void MainWindow::calibrate()

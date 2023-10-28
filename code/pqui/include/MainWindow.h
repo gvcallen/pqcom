@@ -37,6 +37,7 @@ public slots:
     void onClose();
     
     // SUNCQ Slots
+    void resetGroundStation();
     void calibrate();
     void returnToStart();
     void returnToStow();
