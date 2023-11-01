@@ -20,7 +20,7 @@ specifications in Table \ref{tab:mount_specifications} were realized.
   Gear D        & 92 inner teeth, 80 outer teeth \\ \hline
   Gear E        & 140 teeth (equivalent) \\ \hline
   \end{tabular}
-  \caption{Mount Component Specifications}
+  \caption{Mount Gear and Motor Specifications}
   \label{tab:mount_specifications}
 \end{table}
 
@@ -57,7 +57,7 @@ Simulation of a helical antenna is well documented in literature, and therefore 
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.45\textwidth]{helix1_pattern_550MHz}
-  \caption{Initial Helical Antenna Radiation Pattern ($f=\SI{550}{MHz}$)}
+  \caption{Initial Simulated Helical Antenna Radiation Pattern ($f=\SI{550}{MHz}$)}
   \label{fig:helix1_pattern_550MHz}
 \end{figure}
 
@@ -67,13 +67,13 @@ Most of the follow-up design is conducted around the lower frequency of $f = \SI
   \begin{minipage}{.48\textwidth}
     \centering
     \includegraphics[width=0.6\linewidth]{helix2_pattern_405MHz}
-    \caption{Helical Antenna Pattern at $f = \SI{405}{MHz}$ ($f_c = \SI{550}{MHz}$, $G_\lambda = 0.5$)}
+    \caption{Simulated Helical Antenna Pattern at $f = \SI{405}{MHz}$ ($f_c = \SI{550}{MHz}$, $G_\lambda = 0.5$)}
     \label{fig:helix2_pattern_405MHz}
   \end{minipage}
   \begin{minipage}{.48\textwidth}
     \centering
     \includegraphics[width=0.75\linewidth]{helix3_pattern_405MHz}
-    \caption{Helical Antenna Pattern at $f = \SI{405}{MHz}$ ($f_c = \SI{550}{MHz}$, $G_\lambda = 0.7$)}
+    \caption{Simulated Helical Antenna Pattern at $f = \SI{405}{MHz}$ ($f_c = \SI{550}{MHz}$, $G_\lambda = 0.7$)}
     \label{fig:helix3_pattern_405MHz}
   \end{minipage}
 \end{figure}
@@ -81,7 +81,7 @@ Most of the follow-up design is conducted around the lower frequency of $f = \SI
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.65\textwidth]{helix3_impedance}
-  \caption{Helical Antenna Input Impedance ($f_c = \SI{550}{MHz}$, $G_\lambda = 0.7$)}
+  \caption{Simulated Helical Antenna Input Impedance ($f_c = \SI{550}{MHz}$, $G_\lambda = 0.7$)}
   \label{fig:helix3_impedance}
 \end{figure}
 
@@ -90,7 +90,7 @@ In order to ease matching, a lower centre frequency should ideally be used, to m
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.65\textwidth]{helix4_impedance}
-  \caption{Helical Antenna Input Impedance ($f_c = \SI{510}{MHz}$, $G_\lambda = 0.6$)}
+  \caption{Simulated Helical Antenna Input Impedance ($f_c = \SI{510}{MHz}$, $G_\lambda = 0.6$)}
   \label{fig:helix4_impedance}
 \end{figure}
 
@@ -102,18 +102,18 @@ The ground plane was therefore cupped, and the results observed. At $G_\lambda =
   \begin{minipage}{.49\textwidth}
     \centering
     \includegraphics[width=0.5\linewidth]{helix5_pattern_405MHz}
-    \caption{Helical Antenna Pattern without Cup ($G_\lambda = 0.6$, $f=\SI{405}{MHz}$)}
+    \caption{Simulated Helical Antenna Pattern without Cup ($G_\lambda = 0.6$, $f=\SI{405}{MHz}$)}
     \label{fig:helix5_pattern_405MHz}
   \end{minipage}
   \begin{minipage}{.49\textwidth}
     \centering
-    \includegraphics[width=0.75\linewidth]{helix6_pattern_405MHz}
-    \caption{Helical Antenna Pattern with Cup ($G_\lambda = 0.6$, $f=\SI{405}{MHz}$)}
+    \includegraphics[width=0.85\linewidth]{helix6_pattern_405MHz}
+    \caption{Simulated Helical Antenna Pattern with Cup ($G_\lambda = 0.6$, $f=\SI{405}{MHz}$)}
     \label{fig:helix6_pattern_405MHz}
   \end{minipage}
 \end{figure}
 
-It was therefore decided that the antenna would initially be built with a large ground plane and higher number of turns. Then, after measurement results and protocol implementation, the ground plane would be decreased appropriately to fit onto the mount. If time allowed, and it is found to be necessary, a cup will then be added to the ground plane, to improve the pattern and antenna performance, and cater for the radiosonde link. The final model parameters are then $D = \SI{187.1}{mm}$, $S = \SI{88.2}{mm}$, $n = 4$, and $G = \SI{350}{mm}$.
+It was therefore decided that the antenna would initially be built with a large ground plane and higher number of turns. Then, after measurement results and protocol implementation, the ground plane would be decreased appropriately to fit onto the mount. If time allows, and it is deemed necessary, a cup will then be added to the ground plane, to improve the pattern and antenna performance, and cater for the radiosonde link. The final model parameters are then $D = \SI{187.1}{mm}$, $S = \SI{88.2}{mm}$, $n = 4$, and $G = \SI{350}{mm}$.
 
 \subsection{Matching}
 Impedance matching should be done if the helical antenna is to be fed by a $\SI{50}{\ohm}$ coaxial cable. It was decided to match the antenna to the custom link's frequency of $f = \SI{433}{MHz}$ using the strip method mention in Section \ref{sec:helical_matching} for an uncupped ground plane. The FEKO model for this method is shown in Figure \ref{fig:helix7_model}.
@@ -121,7 +121,7 @@ Impedance matching should be done if the helical antenna is to be fed by a $\SI{
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.45\textwidth]{helix7_model}
-  \caption{Helix Antenna Model with Matching Strip}
+  \caption{Helical Antenna with Matching Strip Simulation Model}
   \label{fig:helix7_model}
 \end{figure}
 
@@ -129,8 +129,8 @@ The strip is recommended to be relatively flat, and extend for approximately the
 
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=0.7\textwidth]{helix7_returnLoss}
-  \caption{Helical Antenna Return Loss vs Frequency}
+  \includegraphics[width=0.85\textwidth]{helix7_returnLoss}
+  \caption{Simulated Helical Antenna Return Loss vs Frequency}
   \label{fig:helix7_returnLoss}
 \end{figure}
 

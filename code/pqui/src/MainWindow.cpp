@@ -237,7 +237,7 @@ void MainWindow::autoRXLogChanged()
     {
         auto headers = QString(logFile.readLine()).split(',');
         
-        int latIdx = -1, lngIdx = -1, altIdx = -1;
+        int latIdx = -1, lngIdx = -1, altIdx = -1, snrIdx = -1;
         for (int i = 0; i < headers.size(); i++)
         {
             if (headers[i] == "lat")
@@ -246,9 +246,11 @@ void MainWindow::autoRXLogChanged()
                 lngIdx = i;
             else if (headers[i] == "alt")
                 altIdx = i;
+            else if (headers[i] == "snr")
+                snrIdx = i;
         }
 
-        if (latIdx == -1 || lngIdx == -1 || altIdx == -1)
+        if (latIdx == -1 || lngIdx == -1 || altIdx == -1 || snrIdx == -1)
             return;
 
         // Debugging code - uncomment to read file line-by-line
@@ -272,15 +274,13 @@ void MainWindow::autoRXLogChanged()
         if (largestIdx > values.size())
             return;
 
-        auto latStr = values[latIdx];
-        auto lngStr = values[lngIdx];
-        auto altStr = values[altIdx];
-
-        float lat = latStr.toFloat(); 
-        float lng = lngStr.toFloat(); 
-        float alt = altStr.toFloat(); 
+        float lat = values[latIdx].toFloat();
+        float lng = values[lngIdx].toFloat();
+        float alt = values[altIdx].toFloat();
+        float snr = values[snrIdx].toFloat();
 
         setTrackLocation(lat, lng, alt);
+        setSnr(snr);
     }
 }
 
@@ -415,6 +415,11 @@ void MainWindow::setTrackLocation(float lat, float lng, float alt)
     qDebug() << "Sec: " << instant.secondsSinceEpoch;
     
     ::setTrackLocation(serial, instant);
+}
+
+void MainWindow::setSnr(float snr)
+{
+    qDebug() << "Snr: " << snr;
 }
 
 void MainWindow::resetGroundStation()

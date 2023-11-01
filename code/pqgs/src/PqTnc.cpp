@@ -176,7 +176,6 @@ gel::Error PqTnc::updateSerial()
 {        
     while (Serial.available())
     {
-        Serial.println("AV = " + String(Serial.available()));
         uint8_t c = Serial.read();
         
         if (settings.tncMode == suncq::TncMode::Normal)
@@ -419,6 +418,7 @@ void PqTnc::sendError(gel::Error& err)
 gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
 {
     String payloadStr{(const char*)payload.data()};
+    Serial.println("Continuous bit rate = " + String(groundStation.getLink().getDataRate()));
     sendMessage(String(payload.data(), payload.size()));
 
     if (payloadStr.indexOf("GPS") > 0)
@@ -437,9 +437,25 @@ gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
         latestReceivedInstant.location.lng = lng;
         latestReceivedInstant.location.altitude = altitude;
         latestReceivedInstant.secondsSinceEpoch = groundStation.getCurrentSecondsSinceEpoch() - age;
+
+        auto gsLocationMaybe = groundStation.getLocation();
+        if (gsLocationMaybe.has_value())
+        {
+            auto gsLocation = gsLocationMaybe.value();
+            auto origin = groundStation.getTrackingConfig().mapProjectionOrigin;
+            
+            auto gsLocationCart = gsLocation.toCartesian(origin);
+            auto pqLocationCart = latestReceivedInstant.location.toCartesian(origin);
+
+            auto deltaVec = pqLocationCart - gsLocationCart;
+            float distance = gel::length(deltaVec);
+
+            Serial.println("Calculated distance = " + String(distance / 1000.0) + " km");
+        }
     }
 
     Serial.println("RSSI = " + String(groundStation.getRadio().getRssi()));
+    Serial.println("SNR = " + String(groundStation.getRadio().getSNR()));
 
     return gel::Error::None;
 }

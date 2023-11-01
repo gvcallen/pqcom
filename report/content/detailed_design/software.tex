@@ -2,116 +2,23 @@
 
 \section{Software}
 
-\subsection{Components}
+\subsection{Classes}
+The Arduino framework will be used, as well as a custom C++ library for re-usability across GS and PQ code. Tables \ref{tab:gpsUML} to \ref{tab:groundStationUML} in the Appendix describe expected class functionality.
 
-A shared library was designed in C++ to be re-used in both the PQ and GS code. Composition was used to follow the component-based design. Tables \ref{tab:gpsUML} to \ref{tab:groundStationUML} describe the various classes planned, as well as their expected functionality, with \textit{setup}/\textit{update} functions excluded.
+Although the CSP protocol was considered, it was decided to rather develop a simple ASCII protocol between the PQ and GS. This flow control is encapsulated in the \textit{link} class. The link object can be set to either \textit{Controller} or \textit{Responder} mode for the GS and PQ respectively, and allows \textit{Telemetry} and \textit{Telecommand} operating modes. In \textit{Telemetry} mode, the responder sends data at regular intervals to the controller, pausing at longer intervals to \textit{listen} for a ``telecommand mode" message. If the responder receives this message, it sends an ``ACK" message, and switches to \textit{Telecommand} mode to await further commands.
 
-The \textit{Link} class deserves additional explanation. Although mature protocols exist (such as CSP as mentioned) it was decided to develop only a very simple protocol between the PQ and GS. The link class is designed to encapsulate flow control of the radio communication link, and should be configurable to either be in \textit{Controller} or \textit{Responder} mode (for the GS and PQ respectively). It should allow for either \textit{Telemetry} or \textit{Telecommand} operating modes, and allow callers to simply use callbacks to populate/respond to data when necessary.
+The \textit{PqTnc} and \textit{PqUnit} classes where designed as Singleton classes for the GS and PQ respectively. Here, the GS is referred to as a \textit{Terminal Node Controller} (TNC) with reference to the serial interface it exposes to a host computer. This is summarised in the created \textit{SUNCQ} protocol in Appendix \ref{sec:appendix_suncq}.
 
-\begin{table}[!htb]
+\subsection{Tracking}
+For path tracking, it is decided to store data in the TNC object on the ESP32 itself, instead of streaming it from the host computer. This is so that the host can be disconnected, and the payload will still be tracked.
+
+An "instant" is defined as both a location and a time. The PqTnc object performs a check in its update loop to determine if an instant has been reached, based on its GPS received time. The GroundStation object should store two locations - the previous location in the path, and the location it is moving towards. The mount is pointed at the location which linearly interpolates its these two instants, with a factor based on the current time, and the time of the two instants.
+
+To allow direct GPS tracking and flight path tracking to be used simultaneously, it was decided to follow the flight path data until a location from the satellite is received. When a "known" location is received, it is used for a specified timeout "trust" period, until a new location is received and is overwritten. A pseudo low-pass filter is added to the ground station to prevent pointing "jitter". The final algorithm is shown in Figure \ref{fig:trackingAlgorithm}.
+
+\begin{figure}[!htb]
   \centering
-  \caption{GPS Class}
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ |c|c| }
-  \hline
-  \textbf{Function}        & \textbf{Description}    \\
-  \hline
-    getLocation()              & Return latitude, longitude and altitude \\
-    getTime()                  & Return seconds since epoch \\
-  \hline
-  \end{tabular}
-  \label{tab:gpsUML}
-\end{table}
-
-\begin{table}[!htb]
-  \centering
-  \caption{Radio Class}
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ |c|c| }
-  \hline
-  \textbf{Function}        & \textbf{Description}    \\
-  \hline
-    startTransmit(message)              & Transmit data (non-blocking i.e. with callback) \\
-    startReceive()                      & Start listening to receive data (non-blocking i.e. with callback) \\
-    getRssi()                           & Get signal strength \\
-    getSnr()                            & Get signal-to-noise ratio \\
-  \hline
-  \end{tabular}
-  \label{tab:radioUML}
-\end{table}
-
-\begin{table}[!htb]
-  \centering
-  \caption{Link Class}
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ |c|c| }
-  \hline
-  \textbf{Function}        & \textbf{Description}    \\
-  \hline
-  setTelemetryCallback(fn)                    & Set the "telemetry sent/received" function  \\
-  setTelecommandCallback(fn)                  & Set the "telecommand received" function (\textit{Responder} only) \\
-  \hline
-  \end{tabular}
-  \label{tab:linkUML}
-\end{table}
-
-\begin{table}[!htb]
-  \centering
-  \caption{StepperMotor Class}
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ |c|c| }
-  \hline
-  \textbf{Function}        & \textbf{Description}    \\
-  \hline
-    stepForward(numSteps)         & Blocking and non-blocking options \\
-    saveZeroPosition()            & Used for calibration \\
-    getPosition()                 & Used for open-loop feedback \\
-    setSpeed()                    & Sets the delay between steps \\
-    setCurrentMultiplier()        & Set the amount of current \\
-  \hline
-  \end{tabular}
-  \label{tab:stepperMotorUML}
-\end{table}
-
-\begin{table}[!htb]
-  \centering
-  \caption{Mount Class}
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ |c|c| }
-  \hline
-  \textbf{Function}        & \textbf{Description}    \\
-  \hline
-    calibrate()                         & Calbrate the mount \\
-    setAzimuthalElevation(az, el)       & Set the azimuthal and elevation angles \\
-    setBoresight(boresightVec)          & Set the boresight pointing vector \\
-  \hline
-  \end{tabular}
-  \label{tab:mountUML}
-\end{table}
-
-\begin{table}[!htb]
-  \centering
-  \caption{GroundStation Class}
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ |c|c| }
-  \hline
-  \textbf{Function}             & \textbf{Description}    \\
-  \hline
-    calibrate()                 & Calibrate the entire GS \\
-    addEstimatedLocation(loc)      & Add an estimated input GPS location for open-loop tracking \\
-    addKnownLocation(loc)          & Add a known GPS location for closed-loop tracking \\
-  \hline
-  \end{tabular}
-  \label{tab:groundStationUML}
-\end{table}
-
-\newpage
-
-\subsection{Containers}
-\noindent Two larger classes were designed to encapsulate/contain the above components:
-\begin{enumerate}
-  \item \textbf{PqTnc} class, which acts as an interface between the GS, and a host computer. Here, the GS is referred to as a \textit{Terminal Node Controller} (TNC) when referring to the serial interface it exposes to a host computer. This class should contain the ground station object, handle serial commuication and errors, and store any data to provide the ground station object (e.g. GPS flight path information).
-  \item \textbf{PqUnit} class, which encapsulates all functionality for the PQ module, such as populating telemetry buffers, and responding to telecommands.
-\end{enumerate}
-
-\noindent A protocol titled the \textit{SUNCQ} protocol was drawn up to facilitate commands between the TNC and a computer. This can be found in Appendix \ref{sec:appendix_suncq}. Some commands were included for future contingency (e.g. the inclusion of a TNC "mode" with support for the common KISS (Keep It Simple Stupid) protocol).
+  \includegraphics[width=0.95\textwidth]{trackingAlgorithm}
+  \caption{Tracking Algorithm Flow Diagram}
+  \label{fig:trackingAlgorithm}
+\end{figure}

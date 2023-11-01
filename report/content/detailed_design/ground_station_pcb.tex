@@ -24,7 +24,7 @@ Current calculations should be done to ensure that the voltage regulators and th
   \label{tab:gs_component_consumption}
 \end{table}
 
-Therefore, maximum consumption - even at full motor current draw - is only 50 W, and will not place heavy load on the car socket battery supply. The 3.3 V regulator should be capable of supplying around 130 mA, and the 5 V regulator around $\SI{120}{mA} + (\SI{130}{mA} \times \frac{\SI{3.3}{V}}{\SI{5}{V}}) \approx \SI{210}{mA}$. The LD1117CV can supply up to $\SI{800}{mA}$, and the L7805CP up to $\SI{1.5}{A}$, meaning the limitations are met.
+Therefore, maximum consumption - even at full motor current draw - is only 50 W, and will not place heavy load on the car socket battery supply. The 3.3 V regulator should be capable of supplying around 130 mA, and the 5 V regulator around $\SI{120}{mA} + \SI{130}{mA} = \SI{250}{mA}$. The LD1117CV can supply up to $\SI{800}{mA}$, and the L7805CP up to $\SI{1.5}{A}$, meaning the limitations are met.
 
 The power section also includes selector jumpers to isolate it from the rest of the board. In this way, if a component is damaged during implementation, or if the power section is found to not be working, external power can be supplied appropriately.
 
@@ -35,8 +35,4 @@ The L6219 drivers require a reference voltage to set the maximum current. Accord
 The RA-02 RF module states that not all data pins are necessary. Further, it was assumed that there may be some errors in the original design. A male header was therefore provided for unused GPIO pins, to allow for flexibility once the PCB was manufactured.
 
 \subsection{PCB Design}
-\subsubsection{Stackup}
-A 2-layer stackup was decided on, so that the board could be manufactured in-house early on in the project (as the in-house PCB machine has a 2-layer limitation).
-
-\subsubsection{Final Design}
-The final PCB was designed in KiCAD. A screenshot of the front layer is shown in Appendix \ref{sec:appendix_gs_pcb_design}. The board was designed to be compatible with the mount with the relevant mounting holes and motor cut-outs. Female headers were used for most of the modules, since development boards were being used. Two PCB pours were exposed below the voltage regulators to act as a heaet sink for added heat dissipation.
+A 2-layer stackup was decided on, so that the board could be manufactured in-house early on in the project (as the in-house PCB machine has a 2-layer limitation). The final PCB was designed in KiCAD. A screenshot of the front layer is shown in Appendix \ref{sec:appendix_gs_pcb_design}. The board was designed to be compatible with the mount with the relevant mounting holes and motor cut-outs. Female headers were used for most of the modules, since development boards were being used. Two PCB pours were exposed below the voltage regulators to act as a heaet sink for added heat dissipation.

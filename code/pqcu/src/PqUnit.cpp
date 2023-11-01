@@ -75,7 +75,7 @@ void PqUnit::update()
     gel::Error err;
 
     #if USE_GPS
-    if (err = gps.update())
+    if (err = gps.update(link.getConfig().transmitInterval - 5))
         handleError(err, "Could not update GPS.");
     #endif
 
@@ -101,29 +101,16 @@ void PqUnit::updateButton()
 
 void PqUnit::handleButtonPress()
 {
-    uint32_t& packetSleep = link.getConfig().packetSleep;
-    if (packetSleep < 100)
-        packetSleep = 1000;
+    uint32_t& transmitInterval = link.getConfig().transmitInterval;
+    if (transmitInterval < 100)
+        transmitInterval = 1000;
     else
-        packetSleep = 25;
+        transmitInterval = 0;
 }
 
 gel::Error PqUnit::handleTelemetry(gel::span<uint8_t> payload)
 {        
-    // static const uint8_t payloadData[] =
-        // "00000#"
-        // "abcdefghijklmnopqrstuvwxyz\n"
-        // "abcdefghijklmnopqrstuvwxyz\n"
-        // "abcdefghijklmnopqrstuvwxyz\n"
-        // "abcdefghijklmnopqrstuvwxyz\n"
-        // "abcdefghijklmnopqrstuvwxyz\n"
-        // "abcdefghijklmnopqrstuvwxyz\n"
-        // "abcdefghijklmnopqrstuvwxyz\n"
-        // "abcdefghijklmnopqrstuvwxyz\n"
-        // "abcdefghijklmnopqrstuvwxyz\n"
-        // "Done\n";
-
-    char* payloadStr = (char*)payload.data();        
+    char* payloadStr = (char*)payload.data();
     
     // Body outline
     uint8_t metaData[] =

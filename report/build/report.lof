@@ -2,62 +2,71 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces A Balloon Satellite \cite {site-cyberBalloonLaunch}\relax }}{1}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Planned Balloon Path and Distances\relax }}{2}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A High-Altitude Balloon Carrying a Nano-Satellite Payload \cite {site-cyberBalloonLaunch}\relax }}{1}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Predicted Balloon Path and Distances\relax }}{2}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces A PQSU Enclosure \cite {standard-pqsu}\relax }}{5}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A CAD Model of a PQSU Enclosure \cite {standard-pqsu}\relax }}{5}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces GPS Relay Tracking \cite {site-highaltitudescienceTrackingWeather}\relax }}{7}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Dipole Antenna Illustration \cite {site-designingDipole}\relax }}{8}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Whip Antenna in Plastic Housing\relax }}{9}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Helical, Unidirectional Antenna\relax }}{9}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Yagi-Uda Antenna \cite {site-icantennasYagi}\relax }}{10}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Inverted-F Microstrip Antennas \cite {site-invertedFAntenna}\relax }}{10}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Dipole Antenna Geometry\relax }}{8}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Dipole Antenna Radiation Pattern\relax }}{8}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces A Monopole Whip Antenna in a Plastic Housing\relax }}{8}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces A 21-turn Copper Helical Antenna\relax }}{8}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Yagi-Uda Antenna Geometry \cite {site-icantennasYagi}\relax }}{9}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Two Inverted-F Microstrip Antenna Geometries \cite {site-invertedFAntenna}\relax }}{9}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces High-Level System Diagram\relax }}{14}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Groud Station System Diagram\relax }}{16}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Azimuthal and Elevation Visualization \cite {site-azElevationVisual}\relax }}{16}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces The Existing Antenna Mount\relax }}{17}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces PocketQube Unit System Diagram\relax }}{18}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces High-Level System Diagram\relax }}{13}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Groud Station System Diagram\relax }}{15}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Azimuthal and Elevation Visualization \cite {site-azElevationVisual}\relax }}{15}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The Existing Antenna Mount\relax }}{15}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces PocketQube Unit System Diagram\relax }}{16}{figure.caption.27}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces PocketQube Unit PCB Design (Front)\relax }}{25}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces PocketQube Unit PCB Design (Back)\relax }}{25}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Initial Helical Antenna Radiation Pattern ($f=\SI {550}{MHz}$)\relax }}{29}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Helical Antenna Pattern at $f = \SI {405}{MHz}$ ($f_c = \SI {550}{MHz}$, $G_\lambda = 0.5$)\relax }}{30}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Helical Antenna Pattern at $f = \SI {405}{MHz}$ ($f_c = \SI {550}{MHz}$, $G_\lambda = 0.7$)\relax }}{30}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Helical Antenna Input Impedance ($f_c = \SI {550}{MHz}$, $G_\lambda = 0.7$)\relax }}{30}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Helical Antenna Input Impedance ($f_c = \SI {510}{MHz}$, $G_\lambda = 0.6$)\relax }}{31}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Helical Antenna Pattern without Cup ($G_\lambda = 0.6$, $f=\SI {405}{MHz}$)\relax }}{31}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Helical Antenna Pattern with Cup ($G_\lambda = 0.6$, $f=\SI {405}{MHz}$)\relax }}{31}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Helix Antenna Model with Matching Strip\relax }}{32}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Helical Antenna Return Loss vs Frequency\relax }}{32}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Dipole Model\relax }}{33}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces $0.45 \lambda $ Dipole Radiation Pattern\relax }}{33}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces $0.45 \lambda $ Dipole Return Loss vs Frequency\relax }}{34}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces PocketQube Unit PCB Design (Front)\relax }}{23}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces PocketQube Unit PCB Design (Back)\relax }}{23}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Initial Simulated Helical Antenna Radiation Pattern ($f=\SI {550}{MHz}$)\relax }}{27}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulated Helical Antenna Pattern at $f = \SI {405}{MHz}$ ($f_c = \SI {550}{MHz}$, $G_\lambda = 0.5$)\relax }}{28}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Simulated Helical Antenna Pattern at $f = \SI {405}{MHz}$ ($f_c = \SI {550}{MHz}$, $G_\lambda = 0.7$)\relax }}{28}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Simulated Helical Antenna Input Impedance ($f_c = \SI {550}{MHz}$, $G_\lambda = 0.7$)\relax }}{28}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Simulated Helical Antenna Input Impedance ($f_c = \SI {510}{MHz}$, $G_\lambda = 0.6$)\relax }}{29}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Simulated Helical Antenna Pattern without Cup ($G_\lambda = 0.6$, $f=\SI {405}{MHz}$)\relax }}{29}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Simulated Helical Antenna Pattern with Cup ($G_\lambda = 0.6$, $f=\SI {405}{MHz}$)\relax }}{29}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Helical Antenna with Matching Strip Simulation Model\relax }}{30}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Simulated Helical Antenna Return Loss vs Frequency\relax }}{30}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces General Dipole Simulation Model\relax }}{32}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Simulated $0.45 \lambda $ Dipole Radiation Pattern\relax }}{32}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Simulated $0.45 \lambda $ Dipole Return Loss vs Frequency\relax }}{32}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Tracking Algorithm Flow Diagram\relax }}{33}{figure.caption.54}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Ground Station PCB Implementation\relax }}{36}{figure.caption.68}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Ground Station Mounted on Tripod\relax }}{37}{figure.caption.69}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces PQ Unit (front) [right] and programmer [left]\relax }}{38}{figure.caption.70}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces PQ Unit (back)\relax }}{38}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Ground Station PCB Implementation\relax }}{34}{figure.caption.55}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Ground Station Initial Antenna Implementation\relax }}{34}{figure.caption.55}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Ground Station Mounted on Tripod\relax }}{35}{figure.caption.56}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces PQ Unit (front) [right] and programmer [left]\relax }}{36}{figure.caption.57}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces PQ Unit (back)\relax }}{36}{figure.caption.57}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Helical Antenna Return Loss vs Frequency\relax }}{43}{figure.caption.73}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Dipole Antenna Return Loss vs Frequency\relax }}{44}{figure.caption.74}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces TX Output Power vs Current Consumption\relax }}{44}{figure.caption.75}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Measured RSSI vs Distance\relax }}{46}{figure.caption.78}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Measured SNR vs Distance\relax }}{46}{figure.caption.79}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Pointing Test Setup\relax }}{47}{figure.caption.80}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces GPS Tracking Locations and RSSI Values\relax }}{48}{figure.caption.81}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Received Radiosonde Signal FFT\relax }}{49}{figure.caption.82}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Measured Helical Antenna Return Loss vs Frequency\relax }}{40}{figure.caption.60}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Measured Dipole Antenna Return Loss vs Frequency\relax }}{41}{figure.caption.61}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces TX Output Power vs Current Consumption\relax }}{41}{figure.caption.62}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Measured RSSI vs Distance\relax }}{43}{figure.caption.65}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Measured SNR vs Distance\relax }}{43}{figure.caption.66}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Pointing Test Setup\relax }}{44}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces GPS Tracking Locations and RSSI Values\relax }}{45}{figure.caption.68}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Received Radiosonde Signal FFT\relax }}{46}{figure.caption.69}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Ground Station PCB Design\relax }}{63}{figure.caption.84}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Existing Antenna Mount PCB\relax }}{64}{figure.caption.85}%
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Ground Station Original Antenna Build\relax }}{65}{figure.caption.86}%
-\contentsline {figure}{\numberline {E.3}{\ignorespaces PocketQube Breadboard for Testing\relax }}{65}{figure.caption.87}%
-\contentsline {figure}{\numberline {E.4}{\ignorespaces PocketQube Dipole Antenna\relax }}{66}{figure.caption.88}%
-\contentsline {figure}{\numberline {E.5}{\ignorespaces GUI Snapshot\relax }}{67}{figure.caption.89}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Antenna Gain vs Beamwidth \cite {paper-yagiGainBeamwidth}\relax }}{57}{figure.caption.71}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Range Test Locations\relax }}{68}{figure.caption.90}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Ground Station PCB Design\relax }}{60}{figure.caption.72}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Existing Antenna Mount PCB\relax }}{62}{figure.caption.79}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces PocketQube Breadboard for Testing\relax }}{63}{figure.caption.80}%
+\contentsline {figure}{\numberline {D.3}{\ignorespaces PocketQube Dipole Antenna\relax }}{63}{figure.caption.81}%
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Mount Azimuthal Compensation 1 (Elevation Fixed)\relax }}{64}{figure.caption.82}%
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Mount Azimuthal Compensation 2 (Elevation Fixed)\relax }}{64}{figure.caption.82}%
+\contentsline {figure}{\numberline {D.6}{\ignorespaces Mount Azimuthal Compensation 3 (Elevation Fixed)\relax }}{64}{figure.caption.82}%
+\contentsline {figure}{\numberline {D.7}{\ignorespaces Mount Azimuthal Compensation 4 (Elevation Fixed)\relax }}{64}{figure.caption.83}%
+\contentsline {figure}{\numberline {D.8}{\ignorespaces Mount Azimuthal Compensation 5 (Azimuth Fixed)\relax }}{64}{figure.caption.83}%
+\contentsline {figure}{\numberline {D.9}{\ignorespaces Mount Azimuthal Compensation 6 (Azimuth Fixed)\relax }}{64}{figure.caption.83}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces GUI Snapshot\relax }}{65}{figure.caption.84}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Range Test Locations\relax }}{66}{figure.caption.85}%

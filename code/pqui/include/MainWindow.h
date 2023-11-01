@@ -67,6 +67,7 @@ private:
     void setTrackTargetLoRa();
     void setTrackTargetRadiosonde();
     void setTrackLocation(float lat, float lng, float alt);
+    void setSnr(float snr);
 
     QString getLogFilePath();
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  24 OCT 2023 18:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.14)  1 NOV 2023 05:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -674,7 +674,7 @@ LaTeX Info: Redefining \nameref on input line 126.
  (./frontmatter/title_page.tex
 
 pdfTeX warning: pdflatex (file ./frontmatter/./figures//SU_logo_RGB_without_slogan.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<frontmatter/./figures//SU_logo_RGB_without_slogan.pdf, id=462, 441.01764pt x 506.96803pt>
+<frontmatter/./figures//SU_logo_RGB_without_slogan.pdf, id=458, 441.01764pt x 506.96803pt>
 File: frontmatter/./figures//SU_logo_RGB_without_slogan.pdf Graphic file (type pdf)
 <use frontmatter/./figures//SU_logo_RGB_without_slogan.pdf>
 Package pdftex.def Info: frontmatter/./figures//SU_logo_RGB_without_slogan.pdf  used on input line 7.
@@ -690,7 +690,7 @@ Package microtype Info: Loading generic protrusion settings for font family
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./frontmatter/./figures//SU_logo_RGB_without_slogan.pdf>]) (./frontmatter/declaration.tex
-<USlogo-top.pdf, id=482, 560.0925pt x 183.68625pt>
+<USlogo-top.pdf, id=478, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
 Package pdftex.def Info: USlogo-top.pdf  used on input line 7.
@@ -722,7 +722,7 @@ LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <17.28> not available
 ] (./content/content.tex
 Chapter 1.
 (./content/introduction/overview.tex
-<content/introduction/./figures/balloonSat.png, id=990, 451.6875pt x 301.125pt>
+<content/introduction/./figures/balloonSat.png, id=1001, 451.6875pt x 301.125pt>
 File: content/introduction/./figures/balloonSat.png Graphic file (type png)
 <use content/introduction/./figures/balloonSat.png>
 Package pdftex.def Info: content/introduction/./figures/balloonSat.png  used on input line 11.
@@ -730,15 +730,15 @@ Package pdftex.def Info: content/introduction/./figures/balloonSat.png  used on 
 ) (./content/introduction/problem_statement.tex [1
 
  <./content/introduction/./figures/balloonSat.png>]
-<content/introduction/./figures//balloon_path.png, id=1001, 713.66624pt x 550.30594pt>
-File: content/introduction/./figures//balloon_path.png Graphic file (type png)
-<use content/introduction/./figures//balloon_path.png>
-Package pdftex.def Info: content/introduction/./figures//balloon_path.png  used on input line 9.
-(pdftex.def)             Requested size: 283.39244pt x 218.52304pt.
-) (./content/introduction/requirements.tex [2 <./content/introduction/./figures//balloon_path.png>]) (./content/introduction/specifications.tex [3]) [4]
+<content/introduction/./figures//balloon_path_3d.png, id=1011, 779.16093pt x 456.20438pt>
+File: content/introduction/./figures//balloon_path_3d.png Graphic file (type png)
+<use content/introduction/./figures//balloon_path_3d.png>
+Package pdftex.def Info: content/introduction/./figures//balloon_path_3d.png  used on input line 9.
+(pdftex.def)             Requested size: 425.08147pt x 248.88748pt.
+) (./content/introduction/requirements.tex [2 <./content/introduction/./figures//balloon_path_3d.png>]) (./content/introduction/specifications.tex [3]) [4]
 Chapter 2.
 (./content/background/pocketqube.tex
-<content/background/./figures/pq_enclosure.png, id=1044, 815.29594pt x 462.97969pt>
+<content/background/./figures/pq_enclosure.png, id=1064, 815.29594pt x 462.97969pt>
 File: content/background/./figures/pq_enclosure.png Graphic file (type png)
 <use content/background/./figures/pq_enclosure.png>
 Package pdftex.def Info: content/background/./figures/pq_enclosure.png  used on input line 9.
@@ -746,82 +746,91 @@ Package pdftex.def Info: content/background/./figures/pq_enclosure.png  used on 
 ) (./content/background/satellite_tracking.tex [5
 
  <./content/background/./figures/pq_enclosure.png>]
-<content/background/./figures//gps_relay.png, id=1056, 361.35pt x 361.35pt>
+<content/background/./figures//gps_relay.png, id=1077, 361.35pt x 361.35pt>
 File: content/background/./figures//gps_relay.png Graphic file (type png)
 <use content/background/./figures//gps_relay.png>
 Package pdftex.def Info: content/background/./figures//gps_relay.png  used on input line 26.
 (pdftex.def)             Requested size: 141.69621pt x 141.69786pt.
-) (./content/background/antennas.tex [6]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 10.
- (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-<content/background/./figures/dipole.png, id=1068, 602.25pt x 296.60812pt>
-File: content/background/./figures/dipole.png Graphic file (type png)
-<use content/background/./figures/dipole.png>
-Package pdftex.def Info: content/background/./figures/dipole.png  used on input line 21.
-(pdftex.def)             Requested size: 188.9235pt x 93.04282pt.
+ [6]) (./content/background/antennas.tex
+<content/background/./figures/dipole_geometry.png, id=1089, 602.25pt x 296.60812pt>
+File: content/background/./figures/dipole_geometry.png Graphic file (type png)
+<use content/background/./figures/dipole_geometry.png>
+Package pdftex.def Info: content/background/./figures/dipole_geometry.png  used on input line 15.
+(pdftex.def)             Requested size: 185.15062pt x 91.18721pt.
+<content/background/./figures/dipole_pattern.png, id=1090, 487.06969pt x 294.34969pt>
+File: content/background/./figures/dipole_pattern.png Graphic file (type png)
+<use content/background/./figures/dipole_pattern.png>
+Package pdftex.def Info: content/background/./figures/dipole_pattern.png  used on input line 21.
+(pdftex.def)             Requested size: 138.86385pt x 83.91747pt.
  [7 <./content/background/./figures//gps_relay.png>]
-<content/background/./figures/whip.png, id=1081, 301.125pt x 301.125pt>
+<content/background/./figures/whip.png, id=1101, 301.125pt x 301.125pt>
 File: content/background/./figures/whip.png Graphic file (type png)
 <use content/background/./figures/whip.png>
-Package pdftex.def Info: content/background/./figures/whip.png  used on input line 38.
-(pdftex.def)             Requested size: 141.69621pt x 141.69876pt.
-<content/background/./figures/helical_uni.jpg, id=1082, 564.1075pt x 551.05875pt>
+Package pdftex.def Info: content/background/./figures/whip.png  used on input line 37.
+(pdftex.def)             Requested size: 138.86385pt x 138.86838pt.
+<content/background/./figures/helical_uni.jpg, id=1102, 564.1075pt x 551.05875pt>
 File: content/background/./figures/helical_uni.jpg Graphic file (type jpg)
 <use content/background/./figures/helical_uni.jpg>
-Package pdftex.def Info: content/background/./figures/helical_uni.jpg  used on input line 46.
-(pdftex.def)             Requested size: 94.46175pt x 92.27452pt.
- [8 <./content/background/./figures/dipole.png>] [9 <./content/background/./figures/whip.png> <./content/background/./figures/helical_uni.jpg>]
-<content/background/./figures/yagi.jpg, id=1110, 702.625pt x 468.75125pt>
+Package pdftex.def Info: content/background/./figures/helical_uni.jpg  used on input line 43.
+(pdftex.def)             Requested size: 138.86385pt x 135.65381pt.
+ [8 <./content/background/./figures/dipole_geometry.png> <./content/background/./figures/dipole_pattern.png> <./content/background/./figures/whip.png> <./content/background/./figures/helical_uni.jpg>]
+<content/background/./figures/yagi.jpg, id=1118, 702.625pt x 468.75125pt>
 File: content/background/./figures/yagi.jpg Graphic file (type jpg)
 <use content/background/./figures/yagi.jpg>
 Package pdftex.def Info: content/background/./figures/yagi.jpg  used on input line 64.
-(pdftex.def)             Requested size: 188.9235pt x 126.03523pt.
-<content/background/./figures/invertedF.png, id=1114, 4028.29968pt x 2105.61656pt>
+(pdftex.def)             Requested size: 185.15062pt x 123.51753pt.
+<content/background/./figures/invertedF.png, id=1121, 4028.29968pt x 2105.61656pt>
 File: content/background/./figures/invertedF.png Graphic file (type png)
 <use content/background/./figures/invertedF.png>
-Package pdftex.def Info: content/background/./figures/invertedF.png  used on input line 73.
-(pdftex.def)             Requested size: 141.69621pt x 74.05753pt.
- [10 <./content/background/./figures/yagi.jpg> <./content/background/./figures/invertedF.png>] [11]) (./content/background/telecommunication.tex [12]) [13]
+Package pdftex.def Info: content/background/./figures/invertedF.png  used on input line 70.
+(pdftex.def)             Requested size: 185.15062pt x 96.77278pt.
+ [9 <./content/background/./figures/yagi.jpg> <./content/background/./figures/invertedF.png>] [10]
+Overfull \hbox (25.40128pt too wide) in paragraph at lines 100--110
+ []|  [] 
+ []
+
+) (./content/background/telecommunication.tex
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 6.
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [11]) [12]
 Chapter 3.
-(./content/system_design/overview.tex) (./content/system_design/high_level_system.tex
-<content/system_design/./figures/complete_system.png, id=1171, 803.25093pt x 557.83406pt>
+(./content/system_design/high_level_system.tex
+<content/system_design/./figures/complete_system.png, id=1182, 803.25093pt x 557.83406pt>
 File: content/system_design/./figures/complete_system.png Graphic file (type png)
 <use content/system_design/./figures/complete_system.png>
 Package pdftex.def Info: content/system_design/./figures/complete_system.png  used on input line 8.
-(pdftex.def)             Requested size: 377.85419pt x 262.41185pt.
- [14
+(pdftex.def)             Requested size: 307.00247pt x 213.20485pt.
+ [13
 
  <./content/system_design/./figures/complete_system.png>]) (./content/system_design/ground_station.tex
-<content/system_design/./figures/gs_system.png, id=1179, 1156.32pt x 601.4972pt>
+<content/system_design/./figures/gs_system.png, id=1191, 1156.32pt x 601.4972pt>
 File: content/system_design/./figures/gs_system.png Graphic file (type png)
 <use content/system_design/./figures/gs_system.png>
-Package pdftex.def Info: content/system_design/./figures/gs_system.png  used on input line 8.
-(pdftex.def)             Requested size: 448.6987pt x 233.39899pt.
- [15]
-<content/system_design/./figures/az_elevation.png, id=1184, 445.665pt x 319.94531pt>
+Package pdftex.def Info: content/system_design/./figures/gs_system.png  used on input line 7.
+(pdftex.def)             Requested size: 425.08147pt x 221.1187pt.
+ [14]
+<content/system_design/./figures/az_elevation.png, id=1197, 445.665pt x 319.94531pt>
 File: content/system_design/./figures/az_elevation.png Graphic file (type png)
 <use content/system_design/./figures/az_elevation.png>
-Package pdftex.def Info: content/system_design/./figures/az_elevation.png  used on input line 22.
-(pdftex.def)             Requested size: 188.9235pt x 135.63077pt.
- [16 <./content/system_design/./figures/gs_system.png> <./content/system_design/./figures/az_elevation.png>]
-<content/system_design/./figures/antennaMount.png, id=1194, 404.35065pt x 557.9244pt>
+Package pdftex.def Info: content/system_design/./figures/az_elevation.png  used on input line 23.
+(pdftex.def)             Requested size: 208.29225pt x 149.5346pt.
+<content/system_design/./figures/antennaMount.png, id=1200, 404.35065pt x 557.9244pt>
 File: content/system_design/./figures/antennaMount.png Graphic file (type png)
 <use content/system_design/./figures/antennaMount.png>
-Package pdftex.def Info: content/system_design/./figures/antennaMount.png  used on input line 35.
-(pdftex.def)             Requested size: 165.31346pt x 228.09496pt.
-) (./content/system_design/pq_unit.tex
-<content/system_design/./figures/pqunit_system.png, id=1196, 759.58781pt x 584.1825pt>
+Package pdftex.def Info: content/system_design/./figures/antennaMount.png  used on input line 29.
+(pdftex.def)             Requested size: 138.86385pt x 191.60725pt.
+ [15 <./content/system_design/./figures/gs_system.png> <./content/system_design/./figures/az_elevation.png> <./content/system_design/./figures/antennaMount.png>]) (./content/system_design/pq_unit.tex
+<content/system_design/./figures/pqunit_system.png, id=1210, 759.58781pt x 584.1825pt>
 File: content/system_design/./figures/pqunit_system.png Graphic file (type png)
 <use content/system_design/./figures/pqunit_system.png>
-Package pdftex.def Info: content/system_design/./figures/pqunit_system.png  used on input line 8.
+Package pdftex.def Info: content/system_design/./figures/pqunit_system.png  used on input line 7.
 (pdftex.def)             Requested size: 283.39244pt x 217.95366pt.
- [17 <./content/system_design/./figures/antennaMount.png>]) [18 <./content/system_design/./figures/pqunit_system.png>]
+) [16 <./content/system_design/./figures/pqunit_system.png>]
 Chapter 4.
-(./content/detailed_design/component_selection.tex [19
+(./content/detailed_design/component_selection.tex [17
 
-] [20]
+] [18]
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 49.
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -830,199 +839,200 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [21]) (./content/detailed_design/ground_station_pcb.tex [22]) (./content/detailed_design/pq_unit_pcb.tex [23] [24]
-<content/detailed_design/./figures/pqunit_pcb_design_front.png, id=1262, 595.47469pt x 579.66562pt>
+ [19]) (./content/detailed_design/ground_station_pcb.tex [20]) (./content/detailed_design/pq_unit_pcb.tex [21] [22]
+<content/detailed_design/./figures/pqunit_pcb_design_front.png, id=1271, 595.47469pt x 579.66562pt>
 File: content/detailed_design/./figures/pqunit_pcb_design_front.png Graphic file (type png)
 <use content/detailed_design/./figures/pqunit_pcb_design_front.png>
-Package pdftex.def Info: content/detailed_design/./figures/pqunit_pcb_design_front.png  used on input line 36.
-(pdftex.def)             Requested size: 182.7819pt x 177.92549pt.
-<content/detailed_design/./figures/pqunit_pcb_design_back.png, id=1263, 587.19376pt x 575.90157pt>
+Package pdftex.def Info: content/detailed_design/./figures/pqunit_pcb_design_front.png  used on input line 34.
+(pdftex.def)             Requested size: 192.93715pt x 187.81416pt.
+<content/detailed_design/./figures/pqunit_pcb_design_back.png, id=1272, 587.19376pt x 575.90157pt>
 File: content/detailed_design/./figures/pqunit_pcb_design_back.png Graphic file (type png)
 <use content/detailed_design/./figures/pqunit_pcb_design_back.png>
-Package pdftex.def Info: content/detailed_design/./figures/pqunit_pcb_design_back.png  used on input line 42.
-(pdftex.def)             Requested size: 182.7819pt x 179.2658pt.
-) (./content/detailed_design/link_budget.tex [25 <./content/detailed_design/./figures/pqunit_pcb_design_front.png> <./content/detailed_design/./figures/pqunit_pcb_design_back.png>]
+Package pdftex.def Info: content/detailed_design/./figures/pqunit_pcb_design_back.png  used on input line 40.
+(pdftex.def)             Requested size: 192.93715pt x 189.22208pt.
+) (./content/detailed_design/link_budget.tex [23 <./content/detailed_design/./figures/pqunit_pcb_design_front.png> <./content/detailed_design/./figures/pqunit_pcb_design_back.png>]
 Overfull \hbox (11.17897pt too wide) in paragraph at lines 12--47
  [][] 
  []
 
-[26]) (./content/detailed_design/ground_station_antenna.tex [27] [28]
-<content/detailed_design/./figures/helix1_pattern_550MHz.png, id=1298, 619.56468pt x 525.46312pt>
+[24]) (./content/detailed_design/ground_station_antenna.tex [25] [26]
+<content/detailed_design/./figures/helix1_pattern_550MHz.png, id=1303, 619.56468pt x 525.46312pt>
 File: content/detailed_design/./figures/helix1_pattern_550MHz.png Graphic file (type png)
 <use content/detailed_design/./figures/helix1_pattern_550MHz.png>
 Package pdftex.def Info: content/detailed_design/./figures/helix1_pattern_550MHz.png  used on input line 59.
 (pdftex.def)             Requested size: 212.54073pt x 180.25868pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 60.
- [29 <./content/detailed_design/./figures/helix1_pattern_550MHz.png>]
-<content/detailed_design/./figures/helix2_pattern_405MHz.png, id=1309, 369.63094pt x 451.6875pt>
+ [27 <./content/detailed_design/./figures/helix1_pattern_550MHz.png>]
+<content/detailed_design/./figures/helix2_pattern_405MHz.png, id=1314, 369.63094pt x 451.6875pt>
 File: content/detailed_design/./figures/helix2_pattern_405MHz.png Graphic file (type png)
 <use content/detailed_design/./figures/helix2_pattern_405MHz.png>
 Package pdftex.def Info: content/detailed_design/./figures/helix2_pattern_405MHz.png  used on input line 69.
 (pdftex.def)             Requested size: 136.02715pt x 166.22577pt.
-<content/detailed_design/./figures/helix3_pattern_405MHz.png, id=1310, 383.93437pt x 376.40625pt>
+<content/detailed_design/./figures/helix3_pattern_405MHz.png, id=1315, 383.93437pt x 376.40625pt>
 File: content/detailed_design/./figures/helix3_pattern_405MHz.png Graphic file (type png)
 <use content/detailed_design/./figures/helix3_pattern_405MHz.png>
 Package pdftex.def Info: content/detailed_design/./figures/helix3_pattern_405MHz.png  used on input line 75.
 (pdftex.def)             Requested size: 170.03221pt x 166.69902pt.
-<content/detailed_design/./figures/helix3_impedance.png, id=1311, 1034.36438pt x 534.49687pt>
+<content/detailed_design/./figures/helix3_impedance.png, id=1316, 1034.36438pt x 534.49687pt>
 File: content/detailed_design/./figures/helix3_impedance.png Graphic file (type png)
 <use content/detailed_design/./figures/helix3_impedance.png>
 Package pdftex.def Info: content/detailed_design/./figures/helix3_impedance.png  used on input line 83.
 (pdftex.def)             Requested size: 307.00247pt x 158.63759pt.
-<content/detailed_design/./figures/helix4_impedance.png, id=1313, 1035.11719pt x 625.58719pt>
+<content/detailed_design/./figures/helix4_impedance.png, id=1318, 1035.11719pt x 625.58719pt>
 File: content/detailed_design/./figures/helix4_impedance.png Graphic file (type png)
 <use content/detailed_design/./figures/helix4_impedance.png>
 Package pdftex.def Info: content/detailed_design/./figures/helix4_impedance.png  used on input line 92.
 (pdftex.def)             Requested size: 307.00247pt x 185.53937pt.
- [30 <./content/detailed_design/./figures/helix2_pattern_405MHz.png> <./content/detailed_design/./figures/helix3_pattern_405MHz.png> <./content/detailed_design/./figures/helix3_impedance.png>]
-<content/detailed_design/./figures/helix5_pattern_405MHz.png, id=1323, 387.69844pt x 543.53062pt>
+ [28 <./content/detailed_design/./figures/helix2_pattern_405MHz.png> <./content/detailed_design/./figures/helix3_pattern_405MHz.png> <./content/detailed_design/./figures/helix3_impedance.png>]
+<content/detailed_design/./figures/helix5_pattern_405MHz.png, id=1328, 387.69844pt x 543.53062pt>
 File: content/detailed_design/./figures/helix5_pattern_405MHz.png Graphic file (type png)
 <use content/detailed_design/./figures/helix5_pattern_405MHz.png>
 Package pdftex.def Info: content/detailed_design/./figures/helix5_pattern_405MHz.png  used on input line 104.
 (pdftex.def)             Requested size: 115.7187pt x 162.23108pt.
-<content/detailed_design/./figures/helix6_pattern_405MHz.png, id=1324, 402.00188pt x 357.58594pt>
+<content/detailed_design/./figures/helix6_pattern_405MHz.png, id=1329, 402.00188pt x 357.58594pt>
 File: content/detailed_design/./figures/helix6_pattern_405MHz.png Graphic file (type png)
 <use content/detailed_design/./figures/helix6_pattern_405MHz.png>
 Package pdftex.def Info: content/detailed_design/./figures/helix6_pattern_405MHz.png  used on input line 110.
-(pdftex.def)             Requested size: 173.57805pt x 154.39734pt.
- [31 <./content/detailed_design/./figures/helix4_impedance.png (PNG copy)> <./content/detailed_design/./figures/helix5_pattern_405MHz.png> <./content/detailed_design/./figures/helix6_pattern_405MHz.png>]
-<content/detailed_design/./figures/helix7_model.png, id=1333, 745.28438pt x 414.04688pt>
+(pdftex.def)             Requested size: 196.7232pt x 174.98401pt.
+ [29 <./content/detailed_design/./figures/helix4_impedance.png (PNG copy)> <./content/detailed_design/./figures/helix5_pattern_405MHz.png> <./content/detailed_design/./figures/helix6_pattern_405MHz.png>]
+<content/detailed_design/./figures/helix7_model.png, id=1338, 745.28438pt x 414.04688pt>
 File: content/detailed_design/./figures/helix7_model.png Graphic file (type png)
 <use content/detailed_design/./figures/helix7_model.png>
 Package pdftex.def Info: content/detailed_design/./figures/helix7_model.png  used on input line 123.
 (pdftex.def)             Requested size: 212.54073pt x 118.07407pt.
-<content/detailed_design/./figures/helix7_returnLoss.png, id=1335, 1032.85875pt x 529.22719pt>
+<content/detailed_design/./figures/helix7_returnLoss.png, id=1340, 1032.85875pt x 529.22719pt>
 File: content/detailed_design/./figures/helix7_returnLoss.png Graphic file (type png)
 <use content/detailed_design/./figures/helix7_returnLoss.png>
 Package pdftex.def Info: content/detailed_design/./figures/helix7_returnLoss.png  used on input line 132.
-(pdftex.def)             Requested size: 330.61972pt x 169.4046pt.
- [32 <./content/detailed_design/./figures/helix7_model.png> <./content/detailed_design/./figures/helix7_returnLoss.png>]) (./content/detailed_design/pq_unit_antenna.tex
-<content/detailed_design/./figures/dipole1_modelMesh.png, id=1342, 577.40718pt x 455.45157pt>
+(pdftex.def)             Requested size: 401.47144pt x 205.71136pt.
+ [30 <./content/detailed_design/./figures/helix7_model.png> <./content/detailed_design/./figures/helix7_returnLoss.png>]) (./content/detailed_design/pq_unit_antenna.tex
+<content/detailed_design/./figures/dipole1_modelMesh.png, id=1347, 577.40718pt x 455.45157pt>
 File: content/detailed_design/./figures/dipole1_modelMesh.png Graphic file (type png)
 <use content/detailed_design/./figures/dipole1_modelMesh.png>
-Package pdftex.def Info: content/detailed_design/./figures/dipole1_modelMesh.png  used on input line 12.
+Package pdftex.def Info: content/detailed_design/./figures/dipole1_modelMesh.png  used on input line 15.
 (pdftex.def)             Requested size: 150.43289pt x 118.65785pt.
-<content/detailed_design/./figures/dipole1_pattern_433MHz.png, id=1343, 594.72188pt x 476.53032pt>
+<content/detailed_design/./figures/dipole1_pattern_433MHz.png, id=1348, 594.72188pt x 476.53032pt>
 File: content/detailed_design/./figures/dipole1_pattern_433MHz.png Graphic file (type png)
 <use content/detailed_design/./figures/dipole1_pattern_433MHz.png>
-Package pdftex.def Info: content/detailed_design/./figures/dipole1_pattern_433MHz.png  used on input line 18.
+Package pdftex.def Info: content/detailed_design/./figures/dipole1_pattern_433MHz.png  used on input line 21.
 (pdftex.def)             Requested size: 150.43289pt x 120.53563pt.
-<content/detailed_design/./figures/dipole1_returnLoss.png, id=1347, 1035.11719pt x 625.58719pt>
+<content/detailed_design/./figures/dipole1_returnLoss.png, id=1352, 1035.11719pt x 625.58719pt>
 File: content/detailed_design/./figures/dipole1_returnLoss.png Graphic file (type png)
 <use content/detailed_design/./figures/dipole1_returnLoss.png>
-Package pdftex.def Info: content/detailed_design/./figures/dipole1_returnLoss.png  used on input line 28.
-(pdftex.def)             Requested size: 307.00247pt x 185.53937pt.
-) (./content/detailed_design/software.tex [33 <./content/detailed_design/./figures/dipole1_modelMesh.png> <./content/detailed_design/./figures/dipole1_pattern_433MHz.png>]
-Overfull \hbox (4.79045pt too wide) in paragraph at lines 47--56
- [][] 
- []
-
-
-Overfull \hbox (5.94969pt too wide) in paragraph at lines 96--106
- [][] 
- []
-
-[34 <./content/detailed_design/./figures/dipole1_returnLoss.png (PNG copy)>]) [35]
+Package pdftex.def Info: content/detailed_design/./figures/dipole1_returnLoss.png  used on input line 31.
+(pdftex.def)             Requested size: 354.23695pt x 214.0905pt.
+ [31]) (./content/detailed_design/software.tex [32 <./content/detailed_design/./figures/dipole1_modelMesh.png> <./content/detailed_design/./figures/dipole1_pattern_433MHz.png> <./content/detailed_design/./figures/dipole1_returnLoss.png (PNG copy)>]
+<content/detailed_design/./figures/trackingAlgorithm.png, id=1368, 870.25125pt x 581.17125pt>
+File: content/detailed_design/./figures/trackingAlgorithm.png Graphic file (type png)
+<use content/detailed_design/./figures/trackingAlgorithm.png>
+Package pdftex.def Info: content/detailed_design/./figures/trackingAlgorithm.png  used on input line 21.
+(pdftex.def)             Requested size: 448.6987pt x 299.65681pt.
+) [33 <./content/detailed_design/./figures/trackingAlgorithm.png>]
 Chapter 5.
 (./content/implementation/ground_station_pcb.tex
-<content/implementation/./figures/groundStationPCB.png, id=1369, 3011.25pt x 2948.01375pt>
+<content/implementation/./figures/groundStationPCB.png, id=1376, 3011.25pt x 2948.01375pt>
 File: content/implementation/./figures/groundStationPCB.png Graphic file (type png)
 <use content/implementation/./figures/groundStationPCB.png>
-Package pdftex.def Info: content/implementation/./figures/groundStationPCB.png  used on input line 9.
-(pdftex.def)             Requested size: 188.9235pt x 184.92516pt.
-) (./content/implementation/ground_station_antenna.tex [36
+Package pdftex.def Info: content/implementation/./figures/groundStationPCB.png  used on input line 11.
+(pdftex.def)             Requested size: 185.15062pt x 181.23654pt.
+<content/implementation/./figures/gsAntennaOriginal.jpg, id=1377, 4015.0pt x 3011.25pt>
+File: content/implementation/./figures/gsAntennaOriginal.jpg Graphic file (type jpg)
+<use content/implementation/./figures/gsAntennaOriginal.jpg>
+Package pdftex.def Info: content/implementation/./figures/gsAntennaOriginal.jpg  used on input line 17.
+(pdftex.def)             Requested size: 219.86482pt x 164.86111pt.
+) (./content/implementation/ground_station_antenna.tex [34
 
- <./content/implementation/./figures/groundStationPCB.png>]
-<content/implementation/./figures/gsTripod.jpeg, id=1378, 548.0475pt x 828.09375pt>
+ <./content/implementation/./figures/groundStationPCB.png> <./content/implementation/./figures/gsAntennaOriginal.jpg>]
+<content/implementation/./figures/gsTripod.jpeg, id=1386, 548.0475pt x 828.09375pt>
 File: content/implementation/./figures/gsTripod.jpeg Graphic file (type jpg)
 <use content/implementation/./figures/gsTripod.jpeg>
-Package pdftex.def Info: content/implementation/./figures/gsTripod.jpeg  used on input line 11.
+Package pdftex.def Info: content/implementation/./figures/gsTripod.jpeg  used on input line 13.
 (pdftex.def)             Requested size: 165.31346pt x 249.78206pt.
 ) (./content/implementation/pq_unit_pcb.tex
-<content/implementation/./figures/pqUnitPCB.jpg, id=1382, 3997.93625pt x 2998.20125pt>
+<content/implementation/./figures/pqUnitPCB.jpg, id=1391, 3997.93625pt x 2998.20125pt>
 File: content/implementation/./figures/pqUnitPCB.jpg Graphic file (type jpg)
 <use content/implementation/./figures/pqUnitPCB.jpg>
-Package pdftex.def Info: content/implementation/./figures/pqUnitPCB.jpg  used on input line 12.
+Package pdftex.def Info: content/implementation/./figures/pqUnitPCB.jpg  used on input line 13.
 (pdftex.def)             Requested size: 196.7232pt x 147.49416pt.
-<content/implementation/./figures/pqUnitPower.jpg, id=1383, 4015.0pt x 3011.25pt>
+<content/implementation/./figures/pqUnitPower.jpg, id=1392, 2535.4725pt x 2900.8375pt>
 File: content/implementation/./figures/pqUnitPower.jpg Graphic file (type jpg)
 <use content/implementation/./figures/pqUnitPower.jpg>
-Package pdftex.def Info: content/implementation/./figures/pqUnitPower.jpg  used on input line 18.
-(pdftex.def)             Requested size: 196.7232pt x 147.53876pt.
-) (./content/implementation/pq_unit_antenna.tex [37 <./content/implementation/./figures/gsTripod.jpeg>]) (./content/implementation/software.tex [38 <./content/implementation/./figures/pqUnitPCB.jpg> <./content/implementation/./figures/pqUnitPower.jpg>]
-LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 22.
+Package pdftex.def Info: content/implementation/./figures/pqUnitPower.jpg  used on input line 19.
+(pdftex.def)             Requested size: 138.86385pt x 158.86047pt.
+) (./content/implementation/pq_unit_antenna.tex [35 <./content/implementation/./figures/gsTripod.jpeg>]) (./content/implementation/software.tex [36 <./content/implementation/./figures/pqUnitPCB.jpg> <./content/implementation/./figures/pqUnitPower.jpg>]
+LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 17.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 22.
- [39]) [40]
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 17.
+) [37]
 Chapter 6.
-(./content/testing/ground_station_pcb.tex [41
+(./content/testing/ground_station_pcb.tex [38
 
 ]
-Overfull \hbox (9.56903pt too wide) in paragraph at lines 32--74
+Overfull \hbox (8.37585pt too wide) in paragraph at lines 31--73
  []|  [] 
  []
 
 ) (./content/testing/pq_unit_pcb.tex) (./content/testing/ground_station_antenna.tex
-<content/testing/./figures/helicalReturnLoss.png, id=1425, 1383.2478pt x 693.792pt>
+<content/testing/./figures/helicalReturnLoss.png, id=1429, 1383.2478pt x 693.792pt>
 File: content/testing/./figures/helicalReturnLoss.png Graphic file (type png)
 <use content/testing/./figures/helicalReturnLoss.png>
 Package pdftex.def Info: content/testing/./figures/helicalReturnLoss.png  used on input line 9.
 (pdftex.def)             Requested size: 401.47144pt x 201.3639pt.
-) (./content/testing/pq_unit_antenna.tex [42]
-<content/testing/./figures/dipoleReturnLoss.png, id=1431, 1383.2478pt x 693.792pt>
+) (./content/testing/pq_unit_antenna.tex [39]
+<content/testing/./figures/dipoleReturnLoss.png, id=1435, 1383.2478pt x 693.792pt>
 File: content/testing/./figures/dipoleReturnLoss.png Graphic file (type png)
 <use content/testing/./figures/dipoleReturnLoss.png>
 Package pdftex.def Info: content/testing/./figures/dipoleReturnLoss.png  used on input line 9.
 (pdftex.def)             Requested size: 401.47144pt x 201.3639pt.
-) (./content/testing/radio_communication.tex [43 <./content/testing/./figures/helicalReturnLoss.png>]
-<content/testing/./figures/txPower.png, id=1438, 1383.2478pt x 693.792pt>
+) (./content/testing/radio_communication.tex [40 <./content/testing/./figures/helicalReturnLoss.png>]
+<content/testing/./figures/txPower.png, id=1442, 1383.2478pt x 693.792pt>
 File: content/testing/./figures/txPower.png Graphic file (type png)
 <use content/testing/./figures/txPower.png>
 Package pdftex.def Info: content/testing/./figures/txPower.png  used on input line 13.
 (pdftex.def)             Requested size: 401.47144pt x 201.3639pt.
- [44 <./content/testing/./figures/dipoleReturnLoss.png> <./content/testing/./figures/txPower.png>]) (./content/testing/serial_protocol.tex) (./content/testing/range.tex
+ [41 <./content/testing/./figures/dipoleReturnLoss.png> <./content/testing/./figures/txPower.png>]) (./content/testing/serial_protocol.tex) (./content/testing/range.tex
 Overfull \hbox (41.85246pt too wide) in paragraph at lines 10--41
  []|  [] 
  []
 
-[45]
-<content/testing/./figures/rangeRssi.png, id=1455, 1383.2478pt x 693.792pt>
+[42]
+<content/testing/./figures/rangeRssi.png, id=1458, 1383.2478pt x 693.792pt>
 File: content/testing/./figures/rangeRssi.png Graphic file (type png)
 <use content/testing/./figures/rangeRssi.png>
 Package pdftex.def Info: content/testing/./figures/rangeRssi.png  used on input line 51.
 (pdftex.def)             Requested size: 425.08147pt x 213.21008pt.
-<content/testing/./figures/rangeSnr.png, id=1456, 1383.2478pt x 693.792pt>
+<content/testing/./figures/rangeSnr.png, id=1459, 1383.2478pt x 693.792pt>
 File: content/testing/./figures/rangeSnr.png Graphic file (type png)
 <use content/testing/./figures/rangeSnr.png>
 Package pdftex.def Info: content/testing/./figures/rangeSnr.png  used on input line 58.
 (pdftex.def)             Requested size: 425.08147pt x 213.21008pt.
-) (./content/testing/tracking.tex [46 <./content/testing/./figures/rangeRssi.png> <./content/testing/./figures/rangeSnr.png>]
-<content/testing/./figures/pointingTestSetup.jpeg, id=1465, 1204.5pt x 1606.0pt>
+) (./content/testing/tracking.tex [43 <./content/testing/./figures/rangeRssi.png> <./content/testing/./figures/rangeSnr.png>]
+<content/testing/./figures/pointingTestSetup.jpeg, id=1467, 1204.5pt x 1606.0pt>
 File: content/testing/./figures/pointingTestSetup.jpeg Graphic file (type jpg)
 <use content/testing/./figures/pointingTestSetup.jpeg>
 Package pdftex.def Info: content/testing/./figures/pointingTestSetup.jpeg  used on input line 11.
 (pdftex.def)             Requested size: 188.9235pt x 251.89261pt.
- [47 <./content/testing/./figures/pointingTestSetup.jpeg>]
-<content/testing/./figures/gpsTrackingMap.png, id=1470, 596.2275pt x 533.74406pt>
+ [44 <./content/testing/./figures/pointingTestSetup.jpeg>]
+<content/testing/./figures/gpsTrackingMap.png, id=1474, 596.2275pt x 533.74406pt>
 File: content/testing/./figures/gpsTrackingMap.png Graphic file (type png)
 <use content/testing/./figures/gpsTrackingMap.png>
-Package pdftex.def Info: content/testing/./figures/gpsTrackingMap.png  used on input line 24.
+Package pdftex.def Info: content/testing/./figures/gpsTrackingMap.png  used on input line 23.
 (pdftex.def)             Requested size: 283.39244pt x 253.69394pt.
-) (./content/testing/radiosonde.tex [48 <./content/testing/./figures/gpsTrackingMap.png>]
-<content/testing/./figures/radiosondeSpectrum.png, id=1477, 656.4525pt x 363.60844pt>
+) (./content/testing/radiosonde.tex [45 <./content/testing/./figures/gpsTrackingMap.png>]
+<content/testing/./figures/radiosondeSpectrum.png, id=1483, 656.4525pt x 363.60844pt>
 File: content/testing/./figures/radiosondeSpectrum.png Graphic file (type png)
 <use content/testing/./figures/radiosondeSpectrum.png>
 Package pdftex.def Info: content/testing/./figures/radiosondeSpectrum.png  used on input line 9.
 (pdftex.def)             Requested size: 377.85419pt x 209.29515pt.
-) (./content/testing/full_system.tex) [49 <./content/testing/./figures/radiosondeSpectrum.png>]
+) (./content/testing/full_system.tex) [46 <./content/testing/./figures/radiosondeSpectrum.png>]
 Chapter 7.
-(./content/conclusion/summary.tex) (./content/conclusion/future_work.tex [50
+(./content/conclusion/summary.tex) (./content/conclusion/future_work.tex [47
 
-])) (build/report.bbl [51]
+])) (build/report.bbl [48]
 Underfull \hbox (badness 10000) in paragraph at lines 25--28
 []\OT1/lmr/m/n/12 (+20) rose.edu, ``Rsc cy-ber stu-dents fly high with high al-ti-tude bal-loon
  []
@@ -1038,315 +1048,182 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--28
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
-[]\OT1/lmr/m/n/12 (+20) electronicsforu, ``Trans-mis-sion ba-sics: De-sign-ing a dipole an-tenna,''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
-[][]$\OT1/lmr/m/n/12 (+20) https : / / www . electronicsforu . com / technology-[]trends / learn-[]electronics /
- []
-
-
-Underfull \hbox (badness 3428) in paragraph at lines 62--65
+Underfull \hbox (badness 3428) in paragraph at lines 63--66
 []\OT1/lmr/m/n/12 (+20) ``Weather Bal-loons --- weather.gov,'' [][]$https : / / www . weather . gov / bmx / kidscorner[]
  []
 
+[49
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--65
-\OT1/lmr/m/n/12 (+20) weatherballoons# : [] : text = The % 20balloon % 20^^Mights % 20last % 20for ,[] 20 % 20miles )
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--70
+]
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
 []\OT1/lmr/m/n/12 (+20) Intermet, ``imet-54,'' [][]$https : / / intermet . co / wp-[]content / uploads /
  []
 
-[52
 
-]
-Underfull \hbox (badness 2173) in paragraph at lines 106--110
+Underfull \hbox (badness 2173) in paragraph at lines 115--119
 []\OT1/lmr/m/n/12 (+20) LinkedIn, ``What are the ben-e-fits and draw-backs of us-ing dif-fer-ent mod-u-la-
  []
 
 
-Underfull \hbox (badness 3713) in paragraph at lines 106--110
+Underfull \hbox (badness 3713) in paragraph at lines 115--119
 \OT1/lmr/m/n/12 (+20) tion and cod-ing schemes for sat-com?'' [][]$https : / / www . linkedin . com / advice / 0 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--110
+Underfull \hbox (badness 10000) in paragraph at lines 115--119
 \OT1/lmr/m/n/12 (+20) what-[]bene^^Lts-[]drawbacks-[]using-[]dierent-[]6f# : [] : text = The % 20most % 20common %
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 112--116
+Underfull \hbox (badness 5970) in paragraph at lines 121--125
 []\OT1/lmr/m/n/12 (+20) ------, ``What are the ben-e-fits and draw-backs of us-ing dif-fer-ent mod-u-la-
  []
 
 
-Underfull \hbox (badness 3713) in paragraph at lines 112--116
+Underfull \hbox (badness 3713) in paragraph at lines 121--125
 \OT1/lmr/m/n/12 (+20) tion and cod-ing schemes for sat-com?'' [][]$https : / / www . linkedin . com / advice / 0 /
  []
 
 
-Underfull \hbox (badness 4726) in paragraph at lines 123--126
+Underfull \hbox (badness 4726) in paragraph at lines 132--135
 []\OT1/lmr/m/n/12 (+20) J. Fer-nan-dez, ``Link bud-get cal-cu-la-tion,'' [][]$https : / / github . com / FOSSASystems /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--126
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
 \OT1/lmr/m/n/12 (+7) FOSSASAT-[]1 / blob / master / FOSSA % 20Documents / FOSSASAT-[]1 % 20Link % 20Budget .
  []
 
-[53]
-Underfull \hbox (badness 1983) in paragraph at lines 156--159
+[50]
+Underfull \hbox (badness 1983) in paragraph at lines 170--173
 []\OT1/lmr/m/n/12 (+20) STMicroelectronics, ``L6219 step-per mo-tor driver,'' [][]$https : / / www . mantech . co . za /
  []
 
 
-Underfull \hbox (badness 4013) in paragraph at lines 161--164
+Underfull \hbox (badness 4013) in paragraph at lines 175--178
 []\OT1/lmr/m/n/12 (+20) Gravitech, ``Ar-duino nano,'' [][]$https : / / www . arduino . cc / en / uploads / Main / Arduino[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--172
+Underfull \hbox (badness 10000) in paragraph at lines 183--186
 []\OT1/lmr/m/n/12 (+20) Intermet, ``imet-3100m,'' [][]$https : / / intermet . co / wp-[]content / uploads /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--172
+Underfull \hbox (badness 10000) in paragraph at lines 183--186
 \OT1/lmr/m/n/12 (+20) iMet-[]3100M-[]403MHz-[]Military-[]Antenna-[]Receiver-[]Brochure-[]V4 . 5 . pdf$[][], [Ac-cessed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
 []\OT1/lmr/m/n/12 (+20) ``Types of or-bits --- esa.int,'' [][]$https : / / www . esa . int / Enabling[]Support /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
 \OT1/lmr/m/n/12 (+20) Space[]Transportation / Types[]of[]orbits# : [] : text = Low % 20Earth % 20orbit % 20(LEO )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
 \OT1/lmr/m/n/12 (+20) ,[]-[]A % 20low % 20Earth & text = It % 20is % 20normally % 20at % 20an ,[] very % 20far % 20above %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--201
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
+[]\OT1/lmr/m/n/12 (+20) electronicsforu, ``Trans-mis-sion ba-sics: De-sign-ing a dipole an-tenna,''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
+[][]$\OT1/lmr/m/n/12 (+20) https : / / www . electronicsforu . com / technology-[]trends / learn-[]electronics /
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 222--225
 []\OT1/lmr/m/n/12 (+20) C. P. SO-LU-TIONS, ``Pcb lay-ers ex-plained: Mul-ti-layer boards
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--201
+Underfull \hbox (badness 10000) in paragraph at lines 222--225
 \OT1/lmr/m/n/12 (+20) and stackup rules,'' [][]$https : / / resources . pcb . cadence . com / blog /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--201
+Underfull \hbox (badness 10000) in paragraph at lines 222--225
 \OT1/lmr/m/n/12 (+20) 2019-[]pcb-[]layers-[]explained-[]multilayer-[]boards-[]and-[]stackup-[]rules$[][], [Ac-cessed 18-08-
  []
 
 
-Underfull \hbox (badness 4120) in paragraph at lines 203--206
+Underfull \hbox (badness 4120) in paragraph at lines 227--230
 []\OT1/lmr/m/n/12 (+20) Proteus, ``Pcb via stitch-ing and shield-ing,'' [][]$https : / / www . labcenter . com / blog /
  []
 
-[54]) (./endmatter/appendix.tex [55]
+) (./endmatter/appendix.tex [52]
 Appendix A.
 
 
-pdfTeX warning: pdflatex (file ./endmatter//docs/gs_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//docs/gs_schematic.pdf, id=1596, 597.55246pt x 845.07724pt>
-File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/gs_schematic.pdf>
-Package pdftex.def Info: endmatter//docs/gs_schematic.pdf  used on input line 23.
-(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+pdfTeX warning: pdflatex (file ./endmatter//docs/pqsu.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<endmatter//docs/pqsu.pdf, id=1609, 597.55246pt x 845.07718pt>
+File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
+<use endmatter//docs/pqsu.pdf>
+Package pdftex.def Info: endmatter//docs/pqsu.pdf  used on input line 23.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
-pdfTeX warning: pdflatex (file ./endmatter//docs/gs_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/gs_schematic.pdf>
-Package pdftex.def Info: endmatter//docs/gs_schematic.pdf  used on input line 23.
-(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+pdfTeX warning: pdflatex (file ./endmatter//docs/pqsu.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
+<use endmatter//docs/pqsu.pdf>
+Package pdftex.def Info: endmatter//docs/pqsu.pdf  used on input line 23.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
-pdfTeX warning: pdflatex (file ./endmatter//docs/gs_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./endmatter//docs/pqsu.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
 
-pdfTeX warning: pdflatex (file ./endmatter//docs/gs_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//docs/gs_schematic.pdf, id=1599, page=1, 597.55246pt x 845.07724pt>
-File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/gs_schematic.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/gs_schematic.pdf , page1 used on input line 23.
-(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
-File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/gs_schematic.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/gs_schematic.pdf , page1 used on input line 23.
-(pdftex.def)             Requested size: 388.4045pt x 549.2937pt.
-[56
+pdfTeX warning: pdflatex (file ./endmatter//docs/pqsu.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<endmatter//docs/pqsu.pdf, id=1612, page=1, 597.55246pt x 845.07718pt>
+File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
+<use endmatter//docs/pqsu.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/pqsu.pdf , page1 used on input line 23.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
+<use endmatter//docs/pqsu.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/pqsu.pdf , page1 used on input line 23.
+(pdftex.def)             Requested size: 478.04262pt x 676.06267pt.
+[53
 
 ]
-File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/gs_schematic.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/gs_schematic.pdf , page1 used on input line 23.
-(pdftex.def)             Requested size: 388.4045pt x 549.2937pt.
-File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/gs_schematic.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/gs_schematic.pdf , page1 used on input line 23.
-(pdftex.def)             Requested size: 388.4045pt x 549.2937pt.
+File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
+<use endmatter//docs/pqsu.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/pqsu.pdf , page1 used on input line 23.
+(pdftex.def)             Requested size: 478.04262pt x 676.06267pt.
+File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
+<use endmatter//docs/pqsu.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/pqsu.pdf , page1 used on input line 23.
+(pdftex.def)             Requested size: 478.04262pt x 676.06267pt.
 
 Appendix B.
-File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/gs_schematic.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/gs_schematic.pdf , page1 used on input line 23.
-(pdftex.def)             Requested size: 388.4045pt x 549.2937pt.
-[57
-
- <./endmatter//docs/gs_schematic.pdf>]
-
-pdfTeX warning: pdflatex (file ./endmatter//docs/pq_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//docs/pq_schematic.pdf, id=1610, 597.55246pt x 845.07724pt>
-File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/pq_schematic.pdf>
-Package pdftex.def Info: endmatter//docs/pq_schematic.pdf  used on input line 24.
-(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
-
-
-pdfTeX warning: pdflatex (file ./endmatter//docs/pq_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/pq_schematic.pdf>
-Package pdftex.def Info: endmatter//docs/pq_schematic.pdf  used on input line 24.
-(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
-
-
-pdfTeX warning: pdflatex (file ./endmatter//docs/pq_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file ./endmatter//docs/pq_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//docs/pq_schematic.pdf, id=1613, page=1, 597.55246pt x 845.07724pt>
-File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/pq_schematic.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/pq_schematic.pdf , page1 used on input line 24.
-(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
-File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/pq_schematic.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/pq_schematic.pdf , page1 used on input line 24.
-(pdftex.def)             Requested size: 418.28386pt x 591.55003pt.
-File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/pq_schematic.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/pq_schematic.pdf , page1 used on input line 24.
-(pdftex.def)             Requested size: 418.28386pt x 591.55003pt.
-File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/pq_schematic.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/pq_schematic.pdf , page1 used on input line 24.
-(pdftex.def)             Requested size: 418.28386pt x 591.55003pt.
-File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
-<use endmatter//docs/pq_schematic.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/pq_schematic.pdf , page1 used on input line 24.
-(pdftex.def)             Requested size: 418.28386pt x 591.55003pt.
-[58 <./endmatter//docs/pq_schematic.pdf>]
-
-pdfTeX warning: pdflatex (file ./endmatter//docs/pqsu.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//docs/pqsu.pdf, id=1619, 597.55246pt x 845.07718pt>
-File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
-<use endmatter//docs/pqsu.pdf>
-Package pdftex.def Info: endmatter//docs/pqsu.pdf  used on input line 31.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-
-
-pdfTeX warning: pdflatex (file ./endmatter//docs/pqsu.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
-<use endmatter//docs/pqsu.pdf>
-Package pdftex.def Info: endmatter//docs/pqsu.pdf  used on input line 31.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-
-
-pdfTeX warning: pdflatex (file ./endmatter//docs/pqsu.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file ./endmatter//docs/pqsu.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//docs/pqsu.pdf, id=1622, page=1, 597.55246pt x 845.07718pt>
 File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
 <use endmatter//docs/pqsu.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/pqsu.pdf , page1 used on input line 31.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
-<use endmatter//docs/pqsu.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/pqsu.pdf , page1 used on input line 31.
+Package pdftex.def Info: endmatter//docs/pqsu.pdf , page1 used on input line 23.
 (pdftex.def)             Requested size: 478.04262pt x 676.06267pt.
-[59]
-File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
-<use endmatter//docs/pqsu.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/pqsu.pdf , page1 used on input line 31.
-(pdftex.def)             Requested size: 478.04262pt x 676.06267pt.
-File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
-<use endmatter//docs/pqsu.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/pqsu.pdf , page1 used on input line 31.
-(pdftex.def)             Requested size: 478.04262pt x 676.06267pt.
-
-Appendix C.
-File: endmatter//docs/pqsu.pdf Graphic file (type pdf)
-<use endmatter//docs/pqsu.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/pqsu.pdf , page1 used on input line 31.
-(pdftex.def)             Requested size: 478.04262pt x 676.06267pt.
-[60
+[54
 
  <./endmatter//docs/pqsu.pdf>]
 
 pdfTeX warning: pdflatex (file ./endmatter//docs/suncq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//docs/suncq.pdf, id=1673, 597.55246pt x 845.07724pt>
+<endmatter//docs/suncq.pdf, id=1663, 597.55246pt x 845.07724pt>
 File: endmatter//docs/suncq.pdf Graphic file (type pdf)
 <use endmatter//docs/suncq.pdf>
-Package pdftex.def Info: endmatter//docs/suncq.pdf  used on input line 32.
-(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
-
-
-pdfTeX warning: pdflatex (file ./endmatter//docs/suncq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-File: endmatter//docs/suncq.pdf Graphic file (type pdf)
-<use endmatter//docs/suncq.pdf>
-Package pdftex.def Info: endmatter//docs/suncq.pdf  used on input line 32.
-(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
-
-
-pdfTeX warning: pdflatex (file ./endmatter//docs/suncq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file ./endmatter//docs/suncq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//docs/suncq.pdf, id=1676, page=1, 597.55246pt x 845.07724pt>
-File: endmatter//docs/suncq.pdf Graphic file (type pdf)
-<use endmatter//docs/suncq.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/suncq.pdf , page1 used on input line 32.
-(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
-File: endmatter//docs/suncq.pdf Graphic file (type pdf)
-<use endmatter//docs/suncq.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/suncq.pdf , page1 used on input line 32.
-(pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
-File: endmatter//docs/suncq.pdf Graphic file (type pdf)
-<use endmatter//docs/suncq.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/suncq.pdf , page1 used on input line 32.
-(pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
-File: endmatter//docs/suncq.pdf Graphic file (type pdf)
-<use endmatter//docs/suncq.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/suncq.pdf , page1 used on input line 32.
-(pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
-File: endmatter//docs/suncq.pdf Graphic file (type pdf)
-<use endmatter//docs/suncq.pdf, page 1>
-Package pdftex.def Info: endmatter//docs/suncq.pdf , page1 used on input line 32.
-(pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
-[61 <./endmatter//docs/suncq.pdf>]
-File: endmatter//docs/suncq.pdf Graphic file (type pdf)
-<use endmatter//docs/suncq.pdf>
-Package pdftex.def Info: endmatter//docs/suncq.pdf  used on input line 33.
+Package pdftex.def Info: endmatter//docs/suncq.pdf  used on input line 24.
 (pdftex.def)             Requested size: 597.551pt x 845.07518pt.
 
 
 pdfTeX warning: pdflatex (file ./endmatter//docs/suncq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: endmatter//docs/suncq.pdf Graphic file (type pdf)
 <use endmatter//docs/suncq.pdf>
-Package pdftex.def Info: endmatter//docs/suncq.pdf  used on input line 33.
+Package pdftex.def Info: endmatter//docs/suncq.pdf  used on input line 24.
 (pdftex.def)             Requested size: 597.551pt x 845.07518pt.
 
 
@@ -1354,98 +1231,268 @@ pdfTeX warning: pdflatex (file ./endmatter//docs/suncq.pdf): PDF inclusion: foun
 
 
 pdfTeX warning: pdflatex (file ./endmatter//docs/suncq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter//docs/suncq.pdf, id=1732, page=2, 597.55246pt x 845.07724pt>
+<endmatter//docs/suncq.pdf, id=1666, page=1, 597.55246pt x 845.07724pt>
+File: endmatter//docs/suncq.pdf Graphic file (type pdf)
+<use endmatter//docs/suncq.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/suncq.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+File: endmatter//docs/suncq.pdf Graphic file (type pdf)
+<use endmatter//docs/suncq.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/suncq.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
+File: endmatter//docs/suncq.pdf Graphic file (type pdf)
+<use endmatter//docs/suncq.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/suncq.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
+File: endmatter//docs/suncq.pdf Graphic file (type pdf)
+<use endmatter//docs/suncq.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/suncq.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
+File: endmatter//docs/suncq.pdf Graphic file (type pdf)
+<use endmatter//docs/suncq.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/suncq.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
+[55 <./endmatter//docs/suncq.pdf>]
+File: endmatter//docs/suncq.pdf Graphic file (type pdf)
+<use endmatter//docs/suncq.pdf>
+Package pdftex.def Info: endmatter//docs/suncq.pdf  used on input line 25.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+
+
+pdfTeX warning: pdflatex (file ./endmatter//docs/suncq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+File: endmatter//docs/suncq.pdf Graphic file (type pdf)
+<use endmatter//docs/suncq.pdf>
+Package pdftex.def Info: endmatter//docs/suncq.pdf  used on input line 25.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+
+
+pdfTeX warning: pdflatex (file ./endmatter//docs/suncq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./endmatter//docs/suncq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<endmatter//docs/suncq.pdf, id=1722, page=2, 597.55246pt x 845.07724pt>
 File: endmatter//docs/suncq.pdf Graphic file (type pdf)
 <use endmatter//docs/suncq.pdf, page 2>
-Package pdftex.def Info: endmatter//docs/suncq.pdf , page2 used on input line 33.
+Package pdftex.def Info: endmatter//docs/suncq.pdf , page2 used on input line 25.
 (pdftex.def)             Requested size: 597.551pt x 845.07518pt.
 File: endmatter//docs/suncq.pdf Graphic file (type pdf)
 <use endmatter//docs/suncq.pdf, page 2>
-Package pdftex.def Info: endmatter//docs/suncq.pdf , page2 used on input line 33.
+Package pdftex.def Info: endmatter//docs/suncq.pdf , page2 used on input line 25.
 (pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
 File: endmatter//docs/suncq.pdf Graphic file (type pdf)
 <use endmatter//docs/suncq.pdf, page 2>
-Package pdftex.def Info: endmatter//docs/suncq.pdf , page2 used on input line 33.
+Package pdftex.def Info: endmatter//docs/suncq.pdf , page2 used on input line 25.
 (pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
 File: endmatter//docs/suncq.pdf Graphic file (type pdf)
 <use endmatter//docs/suncq.pdf, page 2>
-Package pdftex.def Info: endmatter//docs/suncq.pdf , page2 used on input line 33.
+Package pdftex.def Info: endmatter//docs/suncq.pdf , page2 used on input line 25.
 (pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
 File: endmatter//docs/suncq.pdf Graphic file (type pdf)
 <use endmatter//docs/suncq.pdf, page 2>
-Package pdftex.def Info: endmatter//docs/suncq.pdf , page2 used on input line 33.
+Package pdftex.def Info: endmatter//docs/suncq.pdf , page2 used on input line 25.
 (pdftex.def)             Requested size: 507.92198pt x 718.31905pt.
-[62 <./endmatter//docs/suncq.pdf>]
-Appendix D.
-<endmatter/./figures/gs_pcb_design.png, id=1746, 613.54219pt x 575.14874pt>
+[56 <./endmatter//docs/suncq.pdf>]
+<endmatter/./figures/antennaGain.png, id=1736, 506.6428pt x 379.4175pt>
+File: endmatter/./figures/antennaGain.png Graphic file (type png)
+<use endmatter/./figures/antennaGain.png>
+Package pdftex.def Info: endmatter/./figures/antennaGain.png  used on input line 29.
+(pdftex.def)             Requested size: 236.15797pt x 176.84993pt.
+
+
+pdfTeX warning: pdflatex (file ./endmatter//docs/gs_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<endmatter//docs/gs_schematic.pdf, id=1739, 597.55246pt x 845.07724pt>
+File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/gs_schematic.pdf>
+Package pdftex.def Info: endmatter//docs/gs_schematic.pdf  used on input line 35.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+
+
+pdfTeX warning: pdflatex (file ./endmatter//docs/gs_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/gs_schematic.pdf>
+Package pdftex.def Info: endmatter//docs/gs_schematic.pdf  used on input line 35.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+
+
+pdfTeX warning: pdflatex (file ./endmatter//docs/gs_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./endmatter//docs/gs_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<endmatter//docs/gs_schematic.pdf, id=1742, page=1, 597.55246pt x 845.07724pt>
+File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/gs_schematic.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/gs_schematic.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/gs_schematic.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/gs_schematic.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 388.4045pt x 549.2937pt.
+[57 <./endmatter/./figures/antennaGain.png>]
+File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/gs_schematic.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/gs_schematic.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 388.4045pt x 549.2937pt.
+File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/gs_schematic.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/gs_schematic.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 388.4045pt x 549.2937pt.
+
+Appendix C.
+File: endmatter//docs/gs_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/gs_schematic.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/gs_schematic.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 388.4045pt x 549.2937pt.
+[58
+
+ <./endmatter//docs/gs_schematic.pdf>]
+
+pdfTeX warning: pdflatex (file ./endmatter//docs/pq_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<endmatter//docs/pq_schematic.pdf, id=1753, 597.55246pt x 845.07724pt>
+File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/pq_schematic.pdf>
+Package pdftex.def Info: endmatter//docs/pq_schematic.pdf  used on input line 36.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+
+
+pdfTeX warning: pdflatex (file ./endmatter//docs/pq_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/pq_schematic.pdf>
+Package pdftex.def Info: endmatter//docs/pq_schematic.pdf  used on input line 36.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+
+
+pdfTeX warning: pdflatex (file ./endmatter//docs/pq_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./endmatter//docs/pq_schematic.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<endmatter//docs/pq_schematic.pdf, id=1756, page=1, 597.55246pt x 845.07724pt>
+File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/pq_schematic.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/pq_schematic.pdf , page1 used on input line 36.
+(pdftex.def)             Requested size: 597.551pt x 845.07518pt.
+File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/pq_schematic.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/pq_schematic.pdf , page1 used on input line 36.
+(pdftex.def)             Requested size: 418.28386pt x 591.55003pt.
+File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/pq_schematic.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/pq_schematic.pdf , page1 used on input line 36.
+(pdftex.def)             Requested size: 418.28386pt x 591.55003pt.
+File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/pq_schematic.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/pq_schematic.pdf , page1 used on input line 36.
+(pdftex.def)             Requested size: 418.28386pt x 591.55003pt.
+File: endmatter//docs/pq_schematic.pdf Graphic file (type pdf)
+<use endmatter//docs/pq_schematic.pdf, page 1>
+Package pdftex.def Info: endmatter//docs/pq_schematic.pdf , page1 used on input line 36.
+(pdftex.def)             Requested size: 418.28386pt x 591.55003pt.
+[59 <./endmatter//docs/pq_schematic.pdf>]
+<endmatter/./figures/gs_pcb_design.png, id=1762, 613.54219pt x 575.14874pt>
 File: endmatter/./figures/gs_pcb_design.png Graphic file (type png)
 <use endmatter/./figures/gs_pcb_design.png>
 Package pdftex.def Info: endmatter/./figures/gs_pcb_design.png  used on input line 40.
 (pdftex.def)             Requested size: 283.39244pt x 265.65987pt.
-[63
 
- <./endmatter/./figures/gs_pcb_design.png>]
-Appendix E.
-<endmatter/./figures/gs_existing.jpeg, id=1752, 963.6pt x 1284.8pt>
+Overfull \hbox (4.79045pt too wide) in paragraph at lines 85--94
+ [][] 
+ []
+
+
+Overfull \hbox (5.94969pt too wide) in paragraph at lines 134--144
+ [][] 
+ []
+
+[60 <./endmatter/./figures/gs_pcb_design.png>] [61]
+Appendix D.
+<endmatter/./figures/gs_existing.jpeg, id=1772, 963.6pt x 1284.8pt>
 File: endmatter/./figures/gs_existing.jpeg Graphic file (type jpg)
 <use endmatter/./figures/gs_existing.jpeg>
-Package pdftex.def Info: endmatter/./figures/gs_existing.jpeg  used on input line 50.
+Package pdftex.def Info: endmatter/./figures/gs_existing.jpeg  used on input line 152.
 (pdftex.def)             Requested size: 188.9235pt x 251.8975pt.
-<endmatter/./figures/gsAntennaOriginal.jpg, id=1753, 4015.0pt x 3011.25pt>
-File: endmatter/./figures/gsAntennaOriginal.jpg Graphic file (type jpg)
-<use endmatter/./figures/gsAntennaOriginal.jpg>
-Package pdftex.def Info: endmatter/./figures/gsAntennaOriginal.jpg  used on input line 57.
-(pdftex.def)             Requested size: 425.08147pt x 318.78664pt.
-[64
+[62
 
  <./endmatter/./figures/gs_existing.jpeg>]
-<endmatter/./figures/pqBreadboard.jpg, id=1758, 4015.0pt x 3011.25pt>
+<endmatter/./figures/pqBreadboard.jpg, id=1778, 4015.0pt x 3011.25pt>
 File: endmatter/./figures/pqBreadboard.jpg Graphic file (type jpg)
 <use endmatter/./figures/pqBreadboard.jpg>
-Package pdftex.def Info: endmatter/./figures/pqBreadboard.jpg  used on input line 65.
-(pdftex.def)             Requested size: 377.85419pt x 283.3608pt.
-<endmatter/./figures/pqAntenna.jpeg, id=1759, 1204.5pt x 1606.0pt>
+Package pdftex.def Info: endmatter/./figures/pqBreadboard.jpg  used on input line 160.
+(pdftex.def)             Requested size: 330.61972pt x 247.93495pt.
+<endmatter/./figures/pqAntenna.jpeg, id=1779, 1204.5pt x 1606.0pt>
 File: endmatter/./figures/pqAntenna.jpeg Graphic file (type jpg)
 <use endmatter/./figures/pqAntenna.jpeg>
-Package pdftex.def Info: endmatter/./figures/pqAntenna.jpeg  used on input line 71.
+Package pdftex.def Info: endmatter/./figures/pqAntenna.jpeg  used on input line 166.
 (pdftex.def)             Requested size: 236.15797pt x 314.87189pt.
- [65 <./endmatter/./figures/gsAntennaOriginal.jpg> <./endmatter/./figures/pqBreadboard.jpg>] [66 <./endmatter/./figures/pqAntenna.jpeg>]
-<endmatter/./figures/guiSnapshot1.png, id=1768, 609.77812pt x 477.28313pt>
+ [63 <./endmatter/./figures/pqBreadboard.jpg> <./endmatter/./figures/pqAntenna.jpeg>]
+<endmatter/./figures/mountRotation1.jpg, id=1785, 4015.0pt x 3011.25pt>
+File: endmatter/./figures/mountRotation1.jpg Graphic file (type jpg)
+<use endmatter/./figures/mountRotation1.jpg>
+Package pdftex.def Info: endmatter/./figures/mountRotation1.jpg  used on input line 175.
+(pdftex.def)             Requested size: 143.58687pt x 107.65596pt.
+<endmatter/./figures/mountRotation2.jpg, id=1786, 4015.0pt x 3011.25pt>
+File: endmatter/./figures/mountRotation2.jpg Graphic file (type jpg)
+<use endmatter/./figures/mountRotation2.jpg>
+Package pdftex.def Info: endmatter/./figures/mountRotation2.jpg  used on input line 181.
+(pdftex.def)             Requested size: 143.58687pt x 107.65596pt.
+<endmatter/./figures/mountRotation3.jpg, id=1787, 4015.0pt x 3011.25pt>
+File: endmatter/./figures/mountRotation3.jpg Graphic file (type jpg)
+<use endmatter/./figures/mountRotation3.jpg>
+Package pdftex.def Info: endmatter/./figures/mountRotation3.jpg  used on input line 187.
+(pdftex.def)             Requested size: 143.58687pt x 107.65596pt.
+<endmatter/./figures/mountRotation4.jpg, id=1788, 4015.0pt x 3011.25pt>
+File: endmatter/./figures/mountRotation4.jpg Graphic file (type jpg)
+<use endmatter/./figures/mountRotation4.jpg>
+Package pdftex.def Info: endmatter/./figures/mountRotation4.jpg  used on input line 195.
+(pdftex.def)             Requested size: 143.58687pt x 107.65596pt.
+<endmatter/./figures/mountRotation6.jpg, id=1789, 4015.0pt x 3011.25pt>
+File: endmatter/./figures/mountRotation6.jpg Graphic file (type jpg)
+<use endmatter/./figures/mountRotation6.jpg>
+Package pdftex.def Info: endmatter/./figures/mountRotation6.jpg  used on input line 201.
+(pdftex.def)             Requested size: 143.58687pt x 107.65596pt.
+<endmatter/./figures/mountRotation7.jpg, id=1790, 4015.0pt x 3011.25pt>
+File: endmatter/./figures/mountRotation7.jpg Graphic file (type jpg)
+<use endmatter/./figures/mountRotation7.jpg>
+Package pdftex.def Info: endmatter/./figures/mountRotation7.jpg  used on input line 207.
+(pdftex.def)             Requested size: 143.58687pt x 107.65596pt.
+ [64 <./endmatter/./figures/mountRotation1.jpg> <./endmatter/./figures/mountRotation2.jpg> <./endmatter/./figures/mountRotation3.jpg> <./endmatter/./figures/mountRotation4.jpg> <./endmatter/./figures/mountRotation6.jpg> <./endmatter/./figures/mountRotation7.jpg>]
+Appendix E.
+<endmatter/./figures/guiSnapshot1.png, id=1795, 609.77812pt x 477.28313pt>
 File: endmatter/./figures/guiSnapshot1.png Graphic file (type png)
 <use endmatter/./figures/guiSnapshot1.png>
-Package pdftex.def Info: endmatter/./figures/guiSnapshot1.png  used on input line 79.
+Package pdftex.def Info: endmatter/./figures/guiSnapshot1.png  used on input line 218.
 (pdftex.def)             Requested size: 448.6987pt x 351.21764pt.
- [67 <./endmatter/./figures/guiSnapshot1.png>]
+[65
+
+ <./endmatter/./figures/guiSnapshot1.png>]
 Appendix F.
-<endmatter/./figures/rangeTests.png, id=1774, 753.5653pt x 479.54156pt>
+<endmatter/./figures/rangeTests.png, id=1801, 753.5653pt x 479.54156pt>
 File: endmatter/./figures/rangeTests.png Graphic file (type png)
 <use endmatter/./figures/rangeTests.png>
-Package pdftex.def Info: endmatter/./figures/rangeTests.png  used on input line 89.
+Package pdftex.def Info: endmatter/./figures/rangeTests.png  used on input line 228.
 (pdftex.def)             Requested size: 377.85419pt x 240.45068pt.
 )
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 109.
 See the caption package documentation for explanation.
 
-[68
+[66
 
  <./endmatter/./figures/rangeTests.png>] (build/report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 40FA94C76BCFC530EAB6856E6587BA27;13954.
+(rerunfilecheck)             Checksum: B36D5F08D7BB1FEDFB98ECF5E7260E7B;13871.
  ) 
 Here is how much of TeX's memory you used:
- 23216 strings out of 480171
- 445628 string characters out of 5894489
- 809822 words of memory out of 5000000
- 39996 multiletter control sequences out of 15000+600000
- 545816 words of font info for 189 fonts, out of 8000000 for 9000
+ 23347 strings out of 480171
+ 450095 string characters out of 5894489
+ 811079 words of memory out of 5000000
+ 40119 multiletter control sequences out of 15000+600000
+ 546117 words of font info for 193 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 71i,18n,86p,1085b,1143s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on build/report.pdf (79 pages, 47668430 bytes).
+ 71i,18n,86p,1060b,1143s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on build/report.pdf (77 pages, 88240954 bytes).
 PDF statistics:
- 1936 PDF objects out of 2073 (max. 8388607)
- 1665 compressed objects within 17 object streams
- 357 named destinations out of 1000 (max. 500000)
- 48869 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1960 PDF objects out of 2073 (max. 8388607)
+ 1679 compressed objects within 17 object streams
+ 350 named destinations out of 1000 (max. 500000)
+ 48906 words of extra memory for PDF output out of 51595 (max. 10000000)
 

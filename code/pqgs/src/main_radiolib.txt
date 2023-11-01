@@ -28,7 +28,7 @@ void setup() {
   
   while (!Serial);
   // initialize SX1278 with default settings
-  Serial.print(F("[SX1278] Initializing ... "));
+  Serial.print(F("Initializing ... "));
 
   int state = radio.begin(427.0, 500.0, 8, 4 + 2, 0x12, 10, 150, 8);
   radio.implicitHeader(sizeof(expectedPayload));
@@ -42,7 +42,6 @@ void setup() {
   }
 
   radio.setDio0Action(setFlag);
-  // radio.setPacketReceivedAction(setFlag);
 
   Serial.print(F("[SX1278] Starting to listen ... "));
   state = radio.startReceive();
@@ -64,7 +63,7 @@ void setFlag(void) {
   }
 }
 
-#define NUM_PACKET_AVG 10
+#define NUM_PACKET_AVG 25
 size_t packetReceiveTimes[NUM_PACKET_AVG] = {};
 size_t numPackets = 0;
 void loop() {
@@ -73,6 +72,7 @@ void loop() {
 
     String str;
     int state = radio.readData(str);
+    Serial.println(str);
 
     unsigned long newestReceiveTime = packetReceiveTimes[numPackets++ % NUM_PACKET_AVG] = millis();
     unsigned long oldestReceiveTime;
@@ -89,16 +89,18 @@ void loop() {
     }
 
     unsigned long deltaTime = newestReceiveTime - oldestReceiveTime;
-    float bitRate = (float)(numPacketsAvg * 8 * 255) / ((float)deltaTime / 1000.0);
+    float bitRate = (float)((numPacketsAvg - 1) * 8 * 255) / ((float)deltaTime / 1000.0);
     Serial.println("***** Running at " + String(bitRate) + " bps *****");
+
+    // gel::GeoLocation receivedLocation;
 
     if (state == ERR_NONE || state == ERR_CRC_MISMATCH) {
       // packet was successfully received
       // Serial.println("[SX1278] Received packet #" + str.substring(0, 5));
-      Serial.println("[SX1278] Received packet");
+      Serial.println("Received packet");
       Serial.println(str);
       if (state == ERR_CRC_MISMATCH)
-        Serial.println(F("[SX1278] CRC error!")); 
+        Serial.println(F("CRC error!")); 
 
       // print data of the packet
       int expectedNum = sizeof(expectedPayload);
@@ -111,25 +113,19 @@ void loop() {
       }
       float prr = (float)(receivedNum) / (float)(expectedNum - offset);
 
-      Serial.print(F("[SX1278] RSSI:\t\t"));
+      Serial.print(F("RSSI:\t\t"));
       Serial.print(radio.getRSSI());
       Serial.println(F(" dBm"));
 
       // print SNR (Signal-to-Noise Ratio)
-      Serial.print(F("[SX1278] SNR:\t\t"));
+      Serial.print(F("SNR:\t\t"));
       Serial.print(radio.getSNR());
       Serial.println(F(" dB"));
 
       // print PRR
-      Serial.print(F("[SX1278] PRR:\t\t"));
+      Serial.print(F("PRR:\t\t"));
       Serial.print(prr * 100);
       Serial.println(F(" %"));
-
-      // print frequency error
-      // Serial.print(F("[SX1278] Frequency error:\t"));
-      // Serial.print(radio.getFrequencyError());
-      // Serial.println(F(" Hz"));
-
     } else {
       // some other error occurred
       Serial.print(F("[SX1278] Failed, code "));

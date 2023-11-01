@@ -34,11 +34,6 @@ D.~Slabber, ``Pocketcube mechanical interface,'' [Accessed 16-08-2023].
   \url{https://www.highaltitudescience.com/pages/tracking-a-weather-balloon},
   [Accessed 13-08-2023].
 
-\bibitem{site-designingDipole}
-electronicsforu, ``Transmission basics: Designing a dipole antenna,''
-  \url{https://www.electronicsforu.com/technology-trends/learn-electronics/transmission-basics-designing-dipole-antenna},
-  2016, [Accessed 16-08-2023].
-
 \bibitem{site-icantennasYagi}
 C.~R.~A. Inc, ``How to make a 433 mhz yagi antenna design for a long-range?''
   \url{https://lcantennas.com/433-mhz-yagi-antenna-design-for-a-long-range/},
@@ -54,14 +49,33 @@ Celestis, ``What are the "azimuth" and "elevation" of a satellite?''
   \url{https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/},
   [Accessed 29-09-2023].
 
+\bibitem{paper-yagiGainBeamwidth}
+A.~Wonggeeratikun, S.~Noppanakeepong, N.~Leelaruji, N.~Hemmakorn, and
+  Y.~Moriya, \emph{The Analysis of the Airplane Flutter on Low Band Television
+  Broadcasting Signal}.\hskip 1em plus 0.5em minus 0.4em\relax ResearchGate,
+  2023.
+
 \bibitem{site-antennaTheory}
 P.~J. Bevelacqua, ``Antenna theory,'' \url{https://www.antenna-theory.com/},
   2022, [Accessed 16-08-2023].
 
 \bibitem{site-weatherWeatherBalloons}
 ``{W}eather {B}alloons --- weather.gov,''
-  \url{https://www.weather.gov/bmx/kidscorner_weatherballoons#:~:text=The%20balloon%20flights%20last%20for,20%20miles)%20in%20the%20atmosphere!},
-  [Accessed 12-08-2023].
+  \url{https://www.weather.gov/bmx/kidscorner_weatherballoons}, [Accessed
+  12-08-2023].
+
+\bibitem{site-habHub}
+Sondehub, ``Hab-hub flight path predictor,''
+  \url{https://https://predict.habhub.org/}, [Accessed 15-07-2023].
+
+\bibitem{site-normalHorizon}
+Ringbell, ``Distance to the horizon calculator,''
+  \url{http://www.ringbell.co.uk/info/hdist.htm}, [Accessed 15-07-2023].
+
+\bibitem{site-radarHorizon}
+Omni-Calculator, ``Radar horizon calculator,''
+  \url{https://www.omnicalculator.com/physics/radar-horizon}, [Accessed
+  15-07-2023].
 
 \bibitem{datasheet-iMet54}
 Intermet, ``imet-54,''
@@ -73,23 +87,18 @@ Intermet, ``imet-54,''
   \url{https://pure.tudelft.nl/ws/portalfiles/portal/57402203/2019_f_74.pdf},
   [Accessed 13-08-2023].
 
-\bibitem{site-stratoballooningPredictionTracking}
-``{P}rediction and {T}racking a {B}alloon — {S}tratospheric {B}allooning
-  {A}ssociation --- stratoballooning.org,''
-  \url{https://www.stratoballooning.org/tracking}, [Accessed 13-08-2023].
-
 \bibitem{site-mercator}
 R.~Israel, ``Mercator's projection,''
   \url{https://personal.math.ubc.ca/~israel/m103/mercator/mercator.html},
   [Accessed 29-09-2023].
 
+\bibitem{site-stratoballooningPredictionTracking}
+``{P}rediction and {T}racking a {B}alloon — {S}tratospheric {B}allooning
+  {A}ssociation --- stratoballooning.org,''
+  \url{https://www.stratoballooning.org/tracking}, [Accessed 13-08-2023].
+
 \bibitem{textbook-antennaTheoryAnalysisDesign}
 C.~A. Balanis, ``Antenna theory analysis and design,'' [Accessed 29-09-2023].
-
-\bibitem{site-helixAntennas}
-``Helix antennas,''
-  \url{https://www.microwaves101.com/encyclopedias/helix-antennas}, 2018,
-  [Accessed 16-08-2023].
 
 \bibitem{site-helicalCalculator}
 sgcderek, ``Helical antenna calculator,''
@@ -98,8 +107,8 @@ sgcderek, ``Helical antenna calculator,''
 
 \bibitem{paper-lowProfileRingAntenna}
 ``A compact low-profile ring antenna with dual circular polarization and
-  unidirectional radiation for use in rfid readers,'' \url{:
-  https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8822972}, [Accessed
+  unidirectional radiation for use in rfid readers,''
+  \url{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8822972}, [Accessed
   03-09-2023].
 
 \bibitem{site-satelliteModulationOverview}
@@ -142,6 +151,11 @@ I.~Campbell~Scientific, ``The link budget and fade margin,''
 \bibitem{standard-csp}
 GOMspace, ``Cubesat space protocol (csp),'' [Accessed 24-10-2023].
 
+\bibitem{paper-balloonTrajectoryAnalysis}
+E.~E. Harstad, ``Analysis of balloon trajectory prediction methods,''
+  \url{https://www.iastatedigitalpress.com/ahac/article/8334/galley/7926/view/},
+  [Accessed 10-10-2023].
+
 \bibitem{datasheet-4118}
 L.~Engineering, ``High torque motor,''
   \url{https://cnctar.hobbycnc.hu/ZOTYK%C3%93/NEMA%2017%20motorom%20adatlapja%204218M-01.pdf},
@@ -181,7 +195,7 @@ u~blox, ``Neo-6,''
   [Accessed 18-08-2023].
 
 \bibitem{paper-reviewTrackingMethods}
-``Review of tracking methods,'' \url{: http://www.jstor.com/stable/73457},
+``Review of tracking methods,'' \url{http://www.jstor.com/stable/73457},
   [Accessed 13-08-2023].
 
 \bibitem{paper-linkBudget}
@@ -193,6 +207,16 @@ I.~Campbell~Scientific, ``The link budget and fade margin,''
 ``{T}ypes of orbits --- esa.int,''
   \url{https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits#:~:text=Low%20Earth%20orbit%20(LEO),-A%20low%20Earth&text=It%20is%20normally%20at%20an,very%20far%20above%20Earth's%20surface.},
   [Accessed 12-08-2023].
+
+\bibitem{site-designingDipole}
+electronicsforu, ``Transmission basics: Designing a dipole antenna,''
+  \url{https://www.electronicsforu.com/technology-trends/learn-electronics/transmission-basics-designing-dipole-antenna},
+  2016, [Accessed 16-08-2023].
+
+\bibitem{site-helixAntennas}
+``Helix antennas,''
+  \url{https://www.microwaves101.com/encyclopedias/helix-antennas}, 2018,
+  [Accessed 16-08-2023].
 
 \bibitem{site-pcbLayers}
 C.~P. SOLUTIONS, ``Pcb layers explained: Multilayer boards and stackup rules,''

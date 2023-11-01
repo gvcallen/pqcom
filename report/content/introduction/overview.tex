@@ -2,17 +2,15 @@
 
 \section{Overview}
 
-This project aims to design and implement a wireless communication system for a miniaturised satellite standard called a \textit{PocketQube} (PQ). The PocketQube standard was created to define physical and electronic requirements for so-called "nano satellites". The goal of this is to allow for easy integration of various sub-modules into one physical enclosure. One common use-case of these satellites is to collect sensory information from the atmosphere.
+This project aims to design and implement a wireless communication system for a miniaturised satellite called a \textit{PocketQube} (PQ). The PocketQube standard was created to define physical and electronic requirements for so-called ``nano-satellites'', with the goal of easy integration of various sub-modules into one physical enclosure.
 
-Nano-satellites can either be placed into orbit, or attached to a \textit{high-altitude balloon} as shown in Figure \ref{fig:balloonSat}. The goal of this project is to design a communication system that is compatible with the PocketQube standard. The final system should be capable of being used in a balloon satellite launch from the Saldanha Air Field in the Western Cape, which might be done by the Stellenbosch Engineering department near the end of the project.
+Nano-satellites can either be placed into orbit, or attached to a \textit{high-altitude balloon}. One common use-case of these balloons is to collect sensory information from the atmosphere, such as temperature and humidity readings. The goal of this project is to design a system that can be used in a balloon launch from the Saldanha Air Field, which may ultimately be done by the Stellenbosch Engineering department.
 
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.5\textwidth]{balloonSat}
-  \caption{A Balloon Satellite \cite{site-cyberBalloonLaunch}}
+  \caption{A High-Altitude Balloon Carrying a Nano-Satellite Payload \cite{site-cyberBalloonLaunch}}
   \label{fig:balloonSat}
 \end{figure}
 
-Both higher-level systems design, as well as more detailed lower-level component selection, integration, and software design, will be necessary for this project. The communication system will involve both a tracking ground station (GS), as well as a PocketQube 'unit' (PQU). The aim of this project is to both design and implement this system, in order to establish a minimal baseline for further projects to refine the individual sub-systems. The GS should also be capable of receiving information from an existing \textit{Radiosonde} to provide a backup system.
-
-In this report, general system requirements are first listed, and a problem statement is drawn up. Then, a literature review is conducted to gather background information in the fields of interest. This includes an overview of the PocketQube standard, antenna theory, satellite tracking, and telecommunication theory. A system's level design is then done, which is followed by a more detailed design. Finally, the system is implemented and tested, and the results are discussed, and potential improvements for future projects are listed.
+A satellite communication system includes both a ground station (GS), as well as a module on the satellite itself. The aim of this project is to establish a minimal prototype for both of these systems, so that future projects can refine the developed sub-systems. In this report, general system requirements are first listed, and a problem statement is drawn up. Then, a literature review is conducted to gather background information in the fields of interest. This includes an overview of the PocketQube standard, antenna theory, satellite tracking, and telecommunication theory. A systems level design is then done, which is followed by a more detailed design. Finally, the system is implemented and tested, the results are discussed, and potential improvements and work for future projects are listed.
