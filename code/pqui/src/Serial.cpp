@@ -37,7 +37,10 @@ bool uploadFlightPath(QSerialPort* serial, QString filepath)
     {
         suncq::GeoInstant instant;
 
-        instant.secondsSinceEpoch = QDateTime::fromString(doc.GetCell<std::string>("datetime", i).c_str(), Qt::DateFormat::ISODateWithMs).toSecsSinceEpoch();
+        auto date = QDateTime::fromString(doc.GetCell<std::string>("datetime", i).c_str(), Qt::DateFormat::ISODateWithMs);
+        // date.totim
+        instant.secondsSinceEpoch = date.toSecsSinceEpoch();
+        qDebug() << "instantsec = " << instant.secondsSinceEpoch;
         instant.latitude = doc.GetCell<float>("latitude", i);
         instant.longitude = doc.GetCell<float>("longitude", i);
         instant.altitude = doc.GetCell<float>("altitude", i);
@@ -70,10 +73,10 @@ bool returnToStow(QSerialPort* serial)
 
 bool setTrackTarget(QSerialPort* serial, suncq::TrackTarget trackTarget)
 {
-    // uint8_t c = (uint8_t)suncq::Command::SetTrackTarget;
-    // serial->write((const char*)&c, 1);
-    // serial->write((const char*)&trackTarget, 1);
-    // return serial->waitForBytesWritten();
+    uint8_t c = (uint8_t)suncq::Command::SetTrackTarget;
+    serial->write((const char*)&c, 1);
+    serial->write((const char*)&trackTarget, 1);
+    return serial->waitForBytesWritten();
 }
 
 bool setTrackMode(QSerialPort* serial, suncq::TrackMode trackMode)
@@ -89,6 +92,7 @@ bool setTrackLocation(QSerialPort* serial, suncq::GeoInstant& instant)
     uint8_t c = (uint8_t)suncq::Command::SetTrackLocation;
     serial->write((const char*)&c, 1);
     serial->write((const char*)&instant, sizeof (suncq::GeoInstant));
+    
     return serial->waitForBytesWritten();
     
 }

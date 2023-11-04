@@ -1,0 +1,49 @@
+�PID = 405, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -119.50, SNR = -8.50, CBR = 2477.94 bps
+�PID = 406, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -120.50, SNR = -7.50, CBR = 2372.67 bps
+�PID = 407, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -122.25, SNR = -10.25, CBR = 2277.45 bps
+�PID = 408, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -121.50, SNR = -9.50, CBR = 2187.11 bps
+�PID = 409, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -120.75, SNR = -7.75, CBR = 2104.81 bps
+�PID = 410, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -120.50, SNR = -8.50, CBR = 2027.41 bps
+�PID = 411, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -122.75, SNR = -9.75, CBR = 1956.39 bps
+�PID = 412, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -121.50, SNR = -11.50, CBR = 1887.78 bps
+�PID = 413, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -120.50, SNR = -10.50, CBR = 1826.66 bps
+�PID = 414, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -121.50, SNR = -8.50, CBR = 1763.58 bps
+�PID = 415, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -120.25, SNR = -8.25, CBR = 1709.67 bps
+�PID = 416, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -121.25, SNR = -8.25, CBR = 1659.32 bps
+�PID = 417, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -122.75, SNR = -9.75, CBR = 1611.58 bps
+�PID = 418, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -122.75, SNR = -9.75, CBR = 1604.37 bps
+�PID = 419, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -123.75, SNR = -9.75, CBR = 1740.77 bps
+�PID = 420, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -122.00, SNR = -10.00, CBR = 1826.92 bps
+�PID = 421, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -122.50, SNR = -9.50, CBR = 2028.89 bps
+�PID = 422, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -122.25, SNR = -10.25, CBR = 2035.29 bps
+�PID = 423, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -123.50, SNR = -9.50, CBR = 2037.53 bps
+�PID = 424, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -123.50, SNR = -9.50, CBR = 2039.03 bps
+	Code: 6
+	Message: CRC mismatch when trying to receive radio data
+�PID = 426, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -124.75, SNR = -12.75, CBR = 1936.93 bps
+�PID = 427, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -124.50, SNR = -11.50, CBR = 1937.52 bps
+�PID = 428, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -122.50, SNR = -9.50, CBR = 1937.81 bps
+�PID = 429, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -117.50, SNR = -6.50, CBR = 1934.90 bps
+�PID = 430, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -117.25, SNR = -4.25, CBR = 1935.87 bps
+	Code: 6
+	Message: CRC mismatch when trying to receive radio data
+�PID = 432, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -107.00, SNR = 3.50, CBR = 1842.38 bps
+�PID = 433, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -104.00, SNR = 4.25, CBR = 1844.92 bps
+�PID = 434, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -105.00, SNR = 4.00, CBR = 1844.57 bps
+�PID = 435, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -104.00, SNR = 4.25, CBR = 1844.13 bps
+�PID = 436, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -104.00, SNR = 4.25, CBR = 1843.87 bps
+�PID = 437, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -105.00, SNR = 4.50, CBR = 1842.73 bps
+�PID = 438, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -105.00, SNR = 4.50, CBR = 1842.56 bps
+�PID = 439, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -105.00, SNR = 4.00, CBR = 1844.13 bps
+�PID = 440, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -105.00, SNR = 4.25, CBR = 1843.52 bps
+�PID = 441, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -104.00, SNR = 3.50, CBR = 1846.24 bps
+�PID = 442, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -104.00, SNR = 4.00, CBR = 1846.33 bps
+�PID = 443, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -104.00, SNR = 4.25, CBR = 1847.30 bps
+�PID = 444, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -105.00, SNR = 3.75, CBR = 1847.21 bps
+�PID = 445, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -105.00, SNR = 4.25, CBR = 1846.68 bps
+�PID = 446, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -106.00, SNR = 3.50, CBR = 1934.42 bps
+�PID = 447, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -105.00, SNR = 4.25, CBR = 1935.87 bps
+�PID = 448, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -104.00, SNR = 3.75, CBR = 1936.93 bps
+�PID = 449, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -105.00, SNR = 4.00, CBR = 1940.04 bps
+�PID = 450, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -105.00, SNR = 4.00, CBR = 1940.52 bps
+�PID = 451, Lat = -33.96, Lng = 18.40, Alt = 1111.00, Dist = 71.03 km, RSSI = -107.00, SNR = 3.50, CBR = 2044.74 bps

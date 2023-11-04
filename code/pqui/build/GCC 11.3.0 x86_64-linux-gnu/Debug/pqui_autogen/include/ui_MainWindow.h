@@ -33,7 +33,7 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QHBoxLayout *horizontalLayout;
+    QGridLayout *gridLayout_3;
     QTabWidget *tabWidget;
     QWidget *connectionTab;
     QVBoxLayout *verticalLayout_2;
@@ -96,6 +96,18 @@ public:
     QPushButton *Clear;
     QSpacerItem *horizontalSpacer_4;
     QWidget *satelliteTab;
+    QVBoxLayout *verticalLayout_7;
+    QGroupBox *groupBox_2;
+    QVBoxLayout *verticalLayout_8;
+    QTextBrowser *telemetryMonitor;
+    QGroupBox *groupBox_3;
+    QGridLayout *gridLayout_4;
+    QLineEdit *lineEdit;
+    QPushButton *pushButton_8;
+    QSpacerItem *horizontalSpacer_6;
+    QSpacerItem *horizontalSpacer_7;
+    QLabel *label_9;
+    QLineEdit *lineEdit_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -106,8 +118,8 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        horizontalLayout = new QHBoxLayout(centralwidget);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        gridLayout_3 = new QGridLayout(centralwidget);
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         connectionTab = new QWidget();
@@ -424,9 +436,60 @@ public:
         tabWidget->addTab(groundStationTab, QString());
         satelliteTab = new QWidget();
         satelliteTab->setObjectName(QString::fromUtf8("satelliteTab"));
+        verticalLayout_7 = new QVBoxLayout(satelliteTab);
+        verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
+        groupBox_2 = new QGroupBox(satelliteTab);
+        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+        verticalLayout_8 = new QVBoxLayout(groupBox_2);
+        verticalLayout_8->setObjectName(QString::fromUtf8("verticalLayout_8"));
+        telemetryMonitor = new QTextBrowser(groupBox_2);
+        telemetryMonitor->setObjectName(QString::fromUtf8("telemetryMonitor"));
+
+        verticalLayout_8->addWidget(telemetryMonitor);
+
+
+        verticalLayout_7->addWidget(groupBox_2);
+
+        groupBox_3 = new QGroupBox(satelliteTab);
+        groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
+        gridLayout_4 = new QGridLayout(groupBox_3);
+        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
+        lineEdit = new QLineEdit(groupBox_3);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setMaximumSize(QSize(50, 16777215));
+
+        gridLayout_4->addWidget(lineEdit, 0, 2, 1, 1);
+
+        pushButton_8 = new QPushButton(groupBox_3);
+        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
+
+        gridLayout_4->addWidget(pushButton_8, 0, 4, 1, 1);
+
+        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_4->addItem(horizontalSpacer_6, 0, 5, 1, 1);
+
+        horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_4->addItem(horizontalSpacer_7, 0, 1, 1, 1);
+
+        label_9 = new QLabel(groupBox_3);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+
+        gridLayout_4->addWidget(label_9, 0, 0, 1, 1);
+
+        lineEdit_2 = new QLineEdit(groupBox_3);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setMaximumSize(QSize(50, 16777215));
+
+        gridLayout_4->addWidget(lineEdit_2, 0, 3, 1, 1);
+
+
+        verticalLayout_7->addWidget(groupBox_3);
+
         tabWidget->addTab(satelliteTab, QString());
 
-        horizontalLayout->addWidget(tabWidget);
+        gridLayout_3->addWidget(tabWidget, 0, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -491,6 +554,12 @@ public:
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Monitor", nullptr));
         Clear->setText(QCoreApplication::translate("MainWindow", "Clear", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(groundStationTab), QCoreApplication::translate("MainWindow", "Ground Station", nullptr));
+        groupBox_2->setTitle(QCoreApplication::translate("MainWindow", "Telemetry", nullptr));
+        groupBox_3->setTitle(QCoreApplication::translate("MainWindow", "Telecommand", nullptr));
+        lineEdit->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
+        pushButton_8->setText(QCoreApplication::translate("MainWindow", "Add", nullptr));
+        label_9->setText(QCoreApplication::translate("MainWindow", "Add Numbers", nullptr));
+        lineEdit_2->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(satelliteTab), QCoreApplication::translate("MainWindow", "Satellite", nullptr));
     } // retranslateUi
 

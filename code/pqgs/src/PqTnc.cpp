@@ -26,14 +26,17 @@ void PqTnc::begin()
     Serial.begin(BAUD_RATE);
     while (!Serial);
     delay(500);
+    sendMessage("Initialized Serial");
     
     if (err = setupEEPROM())
         handleError(err, "Could not setup EEPROM");
 
     if (err = setupGroundStation())
         handleError(err, "Could not setup ground station");
+    else
+        sendMessage("Initialized Ground Station");
     
-    PqTnc::singletonTnc = this;    
+    PqTnc::singletonTnc = this;  
 }
 
 gel::Error PqTnc::setupGroundStation()
@@ -152,7 +155,6 @@ gel::Error PqTnc::saveFlightPath()
     EEPROM.writeBytes(EEPROM_OFFSET_FLIGHT_PATH + sizeof(FlightPathHeader), path, header.numInstances * sizeof (gel::GeoInstant));
 
     EEPROM.commit();
-    sendMessage("Successfully added " + String(numPathInstants) + " locations");
 
     return gel::Error::None;
 }
@@ -164,7 +166,8 @@ void PqTnc::update()
     if (err = updateSerial())
         sendError(err);
 
-    if (err = updateTracking())
+    auto trackingErrors = updateTracking();
+    for (auto& err : trackingErrors)
         sendError(err);
     
     auto gsErrors = groundStation.update();
@@ -199,19 +202,21 @@ gel::Error PqTnc::updateSerialNormal(uint8_t c)
         switch (c)
         {
         case suncq::Command::Calibrate:
+            sendMessage("Calibrating Ground Station");
             err = groundStation.calibrate();
             break;
         case suncq::Command::ReturnToStart:
+            sendMessage("Returning to Start");
             err = groundStation.returnToStart();
             break;
         case suncq::Command::ReturnToStow:
+            sendMessage("Returning to Stow");
             err = groundStation.returnToStow();
             break;
         case suncq::Command::GetSignalRSSI:
             sendSignalRSSI();
             break;
         case suncq::Command::Reset:
-            Serial.println("RESET !!!");
             reset();
             break;
         default:
@@ -234,11 +239,10 @@ gel::Error PqTnc::updateSerialNormal(uint8_t c)
             commandFinished = addFlightPathData((uint8_t)c);
             break;
         case suncq::Command::SetTrackTarget:
-            sendMessage(String(c));
+            // sendMessage(String(c));
             break;
         case suncq::Command::SetTrackLocation:
-            if (settings.trackMode & suncq::TrackMode::GpsReceived)
-                commandFinished = addKnownLocationData((uint8_t)c);
+            commandFinished = addKnownLocationData((uint8_t)c);
             break;
         default:
             break; // Shouldn't get here
@@ -256,14 +260,21 @@ gel::Error PqTnc::updateSerialKISS(uint8_t c)
     return gel::Error::NotImplemented;
 }
 
-gel::Error PqTnc::updateTracking()
+gel::vector<gel::Error, 2> PqTnc::updateTracking()
 {
-    if (settings.trackMode & suncq::TrackMode::GpsUploaded)
-        return updateTrackingGPSUploaded();
+    gel::vector<gel::Error, 2> errors;
     if (settings.trackMode & suncq::TrackMode::GpsReceived)
-        return updateTrackingGPSReceived();
+    {
+        if (gel::Error err = updateTrackingGPSReceived())
+            errors.push_back(err);
+    }
+    if (settings.trackMode & suncq::TrackMode::GpsUploaded)
+    {
+        if (gel::Error err = updateTrackingGPSUploaded())
+            errors.push_back(err);
+    }
 
-    return gel::Error::None;
+    return errors;
 }
 
 gel::Error PqTnc::updateTrackingGPSUploaded()
@@ -273,7 +284,7 @@ gel::Error PqTnc::updateTrackingGPSUploaded()
     // right after the current one, and then the loop should break.
     uint64_t currentSecondsSinceEpoch = groundStation.getCurrentSecondsSinceEpoch();
     gel::GeoInstant& nextInstant = path[nextPathInstantIdx];
-    
+
     // Check if we have passed the instant we were heading towards
     if (currentSecondsSinceEpoch > nextInstant.secondsSinceEpoch)
     {
@@ -301,6 +312,7 @@ gel::Error PqTnc::updateTrackingGPSReceived()
     if (!gpsRecieved)
         return gel::Error::None;;
 
+    // sendMessage("Adding known location to GS");
     return groundStation.addKnownLocation(latestReceivedInstant);
 }
 
@@ -313,7 +325,32 @@ gel::Error PqTnc::setTncMode(suncq::TncMode mode)
 gel::Error PqTnc::setTrackMode(suncq::TrackMode mode)
 {
     settings.trackMode = mode;
-    sendMessage("Setting tracking mode to " + String(mode));
+
+    String modeString;
+    switch ((int)mode)
+    {
+        case (int)suncq::TrackMode::None:
+            modeString = "None";
+            break;
+
+        case (int)suncq::TrackMode::GpsReceived:
+            modeString = "GPS Received";
+            break;
+
+        case (int)suncq::TrackMode::GpsUploaded:
+            modeString = "GPS Uploaded";
+            break;
+
+        case ((int)suncq::TrackMode::GpsUploaded | (int)suncq::TrackMode::GpsReceived):
+            modeString = "GPS Uploaded and Recieved";
+            break;
+
+        default:
+            modeString = "Not Supported";
+            break;
+    }
+
+    sendMessage("Setting tracking mode to " + String(modeString));
 
     if (mode & suncq::TrackMode::SignalStrengthInitial)
         return groundStation.scanBruteForce();
@@ -324,8 +361,9 @@ gel::Error PqTnc::setTrackMode(suncq::TrackMode mode)
 bool PqTnc::addKnownLocationData(uint8_t newData)
 {
     if (byteStreamIdx < sizeof (gel::GeoInstant))
-        ((uint8_t*)&latestReceivedInstant)[byteStreamIdx++] = newData;
-
+        ((uint8_t*)&latestReceivedInstant)[byteStreamIdx] = newData;
+    
+    byteStreamIdx++;
     if (byteStreamIdx < sizeof (gel::GeoInstant))
     {
         return false;
@@ -333,12 +371,23 @@ bool PqTnc::addKnownLocationData(uint8_t newData)
     else
     {
         byteStreamIdx = 0;
-        Serial.println("Pointing at:");
-        Serial.println("Lat = " + String(latestReceivedInstant.location.lat));
-        Serial.println("Lat = " + String(latestReceivedInstant.location.lng));
+
+        if (latestReceivedInstant.secondsSinceEpoch == 0)
+            latestReceivedInstant.secondsSinceEpoch = groundStation.getCurrentSecondsSinceEpoch();
+            
+        auto log = String("Adding received location: ")
+                 + String("Lat = ") + String(latestReceivedInstant.location.lat) + ", "
+                 + String("Lng = ") + String(latestReceivedInstant.location.lng) + ", "
+                 + String("Alt = ") + String(latestReceivedInstant.location.altitude) + ", "
+                 + String("Sec = ") + String(latestReceivedInstant.secondsSinceEpoch);
+        sendMessage(log);
+
+        
         gpsRecieved = true;
         return true;
     }
+
+    return true;
 }
 
 // True is returned if we are done receiving data for the flight path
@@ -365,6 +414,7 @@ bool PqTnc::addFlightPathData(uint8_t newData)
         {
             saveFlightPath();
             finishedReceiving = true;
+            sendMessage("Added " + String(numPathInstants) + " Path Instants");
         }
         else
         {
@@ -377,6 +427,7 @@ bool PqTnc::addFlightPathData(uint8_t newData)
 
 void PqTnc::reset()
 {
+    sendMessage("Resetting System...");
     groundStation.returnToStow();
     #ifdef ESP32
     ESP.restart();
@@ -388,7 +439,7 @@ void PqTnc::reset()
 
 void PqTnc::sendAcknowledge()
 {
-    uint8_t message[2] = {(uint8_t)suncq::Command::TncStatus, (uint8_t)suncq::StatusCode::Acknowledge};
+    uint8_t message[2] = {(uint8_t)suncq::Command::TncTelemetry, (uint8_t)suncq::StatusCode::Acknowledge};
     Serial.write((const char*)message, sizeof(message));
 }
 
@@ -406,7 +457,14 @@ void PqTnc::sendSignalRSSI()
 
 void PqTnc::sendMessage(String msg)
 {
-    // Serial.write((uint8_t)suncq::Command::TncMessage);
+    Serial.write((uint8_t)suncq::Command::TncMessage);
+    Serial.print("[PqTnc] ");
+    Serial.println(msg.c_str());
+}
+
+void PqTnc::sendTelemetry(String msg)
+{
+    Serial.write((uint8_t)suncq::Command::TncTelemetry);
     Serial.println(msg.c_str());
 }
 
@@ -418,8 +476,14 @@ void PqTnc::sendError(gel::Error& err)
 gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
 {
     String payloadStr{(const char*)payload.data()};
-    Serial.println("Continuous bit rate = " + String(groundStation.getLink().getDataRate()));
-    sendMessage(String(payload.data(), payload.size()));
+    String log = "";
+
+    // sendMessage("Continuous bit rate = " + String(groundStation.getLink().getDataRate()));
+    // sendMessage(String(payload.data(), payload.size()));
+
+    auto numIdx = payloadStr.indexOf("Num: ");
+    auto num = payloadStr.substring(numIdx + 5, numIdx + 5 + 9).toInt();
+    log = log + "PID = " + String(num) + ", ";
 
     if (payloadStr.indexOf("GPS") > 0)
     {
@@ -431,6 +495,10 @@ gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
         auto lng = payloadStr.substring(lngIdx + 5).toFloat();
         auto altitude = payloadStr.substring(altIdx + 5).toFloat();
         auto age = payloadStr.substring(ageIdx + 5).toInt();
+
+        log = log + String("Lat = ") + String(lat) + ", "
+                  + String("Lng = ") + String(lng) + ", "
+                  + String("Alt = ") + String(altitude) + ", ";
 
         gpsRecieved = true;
         latestReceivedInstant.location.lat = lat;
@@ -450,12 +518,17 @@ gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
             auto deltaVec = pqLocationCart - gsLocationCart;
             float distance = gel::length(deltaVec);
 
-            Serial.println("Calculated distance = " + String(distance / 1000.0) + " km");
+            // sendMessage("Calculated distance = " + String(distance / 1000.0) + " km");
+            log = log + "Dist = " + String(distance / 1000.0) + " km, ";
         }
     }
 
-    Serial.println("RSSI = " + String(groundStation.getRadio().getRssi()));
-    Serial.println("SNR = " + String(groundStation.getRadio().getSNR()));
+    log = log + "RSSI = " + String(groundStation.getRadio().getRssi()) + ", ";
+    log = log + "SNR = " + String(groundStation.getRadio().getSNR()) + ", ";
+    log = log + "CBR = " + String(groundStation.getLink().getDataRate()) + " bps";
+    sendTelemetry(log);
+    // sendMessage("RSSI = " + String(groundStation.getRadio().getRssi()));
+    // sendMessage("SNR = " + String(groundStation.getRadio().getSNR()));
 
     return gel::Error::None;
 }

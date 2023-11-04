@@ -52,6 +52,8 @@ public slots:
     }    
 
 private:
+    void outputTelemetry(QString str);
+    
     void closeSerialPort();
     void openSerialPort();
 

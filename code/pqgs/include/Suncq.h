@@ -15,7 +15,7 @@ enum Command
     SetTrackLocation = 0x33,
     SetTrackTarget = 0x34,
     GetSignalRSSI = 0x60,
-    TncStatus = 0x80,
+    TncTelemetry = 0x80,
     TncMessage = 0x81,
     SignalRSSI = 0xA0,
     Invalid = 0xFF,

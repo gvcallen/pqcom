@@ -37,6 +37,8 @@ MainWindow::MainWindow(QWidget *parent)
     loadSettings();
     populateWidgets();
     openSerialPort();
+
+    // qDebug() << "Epoch = " << QDateTime::currentSecsSinceEpoch();
 }
 
 MainWindow::~MainWindow()
@@ -185,16 +187,29 @@ void MainWindow::serialBytesReady()
     serialBytes.insert(serialBytes.end(), bytes.begin(), bytes.end());
 
     auto location = std::find(serialBytes.begin(), serialBytes.end(), '\n');
+    bool telemetry = false;
     while (location != serialBytes.end())
     {
         QString message;
         for (auto it = serialBytes.begin(); it != location - 1; it++)
         {
-            char c = (char)*it;
-            message.append(c);
+            uint8_t c = (uint8_t)*it;
+            
+            if (it == serialBytes.begin())
+            {
+                if (c == suncq::TncTelemetry)
+                    telemetry = true;
+                continue;
+            }
+            
+            message.append((char)c);
         }
         serialBytes.erase(serialBytes.begin(), location + 1);
-        ui->serialMonitor->append(message);
+        
+        if (telemetry)
+            ui->telemetryMonitor->append(message);
+        else
+            ui->serialMonitor->append(message);
 
         location = std::find(serialBytes.begin(), serialBytes.end(), '\n');
     }
@@ -218,12 +233,22 @@ QString MainWindow::getLogFilePath()
     auto fileNames = QDir(folderPath).entryList(QStringList() << "*.log", QDir::Files);
 
     if (fileNames.empty())
-    {
-        QMessageBox::critical(this, "Could not find log file", "Could not open AutoRX log file. Please ensure the log file has been previously generated");
         return "";
-    }
     
     auto fileName = fileNames[0];
+    QDateTime lastModified = QFileInfo(folderPath + "/" + fileName).lastModified();
+    for (auto testFileName : fileNames)
+    {
+        const QFileInfo info(folderPath + "/" + testFileName);
+        const QDateTime testLastModified = info.lastModified();
+
+        if (testLastModified > lastModified)
+        {
+            fileName = testFileName;
+            lastModified = testLastModified;
+        }
+    }
+    
     QString filePath = folderPath + "/" + fileName;
     return filePath;
 }
@@ -250,6 +275,7 @@ void MainWindow::autoRXLogChanged()
                 snrIdx = i;
         }
 
+        // Check if file header is correct
         if (latIdx == -1 || lngIdx == -1 || altIdx == -1 || snrIdx == -1)
             return;
 
@@ -281,7 +307,18 @@ void MainWindow::autoRXLogChanged()
 
         setTrackLocation(lat, lng, alt);
         setSnr(snr);
+        QString telemetry = "Lat = " + QString::number(lat) + ", "
+                          + "Lng = " + QString::number(lng) + ", "
+                          + "Alt = " + QString::number(alt) + ", "
+                          + "Snr = " + QString::number(snr);
+        
+        outputTelemetry(telemetry);
     }
+}
+
+void MainWindow::outputTelemetry(QString str)
+{
+    ui->telemetryMonitor->append(str);
 }
 
 void MainWindow::autoRXLogCheck()
@@ -290,6 +327,9 @@ void MainWindow::autoRXLogCheck()
     const QFileInfo info(filePath);
     const QDateTime lastModified = info.lastModified();
 
+    // Debugging code - uncomment to read file line-by-line
+    // autoRXLogChanged();
+    
     if (lastModified > lastLogCheckTime)
     {
         lastLogCheckTime = lastModified;
@@ -334,7 +374,7 @@ void MainWindow::setTrackMode()
     else if (ui->trackModeCombo->currentText() == TEXT_TRACK_MODE_GPS_RECEIVED)
         ::setTrackMode(serial, suncq::TrackMode::GpsReceived);
     else if (ui->trackModeCombo->currentText() == TEXT_TRACK_MODE_GPS_UPLOADED_AND_RECEIVED)
-        ::setTrackMode(serial, (suncq::TrackMode)((int)suncq::TrackMode::GpsUploaded & (int)suncq::TrackMode::GpsReceived));
+        ::setTrackMode(serial, (suncq::TrackMode)((int)suncq::TrackMode::GpsUploaded | (int)suncq::TrackMode::GpsReceived));
 }
 
 void MainWindow::setTrackTarget()
@@ -350,6 +390,8 @@ void MainWindow::setTrackTargetLoRa()
 {
     if (autoRXProcess && autoRXProcess->isOpen())
         autoRXProcess->close();
+    if (autoRXTimer)
+        autoRXTimer->stop();
     ui->trackTargetCombo->setCurrentIndex(0);
     ::setTrackTarget(serial, suncq::TrackTarget::Internal);
 }
@@ -403,16 +445,19 @@ void MainWindow::setTrackTargetRadiosonde()
 void MainWindow::setTrackLocation(float lat, float lng, float alt)
 {
     suncq::GeoInstant instant;
-    instant.secondsSinceEpoch = QDateTime::currentSecsSinceEpoch();
+    // instant.secondsSinceEpoch = QDateTime::currentSecsSinceEpoch();
+    instant.secondsSinceEpoch = 0;
     instant.latitude = lat;
     instant.longitude = lng;
     instant.altitude = alt;
+
+    QString debugMsg = QString("Setting track location: ")
+                     + "Lat = " + QString::number(instant.latitude) + ", "
+                     + "Lng = " + QString::number(instant.longitude) + ", "
+                     + "Alt = " + QString::number(instant.altitude) + ", "
+                     + "Sec = " + QString::number(instant.secondsSinceEpoch);
     
-    qDebug() << "Setting track location";
-    qDebug() << "Lat: " << lat;
-    qDebug() << "Lng: " << lng;
-    qDebug() << "Alt: " << alt;
-    qDebug() << "Sec: " << instant.secondsSinceEpoch;
+    qDebug() << debugMsg;
     
     ::setTrackLocation(serial, instant);
 }

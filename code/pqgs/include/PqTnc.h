@@ -43,7 +43,7 @@ private:
     gel::Error updateSerial();
     gel::Error updateSerialNormal(uint8_t c);
     gel::Error updateSerialKISS(uint8_t c);
-    gel::Error updateTracking();
+    gel::vector<gel::Error, 2> updateTracking();
     gel::Error updateTrackingGPSUploaded();
     gel::Error updateTrackingGPSReceived();
     
@@ -60,6 +60,7 @@ private:
     // Protocol responses
     void sendAcknowledge();
     void sendSignalRSSI();
+    void sendTelemetry(String msg);
     void sendMessage(String msg);
     void sendError(gel::Error& err);
 
