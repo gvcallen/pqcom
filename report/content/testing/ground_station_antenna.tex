@@ -4,11 +4,20 @@
 
 The ground station antenna's return loss was measured using a network analyser to ensure it was correctly matched to $\SI{50}{\ohm}$. The resultant graph is shown in Figure \ref{fig:helicalReturnLoss}. The figure shows the simple matching strip design is effective and was implemented correctly, however it should be noted that the null is not as deep as simulated (only around -10 dB minimum at 427 MHz as opposed to the -50 dB simulated minimum at the centre frequency of 433 MHz).
 
+
 \begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.85\textwidth]{helicalReturnLoss}
-  \caption{Measured Helical Antenna Return Loss vs Frequency}
-  \label{fig:helicalReturnLoss}
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[width=1.1\linewidth]{helicalReturnLoss}
+    \caption{Measured Helical Antenna Return Loss vs Frequency}
+    \label{fig:helicalReturnLoss}
+  \end{minipage}
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[width=1.1\linewidth]{dipoleReturnLoss}
+    \caption{Measured Dipole Antenna Return Loss vs Frequency}
+    \label{fig:dipoleReturnLoss}
+  \end{minipage}
 \end{figure}
 
-There are several reasons why the null may not be as deep as simulated. Firstly, the aluminium foil used is far from an ideal PEC. Secondly, the imperfections in the antenna's construction (e.g. bends in the coil wire, the PVC and wooden dielectrics that were not simulated, etc.) may cause the match to be non-ideal. Finally, it is hypothesized that a longer strip might have made the implementation more practically realizable, due to the increased capacitive coupling and decreased fringing effects which the matching technique relies on. Instead of optimizing the antenna build, however, it was decided to run further tests with this system, since the link budget allows for up to a 1 dB matching loss. optimisation is therefore left for future projects. Lastly, the antenna gain pattern unfortunately could not be measured, as a chamber was not available that catered for the low frequency of the system.
+There are several reasons why the null may not be as deep as simulated. Firstly, the aluminium foil used is far from an ideal PEC. Secondly, the imperfections in the antenna's construction (e.g. bends in the coil wire, the PVC and wooden dielectrics that were not simulated, etc.) may cause the match to be non-ideal. Finally, it is hypothesized that a longer strip might have made the implementation more practically realizable, due to the increased capacitive coupling and decreased fringing effects which the matching technique relies on. Instead of optimizing the antenna build, however, it was decided to run further tests with this system, since the link budget allows for up to a 1 dB matching loss. Optimisation is therefore left for future projects. Lastly, the antenna gain pattern unfortunately could not be measured, as a chamber was not available that catered for the low frequency of the system.

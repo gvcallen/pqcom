@@ -1,5 +1,20 @@
 \graphicspath{{./figures/}}
 
+\begin{figure}[!htb]
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{pq_backplane}
+    \caption{A Stellenbosch PocketQube Backplane PCB}
+    \label{fig:pq_backplane}
+  \end{minipage}
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{gps_relay}
+    \caption{GPS Relay Tracking \cite{site-highaltitudescienceTrackingWeather}}
+    \label{fig:gps_relay}
+  \end{minipage}
+\end{figure}
+
 \section{Satellite Tracking}
 There are various methods used to track satellites in order to maintain communication. Ultimately, all of these methods provide a single input to the ground station system: the direction in which to ``steer" its antenna. Each method is compared and expanded on below.
 
@@ -20,13 +35,6 @@ If a link cannot be initially established, a "relay" method of GPS tracking can 
     \item The position is \textit{relayed} to an external network (satellite or ground -based) using a radio transmitter.
     \item The ground station receives the location from the external network (e.g. via the internet).
 \end{enumerate}
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.3\textwidth]{gps_relay}
-  \caption{GPS Relay Tracking \cite{site-highaltitudescienceTrackingWeather}}
-  \label{fig:gps_relay}
-\end{figure}
 
 The major disadvantage of this method is the additional cost required. Since an antenna capable of communicating with one of the external networks is required, two antennas are needed if direct communication with a ground station is desired (however this is usually no longer necessary as the relay network can be used). Further, the cost of subscribing to an external network is generally high.
 

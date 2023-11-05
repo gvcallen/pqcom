@@ -1,0 +1,7 @@
+	Code: 6
+	Message: CRC mismatch when trying to receive radio data
+	Code: 6
+	Message: CRC mismatch when trying to receive radio data
+�[PqTnc] Calibrating Ground Station
+	Code: 6
+	Message: CRC mismatch when trying to receive radio data

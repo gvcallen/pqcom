@@ -1,9 +1,18 @@
+\graphicspath{{./figures}}
+
 \section{Software}
-The following documents notable choices made during implementation, but after design. All code is available at \url{https://github.com/gvcallen/pqcom/tree/main/code}.
+The following section documents notable choices made during implementation, but after design. All code is available at \url{https://github.com/gvcallen/pqcom/tree/main/code}.
 
 \subsection{Mount Control}
-The motors were setup in half-stepping mode at maximum current. The step sequence (as in the driver datasheet \cite{datasheet-L6219}) was implemented using an array. The two-axis mount requires some relatively involved control. Elevational variation is straight-forward, as the azimuthal motor (controlled by Gear C in Figure \ref{fig:antennaMount}) can be held fixed, and the elevation motor (Gear D) stepped accordingly. For azimuthal variation, if the elevation motor is held fixed, rotating the azimuthal motor causes the mount to also change in elevation, which must be compensated (demonstrated in Appendix \ref{sec:appendix_mount_rotation}). The ``azel" ratio is the number of elevation motor turns required to tilt the elevation axis the same amount as the azimuthal motor, given by:
-\newpage
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.55\textwidth]{stepperTiming}
+  \caption{Stepper Motor Timing Diagram \cite{datasheet-L6219}}
+  \label{fig:stepperTiming}
+\end{figure}
+
+The motors were setup in half-stepping mode at maximum current, as shown in Figure \ref{fig:stepperTiming}. The step sequence (as in the driver datasheet \cite{datasheet-L6219}) was implemented using an array. Since both axes on the mount are dependent (i.e. connected via Gear E) the two-axis mount requires some relatively involved control. Elevational variation is straight-forward, as the azimuthal motor (controlled by Gear C in Figure \ref{fig:antennaMount}) can be held fixed, and the elevation motor (Gear D) stepped accordingly. For azimuthal variation, if the elevation motor is held fixed, rotating the azimuthal motor causes the mount to also change in elevation, which must be compensated (demonstrated in Appendix \ref{sec:appendix_mount_rotation}). The ``azel" ratio is the number of elevation motor turns required to tilt the elevation axis the same amount as the azimuthal motor, given by:
+
 \begin{equation}\label{eqn:azelRatio}
 \textnormal{azelRatio} = \frac{D_{\textnormal{outer}} / B}{C / A} = \frac{92 / 20}{60 / 15} = 1.15
 \end{equation}
@@ -21,10 +30,7 @@ The motors were setup in half-stepping mode at maximum current. The step sequenc
 \end{align}
 
 \subsection{Pointing}
-A small C++ header-only library titled \textit{wgs84} was used to perform a Mercator projection to cartesian co-ordinates, with Cape Town as the origin. This allows a pointing vector to be determined, which could be passed to the mount and set as the boresight. Unfortunately, the purchased IMU (the MPU-9250) was found to be counterfeit and did not include a magnetometer. A constraint was therefore made that the ground station should be manually faced towards magnetic north using a compass, and then angle between the zero sensor and magnetic north was manually measured as a reference input.
+A small C++ header-only library titled \textit{wgs84} was used for the Mercator projection, with Cape Town as the origin. This allows a pointing vector to be determined, which could be set as the mount's boresight. Unfortunately, the purchased IMU (the MPU-9250) was found to be counterfeit and did not include a magnetometer. A constraint was therefore made that a dead-reckoning fix to face magnetic north should be done for the ground station. The angle between the zero sensor and magnetic north was therefore used as a reference input.
 
 \subsection{Radio and GPS}
 Existing Arduino libraries were wrapped into "cover classes", with the library \textit{Radiolib} initially being used for communication with the LoRa module. However, it was found that its implementation was too large in program size for the Atmega328. It was therefore replaced with an smaller implementation, \textit{LoRaLib}. For the GPS, \textit{TinyGPSPlus} was used.
-
-\subsection{GUI}
-A simple GUI application was development using the Qt framework to ease testing and flight path uploading. The ability to import a CSV in the format provided by \textit{HabHub} was provided. An image of this application can be found in Appendix \ref{sec:appendix_gui}.

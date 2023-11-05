@@ -204,6 +204,7 @@ gel::Error PqTnc::updateSerialNormal(uint8_t c)
         case suncq::Command::Calibrate:
             sendMessage("Calibrating Ground Station");
             err = groundStation.calibrate();
+            sendMessage("Calibration complete");
             break;
         case suncq::Command::ReturnToStart:
             sendMessage("Returning to Start");

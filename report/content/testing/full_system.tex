@@ -1,3 +1,20 @@
+\graphicspath{{./figures}}
+
 \section{Full System}
 
-The South African Weather Service fortunately granted permission for tracking of their weather balloons, which contain similar Radiosondes as designed for. A full system test was therefore conducted, with closed-loop tracking being prioritised. The system was found to successfully track and receive the Radiosonde's GPS location up to a distance of 50 km. It should be noted that, since the Radiosonde's receiver has a low sensitivity, a range as long as the custom link is not expected. However, this full system test successfully demonstrates the capabilities of the system. An image of the setup is shown in Figure \textcolor{red}{xxx}.
+The South African Weather Service kindly granted permission to track their weather balloons, which contain Radiosondes. This allowed for a tracking system test to be conducted, with focus on closed-loop tracking. The system computer unfortunately lost power near the 25 km mark, and a second test could not be conducted due to time constraints. However, it was observed that the mount correctly steered the antenna based on the received GPS data. The results of both the predicted path and the actual path for the weather balloon, as well as the recorded SNR as a function of distance, are shown in Figures \ref{fig:radiosondePredictedVsActual} and \ref{fig:radiosondeSnr}.
+
+\begin{figure}[!htb]
+  \begin{minipage}{.4\textwidth}
+    \centering
+    \includegraphics[width=0.85\linewidth]{radiosondePredictedVsActual}
+    \caption{Radiosonde Closed-Loop Tracking Predicted Path (left) vs Actual (right)}
+    \label{fig:radiosondePredictedVsActual}
+  \end{minipage}
+  \begin{minipage}{.6\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{radiosondeSnr}
+    \caption{Radiosonde Closed-Loop Tracking SNR vs Distance}
+    \label{fig:radiosondeSnr}
+  \end{minipage}
+\end{figure}

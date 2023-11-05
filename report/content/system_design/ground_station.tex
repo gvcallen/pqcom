@@ -10,7 +10,7 @@
 \end{figure}
 
 \subsection{Power}
-The power section consists of two linear regulators, as well as a boost converter. Since the existing motors are ideally powered from +24V, a boost converter will be used to step up the voltage from a car battery voltage of +12V. Further, +5V and +3V3 regulators will be included to power both the MCU and any other ICs. Linear regulators were selected, due to their simplicity, as well as the lack of any specific system-wide efficiency requirements.
+The power section consists of two linear regulators, as well as a boost converter. Since the existing motors are ideally powered from +24V, a boost converter will be used to step up the voltage from a battery voltage of +12V. Further, +5V and +3V3 regulators will be included to power both the MCU and any other ICs. Linear regulators were selected, due to their simplicity, as well as the lack of any specific system-wide efficiency requirements.
 
 \subsection{Communication}
 The communication section consists of the main antenna, as well as the RF circuitry and connectors. The \textit{RF Switch/Connector} is provided to allow the antenna to be shared between the custom and radiosonde communication links. Initially, a connector will be used for prototyping. If time allows, a dedicated RF switch could be included, which will allow for the MCU to control the antenna connection. The radiosonde will either connect to the PC (e.g. if an SDR dongle is used) or to the MCU (if a dedicated receiver is used).
@@ -34,18 +34,17 @@ The communication section consists of the main antenna, as well as the RF circui
 
 Generally, the orientation of a ground station's antenna is described by both an azimuthal and an elevation angle, as in Figure \ref{fig:az_elevation}. The existing two-axis antenna mount is shown in Figure \ref{fig:antennaMount}. Since the antenna platform moves relative to the base (where the PCB is mounted), this relative angle needs to be known. Two options to do this are considered:
 \begin{enumerate}
-    \item \textit{Open-loop}. The base's absolute orientation is measured/known, and the platform's relative orientation is calculated/looked up based on the stepper motor positions.
+    \item \textit{Open-loop}. The base's absolute orientation is known, and the platform's relative orientation is calculated/looked up based on the stepper motor positions.
     \item \textit{Closed-loop}. The platform's absolute orientation is measured in real-time, and this information is fed back into the motor's control system to point the platform correctly.
 \end{enumerate}
 
-Since stepper motors are already included, \textit{open-loop} method will be considered, however the closed loop method may be implemented if this method is found to lack accuracy, or the motor locations are found to be unpredictable. In this case, an inertial measurement unit (IMU), which typically includes an accelerometer and gyroscope, will be used.
+Since stepper motors are already included, \textit{open-loop} method will be considered, however the closed loop method may be implemented if this method is found to lack accuracy, or the motor locations are found to be unpredictable.
 
 \subsection{Monitoring}
-A laptop will be used with a simple Graphical User Application (GUI) allowing the user to:
+A laptop will be used with a simple Graphical User Application (GUI) which allows a user to:
 \begin{itemize}
-    \item Send commands to the ground station and/or satellite.
-    \item Read telemetry of the satelite.
     \item Control the ground station orientation e.g. performing motor calibration etc.
-    \item Set communication parameters e.g. output power and modulation parameters.
+    \item Read telemetry received from the satelite.
     \item Monitor communication link performance.
+    \item Send commands to the ground station and/or satellite.
 \end{itemize}

@@ -2,11 +2,4 @@
 
 \section{Radiosonde}
 
-The helical antenna was setup to receive the radiosonde GFSK signal using the RTL-SDR USB dongle and an SMA to MCX adapter. A resultant "squelch" signal was observed to be received in one second intervals, and the frequency domain of this signal is plotted in Figure \ref{fig:radiosondeSpectrum} using GNU Radio software. A free Python script \textit{Auto-RX} was found to cater for receiving telemetry from the iMet-54 Radiosonde, and the GPS location was successfully received. The developed GUI was therefore altered to allow for tracking the external Radiosondes, and the closed-loop tracking was successfully tested with a similiar but shorter-range procedure as in \ref{sec:closed_loop_testing}.
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.8\textwidth]{radiosondeSpectrum}
-  \caption{Received Radiosonde Signal FFT}
-  \label{fig:radiosondeSpectrum}
-\end{figure}
+The helical antenna was setup to receive signal from a test iMet-54 radiosonde using the RTL-SDR USB dongle and an SMA to MCX adapter. A resultant "squelch" signal was observed to be received in one second intervals, and the frequency domain of this signal is plotted in Figure \ref{fig:radiosondeSpectrum} using GNU Radio software. A free Python script \textit{Auto-RX} was found to cater for receiving telemetry from this radiosondes, as well as several others, and the GPS location was successfully received.

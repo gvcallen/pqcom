@@ -1,29 +1,42 @@
 \section{Telecommunication}\label{sec:telecommunication_theory}
 
 \subsection{Modulation Techniques}
-The \textit{modulation} technique used over a communication link refers to the method used to encode analog or digital information into an electrical voltage. ASK, FSK, PSK, and QAM are the most common techniques \cite{site-satelliteModulationOverview} \cite{site-satelliteModulationComparison}:
-\begin{itemize}
-    \item \textit{Amplitude Shift Keying} (ASK). This technique modulates the amplitude of the voltage to represent various bit levels.
-    \item \textit{Frequency Shift Keying} (FSK). This method changes the frequency of the signal to represent various signal levels. Commonly, \textit{Gaussian-FSK} (GFSK) is used, which implements a smoothing filter. This decreased the bandwidth for similar throughput, making it comparable to the following techniques.
-    \item \textit{Phase Shift Keying} (PSK). This is often seen as a variation of FSK, where the phase of the signal is varied instead of the frequency. It requires complex synchronisation, and has lower spectral efficiency compared to QAM.
-    \item \textit{Quadrature Amplitude Modulation} (QAM). This method modulates both the amplitude and phase of a signal, allowing for a large number of signal levels. It has very high spectral efficiency, and is commonly used for high cost, high throughput systems.
-\end{itemize}
+The \textit{modulation} technique used over a digital communication link refers to the method used to represent digital bits as electrical signals. Common techniques are contrasted in Table \ref{tab:modulationTechniques}.
 
-\textit{LoRa} ("Long-Range") modulation is a relatively new technique. It makes use of frequency-varying "chirps" to modulate the incoming signal. It has been seen to drastically increase range capacity, at the expense of greater bandwidth requirements \cite{datasheet-SX1278}. Its practical use has also been demonstrated in an existing CubeSat system \cite{design-FOSSASATLink}.
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \hspace*{-1cm}
+  \begin{tabular}{ |p{3cm}|p{2cm}|p{11cm}| }
+  \hline
+  \textbf{Name}                & \textbf{Bit Variation}    & \textbf{Comments} \\ \hline
+   Amplitude Shift Keying (ASK)
+   & Amplitudes
+   & Low noise immunity
+   \\ \hline
+   Frequency Shift Keying (FSK)
+   & Frequencies
+   & \textit{Gaussian-FSK} (GFSK) is a common variation with filters the signal, decreasing the bandwidth for similar throughput.
+   \\ \hline
+   Phase Shift Keying (PSK)
+   & Phase Angles
+   & This is often seen as similar to FSK. It is also similar to QAM, but has lower spectral efficiency.
+   \\ \hline
+   Quadrature Amplitude Modulation (QAM)
+   & Amplitude-Phase Pairs
+   & It has very high spectral efficiency, and is commonly used for higher cost, high throughput systems.
+   \\ \hline
+   LoRa (``Long-Range") Modulation
+   & Frequency-varying ``Chirps"
+   & It has been seen to drastically increase range, at the expense of greater bandwidth requirements \cite{datasheet-SX1278}. Its practical use has also been demonstrated in an existing CubeSat system \cite{design-FOSSASATLink}.
+   \\ \hline
+  \end{tabular}
+  \caption{Comparison of Modulation Techniques}
+  \label{tab:modulationTechniques}
+\end{table}
 
 \subsection{Link Budget}\label{sec:link_budget}
-For any communication system, a "link-level" design or \textit{link budget} should be conducted. The goal of this design step is to determine the power requirements of the commuication system, taking into account transmitter power, antenna characteristics, receiver sensitivity, modulation technique, and any attenuation involved. A number of the attenuation affects which may be taken into account in a satellite link budget include \cite{design-satelliteLinkBudget}:
-\begin{itemize}
-    \item Cable loss
-    \item Amplifier-antenna mismatch
-    \item Free-space path losses
-    \item Absorption losses due to clouds, rain etc.
-    \item \textit{Polarization} mismatch due to antennas not being aligned
-    \item \textit{Scintillation} effects due to changes in the air's refractive index
-    \item The effect of varying \textit{elevation angles}
-\end{itemize}
-
-\noindent Further, it is recommend to include a minimum margin or \textit{fade margin} of at least 3 dB for low frequency links \cite{paper-linkMargin}, up to 10 dB for links that require more up-time \cite{design-linkBudgetDesign}, and around 20 dB for mission critical links.
+For any communication system, a \textit{link budget} should be estimated, with the goal of taking into account transmitter power, antenna characteristics, receiver sensitivity, and any attenuation involved. A number of the attenuation affects include: cable loss; amplifier-antenna mismatch; free-space path losses; absorption losses due to clouds and rain; \textit{polarization} mismatch due to antennas not being aligned; \textit{scintillation} effects due to changes in the air's refractive index; and the effect of varying \textit{elevation angles} \cite{design-satelliteLinkBudget}. It is recommended to include a minimum \textit{fade margin} of at least 3 dB for low frequency links \cite{paper-linkMargin}; 10 dB for links that require more up-time \cite{design-linkBudgetDesign}; and 20 dB for critical links.
 
 \subsection{Protocols}
 A few link-layer and network-layer protocols already exist that facilitate nano-satellite applications. 

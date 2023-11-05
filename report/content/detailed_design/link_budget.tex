@@ -4,81 +4,42 @@ The link budget should now be estimated, and initial considerations for the grou
 
 Signal Hill in Cape Town is a viable location for the ground station and is easily accessible. At its distance of 114 km, however, one would need to be at a height of 950 m due to the distance to the horizon. Therefore, the balloon would only be visible at an altitude of 600 m (from Signal Hill's 350 m height). A maximum elevation angle of $16.72^\circ$ at 30 km altitude above Worcester should be considered.
 
-\newpage
 The \textit{receiver sensitivity} is a value which denotes the minimum power level required at the receiver for successful communication. Depending on set parameters, the SX1278 quotes varying receiver sensitivity values. Notable configurations are listed in Table \ref{tab:sensitivity_values}.
-\begin{table}[!htb]
-  \centering
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ |c|c|c|c|c| }
-  \hline
-  \textbf{Description} & \textbf{Modulation} & \textbf{Parameters} & \textbf{Bit Rate} & \textbf{Sensitivity} \\
-  \hline
-  Maximum Bit Rate &
-  GFSK &
-  62.5 kHz &
-  250 000 bps &
-  -92 dBm \\
-  \hline
-  High Bit Rate &
-  GFSK &
-  40 kHz &
-  38400 bps &
-  -109 dBm \\
-  \hline
-  Target Bit Rate ($\approx 9600 bps$) &
-  GFSK &
-  5 kHz &
-  4800 bps &
-  -115 dBm \\
-  \hline
-  - &
-  LoRa &
-  500 kHz, SF 8 &
-  10417 bps &
-  -119 dBm \\
-  \hline
-  Maximum Sensitivity &
-  LoRa &
-  62.5 kHz, SF 12 &
-  24 bps &
-  -147 dBm \\
-  \hline
-  \end{tabular}
-  \caption{Notable SX1278 Configurations}
-  \label{tab:sensitivity_values}
-\end{table}
 
-An online path loos calculator was used to calculate attenuation due to distance, and the Python tool \textit{link budget} was used to calculate atmospheric losses. All values were based on both the RA-02 and the SX1278 chip specifications, as well as half-wavelength dipoles as antennas, an impedance mismatch loss of 0.5 dB (around -10 dB return loss), and a maximum transmitter power setting (18 dBm).
+An online path loss calculator at \cite{site-pathLossCalculator} was used to calculate attenuation due to distance, and the Python tool \textit{link budget} was used to calculate atmospheric losses. All values were based on both the RA-02 and the SX1278 chip specifications, as well as half-wavelength dipoles as antennas, an impedance mismatch loss of 0.5 dB (around -10 dB return loss), and a maximum transmitter power setting (18 dBm).
 
 \begin{table}[!htb]
-  \centering
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ |c|c| }
-  \hline
-  Transmitter Power             & 18 dBm                    \\ \hline
-  Mismatch Loss                 & (0.5 dB)                 \\ \hline
-  Transmission Line Loss        & (1 dB)                  \\ \hline
-  Antenna Gain                  & 2.15 dB                   \\ \hline
-  \textbf{EIRP}                 & \textbf{18.65 dBm}        \\ \hline
-  \end{tabular}
-  \caption{Link Budget - Satellite}
-  \label{tab:link_budget_satellite}
+  \begin{minipage}{.49\textwidth}
+      \centering
+      \renewcommand{\arraystretch}{1.2}
+      \begin{tabular}{ |c|c| }
+      \hline
+      Transmitter Power             & 18 dBm                    \\ \hline
+      Mismatch Loss                 & (0.5 dB)                 \\ \hline
+      Transmission Line Loss        & (1 dB)                  \\ \hline
+      Antenna Gain                  & 2.15 dB                   \\ \hline
+      \textbf{EIRP}                 & \textbf{18.65 dBm}        \\ \hline
+      \end{tabular}
+      \caption{Link Budget - Satellite}
+      \label{tab:link_budget_satellite}
+  \end{minipage}
+  \begin{minipage}{.49\textwidth}
+      \centering
+      \renewcommand{\arraystretch}{1.2}
+      \begin{tabular}{ |c|c| }
+      \hline
+      Free space path loss (114 km) & 126.3 dB                  \\ \hline
+      Atmospheric loss              & 0.22 dB                   \\ \hline
+      Scintillation loss            & 0.37 dB                   \\ \hline
+      Polarization Mismatch         & 3 dB                      \\ \hline
+      \textbf{Total Loss}           & \textbf{129.89 dB}         \\ \hline
+      \end{tabular}
+      \caption{Link Budget - Channel}
+      \label{tab:link_budget_channel}
+  \end{minipage}
 \end{table}
 
-\begin{table}[!htb]
-  \centering
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ |c|c| }
-  \hline
-  Free space path loss (114 km) & 126.3 dB                  \\ \hline
-  Atmospheric loss              & 0.22 dB                   \\ \hline
-  Scintillation loss            & 0.37 dB                   \\ \hline
-  Polarization Mismatch         & 3 dB                      \\ \hline
-  \textbf{Total Loss}           & \textbf{129.89 dB}         \\ \hline
-  \end{tabular}
-  \caption{Link Budget - Channel}
-  \label{tab:link_budget_channel}
-\end{table}
+
 
 \begin{table}[!htb]
   \centering
@@ -95,7 +56,7 @@ An online path loos calculator was used to calculate attenuation due to distance
   \label{tab:link_budget_gs}
 \end{table}
 
-The LoRa "target bit rate" sensitivity value of -119 dBm is used in the above calculations. The final link budget therefore results in 18.65 dBm - 129.89 dB + 119.65 dBm = 8.41 dB of link margin. Although this is theoretically adequate (above the 3 dB recommendation), there are a few considerations to be made:
+The LoRa "target bit rate" sensitivity value of -119 dBm (SF = 8 and BW = 500 kHz) is decided on, since it provides the 9600 baud rate with some margin. The final link budget therefore results in 18.65 dBm - 129.89 dB + 119.65 dBm = 8.41 dB of link margin. Although this is theoretically adequate (above the 3 dB recommendation), there are a few considerations to be made:
 \begin{itemize}
     \item If a higher bit rate is required, e.g. 38.4 kbps, then the margin drops to -2.6 dB.
     \item If a longer range is required (e.g. for future projects), free space path loss will drastically increase. For example, for a 250 km range, the loss becomes 133 dB, meaning the margin drops to only 1.1 dB.

@@ -43,6 +43,7 @@
 \onehalfspacing
 \usepackage{siunitx}
 \usepackage{lipsum}
+% \RenewDocumentCommand{\chapterbelowskip}{}{\vspace*{0pt}}
 
 % Headings
 \usepackage[raggedright,sf,bf]{titlesec}
@@ -127,7 +128,9 @@
 
 % Front matter
 \subfile{frontmatter/title_page}
-\subfile{frontmatter/declaration}
+\subfile{frontmatter/acknowledgements}
+% \subfile{frontmatter/declaration}
+\includepdf[scale=1.0]{frontmatter/docs/plagiarism_signed}
 \pagenumbering{roman}
 \tableofcontents
 \listoffigures

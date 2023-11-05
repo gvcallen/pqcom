@@ -6,24 +6,6 @@
 The existing antennna mount is shown in Figure \ref{fig:antennaMount}. Azimuthal and elevation stepper motors are connected directly through Gear A and B respectively. Gear A rotates the centre shaft to provide azimuthal steering, whereas Gear B rotates through Gear D and E to allow a change in elevation. The 
 specifications in Table \ref{tab:mount_specifications} were realized.
 
-\begin{table}[!htb]
-  \centering
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ |c|c| }
-  \hline
-  \textbf{Component}        & \textbf{Specification}    \\
-  \hline
-  Motor         & 200 full steps (per 360 degrees) \\ \hline
-  Gear A        & 15 teeth \\ \hline
-  Gear B        & 20 teeth \\ \hline
-  Gear C        & 60 teeth \\ \hline
-  Gear D        & 92 inner teeth, 80 outer teeth \\ \hline
-  Gear E        & 140 teeth (equivalent) \\ \hline
-  \end{tabular}
-  \caption{Mount Gear and Motor Specifications}
-  \label{tab:mount_specifications}
-\end{table}
-
 The black plastic platform is triangular and has three mounting holes. The new ground station's antenna should therefore be mounted onto this platform. It is important to consider the forces/torques involved, as well as the stepper motor holding torques, in order to determine the maximum weight and acceptable form factor of the new antenna.
 
 The azimuthal motor need not be considered, as all torques from the mount to its base are perpendicular to the central shaft, meaning it would only need to overcome static frictional forces to rotate the antenna, which are assumed to be negligible. The holding torque of the elevation motor, however, will constrain the antenna design. The holding torque of each motor is 0.25 Nm. The gearing ratio resulting from Gears B, D and E, results in an around 8x torque increase. This provides a holding torque of around 2 Nm at the pivot axle.
@@ -79,20 +61,21 @@ Most of the follow-up design is conducted around the lower frequency of $f = \SI
 \end{figure}
 
 \begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.65\textwidth]{helix3_impedance}
-  \caption{Simulated Helical Antenna Input Impedance ($f_c = \SI{550}{MHz}$, $G_\lambda = 0.7$)}
-  \label{fig:helix3_impedance}
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{helix3_impedance}
+    \caption{Simulated Helical Antenna Impedance ($f_c = \SI{550}{MHz}$, $G_\lambda = 0.7$)}
+    \label{fig:helix3_impedance}
+  \end{minipage}
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{helix4_impedance}
+    \caption{Simulated Helical Antenna Impedance ($f_c = \SI{510}{MHz}$, $G_\lambda = 0.6$)}
+    \label{fig:helix4_impedance}
+  \end{minipage}
 \end{figure}
 
-In order to ease matching, a lower centre frequency should ideally be used, to move the input impedance at 405 MHz and at 433 MHz closer together. This will, however, require either a larger ground plane, or a cupped ground plane (discussed further on). Unfortunately, FEKO does not allow for an optimisation goal that depends on two frequencies. Therefore, an iterative approach was used to find the centre frequency which minimizes the difference between the two impedances. The resulting centre frequency was found to be around $f_c = \SI{510}{MHz}$ at $G_\lambda = 0.6$ ($\approx \SI{350}{mm}$), with a resultant input impedance close to $\SI{250}{\ohm}$, as shown in Figure \ref{fig:helix4_impedance}.
-
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.65\textwidth]{helix4_impedance}
-  \caption{Simulated Helical Antenna Input Impedance ($f_c = \SI{510}{MHz}$, $G_\lambda = 0.6$)}
-  \label{fig:helix4_impedance}
-\end{figure}
+In order to ease matching, a lower centre frequency should ideally be used, to move the input impedance at 405 MHz and at 433 MHz closer together. This will, however, require either a larger ground plane, or a cupped ground plane (discussed further on). Unfortunately, FEKO does not allow for an optimisation goal that depends on two frequencies. Therefore, an iterative approach was used to find the centre frequency which minimizes the difference between the two impedances. The resulting centre frequency was found to be around $f_c = \SI{510}{MHz}$ at $G_\lambda = 0.6$ ($\approx \SI{350}{mm}$), with a resultant impedance close to $\SI{250}{\ohm}$ (as shown in Figure \ref{fig:helix4_impedance}).
 
 Since the mount can support a larger weight than the 3 turn coil, it was decided to experiment with larger a turn count (i.e. $n=4$), both for increased directivity/performance, and to potentially cater for manufacturing imperfections, such as a thin aluminium foil ground plane, and any diversions from the ideal helical shape. It was found that, for small ground plane diameters, as the number of turns increased, the radiation pattern for $f = \SI{405}{MHz}$ was negatively affected. This is intuitive when referring to image theory, as the non-idealities due to the finitely-sized ground plane become more apparent as distance to the plane increases. It should be noted that the pattern at $f = \SI{433}{MHz}$ was not as adversely affected.
 
@@ -118,40 +101,20 @@ It was therefore decided that the antenna would initially be built with a large 
 \subsection{Matching}
 Impedance matching should be done if the helical antenna is to be fed by a $\SI{50}{\ohm}$ coaxial cable. It was decided to match the antenna to the custom link's frequency of $f = \SI{433}{MHz}$ using the strip method mention in Section \ref{sec:helical_matching} for an uncupped ground plane. The FEKO model for this method is shown in Figure \ref{fig:helix7_model}.
 
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.45\textwidth]{helix7_model}
-  \caption{Helical Antenna with Matching Strip Simulation Model}
-  \label{fig:helix7_model}
-\end{figure}
-
-The strip is recommended to be relatively flat, and extend for approximately the first quarter turn. Its pitch angle was therefore chosen to be half that of the full helix, and it was chosen to extend for $0.15$ turns. The unknown parameters for the strip are then its height above the ground plane (also the height of the coaxial pin), and its strip width. The FEKO optimiser was used to optimise these two parameters for a minimum return loss. The resulting return loss as a function of frequency is shown in Figure \ref{fig:helix7_returnLoss}. The resultant mismatch loss is close to 0 dB at the target frequency, and 0.451 dB at 405 MHz.
 
 \begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.85\textwidth]{helix7_returnLoss}
-  \caption{Simulated Helical Antenna Return Loss vs Frequency}
-  \label{fig:helix7_returnLoss}
+  \begin{minipage}{.4\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{helix7_model}
+    \caption{Helical Antenna with Matching Strip Simulation Model}
+    \label{fig:helix7_model}
+  \end{minipage}
+  \begin{minipage}{.58\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{helix7_returnLoss}
+    \caption{Simulated Helical Antenna Return Loss vs Frequency}
+    \label{fig:helix7_returnLoss}
+  \end{minipage}
 \end{figure}
 
-\newpage
-The final antenna parameters are:
-\begin{table}[!htb]
-  \centering
-  \renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ |c|c| }
-  \hline
-  \textbf{Parameter}                  & \textbf{Value}    \\
-  \hline
-  Diameter (D)                        & 187.1 mm          \\ \hline
-  Turn Spacing (S)                    & 88.2 mm           \\ \hline
-  No. of Turns (n)                    & 4                 \\ \hline
-  Ground plane diameter (G)           & $> \SI{350}{mm}$  \\ \hline
-  Strip height (sh)                   & 19.4 mm          \\ \hline
-  Strip width (sw)                    & 77.7 mm           \\ \hline
-  Strip length (sl)                   & 132 mm           \\ \hline
-  Cup height, if used (ch)            & 88.2 mm           \\ \hline
-  \end{tabular}
-  \caption{Helical Antenna Final Parameters}
-  \label{tab:helicalParameters}
-\end{table}
+The strip is recommended to be relatively flat, and extend for approximately the first quarter turn. Its pitch angle was therefore chosen to be half that of the full helix, and it was chosen to extend for $0.15$ turns. The unknown parameters for the strip are then its height above the ground plane (also the height of the coaxial pin), and its strip width. The FEKO optimiser was used to optimise these two parameters for a minimum return loss. The resulting return loss as a function of frequency is shown in Figure \ref{fig:helix7_returnLoss}. The resultant mismatch loss is close to 0 dB at the target frequency, and 0.451 dB at 405 MHz. The final antenna parameters can be found in Table \ref{tab:helicalParameters} in the Appendix.

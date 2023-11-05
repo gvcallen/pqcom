@@ -1,6 +1,6 @@
 \section{Ground Station PCB}
 
-After implementation, trivial initial tests were done to ensure the ground station was functional. This included ensuring all modules (radio, GPS and IMU) could be interfaced with successfully, as well as a few more detailed power tests, documented below.
+After implementation, initial tests were done to ensure the ground station was functional. This included ensuring all modules (radio, GPS and IMU) could be interfaced with successfully, as well as a few more detailed power tests, documented below.
 
 \subsection{Power}
 
@@ -23,50 +23,43 @@ During no load from the motors, but load from the integrated circuits, the volta
 The current consumption through a 12.3 V supply was measured at 179 mA with all systems on except the motor drive. This equates to around 2.2 W of power. Since a total of around 1 W of power is expected during no transmission as calculated previously, this means that the voltage regulators are dissipating the remaining 1.2 W. This is well within the limitations of both regulators e.g. the LD1117 can dissipate a theoretical maximum of $\SI{12}{W}$. The system was left idle for an hour with no noticeable change in current or heat.
 
 \subsection{Motor Drive}
-The motor drive system was tested with the half-step sequence implemented as previously mentioned. Current measurements were made for different operating conditions and are listed in Table \ref{tab:motorDriveTests}. Tests 1-4 were conducted using a \textit{calibrate - return to stow} cycle repeated 10 times at 2/3 maximum current. The intentions of these tests was to determine the speed limitations of the system, since it is easy to identify if the system misses steps by moving it back and forth continuously. Tests 5-6 were conducted with the mount stationary at around 75 degrees elevation at 2/3 and 3/3 current respectively. These tests were intended to stress test the current handling and heat dissipation capabilities of the system. Note that the idle current of 179 mA was subtracted from each measurement.
+The motor drive system was tested with the half-step sequence implemented as previously mentioned. Current measurements were made for different operating conditions and are listed in Table \ref{tab:motorDriveTests}. Tests 1-4 were conducted using a \textit{calibrate - return to stow} cycle repeated 10 times at 2/3 maximum current. The intentions of these tests was to determine the speed limitations of the system, since it is easy to identify if the system misses steps, or if the gears slip, by moving it back and forth continuously. Tests 5-6 were conducted with the mount stationary at around 75 degrees elevation at 2/3 and 3/3 current respectively. These tests were intended to stress test the current handling and heat dissipation capabilities of the system. Note that the idle current of 179 mA was subtracted from each measurement.
 
 \begin{table}[!htb]
   \centering
   \renewcommand{\arraystretch}{1.2}
-  \hspace*{-1cm}
-  \begin{tabular}{ |c|c|c|c|c| }
+  \begin{tabular}{ |p{0.8cm}|c|c|c| }
   \hline
-  \textbf{Test No.}  & \textbf{Description} & \textbf{$I_{\textnormal{min}}$ (A)}   & \textbf{$I_{\textnormal{max}}$ (A)}  & Observation \\
+  \textbf{Test No.}  & \textbf{Description} & \textbf{$I_{\textnormal{avg}}$ (A)} & Observation \\
   \hline
   1
   & $\SI{40}{ms}$ step delay           
-  & 
-  & 
+  & 0.7
   & No noticeable steps missed
   \\  \hline
   2
   & $\SI{20}{ms}$ step delay           
-  & 0.669
-  & 0.961
+  & 0.7
   & No noticeable steps missed
   \\  \hline
   3
   & $\SI{10}{ms}$ step delay           
-  & 0.559
-  & -                   
+  & 0.56
   & Small slip near calibration start
   \\  \hline
   4
   & $\SI{5}{ms}$ step delay           
-  & 0.252
-  & -                   
+  & 0.25
   & Large number of steps missed
   \\  \hline
   5
   & 2/3 current; 1 hour
-  & 0.712
-  & 0.713
+  & 0.71
   & Minimal system change across the hour
   \\  \hline
   6
   & 3/3 current; 1 hour
-  & 2.031
-  & 2.261
+  & 2.1
   & Stabilised current but very hot mount
   \\  \hline
   \end{tabular}
@@ -74,4 +67,4 @@ The motor drive system was tested with the half-step sequence implemented as pre
   \label{tab:motorDriveTests}
 \end{table}
 
-Since the boost converter operates as a DC transformer, the current consumed by the motor drive near the start of the hour can be calculated as $2.031 \times \frac{12}{24} \div 2 = \SI{0.509}{A}$. This is slightly higher than the designed reference current of 475 mA, however it is assumed that the L6219 was dissipating the remainder, since it was observed to increase in temperature. Since the system is stable near the end of the hour, and the L6219 has thermal shutdown, the system is considered to be within a safe operating region, even though it is clear the power dissipated in the driver increased throughout the hour.
+Since the boost converter operates as a DC transformer, the current consumed by the motor drive near the start of the hour can be calculated as $2.031 \times \frac{12}{24} \div 2 = \SI{0.509}{A}$. This is slightly higher than the designed reference current of 475 mA, however it is assumed that the L6219 was dissipating the remainder, since it was observed to increase in temperature. Since the system is stable near the end of the hour, and the L6219 has thermal shutdown, the system is considered to be within a safe operating region, even though it is clear the power dissipated in the driver increased throughout the hour. Lastly, it should be noted that, although the stepper motors meet the torque requirements, it is clear that the mount's gear system was not designed for such a large load. Future projects should therefore consider a stronger design.

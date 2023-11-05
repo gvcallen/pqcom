@@ -12,13 +12,13 @@ The \textit{PqTnc} and \textit{PqUnit} classes where designed as Singleton class
 \subsection{Tracking}
 For path tracking, it is decided to store data in the TNC object on the ESP32 itself, instead of streaming it from the host computer. This is so that the host can be disconnected, and the payload will still be tracked.
 
-An "instant" is defined as both a location and a time. The PqTnc object performs a check in its update loop to determine if an instant has been reached, based on its GPS received time. The GroundStation object should store two locations - the previous location in the path, and the location it is moving towards. The mount is pointed at the location which linearly interpolates its these two instants, with a factor based on the current time, and the time of the two instants.
+An "instant" is defined as both a location and a time. The PqTnc object performs a check in its update loop to determine if an instant has been reached, based on the ground station's GPS received time. The GroundStation object should store two locations - the previous location in the path, and the location it is moving towards. The mount is pointed at the location which linearly interpolates its these two instants, with a factor based on the current time, and the time of the two instants.
 
 To allow direct GPS tracking and flight path tracking to be used simultaneously, it was decided to follow the flight path data until a location from the satellite is received. When a "known" location is received, it is used for a specified timeout "trust" period, until a new location is received and is overwritten. A pseudo low-pass filter is added to the ground station to prevent pointing "jitter". The final algorithm is shown in Figure \ref{fig:trackingAlgorithm}.
 
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=0.95\textwidth]{trackingAlgorithm}
+  \includegraphics[width=0.85\textwidth]{trackingAlgorithm}
   \caption{Tracking Algorithm Flow Diagram}
   \label{fig:trackingAlgorithm}
 \end{figure}

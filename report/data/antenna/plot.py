@@ -4,8 +4,10 @@ import csv
   
 x = [] 
 y = [] 
+
+fticks = [400.0, 433.0, 466.0, 500.0]
   
-with open('helicalReturnLoss.csv','r') as csvfile:
+with open('dipoleReturnLoss.csv','r') as csvfile:
     values = csv.reader(csvfile, delimiter = ',') 
       
     i = 0
@@ -16,17 +18,19 @@ with open('helicalReturnLoss.csv','r') as csvfile:
         freq = float(row[0]) / 1e6
         s11 = float(row[1])
 
-        if freq < 300 or freq > 600:
+        if freq < fticks[0] or freq > fticks[-1]:
             continue
         
         x.append(freq) 
         y.append(s11) 
 
-fs = 20
+fs = 11
+
+plt.figure(figsize=(6, 4.2))
 plt.plot(x, y)
 plt.xticks(fontsize=fs)
 plt.yticks(fontsize=fs)
-plt.xticks(np.arange(min(x), max(x)+1, 50.0))
+plt.xticks(fticks)
 plt.xlabel('Frequency (MHz)', fontsize=fs) 
 plt.ylabel('Return Loss (dB)', fontsize=fs) 
 # plt.title('Helical Antenna Return Loss vs Frequency') 
