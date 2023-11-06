@@ -1,12 +1,6 @@
 \section{Link Budget}
 
-The link budget should now be estimated, and initial considerations for the ground station's base location should be made, as this location will affect the range of elevation angles to accomodate, the distance to the horizon, and the free-space path loss.
-
-Signal Hill in Cape Town is a viable location for the ground station and is easily accessible. At its distance of 114 km, however, one would need to be at a height of 950 m due to the distance to the horizon. Therefore, the balloon would only be visible at an altitude of 600 m (from Signal Hill's 350 m height). A maximum elevation angle of $16.72^\circ$ at 30 km altitude above Worcester should be considered.
-
-The \textit{receiver sensitivity} is a value which denotes the minimum power level required at the receiver for successful communication. Depending on set parameters, the SX1278 quotes varying receiver sensitivity values. Notable configurations are listed in Table \ref{tab:sensitivity_values}.
-
-An online path loss calculator at \cite{site-pathLossCalculator} was used to calculate attenuation due to distance, and the Python tool \textit{link budget} was used to calculate atmospheric losses. All values were based on both the RA-02 and the SX1278 chip specifications, as well as half-wavelength dipoles as antennas, an impedance mismatch loss of 0.5 dB (around -10 dB return loss), and a maximum transmitter power setting (18 dBm).
+The link budget should now be estimated, and initial considerations for the ground station's base location should be made. Signal Hill in Cape Town is a viable location, and is easily accessible. At its distance of 114 km, however, one would need to be at a height of 950 m for communication from launch (due to the earth's curvature). Since the balloon would become visible at an altitude of 600 m (from Signal Hill's $\SI{350}{m}$ height) this location is chosen, since this is only 12 seconds after launch (if an ascent rate of $\SI{5}{m.s^{-1}}$ is assumed). A maximum elevation angle of $16.72^\circ$ at 30 km altitude should therefore be considered. Notable configurations for the SX1278's sensitivity (the minimum receivable power level) are listed in Table \ref{tab:sensitivity_values}.
 
 \begin{table}[!htb]
   \begin{minipage}{.49\textwidth}
@@ -39,8 +33,6 @@ An online path loss calculator at \cite{site-pathLossCalculator} was used to cal
   \end{minipage}
 \end{table}
 
-
-
 \begin{table}[!htb]
   \centering
   \renewcommand{\arraystretch}{1.2}
@@ -56,10 +48,4 @@ An online path loss calculator at \cite{site-pathLossCalculator} was used to cal
   \label{tab:link_budget_gs}
 \end{table}
 
-The LoRa "target bit rate" sensitivity value of -119 dBm (SF = 8 and BW = 500 kHz) is decided on, since it provides the 9600 baud rate with some margin. The final link budget therefore results in 18.65 dBm - 129.89 dB + 119.65 dBm = 8.41 dB of link margin. Although this is theoretically adequate (above the 3 dB recommendation), there are a few considerations to be made:
-\begin{itemize}
-    \item If a higher bit rate is required, e.g. 38.4 kbps, then the margin drops to -2.6 dB.
-    \item If a longer range is required (e.g. for future projects), free space path loss will drastically increase. For example, for a 250 km range, the loss becomes 133 dB, meaning the margin drops to only 1.1 dB.
-\end{itemize}
-
-To achieve the 10 dB recommended link margin, an antenna with at least 2.59 dBi additional gain (i.e. 4.74 dBi gain total) should be designed for the ground station. Then, if necessary, the 20 dB recommendation can be reached by lowering the LoRa spreading factor (SF) to support any "mission critical" requirements. Practically, this "mission critical" setting could be initialized as the system's "startup" state, until a connection is made, where the SF can then be changed to an appropriate value.
+The LoRa ``target bit rate" sensitivity value of -119 dBm (SF = 8 and BW = 500 kHz) is decided on, since it provides the 9600 baud rate with some margin.  An online path loss calculator at \cite{site-pathLossCalculator} was used to calculate attenuation due to distance, and the Python tool \textit{link budget} was used to calculate atmospheric losses. All values were based on both the RA-02 and the SX1278 chip specifications; dipoles as antennas; an impedance mismatch loss of 0.5 dB (around -10 dB return loss); and a maximum transmitter power setting (18 dBm). The final link budget therefore results in 18.65 dBm - 129.89 dB + 119.65 dBm = 8.41 dB of link margin. Although this is theoretically adequate (above the 3 dB recommendation), there are some additional considerations. Firstly, uf a higher bit rate is required, e.g. 38.4 kbps, then the margin drops to -2.6 dB. Secondly, if a longer range is required (e.g. for future projects), free space path loss will drastically increase. For example, for a 250 km range, the loss becomes 133 dB, meaning the margin drops to only 1.1 dB. The system will therefore be designed for a 10 dB link margin. An antenna with at least 2.59 dBi additional gain (i.e. 4.74 dBi gain total) should therefore be designed for the ground station. Then, if necessary, the 20 dB recommendation can be reached by lowering the LoRa spreading factor (SF) to support any "mission critical" requirements.

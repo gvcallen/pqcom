@@ -35,6 +35,9 @@ void PqTnc::begin()
         handleError(err, "Could not setup ground station");
     else
         sendMessage("Initialized Ground Station");
+
+    groundStation.calibrate();
+    while (1);
     
     PqTnc::singletonTnc = this;  
 }

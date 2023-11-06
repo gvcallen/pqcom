@@ -4,6 +4,13 @@
 
   (paper "A3")
 
+  (title_block
+    (title "PQ Ground Station")
+    (date "2023-08-13")
+    (rev "v01")
+    (company "Author: Gary Allen")
+  )
+
   (lib_symbols
     (symbol "ATGM332D-5N31:ATGM332D-5N31" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 33.02 10.16 0)

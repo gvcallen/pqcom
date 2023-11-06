@@ -4,14 +4,12 @@
 
 \subsection{Open-Loop}
 
-In order to test the GPS pointing and open-loop tracking, a map was printed with lines pointing to nearby locations, from a pre-determined location as the origin. The ground station was then placed on top of this map at this location, and positioned to face magnetic north using a compass. This test had multiple goals i.e. to simultaneously test the mount transfer function, the GPS co-ordinate pointing, and the flight path data tracking. An image of the test setup is shown in Figure \ref{fig:pointingTestSetup}.
+In order to test the GPS pointing and open-loop tracking, a map was printed with lines pointing to nearby locations from a pre-determined location. The ground station was then placed on top of this map at this location and calibrated (as described in Appendix \ref{sec:appendix_mount_calibration}). This test had multiple goals i.e. to test the mount transfer function, the GPS co-ordinate pointing, and the flight path tracking. An image of the test setup is shown in Figure \ref{fig:pointingTestSetup}.
 
-Flight path data containing the pre-determined co-ordinates was then uploaded to the system, and the azimuthal angle was qualitatively confirmed to point in the directions labelled on the map using a ruler. Further, the elevation angle was measured using a protractor and compared against the expected angle. The system was found to successfully point towards the commanded locations at the desired times. The measured elevation angle was found to be within $5^\circ$ of the expected angle. Since the beamwidth of the antenna is on the order of $60^\circ$, it was decided not to use a more accurate testing technique, since it is clear the system was functional at least within requirements.
+Flight path data containing the map locations was then uploaded, and the azimuthal angle was qualitatively confirmed to point in the map directions using a ruler. The elevation angle was measured using a protractor and found to be within $5^\circ$ of the expected angle. The system was also found to successfully point towards the commanded locations at the desired times. Since the beamwidth of the antenna is on the order of $60^\circ$, it was decided not to use a more accurate testing technique, since it is clear the system was functional at least within requirements.
 
 \subsection{Closed-Loop}\label{sec:closed_loop_testing}
-The closed-loop received location GPS tracking was tested on an open field with around to \SI{300}{m} range. The PQ unit was carried around the field at a walking speed of around $\SI{2}{m.s^{-1}} $ while transmitting its GPS location. Both the RSSI, and the antenna pointing direction, were recorded and observed respectively.
-
-\begin{figure}[!htb]
+\begin{figure}[!tb]
   \begin{minipage}{.49\textwidth}
     \centering
     \includegraphics[width=0.95\linewidth]{gpsTrackingMap}
@@ -20,12 +18,10 @@ The closed-loop received location GPS tracking was tested on an open field with 
   \end{minipage}
   \begin{minipage}{.49\textwidth}
     \centering
-    \includegraphics[width=0.95\linewidth]{radiosondeSpectrum}
-    \caption{}
+    \includegraphics[width=1.0\linewidth]{radiosondeSpectrum}
+    \caption{Received Radiosonde Signal Spectrum}
     \label{fig:radiosondeSpectrum}
   \end{minipage}
 \end{figure}
 
-The system was observed to successfully track the transmitter around the entire field without noticeable delay. The $90^\circ$ turn created by the furthest ends of the field create an approximate 500 m path which was covered in 100 s. This results in a turning rate of around $0.9 ^ \circ$, which meets the requirement of $0.015 ^ \circ$. The tracking was observed to be successful until the target reached a distance of around 10 m, where the pointing direction became unpredictable. This is attributed to the low accuracy of the GPS modules. vSince the system is already known to have the capabilities of pointing at a GPS location (from the open-loop tests) and the time requirement is much lower for the balloon satellite system (which requires a tracking speed on the order of 45 degrees rotation in an hour) it is clear that the system works as designed.
-
-The above test also serves as a primitive test for GPS accuracy. The width of the main path being walked on was 3.2 m wide. The furthest mapped deviation of a received GPS co-ordinate from this path is measured at around 3 m (note that the map image is outdated). An upper bound on the GPS's accuracy can be therefore be said to be 6.2 m. It is clear that this far exceeds the system requirements laid out in Section \ref{sec:components_gps}.
+Closed-loop GPS tracking was tested on an open field at \SI{300}{m} range. The PQ unit was carried around the field at a walking speed of $\SI{2}{m.s^{-1}}$ while transmitting its GPS location. Both the RSSI, and the antenna pointing direction, were recorded. The system was observed to successfully track the transmitter around the field without noticeable delay. The $90^\circ$ turn created by the furthest ends of the field creates an approximate 500 m path, which was covered in 100 s. This results in a turning rate of around $0.9 ^ \circ$, which meets the requirement of $0.015 ^ \circ$. The tracking was observed to be successful until the target reached a distance of around 10 m, where the pointing direction became unpredictable. This is attributed to the low accuracy of the GPS modules.

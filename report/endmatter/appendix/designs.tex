@@ -1,4 +1,5 @@
 % Designs
+\chapter{Design}
 \section{Power Calculations}
 \begin{table}[!htb]
   \centering
@@ -36,20 +37,38 @@
 \end{table}
 
 
-\includepdf[scale=0.65,pages=1,offset=0mm -35mm,pagecommand=\chapter{Design}\section{Ground Station Schematic}\label{sec:appendix_gs_schematics}]{docs/gs_schematic}
-\includepdf[scale=0.7,pages=1,pagecommand=\section{PocketQube Unit Schematic}\label{sec:appendix_pq_schematic}]{docs/pq_schematic}
+\clearpage
+\includepdf[scale=0.85,pages=1,offset=0mm -10mm,pagecommand=\section{Ground Station Schematic}\label{sec:appendix_gs_schematics}]{docs/gs_schematic}
+\includepdf[scale=0.85,pages=1,offset=0mm -10mm,pagecommand=\section{PocketQube Unit Schematic}\label{sec:appendix_pq_schematic}]{docs/pq_schematic}
 
 \section{Ground Station PCB}\label{sec:appendix_gs_pcb_design}
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=0.6\textwidth]{gs_pcb_design}
-  \caption{Ground Station PCB Design}
-  \label{fig:gs_pcb}
+  \includegraphics[width=0.95\textwidth]{gs_pcb_design_front}
+  \caption{Ground Station PCB Design (front)}
+  \label{fig:gs_pcb_design_front}
 \end{figure}
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.95\textwidth]{gs_pcb_design_back}
+  \caption{Ground Station PCB Design (back)}
+  \label{fig:gs_pcb_design_back}
+\end{figure}
+\clearpage
 
 \section{PCB Errata}\label{sec:appendix_pcb_errata}
 Ground Station PCB:
-% \itemi
+\begin{itemize}
+  \item The zero-sensor JST pin connections were incorrect.
+  \item ESP Pins IO1 and IO3 should be left free for UART communication. Nets M2\_IO1 and M2\_I11 are therefore moved to pins IO14 and IO12 respectively.
+  \item ESP Pins IO34 and IO35 are input-only. Nets M1\_I01 and M1\_I11 are therefore moved to pins IO0 and IO16 respectively. In this case, GPS\_TX is no longer used, and pin 0 on-board the ESP module on the board must be soldered to directly.
+  \item The ESP development board's footprint was sized slightly to wide, and should be narrowed to avoid having to bend the pins.
+\end{itemize}
+
+\noindent PocketQube Unit PCB:
+\begin{itemize}
+  \item The loading capacitors on the crystal oscillator were incorrectly left out. The 8 MHz clock was therefore used, however the capacitors should be added in order for a 16 MHz clock to be used.
+\end{itemize}
 
 \section{Ground Station Antenna}
 \begin{table}[!htb]
@@ -72,6 +91,7 @@ Ground Station PCB:
   \label{tab:helicalParameters}
 \end{table}
 
+\newpage
 \section{Software}
 \begin{table}[!htb]
   \centering
@@ -169,3 +189,16 @@ Ground Station PCB:
   \end{tabular}
   \label{tab:groundStationUML}
 \end{table}
+
+\section{Mount Calibration}\label{sec:appendix_mount_calibration}
+
+The calibration procedure of the mount is described below:
+\begin{itemize}
+  \item Measure the elevation angles of the mount at both extremes.
+  \item Measure the offset angle between the zero-sensor and the desired magnetic north location.
+  \item Lookup the magnetic declination near the area of interest.
+  \item Include the previous three values statically in the software code.
+  \item Rest the mount on the side with the larger elevation angle.
+  \item Face the mount towards magnetic north.
+  \item Run the mount's software calibration procedure, which rotates in azimuth until the zero sensor is found; then in elevation (open-loop) until the start elevation angle is reached; and finally faces north using the magnetic declination and offset angle.
+\end{itemize}

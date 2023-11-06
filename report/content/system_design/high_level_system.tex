@@ -6,7 +6,7 @@ A complete high-level system block diagram illustrating the system-level decisio
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=0.65\textwidth]{complete_system.png}
+    \includegraphics[width=0.75\textwidth]{complete_system.png}
     \caption{High-Level System Diagram}
     \label{fig:complete_system}
   \end{figure}
@@ -14,11 +14,11 @@ A complete high-level system block diagram illustrating the system-level decisio
 \subsection{Tracking}\label{sec:tracking}
 Further research shows that trajectory predictions for both the landing area and the dynamic altitude of a balloon can be up to 15-20 km inaccurate for a standard 2 hour flight \cite{paper-balloonTrajectoryAnalysis}. For the worst case, this is a total inaccuracy of $\sqrt{20^2 + 20^2} = \SI{28}{km}$. For the designed range of 120 km, this results in an angle inaccuracy of $360 \times \frac{28}{2 \pi \times 120} \approx 14^\circ$.
 
-An antenna with a beamwidth of double this inaccuracy is therefore required, to ensure that the satellite is still within the beam even when the antenna's boresight is pointing with worst-case open-loop accuracy. A Yagi-Uda antenna with a beamwidth of around $28^\circ$ has a gain of around 17 dBi \cite{paper-yagiGainBeamwidth}. Using a common Si4311 FSK receiver's sensitivity of -104 dBm, an initial link budget can be estimated. If it is assumed that the link will use 100 mW (20 dB) transmit power, the full 22 dBi gain, and 127 dB path loss attenuation loss at 115 km, then a 10 dB link margin is obtained.
+An antenna with a beamwidth of double this angle is therefore required, to ensure that the satellite is still within the beam even when the antenna's boresight is pointing with worst-case open-loop accuracy. A Yagi-Uda antenna with a beamwidth of around $28^\circ$ has a gain of around 17 dBi \cite{paper-yagiGainBeamwidth}. Using a common Si4311 FSK receiver's sensitivity of -104 dBm, an initial link budget can be estimated. If it is assumed that the link will use 100 mW (20 dB) transmit power, the full 22 dBi gain, and 127 dB path loss attenuation loss at 115 km, then a 10 dB link margin is obtained.
 
 Since the above link budget clearly indicates that open-loop tracking is feasible, it is decided to focus on this as the main tracking method. The ground station therefore requires at least a GPS connection; a means of determining true north (such as a magnetometer); and a means of uploading path data. The path data will be uploaded to the ground station via USB from a system computer. If time allows, direct GPS tracking will then be added as a method of "closing the loop", and to improve pointing accuracy.
 
 \subsection{Custom Link}
 A half-duplex link will be designed. This is decided on due to the nature of the link itself (i.e. either downlink ``telemetry" or a simple command-response ``telecommand" pattern) and due to the added complexity that full-duplex would require (i.e. a duel frequency system).
 
-For the given flight path, a goal of at least 9600 downlink baud rate will be designed for at the 120 km range, with LoRa being explored as the main modulation technique. This is chosen due to the high sensitivity it offers (which will help alleviate the need for a large, high-gain antenna), as while as the link speed it offers for reasonable bandwidth ($< \SI{500}{kHz}$). GFSK will be considered as a backup option, since it is well-established in literature. The 433 MHz amateur band (430 to 440 MHz) will be utilized.
+For the given flight path, a goal of at least 9600 downlink baud rate will be designed for at the 120 km range, with LoRa being explored as the main modulation technique. This is chosen due to the high sensitivity it offers (which will help alleviate the need for a large, high-gain antenna), as well as the link speed it offers for reasonable bandwidth ($< \SI{500}{kHz}$). GFSK will be considered as a backup option, since it is well-established in literature. The 433 MHz amateur band (430 to 440 MHz) will be utilized.

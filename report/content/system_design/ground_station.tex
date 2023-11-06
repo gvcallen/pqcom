@@ -4,8 +4,8 @@
 
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=0.9\textwidth]{gs_system}
-  \caption{Groud Station System Diagram}
+  \includegraphics[width=0.98\textwidth]{gs_system}
+  \caption{Ground Station System Diagram}
   \label{fig:gs_system}
 \end{figure}
 
@@ -17,34 +17,13 @@ The communication section consists of the main antenna, as well as the RF circui
 
 \subsection{Steering and Positioning}\label{sec:gs_steering_positioning}
 
-\begin{figure}[!htb]
-  \begin{minipage}{.49\textwidth}
-    \centering
-    \includegraphics[width=0.9\linewidth]{az_elevation}
-    \caption{Azimuthal and Elevation Visualization \cite{site-azElevationVisual}}
-    \label{fig:az_elevation}
-  \end{minipage}
-  \begin{minipage}{.49\textwidth}
-    \centering
-    \includegraphics[width=0.6\linewidth]{antennaMount}
-    \caption{The Existing Antenna Mount}
-    \label{fig:antennaMount}
-  \end{minipage}
-\end{figure}
-
-Generally, the orientation of a ground station's antenna is described by both an azimuthal and an elevation angle, as in Figure \ref{fig:az_elevation}. The existing two-axis antenna mount is shown in Figure \ref{fig:antennaMount}. Since the antenna platform moves relative to the base (where the PCB is mounted), this relative angle needs to be known. Two options to do this are considered:
+Generally, the orientation of a ground station's antenna is described by both an azimuthal and an elevation angle (see Figure \ref{fig:az_elevation}). The existing two-axis antenna mount which will be used to control these angles is shown in Figure \ref{fig:antennaMount}. Since the antenna platform moves relative to the base (where the PCB is mounted), this relative angle needs to be known. Two options to do this are considered:
 \begin{enumerate}
     \item \textit{Open-loop}. The base's absolute orientation is known, and the platform's relative orientation is calculated/looked up based on the stepper motor positions.
-    \item \textit{Closed-loop}. The platform's absolute orientation is measured in real-time, and this information is fed back into the motor's control system to point the platform correctly.
+    \item \textit{Closed-loop}. The platform's absolute orientation is measured in real-time, and this information is fed back into the motor's control system to steer the platform correctly.
 \end{enumerate}
 
-Since stepper motors are already included, \textit{open-loop} method will be considered, however the closed loop method may be implemented if this method is found to lack accuracy, or the motor locations are found to be unpredictable.
+Since stepper motors are already included, the \textit{open-loop} method will be considered, however the closed loop method may be implemented if this method is found to lack accuracy, or the motor locations are found to be unpredictable.
 
 \subsection{Monitoring}
-A laptop will be used with a simple Graphical User Application (GUI) which allows a user to:
-\begin{itemize}
-    \item Control the ground station orientation e.g. performing motor calibration etc.
-    \item Read telemetry received from the satelite.
-    \item Monitor communication link performance.
-    \item Send commands to the ground station and/or satellite.
-\end{itemize}
+A simple Graphical User Application (GUI) will be implemented, allowing the user to control the ground station's orientation (e.g. perform motor calibration); read telemetry received from the satellite; and monitor the link's performance.

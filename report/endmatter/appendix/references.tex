@@ -63,3 +63,30 @@
     \caption{Notable SX1278 Configurations \cite{datasheet-SX1278}}
     \label{tab:sensitivity_values}
   \end{table}
+
+
+\clearpage
+\section{Mount Control}\label{sec:appendix_mount_control}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.45\linewidth]{az_elevation}
+    \caption{Azimuthal and Elevation Visualization \cite{site-azElevationVisual}}
+    \label{fig:az_elevation}
+\end{figure}
+The ``azel" ratio is the number of elevation motor turns required to tilt the elevation axis the same amount as the azimuthal motor, given by:
+
+\begin{equation}\label{eqn:azelRatio}
+\textnormal{azelRatio} = \frac{D_{\textnormal{outer}} / B}{C / A} = \frac{92 / 20}{60 / 15} = 1.15
+\end{equation}
+
+\noindent The azimuthal and elevation angles can then be calculated as in Formulae \ref{eqn:azAngle} and \ref{eqn:elAngle}, where \textit{elRev} and \textit{azRev} are the number of elevation/azimuth motor steps per full revolution (equal to $200 \times \frac{92}{20} \times \frac{140}{80} = 1610$ and $200 \times \frac{60}{15} = 800$ respectively).
+\begin{align}
+    \textnormal{azAngle} &= \textnormal{azPos} \times \frac{360 ^{\circ}}{\textnormal{azRev}} \label{eqn:azAngle} \\
+    \textnormal{elAngle} &= (\textnormal{azPos} \times \textnormal{azelRatio} + \textnormal{elPos}) \times \frac{360 ^{\circ}}{\textnormal{elRev}} \label{eqn:elAngle}
+\end{align}
+
+\noindent The number of simultaneous \textit{"delta"} steps to make in order for each axis to move to a new location \{\textit{newAzAng}, \textit{newElAng}\} implemented in \textit{setAzimuthElevation()} is then given by Formulae \ref{eqn:deltaAzSteps} and \ref{eqn:deltaElSteps}.
+\begin{align}
+    \textnormal{deltaAzSteps} &= \textnormal{angToPosAz(newAzAng)} - \textnormal{azPos} \label{eqn:deltaAzSteps} \\ 
+    \textnormal{deltaElSteps} &= \textnormal{-deltaAzSteps} \times \textnormal{azelRatio} + \textnormal {angToPosDeltaEl(newElAng - elAng)}\label{eqn:deltaElSteps} 
+\end{align}

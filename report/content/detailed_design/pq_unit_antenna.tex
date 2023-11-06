@@ -2,23 +2,21 @@
 
 \section{PocketQube Unit Antenna}
 \subsection{Mechanical Considerations}
-Since the system is constrained to the 433 MHz band due to the Radiosonde link, the wavelength of interest is relatively large (693 mm). At this wavelength, one half of a half-wavelength dipole is around 173 mm, and the width of a patch antenna on FR4 is around 215 mm. Since the PocketQube is planned to be around 100 mm long, it is clear that a higher frequency band would be more suitable. For the planned prototype balloon satellite launch, it is therefore decided to design a simple half-wavelength dipole, and sllow it to protrude out the ends of the PocketQube housing from launch. Recommendations for future projects are given in Section \ref{sec:future_work} (such as using a much smaller but lower efficiency normal-mode helical antennna on the PQ with a higher gain antenna on the GS).
+Since the system is constrained close to the 433 MHz band (due to the radiosonde link), the wavelength of interest is relatively large (693 mm), and one half of a half-wavelength dipole is around 173 mm. Special consideration would be needed to fit this onto the planned PocketQube length of 150 mm. For the planned prototype balloon satellite launch, it is therefore decided to design a half-wavelength dipole, and allow it to simply protrude out the ends of the PocketQube housing from launch. Recommendations for future projects are given in Section \ref{sec:future_work}, such as designing a deployable antenna.
 
 \subsection{Simulation Design and Matching}
-It was decided to use a simple half-wavelength dipole for the PQ unit, due to its omni-directional radiation pattern and its extremely easy design and construction. A simple 1.5 mm metal wire will be used due to its availability, with a small gap between the two sides of the dipole, and fed by a coaxial cable.
-
-The design parameters for the dipole are $L_\lambda$ (the total dipole length relative to lambda), $F_{\textnormal{gap}}$ (the gap distance of the feed), and $F_{length}$, the length of the feed. A fixed gap distance of $F_{\textnormal{gap}} = \SI{5}{mm}$ is decided on, as it is assumed to not be critical if sufficiently small.
+A simple 1.5 mm metal wire will be used for the dipole due to its availability, and will be fed by a coaxial cable. The design parameters for the dipole are $L_\lambda$ (the total dipole length relative to lambda), $F_{\textnormal{gap}}$ (the gap distance of the feed), and $F_{length}$, the length of the feed. A fixed gap distance of $F_{\textnormal{gap}} = \SI{5}{mm}$ is decided on, as it is assumed to not be critical if sufficiently small.
 
 \begin{figure}[!htb]
   \begin{minipage}{.38\textwidth}
     \centering
-    \includegraphics[width=0.8\linewidth]{dipole1_modelMesh}
-    \caption{Dipole Simulation Model}
+    \includegraphics[width=0.95\linewidth]{dipole1_modelMesh}
+    \caption{Dipole Model}
     \label{fig:dipole1_modelMesh}
   \end{minipage}
   \begin{minipage}{.6\textwidth}
     \centering
-    \includegraphics[width=0.95\linewidth]{dipole1_returnLoss}
+    \includegraphics[width=0.9\linewidth]{dipole1_returnLoss}
     \caption{Simulated $0.45 \lambda$ Dipole Return Loss vs Frequency}
     \label{fig:dipole1_returnLoss}
   \end{minipage}

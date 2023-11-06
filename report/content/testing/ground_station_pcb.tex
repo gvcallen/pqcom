@@ -4,7 +4,7 @@ After implementation, initial tests were done to ensure the ground station was f
 
 \subsection{Power}
 
-During no load from the motors, but load from the integrated circuits, the voltage readings in Table \ref{tab:gs_pcb_voltage} were obtained. The GPS and ESP lights were noted to be on. From these tests, is clear that the full power system is working as expected.
+During no load from the motors, the voltage readings in Table \ref{tab:gs_pcb_voltage} were obtained. The ESP and GPS lights were noted to be on. From these tests, is clear that the full power system is working as expected. The current through a 12.3 V supply was measured at 179 mA i.e. 2.2 W power. Since a total of around 1 W of power is expected during no transmission (see Table \ref{tab:gs_component_consumption}), this means that the voltage regulators are dissipating the remaining 1.2 W. This is well within the limitations of both regulators e.g. the LD1117 can dissipate a theoretical maximum of $\SI{12}{W}$. The system was then left idle for an hour, with no noticeable change in current or heat.
 \begin{table}[!htb]
   \centering
   \renewcommand{\arraystretch}{1.2}
@@ -20,10 +20,8 @@ During no load from the motors, but load from the integrated circuits, the volta
   \label{tab:gs_pcb_voltage}
 \end{table}
 
-The current consumption through a 12.3 V supply was measured at 179 mA with all systems on except the motor drive. This equates to around 2.2 W of power. Since a total of around 1 W of power is expected during no transmission as calculated previously, this means that the voltage regulators are dissipating the remaining 1.2 W. This is well within the limitations of both regulators e.g. the LD1117 can dissipate a theoretical maximum of $\SI{12}{W}$. The system was left idle for an hour with no noticeable change in current or heat.
-
 \subsection{Motor Drive}
-The motor drive system was tested with the half-step sequence implemented as previously mentioned. Current measurements were made for different operating conditions and are listed in Table \ref{tab:motorDriveTests}. Tests 1-4 were conducted using a \textit{calibrate - return to stow} cycle repeated 10 times at 2/3 maximum current. The intentions of these tests was to determine the speed limitations of the system, since it is easy to identify if the system misses steps, or if the gears slip, by moving it back and forth continuously. Tests 5-6 were conducted with the mount stationary at around 75 degrees elevation at 2/3 and 3/3 current respectively. These tests were intended to stress test the current handling and heat dissipation capabilities of the system. Note that the idle current of 179 mA was subtracted from each measurement.
+The motor drive system was tested with the half-step sequence mentioned. Current measurements were made for different operating conditions and are listed in Table \ref{tab:motorDriveTests}. Tests 1-4 were conducted using a \textit{calibrate - return to stow} cycle repeated 10 times at 2/3 maximum current. The goal of these tests was to determine the speed limitations of the system, since it is easy to identify if the system misses steps, or if the gears slip, by moving it back and forth continuously. Tests 5-6 were conducted with the mount stationary at 75 degrees elevation with 2/3 and 3/3 current, respectively. These tests were intended to stress test the current handling and heat dissipation capabilities of the system. Note that the idle current of 179 mA was subtracted from each measurement.
 
 \begin{table}[!htb]
   \centering

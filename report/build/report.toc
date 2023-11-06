@@ -1,8 +1,8 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Acknowledgements}{A}{chapter*.1}%
 \contentsline {chapter}{List of Figures}{v}{chapter*.3}%
-\contentsline {chapter}{List of Tables}{vii}{chapter*.4}%
-\contentsline {chapter}{Abstract}{ix}{chapter*.6}%
+\contentsline {chapter}{List of Tables}{viii}{chapter*.4}%
+\contentsline {chapter}{Abstract}{x}{chapter*.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Open-Loop}{5}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}GPS (Direct)}{6}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}GPS (Relay)}{6}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Signal Strength}{7}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.4}Signal Strength}{6}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}Antennas}{7}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Types}{7}{subsection.2.3.1}%
 \contentsline {subsubsection}{Half-Wavelength Dipole}{7}{subsubsection*.10}%
@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {3.1.3}Custom Link}{13}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}Ground Station}{13}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Power}{13}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Communication}{13}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Communication}{14}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Steering and Positioning}{14}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Monitoring}{15}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}PocketQube Unit}{15}{section.3.3}%
@@ -50,86 +50,88 @@
 \contentsline {section}{\numberline {4.1}Component Selection}{16}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}GPS}{16}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}IMU}{16}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}RF Module}{17}{subsection.4.1.3}%
-\contentsline {subsubsection}{Custom Communication}{17}{subsubsection*.28}%
-\contentsline {subsubsection}{Radiosonde Communication}{17}{subsubsection*.30}%
+\contentsline {subsection}{\numberline {4.1.3}RF Module}{16}{subsection.4.1.3}%
+\contentsline {subsubsection}{Custom Communication}{17}{subsubsection*.27}%
+\contentsline {subsubsection}{Radiosonde Communication}{17}{subsubsection*.29}%
 \contentsline {subsection}{\numberline {4.1.4}Stepper Motor Driver}{18}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Microcontroller}{18}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}RS-485 Driver}{18}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}Power}{19}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.5}RS-485 Driver}{18}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Microcontroller}{18}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}Power}{18}{subsection.4.1.7}%
 \contentsline {section}{\numberline {4.2}Ground Station PCB}{19}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Circuit Design}{19}{subsection.4.2.1}%
-\contentsline {subsubsection}{Motor Drivers}{19}{subsubsection*.31}%
-\contentsline {subsubsection}{Connectors}{20}{subsubsection*.32}%
+\contentsline {subsubsection}{Motor Drivers}{19}{subsubsection*.30}%
+\contentsline {subsubsection}{Connectors}{19}{subsubsection*.31}%
 \contentsline {subsection}{\numberline {4.2.2}PCB Layout}{20}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}PocketQube Unit PCB}{20}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Circuit Design}{20}{subsection.4.3.1}%
 \contentsline {subsubsection}{RF and GPS Modules}{20}{subsubsection*.33}%
 \contentsline {subsection}{\numberline {4.3.2}PCB Layout}{21}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}Link Budget}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Ground Station Antenna}{23}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Mechanical Considerations}{23}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.5}Ground Station Antenna}{22}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Mechanical Considerations}{22}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Theoretical Design}{23}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.5.3}Simulation Design}{24}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Matching}{27}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.4}Matching}{26}{subsection.4.5.4}%
 \contentsline {section}{\numberline {4.6}PocketQube Unit Antenna}{27}{section.4.6}%
 \contentsline {subsection}{\numberline {4.6.1}Mechanical Considerations}{27}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Simulation Design and Matching}{28}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.2}Simulation Design and Matching}{27}{subsection.4.6.2}%
 \contentsline {section}{\numberline {4.7}Software}{28}{section.4.7}%
 \contentsline {subsection}{\numberline {4.7.1}Classes}{28}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Tracking}{29}{subsection.4.7.2}%
-\contentsline {chapter}{\numberline {5}Implementation}{30}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Ground Station PCB}{30}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Ground Station Antenna}{30}{section.5.2}%
-\contentsline {section}{\numberline {5.3}PocketQube Unit PCB}{31}{section.5.3}%
-\contentsline {section}{\numberline {5.4}PocketQube Unit Antenna}{32}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Software}{32}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Mount Control}{32}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Pointing}{33}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}Radio and GPS}{33}{subsection.5.5.3}%
-\contentsline {chapter}{\numberline {6}Testing}{34}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Ground Station PCB}{34}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Power}{34}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Motor Drive}{34}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}PocketQube Unit PCB}{35}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Ground Station Antenna}{35}{section.6.3}%
-\contentsline {section}{\numberline {6.4}PocketQube Unit Antenna}{36}{section.6.4}%
-\contentsline {section}{\numberline {6.5}RF Module}{36}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Setup}{36}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Transmit Power Consumption}{37}{subsection.6.5.2}%
-\contentsline {subsection}{\numberline {6.5.3}Data Rate}{37}{subsection.6.5.3}%
-\contentsline {section}{\numberline {6.6}GUI}{37}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Range}{38}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Tracking and Pointing}{39}{section.6.8}%
-\contentsline {subsection}{\numberline {6.8.1}Open-Loop}{39}{subsection.6.8.1}%
-\contentsline {subsection}{\numberline {6.8.2}Closed-Loop}{40}{subsection.6.8.2}%
-\contentsline {section}{\numberline {6.9}Radiosonde}{40}{section.6.9}%
-\contentsline {section}{\numberline {6.10}Full System}{41}{section.6.10}%
-\contentsline {chapter}{\numberline {7}Conclusion}{42}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Summary}{42}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Future Work}{42}{section.7.2}%
-\contentsline {chapter}{Bibliography}{44}{chapter*.56}%
-\contentsline {chapter}{\numberline {A}Project Planning}{48}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Outcomes Compliance}{49}{appendix.B}%
-\contentsline {chapter}{\numberline {C}References}{51}{appendix.C}%
-\contentsline {section}{\numberline {C.1}PQSU}{51}{section.C.1}%
-\contentsline {section}{\numberline {C.2}SUNCQ}{52}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Antenna Comparison}{54}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Link Configuration Summary}{54}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Power Calculations}{54}{section.C.5}%
-\contentsline {chapter}{\numberline {D}Design}{55}{appendix.D}%
-\contentsline {section}{\numberline {D.1}Ground Station Schematic}{55}{section.D.1}%
-\contentsline {section}{\numberline {D.2}PocketQube Unit Schematic}{56}{section.D.2}%
-\contentsline {section}{\numberline {D.3}Ground Station PCB}{57}{section.D.3}%
-\contentsline {section}{\numberline {D.4}PCB Errata}{57}{section.D.4}%
-\contentsline {section}{\numberline {D.5}Ground Station Antenna}{57}{section.D.5}%
-\contentsline {section}{\numberline {D.6}Software}{57}{section.D.6}%
+\contentsline {subsection}{\numberline {4.7.2}Tracking}{28}{subsection.4.7.2}%
+\contentsline {chapter}{\numberline {5}Implementation}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Ground Station PCB}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Ground Station Antenna}{29}{section.5.2}%
+\contentsline {section}{\numberline {5.3}PocketQube Unit PCB}{30}{section.5.3}%
+\contentsline {section}{\numberline {5.4}PocketQube Unit Antenna}{30}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Software}{31}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Mount Control}{31}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Pointing}{31}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Radio and GPS}{31}{subsection.5.5.3}%
+\contentsline {chapter}{\numberline {6}Testing}{32}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Ground Station PCB}{32}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Power}{32}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Motor Drive}{32}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}PocketQube Unit PCB}{33}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Ground Station Antenna}{33}{section.6.3}%
+\contentsline {section}{\numberline {6.4}PocketQube Unit Antenna}{34}{section.6.4}%
+\contentsline {section}{\numberline {6.5}RF Module}{34}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Transmit Power Consumption}{34}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Data Rate}{35}{subsection.6.5.2}%
+\contentsline {section}{\numberline {6.6}GUI}{35}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Range}{36}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Tracking and Pointing}{37}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Open-Loop}{37}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {6.8.2}Closed-Loop}{37}{subsection.6.8.2}%
+\contentsline {section}{\numberline {6.9}Radiosonde}{38}{section.6.9}%
+\contentsline {section}{\numberline {6.10}Full System}{38}{section.6.10}%
+\contentsline {chapter}{\numberline {7}Conclusion}{39}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Summary}{39}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Future Work}{39}{section.7.2}%
+\contentsline {chapter}{Bibliography}{41}{chapter*.53}%
+\contentsline {chapter}{\numberline {A}Project Plan}{44}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Outcomes Compliance}{45}{appendix.B}%
+\contentsline {chapter}{\numberline {C}References}{47}{appendix.C}%
+\contentsline {section}{\numberline {C.1}PQSU}{47}{section.C.1}%
+\contentsline {section}{\numberline {C.2}SUNCQ}{48}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Antenna Comparison}{50}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Link Configuration Summary}{50}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Mount Control}{51}{section.C.5}%
+\contentsline {chapter}{\numberline {D}Design}{52}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Power Calculations}{52}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Ground Station Schematic}{53}{section.D.2}%
+\contentsline {section}{\numberline {D.3}PocketQube Unit Schematic}{54}{section.D.3}%
+\contentsline {section}{\numberline {D.4}Ground Station PCB}{55}{section.D.4}%
+\contentsline {section}{\numberline {D.5}PCB Errata}{57}{section.D.5}%
+\contentsline {section}{\numberline {D.6}Ground Station Antenna}{57}{section.D.6}%
+\contentsline {section}{\numberline {D.7}Software}{58}{section.D.7}%
+\contentsline {section}{\numberline {D.8}Mount Calibration}{59}{section.D.8}%
 \contentsline {chapter}{\numberline {E}Hardware}{60}{appendix.E}%
-\contentsline {section}{\numberline {E.1}Existing Mount PCB}{60}{section.E.1}%
-\contentsline {section}{\numberline {E.2}PocketQube}{61}{section.E.2}%
-\contentsline {section}{\numberline {E.3}Mount Specifications}{62}{section.E.3}%
-\contentsline {section}{\numberline {E.4}Mount Rotation}{62}{section.E.4}%
-\contentsline {chapter}{\numberline {F}Tests}{63}{appendix.F}%
-\contentsline {section}{\numberline {F.1}Open-Loop Pointing Test}{63}{section.F.1}%
-\contentsline {section}{\numberline {F.2}Range Tests}{64}{section.F.2}%
-\contentsline {section}{\numberline {F.3}GUI}{66}{section.F.3}%
+\contentsline {section}{\numberline {E.1}Mount Gears}{60}{section.E.1}%
+\contentsline {section}{\numberline {E.2}Mount Specifications}{61}{section.E.2}%
+\contentsline {section}{\numberline {E.3}Mount Rotation}{61}{section.E.3}%
+\contentsline {section}{\numberline {E.4}Existing Mount PCB}{62}{section.E.4}%
+\contentsline {section}{\numberline {E.5}PocketQube}{63}{section.E.5}%
+\contentsline {chapter}{\numberline {F}Tests}{64}{appendix.F}%
+\contentsline {section}{\numberline {F.1}Open-Loop Pointing Test}{64}{section.F.1}%
+\contentsline {section}{\numberline {F.2}Range Tests}{66}{section.F.2}%
+\contentsline {section}{\numberline {F.3}GUI}{68}{section.F.3}%
