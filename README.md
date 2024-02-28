@@ -10,3 +10,13 @@ This folder contains the relevant code for the project. Inside are 5 sub-folders
 - ***pqgs*** contains code for the *PocketQube Ground Station*. This includes communication with the PQ unit, motor drive control, GPS tracking and serial control via a "TNC" (a.k.a a laptop connected via USB).
 - ***pqui*** contains desktop GUI code to control the GS via USB and a PC. Theoretically, all control can be done via the terminal, however the GUI was implemented to make things slightly easier. It implements the SUNCQ protocol under ***Documents***.
 - ***radiosonde_auto_rx*** was an extension of the project to receive data from a commercial Radiosonde via a software-defined radio (SDR). This is used by ***pqui***. Although the Radiosonde receiving is functional, it is currently implemented is a bit "messy", since a Python script is called and controlled from Qt, and this causes issues from time-to-time. If only "custom" communication is needed, this can be ignored.
+
+## Other
+The rest of the contents are relatively self-explanatory:
+- ***datasheets*** contains various used (and not used) datasheets for ICs and modules.
+- ***documents*** contains the SUNCQ protocol for PC to GS communication.
+- ***images*** contains images taken throughout the project, such as during testing and final deployment.
+- ***kicad*** contains the schematics developed for the PQ and the GS. The final Gerber files are also present in zip format. Note that some folders in here are old and need to be cleaned up.
+- ***link-budget*** contains a pre-liminary link-budget done with free Python software.
+- ***report*** contains the final report files for Latex. The final PDF is in the root of this folder.
+- ***testing*** contains test results and data.
