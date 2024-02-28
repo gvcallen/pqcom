@@ -1,2 +1,0 @@
-�[PqTnc] Calibrating Ground Station
-elSteps = 469.58

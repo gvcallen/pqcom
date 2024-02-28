@@ -7,3 +7,4 @@
 #define RADIO_RESET         8
 #define BUTTON_P1           A2
 #define BUTTON_P2           A3
+#define BUTTON_DEBOUNCE     50

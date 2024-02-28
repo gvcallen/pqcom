@@ -2,13 +2,14 @@
 
 \section{RF Module}
 
+\subsection{Initial Tests}
 The radio modules were initially tested using two small, 433 MHz helical antennas. The first was placed near a window indoors, and the second inside a car. A range of 50 m was recorded in an urban area with a LoRa spreading factor of 8. This test served merely as a ``proof-of-concept", and was not intended as an indication of system performance.
 
 \subsection{Transmit Power Consumption}
 The custom-built antennas were then connected to both the PQ and the GS and more detailed tests were conducted. The first test measured the power consumption for the PQ unit as a function of transmit power. This is displayed in Figure \ref{fig:txPower}, after subtracting a 31 mA ``no-transmit" current. The maximum current is around 96 mA for the maxium output power (quoted by the RA-02 as 18 dBm +- 1 dBm).
 
 \subsection{Data Rate}
-To test the possible bit rates as a function of LoRa spreading factor (SF), two RA-02 modules were setup with the same parameters and the bit rate was measured as the SF value was varied. A payload length of 255 was used, with 4/6 CRC, an 8 bit preamble, 500 kHz bandwidth, and a 10 ms delay between packets. The bit rate was then measured on the receiving side and is shown in Table \ref{tab:loraBitRate}. Theoretical bit rates were derived using the calculator at \cite{site-loraBitRateCalculator}. The results show that the system is set up correctly, and that a spreading factor of 8 is the correct choice to achieve the 9600 baud rate requirement.
+To test the possible bit rates as a function of LoRa spreading factor (SF), two RA-02 modules were setup with the same parameters and the bit rate was measured as the SF value was varied. A payload length of 255 was used, with 4/6 CRC, an 8 bit preamble, 500 kHz bandwidth, and a 10 ms delay between packets. The bit rate was then measured on the receiving side and compared to theoretical bit rates derived using the calculator at \cite{site-loraBitRateCalculator} (as shown in Table \ref{tab:loraBitRate}). The results show that the system is set up correctly, and that a spreading factor of 8 is the correct choice to achieve the 9600 baud rate requirement.
 
 \begin{figure}[!htb]
   \begin{minipage}{.49\textwidth}

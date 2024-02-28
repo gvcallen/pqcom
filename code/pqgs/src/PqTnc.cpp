@@ -36,9 +36,6 @@ void PqTnc::begin()
     else
         sendMessage("Initialized Ground Station");
 
-    groundStation.calibrate();
-    while (1);
-    
     PqTnc::singletonTnc = this;  
 }
 
@@ -96,6 +93,9 @@ gel::Error PqTnc::setupGroundStation()
     config.tracking.mapProjectionOrigin.lat = GS_MAP_PROJECTION_ORIGIN_LAT;
     config.tracking.mapProjectionOrigin.lng = GS_MAP_PROJECTION_ORIGIN_LONG;
     config.tracking.knownLocationTrustTimeout = GS_KNOWN_LOCATION_TRUST_TIMEOUT;
+    config.tracking.defaultLocation.lat = GS_DEFAULT_LOCATION_LAT;
+    config.tracking.defaultLocation.lng = GS_DEFAULT_LOCATION_LONG;
+    config.tracking.defaultLocation.altitude = 0.0;
 
     // Setup
     if (gel::Error err = groundStation.begin(config, pins))
@@ -116,13 +116,13 @@ gel::Error PqTnc::setupEEPROM()
     if (notInitialized)
         EEPROM.writeBytes(0, &zero, EEPROM_OFFSET_END);
 
-    if (gel::Error err = loadFlightPath())
+    if (gel::Error err = setupFlightPath())
         return err;
 
     return gel::Error::None;
 }
 
-gel::Error PqTnc::loadFlightPath()
+gel::Error PqTnc::setupFlightPath()
 {
     // Our header stores the size, in bytes, of the current flight path. Can be 0.
     FlightPathHeader header;
@@ -147,6 +147,8 @@ gel::Error PqTnc::saveFlightPath()
     if (!numPathInstants)
         return gel::Error::None;
 
+    // We always add the first instant in the flight path to the ground station,
+    // so that the user can command it to point in that direction
     groundStation.addEstimatedLocation(path[0]);
     groundStation.addEstimatedLocation(path[0]);
     
@@ -166,13 +168,16 @@ void PqTnc::update()
 {
     gel::Error err;
     
+    // Update serial
     if (err = updateSerial())
         sendError(err);
 
+    // Update tracking
     auto trackingErrors = updateTracking();
     for (auto& err : trackingErrors)
         sendError(err);
     
+    // Update ground station
     auto gsErrors = groundStation.update();
     for (auto& err : gsErrors)
         sendError(err);
@@ -243,7 +248,7 @@ gel::Error PqTnc::updateSerialNormal(uint8_t c)
             commandFinished = addFlightPathData((uint8_t)c);
             break;
         case suncq::Command::SetTrackTarget:
-            // sendMessage(String(c));
+            // not implemented
             break;
         case suncq::Command::SetTrackLocation:
             commandFinished = addKnownLocationData((uint8_t)c);
@@ -316,7 +321,6 @@ gel::Error PqTnc::updateTrackingGPSReceived()
     if (!gpsRecieved)
         return gel::Error::None;;
 
-    // sendMessage("Adding known location to GS");
     return groundStation.addKnownLocation(latestReceivedInstant);
 }
 
@@ -385,7 +389,6 @@ bool PqTnc::addKnownLocationData(uint8_t newData)
                  + String("Alt = ") + String(latestReceivedInstant.location.altitude) + ", "
                  + String("Sec = ") + String(latestReceivedInstant.secondsSinceEpoch);
         sendMessage(log);
-
         
         gpsRecieved = true;
         return true;
@@ -437,6 +440,7 @@ void PqTnc::reset()
     ESP.restart();
     #endif
     
+    // Possible reset implementation for other MCUs e.g. Atmegas
     // void(* resetFunc) (void) = 0;
     // resetFunc();
 }
@@ -482,9 +486,6 @@ gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
     String payloadStr{(const char*)payload.data()};
     String log = "";
 
-    // sendMessage("Continuous bit rate = " + String(groundStation.getLink().getDataRate()));
-    // sendMessage(String(payload.data(), payload.size()));
-
     auto numIdx = payloadStr.indexOf("Num: ");
     auto num = payloadStr.substring(numIdx + 5, numIdx + 5 + 9).toInt();
     log = log + "PID = " + String(num) + ", ";
@@ -522,7 +523,6 @@ gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
             auto deltaVec = pqLocationCart - gsLocationCart;
             float distance = gel::length(deltaVec);
 
-            // sendMessage("Calculated distance = " + String(distance / 1000.0) + " km");
             log = log + "Dist = " + String(distance / 1000.0) + " km, ";
         }
     }
@@ -531,13 +531,12 @@ gel::Error PqTnc::handleTelemetry(gel::span<uint8_t> payload)
     log = log + "SNR = " + String(groundStation.getRadio().getSNR()) + ", ";
     log = log + "CBR = " + String(groundStation.getLink().getDataRate()) + " bps";
     sendTelemetry(log);
-    // sendMessage("RSSI = " + String(groundStation.getRadio().getRssi()));
-    // sendMessage("SNR = " + String(groundStation.getRadio().getSNR()));
 
     return gel::Error::None;
 }
 
 void PqTnc::handleError(gel::Error err, const char* msg)
 {
+    // Could possibly have a different command e.g. for errors in SUNCQ
     sendMessage(msg);
 }

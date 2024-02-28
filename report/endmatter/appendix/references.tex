@@ -70,7 +70,7 @@
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=0.45\linewidth]{az_elevation}
-    \caption{Azimuthal and Elevation Visualization \cite{site-azElevationVisual}}
+    \caption{Azimuth and Elevation Visualization \cite{site-azElevationVisual}}
     \label{fig:az_elevation}
 \end{figure}
 The ``azel" ratio is the number of elevation motor turns required to tilt the elevation axis the same amount as the azimuthal motor, given by:
@@ -85,7 +85,7 @@ The ``azel" ratio is the number of elevation motor turns required to tilt the el
     \textnormal{elAngle} &= (\textnormal{azPos} \times \textnormal{azelRatio} + \textnormal{elPos}) \times \frac{360 ^{\circ}}{\textnormal{elRev}} \label{eqn:elAngle}
 \end{align}
 
-\noindent The number of simultaneous \textit{"delta"} steps to make in order for each axis to move to a new location \{\textit{newAzAng}, \textit{newElAng}\} implemented in \textit{setAzimuthElevation()} is then given by Formulae \ref{eqn:deltaAzSteps} and \ref{eqn:deltaElSteps}.
+\noindent The number of simultaneous \textit{``delta"} steps to make in order for each axis to move to a new location \{\textit{newAzAng}, \textit{newElAng}\} implemented in \textit{setAzimuthElevation()} is then given by Formulae \ref{eqn:deltaAzSteps} and \ref{eqn:deltaElSteps}.
 \begin{align}
     \textnormal{deltaAzSteps} &= \textnormal{angToPosAz(newAzAng)} - \textnormal{azPos} \label{eqn:deltaAzSteps} \\ 
     \textnormal{deltaElSteps} &= \textnormal{-deltaAzSteps} \times \textnormal{azelRatio} + \textnormal {angToPosDeltaEl(newElAng - elAng)}\label{eqn:deltaElSteps} 

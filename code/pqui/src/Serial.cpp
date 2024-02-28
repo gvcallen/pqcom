@@ -40,7 +40,7 @@ bool uploadFlightPath(QSerialPort* serial, QString filepath)
         auto date = QDateTime::fromString(doc.GetCell<std::string>("datetime", i).c_str(), Qt::DateFormat::ISODateWithMs);
         // date.totim
         instant.secondsSinceEpoch = date.toSecsSinceEpoch();
-        qDebug() << "instantsec = " << instant.secondsSinceEpoch;
+        // qDebug() << "instantsec = " << instant.secondsSinceEpoch;
         instant.latitude = doc.GetCell<float>("latitude", i);
         instant.longitude = doc.GetCell<float>("longitude", i);
         instant.altitude = doc.GetCell<float>("altitude", i);

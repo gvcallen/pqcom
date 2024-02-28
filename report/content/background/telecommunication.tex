@@ -12,23 +12,23 @@ The \textit{modulation} technique used over a digital communication link refers 
   \textbf{Name}                & \textbf{Bit Variation}    & \textbf{Comments} \\ \hline
    Amplitude Shift Keying (ASK)
    & Amplitudes
-   & Low noise immunity
+   & Poor noise immunity
    \\ \hline
    Frequency Shift Keying (FSK)
    & Frequencies
-   & \textit{Gaussian-FSK} (GFSK) is a common variation which filters the signal, decreasing the bandwidth for similar throughput.
+   & Simple to implement. Can be filtered for decreased bandwidth, and is then known as \textit{Gaussian-FSK} (GFSK).
    \\ \hline
    Phase Shift \mbox{Keying} (PSK)
    & Phase \mbox{Angles}
-   & This is often seen as similar to FSK. It is also similar to QAM, but has lower spectral efficiency.
+   & Similar to FSK or QAM. Lower spectral efficiency than QAM.
    \\ \hline
    Quadrature Amplitude Modulation (QAM)
    & Amplitude-Phase Pairs
-   & It has very high spectral efficiency, and is commonly used for higher cost, high throughput systems.
+   & Very high spectral efficiency. Commonly used in higher cost, high throughput systems.
    \\ \hline
-   LoRa (``Long-Range") \mbox{Modulation}
+   LoRa (``Long-Range") Modulation
    & Frequency-varying ``Chirps"
-   & It has been seen to drastically increase range, at the expense of greater bandwidth requirements \cite{datasheet-SX1278}. Its practical use has also been demonstrated in an existing CubeSat system \cite{design-FOSSASATLink}.
+   & Can drastically increase range, at the expense of greater bandwidth requirements \cite{datasheet-SX1278}. Practically demonstrated in an existing CubeSat system \cite{design-FOSSASATLink}.
    \\ \hline
   \end{tabular}
   \caption{Comparison of Modulation Techniques}
@@ -41,4 +41,4 @@ For any communication system, a \textit{link budget} should be estimated, with t
 
 \subsection{Protocols}
 A few link-layer and network-layer protocols already exist that facilitate nano-satellite applications. 
-The CubeSat Space Protocol (CSP) \cite{standard-csp} is a fully-fledged network layer protocol for CubeSat embedded systems. It allows for all devices in the satellite ecosystem (satellite modules, the ground station, a control computer etc.) to communicate "directly" with each other via \textit{packet forwarding}. It relies on various link and network -layer protocols, including KISS, I2C and CCSDS (\textit{Consultative Committee for Space Data Systems}).
+The CubeSat Space Protocol (CSP) \cite{standard-csp} is a fully-fledged network layer protocol for CubeSat embedded systems. It allows for all devices in the satellite ecosystem (satellite modules, the ground station, a control computer etc.) to communicate ``directly" with each other via \textit{packet forwarding}. It relies on various link and network -layer protocols, including KISS, I2C and CCSDS (\textit{Consultative Committee for Space Data Systems}).

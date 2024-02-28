@@ -20,6 +20,8 @@
 #define GS_MNORTH_DELTA_AZ                      -74.0
 #define GS_MAP_PROJECTION_ORIGIN_LAT            -34.0
 #define GS_MAP_PROJECTION_ORIGIN_LONG           19.0
+#define GS_DEFAULT_LOCATION_LAT                 -33.9321
+#define GS_DEFAULT_LOCATION_LONG                18.8602
 
 // Pins
 #define PIN_AZ_ZERO_SENSOR              36

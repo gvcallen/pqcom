@@ -3,8 +3,6 @@
 
 PqUnit* PqUnit::singleton = nullptr;
 
-#define USE_GPS 1
-
 void PqUnit::begin()
 {
     gel::Error err;
@@ -23,10 +21,8 @@ void PqUnit::begin()
         handleError(err, "Could not setup communication link.", true);
 
     // Initialize GPS
-    #if USE_GPS
     if (err = setupGps())
         handleError(err, "Could not initialize GPS.");
-    #endif   
     
     // Initialize debug button
     pinMode(BUTTON_P1, INPUT_PULLUP);
@@ -74,10 +70,8 @@ void PqUnit::update()
 {
     gel::Error err;
 
-    #if USE_GPS
-    if (err = gps.update(link.getConfig().transmitInterval - 5))
+    if (err = gps.update(link.getConfig().transmitInterval))
         handleError(err, "Could not update GPS.");
-    #endif
 
     if (err = link.update())
         handleError(err, "Could not update communication link.");
@@ -183,12 +177,7 @@ gel::Error PqUnit::handleTelemetry(gel::span<uint8_t> payload)
 
 gel::Error PqUnit::handleTelecommand(gel::span<uint8_t> command, gel::span<uint8_t> response)
 {
-    // auto* data = command.data();
-    // if (data[0] == 'T' && data[1] == 'M')
-        // link.setState(gel::Link::State::Telemetry);
-    // else
-        // link.setState(gel::Link::State::Telecommand);
-    
+    // Send received command back to caller
     memcpy(response.data(), command.data(), command.size_bytes());
     return gel::Error::None;
 }
