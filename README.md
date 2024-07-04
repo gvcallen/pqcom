@@ -1,7 +1,7 @@
 # PocketQube Satellite Communication System
 
 ## Overview
-This repository holds code, datasheets, PCB schematics and other files related to the design and development of a PocketQube Satellite Communication System. This was done by Gary Allen in  partial fulfilment of the requirements of the module Project (E) 448 for the degree Baccalaureus in Engineering in the Department of Electrical and Electronic Engineering at the University of Stellenbosch, South Africa. PocketQubes are miniaturised satellites, and this project aimed to develop prototypes for the unit to be placed on the satellite, the ground station, and the PC interface.
+This repository holds code, datasheets, PCB schematics and other files related to the design and development of a PocketQube Satellite Communication System. This was done by Gary Allen in  partial fulfilment of the requirements of the module Project (E) 448 for the degree Baccalaureus in Engineering in the Department of Electrical and Electronic Engineering at the University of Stellenbosch, South Africa. PocketQubes are miniaturised satellites, and this project aimed to develop prototypes for the unit to be placed on the satellite, the ground station, and the PC interface. A video documenting the project can be found on YouTube at https://www.youtube.com/watch?v=bJcF6t-W-kM
 
 ## Code
 This folder contains the relevant code for the project. Inside are 5 sub-folders. All embedded development was done using the *PlatformIO* extension on VS code, and all desktop GUI development was done using the *Qt* C++ library, both under WSL (Windows Subsystem for Linux). I highly recommend a linux install due to the ease of installation of the Qt libraries.
